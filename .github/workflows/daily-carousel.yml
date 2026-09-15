@@ -47,7 +47,43 @@ jobs:
           script: |
             const fs = require('fs');
             const token = await core.getIDToken('https://api.anthropic.com');
-            fs.writeFileSync('/tmp/gha-jwt', token);
+            fs.writeFileSync('/tmp/gha-jwt', token);      - name: OIDC claim kontrolü
+        run: |
+          python - <<'PY'
+          import base64
+          import json
+          import os
+          import sys
+
+          path = "/tmp/gha-jwt"
+
+          if not os.path.exists(path):
+              print("HATA: OIDC token dosyası bulunamadı.")
+              sys.exit(1)
+
+          token = open(path, "r").read().strip()
+          parts = token.split(".")
+
+          if len(parts) != 3:
+              print("HATA: OIDC token JWT formatında değil.")
+              sys.exit(1)
+
+          payload = parts[1]
+          payload += "=" * ((4 - len(payload) % 4) % 4)
+          claims = json.loads(
+              base64.urlsafe_b64decode(payload).decode("utf-8")
+          )
+
+          print("OIDC token alındı.")
+          print("iss:", claims.get("iss"))
+          print("aud:", claims.get("aud"))
+          print("sub:", claims.get("sub"))
+          print("repository:", claims.get("repository"))
+          print("repository_owner:", claims.get("repository_owner"))
+          print("ref:", claims.get("ref"))
+          print("event_name:", claims.get("event_name"))
+          PY
+          
 
       - name: İçerik üret (Claude, WIF ile — statik API key YOK)
         working-directory: scripts
