@@ -19,6 +19,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 12 | Reklam hesabı kısıtlama/ban önleme | 7 | Ödeme istikrarı, risk seviyeli içerik kategorileri, IP/çoklu hesap, ani bütçe artışı |
 | 13 | Reklam yorgunluğu (Ad Fatigue) — frekans yönetimi | 7 | Frekans eşikleri (1-2/3-4/5+), CTR/CPM/negatif geri bildirim, doygunluk vs yorgunluk |
 | 14 | Rakip Analizi — Meta Ads Library'den Strateji Çıkarma | 7 | Otomatik üretildi (2026-09-16) |
+| 15 | Dinamik Ürün Reklamları (DPA) — Katalog Tabanlı Otomasyon | 7 | Otomatik üretildi (2026-09-16) |
 
 ---
 
