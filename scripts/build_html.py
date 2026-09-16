@@ -47,12 +47,27 @@ CLASS_ATTR_PATTERN = re.compile(r'class="([^"]*)"')
 
 
 def extract_style_block() -> str:
-    """carousel_template.html'deki <style>...</style> bloğunu aynen çıkarır."""
-    text = TEMPLATE_HTML.read_text(encoding="utf-8")
-    match = re.search(r"<style>.*?</style>", text, re.DOTALL)
-    assert match, "carousel_template.html içinde <style> bloğu bulunamadı"
-    return match.group(0)
+"""carousel_template.html'deki <style>...</style> bloğunu aynen çıkarır.
 
+ÖNEMLİ: Önce baştaki açıklama yorumunu (<!-- ... -->) kaldırıyoruz.
+Sebep (gerçek, tespit edilmiş hata — 2026-09-16 yayınında footer/progress
+bar/pill tamamen kayboldu, metin sağ kenardan taştı): şablon dosyasının en
+üstündeki yorum metninin İÇİNDE literal "<style>" kelimesi geçiyor
+("1. Aşağıdaki <style> bloğunu OLDUĞU GİBİ kopyala..."). Yorum
+kaldırılmadan yapılan saf regex araması, gerçek <style> etiketi yerine bu
+yorum içindeki metni eşleştiriyor ve baştan bozuk bir blok üretiyordu.
+Bu, çıkan CSS'in ilk kuralı olan `*{margin:0;padding:0;box-sizing:
+border-box;}` sıfırlamasının geçersiz bir seçiciye karışıp düşmesine yol
+açıyordu; box-sizing:border-box olmadan tüm .slide kutuları padding
+kadar büyüyüp 420x525'lik sabit viewport'un dışına taşıyor, bu yüzden
+ekran görüntüsü (screenshot) sağdaki/alttaki her şeyi (footer, progress
+bar, ok, sağ margin) kırpıyordu.
+"""
+text = TEMPLATE_HTML.read_text(encoding="utf-8")
+text_no_comments = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
+match = re.search(r"<style>.*?</style>", text_no_comments, re.DOTALL)
+assert match, "carousel_template.html içinde <style> bloğu bulunamadı"
+return match.group(0)
 
 def profile_data_uri() -> str:
     b64 = PROFILE_B64_FILE.read_text(encoding="utf-8").strip()
