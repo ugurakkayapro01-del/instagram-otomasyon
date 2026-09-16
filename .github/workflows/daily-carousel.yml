@@ -49,43 +49,27 @@ jobs:
             const token = await core.getIDToken('https://api.anthropic.com');
             fs.writeFileSync('/tmp/gha-jwt', token);
 
-      # GEÇİCİ TEŞHİS ADIMI — WIF 401 hatasını çözmek için eklendi.
-      # Token'ın kendisi veya imzası HİÇBİR ZAMAN yazdırılmaz; sadece JWT
-      # payload'ındaki, zaten gizli olmayan (repo adı, branch, vb.) alanlar
-      # decode edilip yazdırılır. Anthropic Console'daki Federation Rule
-      # "Subject" eşleşmesi bu 'sub' değeriyle birebir uyuşmalı.
-      - name: OIDC claim kontrolü (teşhis — sadece claim'ler, token/imza yazdırılmaz)
-        run: |
-          python3 - <<'PY'
-          import base64, json
-          with open('/tmp/gha-jwt') as f:
-              token = f.read().strip()
-          payload_b64 = token.split('.')[1]
-          padded = payload_b64 + '=' * (-len(payload_b64) % 4)
-          claims = json.loads(base64.urlsafe_b64decode(padded))
-          safe_keys = ["iss", "aud", "sub", "repository", "repository_owner",
-                       "repository_id", "repository_owner_id", "ref", "ref_type",
-                       "workflow", "event_name", "job_workflow_ref", "runner_environment"]
-          print("--- OIDC token claim'leri (imza/ham token YOK, sadece asagidaki alanlar) ---")
-          for k in safe_keys:
-              if k in claims:
-                  print(f"{k}: {claims[k]}")
-          print("--------------------------------------------------------------")
-          PY
-
-      # GEÇİCİ TEŞHİS ADIMI — bu 4 değer SECRET DEĞİL (Anthropic'in kendi
-      # dokümantasyonuna göre organization/workspace/service-account/rule ID'leri
-      # gizli bilgi sayılmaz, GitHub'da da Secret değil Variable olarak tutuluyorlar).
-      # Amaç: GitHub Variables'ın workflow'a GERÇEKTEN, boş/yanlış olmadan
-      # ulaştığını doğrulamak — "No authentication attempts" bulgusu, isteğin
-      # Anthropic'e hiç ulaşmadan (genelde bu 4 ID'den biri hatalı/boş olduğu
-      # için) reddedildiğini gösteriyor.
-      - name: WIF kimlik ID kontrolü (teşhis — secret değil, sadece ID'ler)
-        run: |
-          echo "ANTHROPIC_FEDERATION_RULE_ID=${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}"
-          echo "ANTHROPIC_ORGANIZATION_ID=${{ vars.ANTHROPIC_ORGANIZATION_ID }}"
-          echo "ANTHROPIC_SERVICE_ACCOUNT_ID=${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}"
-          echo "ANTHROPIC_WORKSPACE_ID=${{ vars.ANTHROPIC_WORKSPACE_ID }}"
+      # GEÇİCİ TEŞHİS ADIMI — WIF 401 hatasının gerçek kaynağını bulmak için.
+      # scripts/diagnose_wif.py, SDK'yı bypass edip Anthropic token endpoint'ine
+      # SDK'nın gönderdiği isteğin birebir aynısını gönderir ve HTTP durum kodu +
+      # tam (ama JWT/token maskelenmiş) yanıtı gösterir. JWT, access token veya
+      # başka bir secret HİÇBİR ZAMAN yazdırılmaz — bkz. script içi güvenlik notu.
+      # ANTHROPIC_WORKSPACE_ID KASITLI OLARAK GÖNDERİLMİYOR (test): Federation Rule
+      # yalnızca TEK workspace'e (Default) bağlı. Anthropic dokümantasyonuna göre
+      # workspace_id sadece rule BİRDEN FAZLA workspace'e bağlıysa zorunlu; tek
+      # workspace'li rule'larda sunucu kuralın tek etkin workspace'ini otomatik
+      # seçiyor. workspace_id'yi hiç göndermeyerek olası bir target_mismatch
+      # ihtimalini eliyoruz. FEDERATION_RULE_ID / ORGANIZATION_ID / SERVICE_ACCOUNT_ID
+      # DEĞİŞTİRİLMEDİ.
+      - name: WIF teşhis (SDK bypass, ham token exchange testi — secret yazdırılmaz)
+        working-directory: scripts
+        env:
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: /tmp/gha-jwt
+        run: python diagnose_wif.py
+        continue-on-error: true  # bu adım "başarısız" olsa (401) bile sonraki adımları görebilmek için
 
       - name: İçerik üret (Claude, WIF ile — statik API key YOK)
         working-directory: scripts
@@ -93,7 +77,6 @@ jobs:
           ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
           ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
           ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
           ANTHROPIC_IDENTITY_TOKEN_FILE: /tmp/gha-jwt
         run: python generate_carousel.py
 
