@@ -73,6 +73,20 @@ jobs:
           print("--------------------------------------------------------------")
           PY
 
+      # GEÇİCİ TEŞHİS ADIMI — bu 4 değer SECRET DEĞİL (Anthropic'in kendi
+      # dokümantasyonuna göre organization/workspace/service-account/rule ID'leri
+      # gizli bilgi sayılmaz, GitHub'da da Secret değil Variable olarak tutuluyorlar).
+      # Amaç: GitHub Variables'ın workflow'a GERÇEKTEN, boş/yanlış olmadan
+      # ulaştığını doğrulamak — "No authentication attempts" bulgusu, isteğin
+      # Anthropic'e hiç ulaşmadan (genelde bu 4 ID'den biri hatalı/boş olduğu
+      # için) reddedildiğini gösteriyor.
+      - name: WIF kimlik ID kontrolü (teşhis — secret değil, sadece ID'ler)
+        run: |
+          echo "ANTHROPIC_FEDERATION_RULE_ID=${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}"
+          echo "ANTHROPIC_ORGANIZATION_ID=${{ vars.ANTHROPIC_ORGANIZATION_ID }}"
+          echo "ANTHROPIC_SERVICE_ACCOUNT_ID=${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}"
+          echo "ANTHROPIC_WORKSPACE_ID=${{ vars.ANTHROPIC_WORKSPACE_ID }}"
+
       - name: İçerik üret (Claude, WIF ile — statik API key YOK)
         working-directory: scripts
         env:
