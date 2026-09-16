@@ -49,28 +49,6 @@ jobs:
             const token = await core.getIDToken('https://api.anthropic.com');
             fs.writeFileSync('/tmp/gha-jwt', token);
 
-      # GEÇİCİ TEŞHİS ADIMI — WIF 401 hatasının gerçek kaynağını bulmak için.
-      # scripts/diagnose_wif.py, SDK'yı bypass edip Anthropic token endpoint'ine
-      # SDK'nın gönderdiği isteğin birebir aynısını gönderir ve HTTP durum kodu +
-      # tam (ama JWT/token maskelenmiş) yanıtı gösterir. JWT, access token veya
-      # başka bir secret HİÇBİR ZAMAN yazdırılmaz — bkz. script içi güvenlik notu.
-      # ANTHROPIC_WORKSPACE_ID KASITLI OLARAK GÖNDERİLMİYOR (test): Federation Rule
-      # yalnızca TEK workspace'e (Default) bağlı. Anthropic dokümantasyonuna göre
-      # workspace_id sadece rule BİRDEN FAZLA workspace'e bağlıysa zorunlu; tek
-      # workspace'li rule'larda sunucu kuralın tek etkin workspace'ini otomatik
-      # seçiyor. workspace_id'yi hiç göndermeyerek olası bir target_mismatch
-      # ihtimalini eliyoruz. FEDERATION_RULE_ID / ORGANIZATION_ID / SERVICE_ACCOUNT_ID
-      # DEĞİŞTİRİLMEDİ.
-      - name: WIF teşhis (SDK bypass, ham token exchange testi — secret yazdırılmaz)
-        working-directory: scripts
-        env:
-          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
-          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
-          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
-          ANTHROPIC_IDENTITY_TOKEN_FILE: /tmp/gha-jwt
-        run: python diagnose_wif.py
-        continue-on-error: true  # bu adım "başarısız" olsa (401) bile sonraki adımları görebilmek için
-
       - name: İçerik üret (Claude, WIF ile — statik API key YOK)
         working-directory: scripts
         env:
