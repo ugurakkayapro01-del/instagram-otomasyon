@@ -49,6 +49,30 @@ jobs:
             const token = await core.getIDToken('https://api.anthropic.com');
             fs.writeFileSync('/tmp/gha-jwt', token);
 
+      # GEÇİCİ TEŞHİS ADIMI — WIF 401 hatasını çözmek için eklendi.
+      # Token'ın kendisi veya imzası HİÇBİR ZAMAN yazdırılmaz; sadece JWT
+      # payload'ındaki, zaten gizli olmayan (repo adı, branch, vb.) alanlar
+      # decode edilip yazdırılır. Anthropic Console'daki Federation Rule
+      # "Subject" eşleşmesi bu 'sub' değeriyle birebir uyuşmalı.
+      - name: OIDC claim kontrolü (teşhis — sadece claim'ler, token/imza yazdırılmaz)
+        run: |
+          python3 - <<'PY'
+          import base64, json
+          with open('/tmp/gha-jwt') as f:
+              token = f.read().strip()
+          payload_b64 = token.split('.')[1]
+          padded = payload_b64 + '=' * (-len(payload_b64) % 4)
+          claims = json.loads(base64.urlsafe_b64decode(padded))
+          safe_keys = ["iss", "aud", "sub", "repository", "repository_owner",
+                       "repository_id", "repository_owner_id", "ref", "ref_type",
+                       "workflow", "event_name", "job_workflow_ref", "runner_environment"]
+          print("--- OIDC token claim'leri (imza/ham token YOK, sadece asagidaki alanlar) ---")
+          for k in safe_keys:
+              if k in claims:
+                  print(f"{k}: {claims[k]}")
+          print("--------------------------------------------------------------")
+          PY
+
       - name: İçerik üret (Claude, WIF ile — statik API key YOK)
         working-directory: scripts
         env:
