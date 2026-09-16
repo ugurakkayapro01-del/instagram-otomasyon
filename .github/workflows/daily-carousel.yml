@@ -1,20 +1,25 @@
 name: Günlük Instagram Carousel
 
 # Günde 2 kez otomatik çalışır (UTC saatleri — İstanbul UTC+3):
-# 07:00 UTC -> 10:00 İstanbul
-# 16:00 UTC -> 19:00 İstanbul
-# workflow_dispatch: GitHub Actions sekmesinden elle tetiklenebilir.
+#   07:00 UTC -> 10:00 İstanbul
+#   16:00 UTC -> 19:00 İstanbul
+# workflow_dispatch: GitHub'ın Actions sekmesinden elle de tetiklenebilir
+# (ilk test çalıştırması için önerilir — cron'a güvenmeden önce).
 on:
   schedule:
     - cron: "0 7 * * *"
     - cron: "0 16 * * *"
   workflow_dispatch: {}
 
+# id-token: Anthropic Workload Identity Federation için GitHub OIDC token'ı almaya yarar.
+# contents: write — üretilen görselleri ve güncellenmiş konu listelerini push edebilmek için.
+# issues: write — hata durumunda otomatik bir Issue açabilmek için.
 permissions:
   id-token: write
   contents: write
   issues: write
 
+# Aynı workflow'un üst üste/paralel çalışmasını engeller (çift yayın koruması).
 concurrency:
   group: daily-carousel
   cancel-in-progress: false
@@ -22,7 +27,6 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     steps:
       - name: Repoyu al
         uses: actions/checkout@v4
@@ -44,44 +48,6 @@ jobs:
             const fs = require('fs');
             const token = await core.getIDToken('https://api.anthropic.com');
             fs.writeFileSync('/tmp/gha-jwt', token);
-
-      - name: OIDC claim kontrolü
-        run: |
-          python - <<'PY'
-          import base64
-          import json
-          import os
-          import sys
-
-          path = "/tmp/gha-jwt"
-
-          if not os.path.exists(path):
-              print("HATA: OIDC token dosyası bulunamadı.")
-              sys.exit(1)
-
-          token = open(path, "r").read().strip()
-          parts = token.split(".")
-
-          if len(parts) != 3:
-              print("HATA: OIDC token JWT formatında değil.")
-              sys.exit(1)
-
-          payload = parts[1]
-          payload += "=" * ((4 - len(payload) % 4) % 4)
-
-          claims = json.loads(
-              base64.urlsafe_b64decode(payload).decode("utf-8")
-          )
-
-          print("OIDC token alındı.")
-          print("iss:", claims.get("iss"))
-          print("aud:", claims.get("aud"))
-          print("sub:", claims.get("sub"))
-          print("repository:", claims.get("repository"))
-          print("repository_owner:", claims.get("repository_owner"))
-          print("ref:", claims.get("ref"))
-          print("event_name:", claims.get("event_name"))
-          PY
 
       - name: İçerik üret (Claude, WIF ile — statik API key YOK)
         working-directory: scripts
@@ -144,4 +110,3 @@ jobs:
               body: `Bu çalıştırma başarısız oldu. Detaylı log için:\n${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\nHiçbir secret/token bilgisi bu Issue'da yer almaz.`,
               labels: ["automation-failure"],
             });
-            
