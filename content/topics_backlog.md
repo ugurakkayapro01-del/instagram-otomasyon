@@ -4,7 +4,7 @@ Yeni carousel önerilirken buradan seçim yapılır. Bir konu kullanıldığınd
 buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 ## Hazır Bekleyen Konular
-- Rakip analizi — Meta Ads Library'den strateji çıkarma
+
 - Dinamik ürün reklamları (DPA) — katalog tabanlı otomasyon
 - UGC (Kullanıcı Üretimi İçerik) reklamı neden daha çok satar
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar

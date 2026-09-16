@@ -1,0 +1,65 @@
+{
+  "topic": "Rakip Analizi — Meta Ads Library'den Strateji Çıkarma",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "tier",
+  "slides": [
+    {
+      "kind": "hook",
+      "tag": "RAKİP ANALİZİ · META ADS LIBRARY",
+      "title": "Rakiplerin Reklamı\nHerkese Açık.\n**Sen Bakıyor musun?**",
+      "subtitle": "Meta Ads Library ile rakibinin hangi reklamı ne kadar süredir yayında tuttuğunu görebilirsin. Bu tesadüf değil — kanıtlanmış performans sinyali."
+    },
+    {
+      "kind": "light",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🔍",
+      "title": "Ads Library'ye Nasıl Girilir?",
+      "body": "facebook.com/ads/library adresine gir, ülke ve rakip marka adını yaz.\n\"Active\" filtresini seç — sadece o an yayında olan reklamlar görünsün.\nTüm reklam metni, görsel, video ve yayın tarihi ücretsiz görünür.",
+      "is_checklist": false,
+      "pill": "Rakip adını yaz, Active filtrele, analiz başlasın."
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "⏱️",
+      "title": "Yayın Süresi = Performans Sinyali",
+      "body": "Bir reklam Ads Library'de 30 günden uzun süredir yayındaysa, o reklam para kazandırıyor demektir. Hiçbir marka zarar eden reklamı bu kadar uzun süre canlı tutmaz.",
+      "is_checklist": false,
+      "pill": "30+ gün yayında olan reklam = kanıtlanmış kazanan."
+    },
+    {
+      "kind": "special",
+      "background": "dark",
+      "num_label": "Adım 03",
+      "icon": "📊",
+      "title": "Reklamı Değerlendirme Sırası",
+      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><span>Yayın Süresi — 30+ gün canlıysa öncelik ver</span></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><span>Varyasyon Sayısı — Aynı üründe 3+ reklam varsa aktif test var</span></div><div class=\"tier-row\"><span class=\"tier-rank\">03</span><span>Kreatif Format — Video mu, carousel mi, statik mi baskın?</span></div><div class=\"tier-row\"><span class=\"tier-rank\">04</span><span>Metin Yapısı — Hook, CTA ve vaat cümlesi kalıbı</span></div>",
+      "pill": "Önce süreye bak, sonra formata, en son metne."
+    },
+    {
+      "kind": "light",
+      "num_label": "İpucu 04 / 07",
+      "icon": "🎬",
+      "title": "Format Oranına Dikkat Et",
+      "body": "Rakibinin son 10 reklamına bak. Video mu, carousel mi, statik görsel mi ağırlıkta? Bir formatta 3'ten fazla tekrar varsa, o format onlar için işe yarıyor demektir. Sen de aynı formatla test yap, aynı görseli değil.",
+      "is_checklist": false,
+      "pill": "Formatı kopyala, görseli değil — bu seni kopyacı yapmaz."
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 05 / 07",
+      "icon": "🧠",
+      "title": "En Büyük Hata: Kreatifi Kopyalamak",
+      "body": "Rakibinin reklamını birebir kopyalamak Meta'nın orijinal içerik politikasına takılır ve marka güvenini sıfırlar. Doğru yaklaşım: hook kalıbını, CTA yapısını ve teklif mantığını çıkarıp kendi ürününe uyarlamak.",
+      "is_checklist": false,
+      "pill": "Kalıbı çal, kreatifi asla — pattern çıkar, kopya çekme."
+    },
+    {
+      "kind": "cta",
+      "label": "SIRADAKİ CAROUSEL'İ KAÇIRMA",
+      "title": "Rakibin Değil, Verisi Konuşsun.\n**Analiz Et, Kopyalama.**"
+    }
+  ],
+  "caption": "Rakibinin reklamı kaç gündür yayında, hiç kontrol ettin mi? 👇\n\nÇoğu e-ticaret sahibi rakibini sadece ürün fiyatı üzerinden takip ediyor — oysa Meta Ads Library sana onların hangi reklamının kazandığını ücretsiz gösteriyor.\nBu carousel'de nasıl analiz edeceğini adım adım anlatıyorum 👆\n\n─────────────────────\n🔍 Ads Library'ye nasıl girilir, hangi filtre kullanılır\n⏱️ Yayın süresi neden en güçlü performans sinyali\n📊 Reklamı değerlendirme sırası — süre, varyasyon, format, metin\n🎬 Format oranına göre rakip stratejisini okuma\n🧠 En büyük hata: kreatifi birebir kopyalamak\n─────────────────────\n\nEn büyük hata: Kreatifi kopyalamak. Doğrusu pattern'i çıkarıp kendi markana uyarlamak.\n\nRakiplerin sana stratejilerini zaten gösteriyor — sadece nereye bakacağını bilmen gerekiyor.\n\n💾 Kaydet — yeni kampanya kurmadan önce rakip analizi yaparken aç\n💬 Rakiplerinin reklamlarını hiç Ads Library'den inceledin mi? Yorumda söyle!\n\n#adslibrary #rakipanalizi #metaadslibrary\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+}
