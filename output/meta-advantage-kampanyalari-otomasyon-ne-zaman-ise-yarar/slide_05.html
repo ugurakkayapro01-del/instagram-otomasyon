@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#111;font-family:'DM Sans',sans-serif;}
+.wrap{display:flex;flex-direction:column;}
+.slide{width:420px;height:525px;position:relative;overflow:hidden;flex-shrink:0;}
+.prog{position:absolute;bottom:0;left:0;right:0;padding:12px 28px 16px;z-index:10;display:flex;align-items:center;gap:10px;}
+.prog-track{flex:1;height:3px;border-radius:2px;overflow:hidden;}
+.prog-fill{height:100%;border-radius:2px;}
+.prog-num{font-size:11px;font-weight:500;}
+.arr{position:absolute;right:0;top:0;bottom:0;width:44px;z-index:9;display:flex;align-items:center;justify-content:center;}
+
+/* ============ SLAYT TİPİ 1: HOOK (her carousel'in 1. slaytı) ============ */
+.s1{background:linear-gradient(145deg,#020818 0%,#051e3e 60%,#082444 100%);display:flex;flex-direction:column;justify-content:space-between;padding:40px 36px 52px;}
+.g1{position:absolute;top:-80px;right:-80px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(0,180,216,.22) 0%,transparent 65%);}
+.g2{position:absolute;bottom:-60px;left:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(0,119,182,.16) 0%,transparent 65%);}
+.s1 .tag{font-size:10px;font-weight:600;letter-spacing:2px;color:#00B4D8;text-transform:uppercase;position:relative;z-index:1;}
+.s1 .line{width:36px;height:2px;background:#00B4D8;margin:12px 0 18px;position:relative;z-index:1;}
+.s1 .ttl{font-family:'Playfair Display',serif;font-size:34px;font-weight:900;color:#fff;line-height:1.1;position:relative;z-index:1;}
+.s1 .ttl em{color:#00B4D8;font-style:normal;}
+.s1 .sub{font-size:13px;color:rgba(255,255,255,.45);line-height:1.6;position:relative;z-index:1;}
+.s1 .brand{display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1;}
+.s1 .identity{display:flex;align-items:center;gap:10px;}
+.av{width:40px;height:40px;border-radius:50%;border:1.5px solid #00B4D8;overflow:hidden;flex-shrink:0;}
+.av img{width:100%;height:100%;object-fit:cover;}
+.s1 .nm{font-size:12px;font-weight:600;color:#fff;}
+.s1 .hd{font-size:10px;color:#00B4D8;margin-top:1px;}
+.badge{background:rgba(0,180,216,.1);border:.5px solid rgba(0,180,216,.4);border-radius:20px;padding:5px 14px;font-size:10px;font-weight:700;color:#00B4D8;letter-spacing:.06em;}
+
+/* ============ SLAYT TİPİ 2: AÇIK ZEMİN BİLGİ SLAYTI (.sl) ============ */
+.sl{background:#F0F6FA;display:flex;flex-direction:column;justify-content:space-between;padding:36px 36px 52px;}
+.sl .topbar{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#0077B6,#00B4D8,#48CAE4);}
+.sl .num{font-size:10px;font-weight:700;letter-spacing:2px;color:#0077B6;text-transform:uppercase;}
+.sl .icon{font-size:38px;margin:8px 0 4px;}
+.sl .ttl{font-family:'Playfair Display',serif;font-size:21px;font-weight:800;color:#020818;line-height:1.2;}
+.sl .body{font-size:12.5px;color:#4a5568;line-height:1.6;margin-top:9px;}
+.sl .foot{display:flex;justify-content:space-between;align-items:flex-end;}
+.sl .pill{display:inline-flex;align-items:center;gap:5px;background:#0077B6;color:#fff;font-size:11px;font-weight:700;padding:7px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em;}
+.sl .logo{font-size:10px;font-weight:700;color:#0077B6;letter-spacing:.06em;text-align:right;}
+.sl .pgn{font-size:10px;color:#a0aec0;margin-top:2px;text-align:right;}
+
+/* ============ SLAYT TİPİ 3: KOYU ZEMİN BİLGİ SLAYTI (.sd) ============ */
+.sd{background:#051630;display:flex;flex-direction:column;justify-content:space-between;padding:36px 36px 52px;}
+.sd .topbar{position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#0077B6,#00B4D8,#48CAE4);}
+.sd .num{font-size:10px;font-weight:700;letter-spacing:2px;color:#48CAE4;text-transform:uppercase;}
+.sd .icon{font-size:38px;margin:8px 0 4px;}
+.sd .ttl{font-family:'Playfair Display',serif;font-size:21px;font-weight:800;color:#fff;line-height:1.2;}
+.sd .body{font-size:12.5px;color:rgba(255,255,255,.6);line-height:1.6;margin-top:9px;}
+.sd .foot{display:flex;justify-content:space-between;align-items:flex-end;}
+.sd .pill{display:inline-flex;align-items:center;gap:5px;background:#00B4D8;color:#020818;font-size:11px;font-weight:700;padding:7px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em;}
+.sd .logo{font-size:10px;font-weight:700;color:#48CAE4;letter-spacing:.06em;text-align:right;}
+.sd .pgn{font-size:10px;color:rgba(255,255,255,.3);margin-top:2px;text-align:right;}
+
+/* ============ ÖZEL TİP: İSTATİSTİK VURGUSU (büyük sayı) ============ */
+.sstat{background:#F0F6FA;display:flex;flex-direction:column;justify-content:space-between;padding:36px 36px 52px;}
+.sstat .bignum{font-family:'Playfair Display',serif;font-size:80px;font-weight:900;color:#00B4D8;line-height:1;margin:6px 0 0;}
+.sstat .bignumsub{font-size:13px;font-weight:600;color:#0077B6;margin-bottom:10px;}
+
+/* ============ ÖZEL TİP: ZAMAN ÇİZELGESİ (timeline) ============ */
+.timeline{display:flex;flex-direction:column;gap:0;}
+.trow{display:flex;align-items:stretch;gap:14px;}
+.tsec{font-family:'Playfair Display',serif;font-size:13px;font-weight:800;color:#00B4D8;background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.4);border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.tconnect{width:2px;flex:1;background:rgba(0,180,216,.2);margin:2px 0;}
+.trow:last-child .tconnect{display:none;}
+.ttime{font-size:12px;font-weight:700;color:#fff;}
+.tdesc{font-size:11px;color:rgba(255,255,255,.5);line-height:1.5;margin-top:2px;}
+.sl .tdesc{color:#4a5568;}
+
+/* ============ ÖZEL TİP: HUNİ / FUNNEL GRAFİĞİ ============ */
+.funnel{display:flex;flex-direction:column;gap:0;align-items:center;}
+.fun-step{display:flex;align-items:center;justify-content:center;color:#020818;font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;border-radius:8px;padding:12px;margin-bottom:6px;}
+.fun-step.s1f{width:100%;background:linear-gradient(90deg,#0077B6,#00B4D8);}
+.fun-step.s2f{width:82%;background:linear-gradient(90deg,#0088C8,#22C1E0);}
+.fun-step.s3f{width:64%;background:linear-gradient(90deg,#0099DA,#48CAE4);}
+.fun-step.s4f{width:46%;background:linear-gradient(90deg,#00AAEC,#6BD4EB);color:#020818;}
+
+/* ============ ÖZEL TİP: FİYAT KARTLARI ============ */
+.price-main{background:linear-gradient(135deg,#0077B6,#00B4D8);border-radius:14px;padding:16px 18px;color:#fff;margin-bottom:10px;}
+.split-row{display:flex;gap:8px;}
+.split-col{flex:1;background:rgba(0,119,182,.06);border:0.5px solid rgba(0,119,182,.25);border-radius:10px;padding:10px 12px;text-align:center;}
+.split-col .sval{font-family:'Playfair Display',serif;font-size:16px;font-weight:800;color:#0077B6;}
+.split-col .slabel{font-size:9.5px;color:#4a5568;margin-top:2px;line-height:1.3;}
+
+/* ============ ÖZEL TİP: SIRALAMA / TIER LİSTESİ ============ */
+.tier-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:0.5px solid rgba(0,180,216,.15);border-radius:10px;padding:11px 14px;}
+.tier-row.best{background:rgba(0,180,216,.1);border-color:rgba(0,180,216,.5);}
+.tier-rank{font-family:'Playfair Display',serif;font-size:20px;font-weight:900;color:#00B4D8;min-width:26px;}
+
+/* ============ ÖZEL TİP: RİSK/EŞİK ROZETLERİ ============ */
+.risk-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.04);border:0.5px solid rgba(255,255,255,.1);border-radius:10px;padding:11px 14px;}
+.risk-row.high{border-color:rgba(196,80,28,.5);background:rgba(196,80,28,.08);}
+.risk-row.med{border-color:rgba(200,150,20,.4);background:rgba(200,150,20,.06);}
+.risk-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.risk-dot.high{background:#C4501C;}
+.risk-dot.med{background:#C89614;}
+.thr-badge{font-family:'Playfair Display',serif;font-size:16px;font-weight:900;color:#fff;background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.4);border-radius:10px;padding:8px 12px;min-width:56px;text-align:center;}
+.thr-badge.warn{background:rgba(200,150,20,.15);border-color:rgba(200,150,20,.5);}
+.thr-badge.danger{background:rgba(196,80,28,.15);border-color:rgba(196,80,28,.5);}
+
+/* ============ ÖZEL TİP: KARŞILAŞTIRMA KARTLARI ============ */
+.cmp-row{display:flex;gap:10px;margin-bottom:8px;}
+.cmp-col{flex:1;background:rgba(255,255,255,.04);border:0.5px solid rgba(0,180,216,.15);border-radius:10px;padding:12px;}
+.cmp-col.hl{background:rgba(0,180,216,.08);border-color:rgba(0,180,216,.4);}
+
+/* ============ ÖZEL TİP: FORMÜL KUTUSU ============ */
+.formula-box{background:rgba(0,180,216,.06);border:0.5px solid rgba(0,180,216,.25);border-radius:12px;padding:16px;margin-bottom:12px;}
+.formula-box .flabel{font-size:10px;font-weight:700;color:#48CAE4;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;}
+.formula-box .fval{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#fff;line-height:1.4;}
+
+/* ============ ÖZEL TİP: CHECKLIST ============ */
+.chk-item{display:flex;align-items:flex-start;gap:8px;}
+.chk-mark{width:16px;height:16px;border-radius:5px;background:#0077B6;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;margin-top:1px;}
+.chk-txt{font-size:12px;color:#2d3748;line-height:1.4;}
+.sd .chk-txt{color:rgba(255,255,255,.85);}
+
+/* ============ SLAYT TİPİ SON: CTA (her carousel'in son slaytı) ============ */
+.scta{background:linear-gradient(135deg,#0077B6 0%,#00B4D8 100%);display:flex;flex-direction:column;justify-content:space-between;padding:40px 36px 40px;}
+.scta .cg{position:absolute;top:-100px;right:-100px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.07);}
+.scta .cg2{position:absolute;bottom:-80px;left:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.05);}
+.scta .lbl{font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,.6);text-transform:uppercase;}
+.scta .ttl{font-family:'Playfair Display',serif;font-size:27px;font-weight:900;color:#fff;line-height:1.15;margin:12px 0;position:relative;z-index:1;}
+.scta .btns{display:flex;flex-direction:column;gap:8px;position:relative;z-index:1;}
+.scta .btn{font-size:12px;font-weight:700;padding:12px 18px;border-radius:8px;display:flex;align-items:center;gap:8px;}
+.scta .btn.p{background:#fff;color:#0077B6;}
+.scta .btn.s{background:rgba(255,255,255,.12);color:#fff;border:.5px solid rgba(255,255,255,.3);}
+.scta .cbrand{display:flex;align-items:center;gap:10px;position:relative;z-index:1;}
+.scta .cnm{font-size:12px;font-weight:700;color:#fff;}
+.scta .chd{font-size:10px;color:rgba(255,255,255,.6);margin-top:1px;}
+</style>
+<style>html,body{overflow:hidden;height:525px;}</style>
+</head>
+<body>
+<div class="wrap">
+<div class="slide sl">
+  <div class="topbar"></div>
+  <div>
+    <div class="num">Sinyal 04 / 05</div>
+    <div class="icon">💰</div>
+    <div class="ttl">Bütçeyi Sıkı Tutma</div>
+    <div class="body">Advantage+ algoritması gün içinde harcamayı dalgalandırır — bazı gün %50 fazla, bazı gün az harcar. Bunu manuel müdahaleyle sabitlemeye çalışmak öğrenme evresini sıfırlar. Sistem 3-5 gün stabilize olana kadar dokunma.</div>
+  </div>
+  <div class="foot">
+    <div class="pill">→ İlk 3-5 gün bütçeye asla manuel müdahale etme</div>
+    <div><div class="logo">UA DIGITAL PRO</div><div class="pgn">5 / 7</div></div>
+  </div>
+  <div class="arr" style="background:linear-gradient(to right,transparent,rgba(0,0,0,.06))"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="rgba(0,0,0,.25)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="prog"><div class="prog-track" style="background:rgba(0,0,0,.08)"><div class="prog-fill" style="width:71.4%;background:#0077B6"></div></div><span class="prog-num" style="color:rgba(0,0,0,.3)">5/7</span></div>
+</div>
+</div>
+</body>
+</html>

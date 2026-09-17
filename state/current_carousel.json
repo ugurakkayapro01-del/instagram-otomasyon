@@ -1,65 +1,65 @@
 {
-  "topic": "UGC (Kullanıcı Üretimi İçerik) Reklamı Neden Daha Çok Satar",
+  "topic": "Meta Advantage+ Kampanyaları — Otomasyon Ne Zaman İşe Yarar",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "stat",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "UGC REKLAMCILIĞI",
-      "title": "Stüdyo Kalitesi\nSatmıyor.\n**Ham Video** Satıyor.",
-      "subtitle": "Reklamı reklam gibi göstermeyen içerikler, güven kazanıyor ve daha çok dönüşüm getiriyor."
+      "tag": "META ADVANTAGE+ • OTOMASYON REHBERİ",
+      "title": "Advantage+ Herkes İçin\n**Değil**",
+      "subtitle": "Yanlış hesapta kurarsan bütçeni yakar. Doğru hesapta ROAS'ı %30 artırır."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🎥",
-      "title": "UGC Neden Bu Kadar Güçlü?",
-      "body": "Kullanıcı, kendi gibi birinden gelen içeriği reklam olarak algılamıyor. Beyin bunu 'tavsiye' olarak işliyor, savunma mekanizması devreye girmiyor.\nÜretim kalitesi düşse de güven artıyor.",
+      "num_label": "Sinyal 01 / 05",
+      "icon": "🤖",
+      "title": "Otomasyonun Açlık Sınırı",
+      "body": "Advantage+ Shopping Campaigns (ASC), makine öğrenmesiyle hedefleme ve bütçe dağıtımını otomatik yapar. Ama algoritmanın öğrenmesi için son 30 günde en az 15-20 dönüşüm verisi ister. Bu eşiğin altında kurarsan sistem random denemeye döner, senin paranla.",
       "is_checklist": false,
-      "pill": "Ham görüntü = düşük reklam algısı = yüksek güven"
+      "pill": "Kural: 30 günde 15+ dönüşüm yoksa Advantage+'a geçme"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02 / 07",
-      "icon": "📊",
-      "title": "Sayılar Ne Diyor?",
-      "inner_html": "<div class=\"bignum\">4x</div><div class=\"bignumsub\">Ortalama CTR farkı — UGC reklamlar, stüdyo prodüksiyonuna göre 4 kata kadar daha yüksek tıklama oranı alıyor.</div><div class=\"split-row\"><div class=\"split-col\"><div class=\"slabel\">Stüdyo Reklam</div><div class=\"sval\">%0.9 CTR</div></div><div class=\"split-col best\"><div class=\"slabel\">UGC Reklam</div><div class=\"sval\">%3.6 CTR</div></div></div>",
-      "pill": "Ham video, prodüksiyon kalitesinden daha çok tıklama getiriyor"
+      "num_label": "Sinyal 02 / 05",
+      "icon": "⚖️",
+      "title": "Otomasyon mu, Kontrol mü?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Manuel Kampanya</div><div class=\"fval\">Sen hedeflersin, sen bütçeyi ayarlarsın. Yavaş ama öngörülebilir.</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Advantage+</div><div class=\"fval\">Algoritma hedefler, bütçeyi dağıtır. Hızlı ama veri açlığına duyarlı.</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Uygun Hesap</div><div class=\"fval\">Yeni hesap, düşük veri geçmişi</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Uygun Hesap</div><div class=\"fval\">30 günde 15+ dönüşüm, 3+ kreatif</div></div></div>",
+      "pill": "Veri yeterliyse Advantage+, değilse manuel kal"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🗣️",
-      "title": "En Çok Satan 3 UGC Formatı",
-      "body": "Kutu açılımı (unboxing) — ilk izlenim tepkisi\nÖncesi/sonrası (before-after) — somut sonuç kanıtı\nGerçek kullanım anı (demo) — ürünün doğal ortamda kullanımı",
-      "is_checklist": true,
-      "pill": "Format seçimi, ürünün 'kanıtlanabilir' faydasına göre yapılır"
+      "num_label": "Sinyal 03 / 05",
+      "icon": "🎨",
+      "title": "Algoritmanın Yemek İhtiyacı",
+      "body": "Advantage+ tek kreatifle beslenirse hızla doygunlaşır. Sistem test edecek en az 3-5 farklı görsel/video varyantı ister. Az kreatifle kurulan Advantage+ kampanyaları 5-7 gün içinde frekans patlaması yaşar.",
+      "is_checklist": false,
+      "pill": "Minimum 3-5 kreatif varyantı olmadan Advantage+ kurma"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "✂️",
-      "title": "Prodüksiyonu Kasıtlı Bozuk Tut",
-      "body": "Telefon kamerası, doğal ışık, düzensiz kadraj — bunlar hata değil, güven sinyali. Stüdyo aydınlatması ve sabit tripod, izleyicinin 'reklam' alarmını çalıştırır.\nAltyazı ekle: sessiz izleme oranı yüksek, ses açık izlenmiyor.",
+      "num_label": "Sinyal 04 / 05",
+      "icon": "💰",
+      "title": "Bütçeyi Sıkı Tutma",
+      "body": "Advantage+ algoritması gün içinde harcamayı dalgalandırır — bazı gün %50 fazla, bazı gün az harcar. Bunu manuel müdahaleyle sabitlemeye çalışmak öğrenme evresini sıfırlar. Sistem 3-5 gün stabilize olana kadar dokunma.",
       "is_checklist": false,
-      "pill": "Kusursuz görüntü = düşük güven, doğal görüntü = yüksek güven"
+      "pill": "İlk 3-5 gün bütçeye asla manuel müdahale etme"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05 / 07",
+      "num_label": "Sinyal 05 / 05",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Tek UGC'yi Sonsuza Kadar Kullanmak",
-      "body": "Bir UGC reklamı ortalama 10-14 günde frekans doygunluğuna ulaşıyor — çünkü izleyici 'gerçek kişiyi' hızlı tanıyor ve tekrar fark ediyor.\nHer 2 haftada en az 1 yeni UGC varyasyonu devreye alınmalı.",
+      "title": "En Büyük Hata",
+      "body": "Yeni açılan veya günlük 300 TL altı bütçeyle çalışan hesaplarda Advantage+ kurmak, veri toplamadan optimizasyon beklemektir. Sonuç: yüksek CPA, düşük ROAS. Önce manuel kampanyalarla 2-3 haftalık veri geçmişi oluştur, sonra geçiş yap.",
       "is_checklist": false,
-      "pill": "10-14 gün kuralı: UGC'yi bu pencerede tazele"
+      "pill": "Advantage+'a geçmeden önce 2-3 haftalık manuel veri topla"
     },
     {
       "kind": "cta",
-      "label": "UGC Stratejini Kur",
-      "title": "Gerçek Ses, Gerçek Satış.\n**Kurgusuz İçerik**, Kurgulu Sonuç."
+      "label": "KAPANIŞ",
+      "title": "Otomasyon Akıllı Kullanılırsa\n**Kazandırır**"
     }
   ],
-  "caption": "Stüdyo kalitesinde çektiğin reklam, izleyicinin reklam alarmını çalıştırıyor. Telefonla çekilen doğal bir video ise 4 kata kadar daha fazla tıklama alabiliyor. 👇\n\nÇoğu marka bütçesini 'kaliteli' görüntüye harcıyor ama izleyici bunu reklam olarak görüp geçiyor.\nGerçek sonuç, UGC'nin sistematik kullanımında — çözümü bu carousel'de. 👆\n\n─────────────────────\n🎥 UGC neden reklam algısını kırıyor\n📊 UGC vs stüdyo — CTR farkı\n🗣️ En çok satan 3 UGC formatı\n✂️ Prodüksiyonu bilerek 'bozuk' tutma taktiği\n⚠️ 10-14 gün doygunluk kuralı\n─────────────────────\n\nEn büyük hata: Tek bir UGC videosunu haftalarca aynı kampanyada döndürmek. İzleyici kişiyi tanıyınca güven etkisi kayboluyor.\n\nUGC, tesadüf değil sistemli bir üretim döngüsü ile satış getirir.\n\n💾 Kaydet — bir sonraki UGC brifingini hazırlarken tekrar bak\n💬 Sen ürününde hangi UGC formatını denedin? Yorumda söyle!\n\n#ugc #kullaniciicerik #videoreklam\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #reklamstratejisi #instagramreklamlari"
+  "caption": "Advantage+ kampanyasını kurdun, 3 gün sonra ROAS çöktü mü? Sorun otomasyon değil, ne zaman kullanacağını bilmemekti. 👇\n\nMeta'nın yapay zekası harika ama aç karnına çalışmaz — veri, kreatif ve bütçe olmadan sana pahalıya patlar.\nBu carousel'de Advantage+'ı ne zaman açman, ne zaman uzak durman gerektiğini gösteriyorum 👆\n\n─────────────────────\n🤖 Minimum veri eşiği: 30 günde 15+ dönüşüm\n⚖️ Advantage+ vs manuel kampanya farkı\n🎨 Kreatif çeşitliliği kuralı (3-5 varyant)\n💰 Bütçe dalgalanmasına neden dokunmamalısın\n⚠️ En büyük hata: erken geçiş\n─────────────────────\n\nEn büyük hata: Yeni hesapta veya düşük bütçeyle Advantage+ açmak. Önce 2-3 hafta manuel veri topla, sonra otomasyona geç.\n\nOtomasyon köre kılavuz değil, doğru zamanda hızlandırıcı. Doğru sırayla kullan, bütçeni değil sonucu büyüt.\n\n💾 Kaydet — Advantage+ kampanyası kurmadan önce tekrar oku\n💬 Advantage+ denedin mi, sonucu ne oldu? Yorumda söyle!\n\n#metaadvantageplus #advantageshopping\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
