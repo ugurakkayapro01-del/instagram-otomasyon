@@ -20,6 +20,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 13 | Reklam yorgunluğu (Ad Fatigue) — frekans yönetimi | 7 | Frekans eşikleri (1-2/3-4/5+), CTR/CPM/negatif geri bildirim, doygunluk vs yorgunluk |
 | 14 | Rakip Analizi — Meta Ads Library'den Strateji Çıkarma | 7 | Otomatik üretildi (2026-09-16) |
 | 15 | Dinamik Ürün Reklamları (DPA) — Katalog Tabanlı Otomasyon | 7 | Otomatik üretildi (2026-09-16) |
+| 16 | UGC (Kullanıcı Üretimi İçerik) Reklamı Neden Daha Çok Satar | 7 | Otomatik üretildi (2026-09-17) |
 
 ---
 

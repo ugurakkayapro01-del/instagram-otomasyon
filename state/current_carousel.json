@@ -1,65 +1,65 @@
 {
-  "topic": "Dinamik Ürün Reklamları (DPA) — Katalog Tabanlı Otomasyon",
+  "topic": "UGC (Kullanıcı Üretimi İçerik) Reklamı Neden Daha Çok Satar",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "stat",
   "slides": [
     {
       "kind": "hook",
-      "tag": "DPA · KATALOG OTOMASYONU",
-      "title": "Kataloğun\nSenin Yerine\n**Reklam Yapsın**",
-      "subtitle": "Her ziyaretçiye farklı ürün gösteren sistemi kaç e-ticaret sahibi yanlış kuruyor, biliyor musun?"
+      "tag": "UGC REKLAMCILIĞI",
+      "title": "Stüdyo Kalitesi\nSatmıyor.\n**Ham Video** Satıyor.",
+      "subtitle": "Reklamı reklam gibi göstermeyen içerikler, güven kazanıyor ve daha çok dönüşüm getiriyor."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🛍️",
-      "title": "DPA Nasıl Çalışır?",
-      "body": "DPA, ürün kataloğunu Pixel/CAPI verileriyle eşleştirip her kullanıcıya kendi gezdiği veya sepete attığı ürünü otomatik gösteren sistemdir. Tek reklam kurulumu, binlerce ürün için kişiselleşir.",
+      "icon": "🎥",
+      "title": "UGC Neden Bu Kadar Güçlü?",
+      "body": "Kullanıcı, kendi gibi birinden gelen içeriği reklam olarak algılamıyor. Beyin bunu 'tavsiye' olarak işliyor, savunma mekanizması devreye girmiyor.\nÜretim kalitesi düşse de güven artıyor.",
       "is_checklist": false,
-      "pill": "Tek kurulum, sınırsız kişiselleştirilmiş reklam"
+      "pill": "Ham görüntü = düşük reklam algısı = yüksek güven"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama 01",
-      "icon": "🎯",
-      "title": "3 Set, 3 Farklı Sıcaklık",
-      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><div class=\"tdesc\"><div class=\"s1f\">Retargeting DPA</div><div class=\"s2f\">Sepete atıp almayanlara — en yüksek dönüşüm oranı</div></div></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><div class=\"tdesc\"><div class=\"s1f\">Broad Audience DPA</div><div class=\"s2f\">Tüm katalog, soğuk trafiğe geniş keşif</div></div></div><div class=\"tier-row\"><span class=\"tier-rank\">03</span><div class=\"tdesc\"><div class=\"s1f\">Cross-sell / Upsell DPA</div><div class=\"s2f\">Satın alana tamamlayıcı ürün önerisi</div></div></div>",
-      "pill": "Retargeting seti olmadan DPA yarım kalır"
+      "num_label": "Sinyal 02 / 07",
+      "icon": "📊",
+      "title": "Sayılar Ne Diyor?",
+      "inner_html": "<div class=\"bignum\">4x</div><div class=\"bignumsub\">Ortalama CTR farkı — UGC reklamlar, stüdyo prodüksiyonuna göre 4 kata kadar daha yüksek tıklama oranı alıyor.</div><div class=\"split-row\"><div class=\"split-col\"><div class=\"slabel\">Stüdyo Reklam</div><div class=\"sval\">%0.9 CTR</div></div><div class=\"split-col best\"><div class=\"slabel\">UGC Reklam</div><div class=\"sval\">%3.6 CTR</div></div></div>",
+      "pill": "Ham video, prodüksiyon kalitesinden daha çok tıklama getiriyor"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "📋",
-      "title": "Feed Kalitesi = Reklam Kalitesi",
-      "body": "Ürün başlığı ve açıklaması eksiksiz dolu olmalı\nYüksek çözünürlüklü, arka plansız ana görsel şart\nGTIN/MPN veya marka bilgisi girilmeli\nStok durumu (availability) günlük senkronize olmalı",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🗣️",
+      "title": "En Çok Satan 3 UGC Formatı",
+      "body": "Kutu açılımı (unboxing) — ilk izlenim tepkisi\nÖncesi/sonrası (before-after) — somut sonuç kanıtı\nGerçek kullanım anı (demo) — ürünün doğal ortamda kullanımı",
       "is_checklist": true,
-      "pill": "Eksik alan = düşük gösterim, düşük dönüşüm"
+      "pill": "Format seçimi, ürünün 'kanıtlanabilir' faydasına göre yapılır"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🔗",
-      "title": "content_id Eşleşmesi Şart",
-      "body": "Pixel veya CAPI'den gelen ViewContent, AddToCart ve Purchase event'lerindeki content_id, kataloğundaki ürün ID'siyle birebir aynı olmalı. Tek karakterlik uyumsuzluk bile reklamın boş veya yanlış ürün göstermesine yol açar.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "✂️",
+      "title": "Prodüksiyonu Kasıtlı Bozuk Tut",
+      "body": "Telefon kamerası, doğal ışık, düzensiz kadraj — bunlar hata değil, güven sinyali. Stüdyo aydınlatması ve sabit tripod, izleyicinin 'reklam' alarmını çalıştırır.\nAltyazı ekle: sessiz izleme oranı yüksek, ses açık izlenmiyor.",
       "is_checklist": false,
-      "pill": "Katalog ID = Pixel ID, tek tek kontrol et"
+      "pill": "Kusursuz görüntü = düşük güven, doğal görüntü = yüksek güven"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 04 / 07",
+      "num_label": "Sinyal 05 / 07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Statik Feed",
-      "body": "Feed'i haftada bir elle güncelleyen işletmeler, stokta olmayan ürünü reklamda göstermeye devam eder. Bu güven kaybı yaratır ve algoritmayı yanıltır. Günlük otomatik senkron ve en az 100 ürünlük katalog varyasyonu şarttır.",
+      "title": "En Büyük Hata: Tek UGC'yi Sonsuza Kadar Kullanmak",
+      "body": "Bir UGC reklamı ortalama 10-14 günde frekans doygunluğuna ulaşıyor — çünkü izleyici 'gerçek kişiyi' hızlı tanıyor ve tekrar fark ediyor.\nHer 2 haftada en az 1 yeni UGC varyasyonu devreye alınmalı.",
       "is_checklist": false,
-      "pill": "Günlük senkron yoksa DPA para yakar"
+      "pill": "10-14 gün kuralı: UGC'yi bu pencerede tazele"
     },
     {
       "kind": "cta",
-      "label": "DIGITAL PRO",
-      "title": "Kataloğun Konuşsun,\nSen Sonuçları Say"
+      "label": "UGC Stratejini Kur",
+      "title": "Gerçek Ses, Gerçek Satış.\n**Kurgusuz İçerik**, Kurgulu Sonuç."
     }
   ],
-  "caption": "Aynı reklamı herkese gösteriyorsan, kataloğunu boşa harcıyorsun. Çünkü her müşteri farklı ürüne bakıyor. 👇\n\nDPA (Dinamik Ürün Reklamları) bunu otomatik çözüyor — ama çoğu hesap feed hatası yüzünden boş reklam gösteriyor.\nBu carousel'de kritik noktaları anlatıyorum 👆\n\n─────────────────────\n🛍️ DPA nasıl çalışır — kişiselleşmiş otomasyon mantığı\n🎯 3 set sıralaması — Retargeting, Broad, Cross-sell\n📋 Feed kalitesi checklist'i\n🔗 content_id eşleşmesinin kritik önemi\n⚠️ En büyük hata: statik feed\n─────────────────────\n\nEn büyük hata: Feed'ini haftada bir elle güncellemek, stokta olmayan ürünü göstermeye devam etmek demektir. Bu hem müşteri güvenini hem bütçeni yakar.\n\nDPA doğru kurulduğunda tek reklam seti, binlerce kişiye özel bir mağaza gibi çalışır.\n\n💾 Kaydet — katalog kurulumuna başlarken tekrar bak\n💬 Katalogdaki ürün sayın kaç? Yorumda söyle!\n\n#dpa #dinamikurunreklami #contentid\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Stüdyo kalitesinde çektiğin reklam, izleyicinin reklam alarmını çalıştırıyor. Telefonla çekilen doğal bir video ise 4 kata kadar daha fazla tıklama alabiliyor. 👇\n\nÇoğu marka bütçesini 'kaliteli' görüntüye harcıyor ama izleyici bunu reklam olarak görüp geçiyor.\nGerçek sonuç, UGC'nin sistematik kullanımında — çözümü bu carousel'de. 👆\n\n─────────────────────\n🎥 UGC neden reklam algısını kırıyor\n📊 UGC vs stüdyo — CTR farkı\n🗣️ En çok satan 3 UGC formatı\n✂️ Prodüksiyonu bilerek 'bozuk' tutma taktiği\n⚠️ 10-14 gün doygunluk kuralı\n─────────────────────\n\nEn büyük hata: Tek bir UGC videosunu haftalarca aynı kampanyada döndürmek. İzleyici kişiyi tanıyınca güven etkisi kayboluyor.\n\nUGC, tesadüf değil sistemli bir üretim döngüsü ile satış getirir.\n\n💾 Kaydet — bir sonraki UGC brifingini hazırlarken tekrar bak\n💬 Sen ürününde hangi UGC formatını denedin? Yorumda söyle!\n\n#ugc #kullaniciicerik #videoreklam\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #reklamstratejisi #instagramreklamlari"
 }

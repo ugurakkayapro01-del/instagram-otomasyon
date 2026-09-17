@@ -5,7 +5,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 ## Hazır Bekleyen Konular
 
-- UGC (Kullanıcı Üretimi İçerik) reklamı neden daha çok satar
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 
 ## Yeni Konu Üretme Kuralları
