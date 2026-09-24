@@ -6,6 +6,9 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
+- Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi
+- Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi
+- Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:

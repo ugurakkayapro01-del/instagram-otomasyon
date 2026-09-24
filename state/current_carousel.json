@@ -1,65 +1,69 @@
 {
-  "topic": "Meta Advantage+ Kampanyaları — Otomasyon Ne Zaman İşe Yarar",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
+  "topic": "Reklam Metni (Ad Copy) Formülleri — AIDA ve PAS Çerçeveleri",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi",
+    "Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi",
+    "Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü"
+  ],
   "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "META ADVANTAGE+ • OTOMASYON REHBERİ",
-      "title": "Advantage+ Herkes İçin\n**Değil**",
-      "subtitle": "Yanlış hesapta kurarsan bütçeni yakar. Doğru hesapta ROAS'ı %30 artırır."
+      "tag": "REKLAM METNİ STRATEJİSİ",
+      "title": "Reklam Metnini\nRastgele Yazma.\n**Formülü Var.**",
+      "subtitle": "AIDA mı PAS mı? Hangi durumda hangisi dönüşüm getirir, göstereceğim."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01 / 05",
-      "icon": "🤖",
-      "title": "Otomasyonun Açlık Sınırı",
-      "body": "Advantage+ Shopping Campaigns (ASC), makine öğrenmesiyle hedefleme ve bütçe dağıtımını otomatik yapar. Ama algoritmanın öğrenmesi için son 30 günde en az 15-20 dönüşüm verisi ister. Bu eşiğin altında kurarsan sistem random denemeye döner, senin paranla.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🧠",
+      "title": "Neden Formülsüz Metin Satmıyor?",
+      "body": "Rastgele yazılan reklam metinleri, okuyucuyu belirli bir duygu-aksiyon sırasına sokmadığı için ortalama %40 daha düşük CTR üretir. Formül, dikkatten aksiyona giden yolu daraltır ve okuyucunun kafasında karar vermesini kolaylaştırır.",
       "is_checklist": false,
-      "pill": "Kural: 30 günde 15+ dönüşüm yoksa Advantage+'a geçme"
+      "pill": "Formül = tahmin değil, sistematik ikna."
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "🎯",
+      "title": "AIDA Formülü: 4 Aşamalı Yapı",
+      "body": "Attention: İlk 5 kelimede dikkat çek (sayı, soru, iddia).\nInterest: Ürünün farkını tek cümlede anlat.\nDesire: Faydayı duygusal bir sonuca bağla.\nAction: Tek, net bir CTA ile kapat.",
+      "is_checklist": true,
+      "pill": "AIDA, soğuk trafik ve marka bilinirliği için en güçlüsü."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02 / 05",
+      "num_label": "İpucu 03 / 07",
       "icon": "⚖️",
-      "title": "Otomasyon mu, Kontrol mü?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Manuel Kampanya</div><div class=\"fval\">Sen hedeflersin, sen bütçeyi ayarlarsın. Yavaş ama öngörülebilir.</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Advantage+</div><div class=\"fval\">Algoritma hedefler, bütçeyi dağıtır. Hızlı ama veri açlığına duyarlı.</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Uygun Hesap</div><div class=\"fval\">Yeni hesap, düşük veri geçmişi</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Uygun Hesap</div><div class=\"fval\">30 günde 15+ dönüşüm, 3+ kreatif</div></div></div>",
-      "pill": "Veri yeterliyse Advantage+, değilse manuel kal"
-    },
-    {
-      "kind": "dark",
-      "num_label": "Sinyal 03 / 05",
-      "icon": "🎨",
-      "title": "Algoritmanın Yemek İhtiyacı",
-      "body": "Advantage+ tek kreatifle beslenirse hızla doygunlaşır. Sistem test edecek en az 3-5 farklı görsel/video varyantı ister. Az kreatifle kurulan Advantage+ kampanyaları 5-7 gün içinde frekans patlaması yaşar.",
-      "is_checklist": false,
-      "pill": "Minimum 3-5 kreatif varyantı olmadan Advantage+ kurma"
+      "title": "AIDA mı, PAS mı? Doğru Seçim",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">AIDA</div><div class=\"tdesc\">Soğuk trafik, ilk temas, marka bilinirliği kampanyaları için etkili</div></div><div class=\"cmp-col best\"><div class=\"slabel\">PAS</div><div class=\"tdesc\">Sıcak trafik ve retargeting'de ortalama %25 daha yüksek dönüşüm</div></div></div>",
+      "pill": "Soğuk trafikte AIDA, sıcak trafikte PAS kullan."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 04 / 05",
-      "icon": "💰",
-      "title": "Bütçeyi Sıkı Tutma",
-      "body": "Advantage+ algoritması gün içinde harcamayı dalgalandırır — bazı gün %50 fazla, bazı gün az harcar. Bunu manuel müdahaleyle sabitlemeye çalışmak öğrenme evresini sıfırlar. Sistem 3-5 gün stabilize olana kadar dokunma.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "📝",
+      "title": "PAS Formülü: Sorunu Büyüt, Sonra Çöz",
+      "body": "Problem: Hedef kitlenin yaşadığı somut sorunu tek cümlede söyle. Agitate: Sorunun büyümesini ve sonuçlarını vurgulayarak aciliyet yarat. Solution: Ürününü sorunun doğrudan çözümü olarak sun, sayı veya yorumla kanıtla.",
       "is_checklist": false,
-      "pill": "İlk 3-5 gün bütçeye asla manuel müdahale etme"
+      "pill": "Agitate adımını atlarsan PAS işe yaramaz."
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05 / 05",
+      "num_label": "İpucu 05 / 07",
       "icon": "⚠️",
-      "title": "En Büyük Hata",
-      "body": "Yeni açılan veya günlük 300 TL altı bütçeyle çalışan hesaplarda Advantage+ kurmak, veri toplamadan optimizasyon beklemektir. Sonuç: yüksek CPA, düşük ROAS. Önce manuel kampanyalarla 2-3 haftalık veri geçmişi oluştur, sonra geçiş yap.",
+      "title": "En Büyük Hata: Formülleri Karıştırmak",
+      "body": "Tek reklamda hem AIDA hem PAS yapısını karıştırmak mesajı sulandırır ve CTA'yı zayıflatır. Bir reklamda tek formül, tek CTA, tek duygusal ton kullan; formülleri ayrı reklam setlerinde A/B testle karşılaştır.",
       "is_checklist": false,
-      "pill": "Advantage+'a geçmeden önce 2-3 haftalık manuel veri topla"
+      "pill": "Bir reklam = bir formül. Karıştırma."
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Otomasyon Akıllı Kullanılırsa\n**Kazandırır**"
+      "label": "SIRADAKİ ADIM",
+      "title": "Doğru Formülü Seç,\nMetnin Satışa Dönüşsün."
     }
   ],
-  "caption": "Advantage+ kampanyasını kurdun, 3 gün sonra ROAS çöktü mü? Sorun otomasyon değil, ne zaman kullanacağını bilmemekti. 👇\n\nMeta'nın yapay zekası harika ama aç karnına çalışmaz — veri, kreatif ve bütçe olmadan sana pahalıya patlar.\nBu carousel'de Advantage+'ı ne zaman açman, ne zaman uzak durman gerektiğini gösteriyorum 👆\n\n─────────────────────\n🤖 Minimum veri eşiği: 30 günde 15+ dönüşüm\n⚖️ Advantage+ vs manuel kampanya farkı\n🎨 Kreatif çeşitliliği kuralı (3-5 varyant)\n💰 Bütçe dalgalanmasına neden dokunmamalısın\n⚠️ En büyük hata: erken geçiş\n─────────────────────\n\nEn büyük hata: Yeni hesapta veya düşük bütçeyle Advantage+ açmak. Önce 2-3 hafta manuel veri topla, sonra otomasyona geç.\n\nOtomasyon köre kılavuz değil, doğru zamanda hızlandırıcı. Doğru sırayla kullan, bütçeni değil sonucu büyüt.\n\n💾 Kaydet — Advantage+ kampanyası kurmadan önce tekrar oku\n💬 Advantage+ denedin mi, sonucu ne oldu? Yorumda söyle!\n\n#metaadvantageplus #advantageshopping\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Reklam metnini rastgele mi yazıyorsun? İşte bu yüzden dönüşmüyor. 👇\n\nAIDA ve PAS — ikisi de işe yarar ama yanlış yerde kullanırsan ikisi de boşa gider.\nHangi formülü ne zaman kullanacağını bu carousel'de anlatıyorum 👆\n\n─────────────────────\n🧠 Formülsüz metin neden satmıyor\n🎯 AIDA'nın 4 aşaması\n⚖️ AIDA mı PAS mı, doğru seçim\n📝 PAS formülü adım adım\n⚠️ En büyük hata: formülleri karıştırmak\n─────────────────────\n\nEn büyük hata: Bir reklamda iki formülü karıştırmak, CTA'yı öldürür.\n\nFormülü seç, metni ona göre kur — dönüşüm oranın değişecek.\n\n💾 Kaydet — yeni bir reklam metni yazmadan önce aç\n💬 Sen hangi formülü daha çok kullanıyorsun, AIDA mı PAS mı? Yorumda söyle!\n\n#adcopy #aida #pas\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
