@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi
 - Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü
 
 ## Yeni Konu Üretme Kuralları

@@ -1,65 +1,65 @@
 {
-  "topic": "Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi",
+  "topic": "Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "CAROUSEL ADS STRATEJİSİ",
-      "title": "İlk Kart Yanlışsa\nTüm Reklam **Batar**",
-      "subtitle": "Ürün sıralaması rastgele değil, matematiksel olmalı."
+      "tag": "Q4 KAMPANYA STRATEJİSİ",
+      "title": "Q4'te Herkes\nAynı Müzayedede.\n**Erken Kuran Kazanır**",
+      "subtitle": "CPM'ler Kasım'da %40'a kadar tırmanır. Kampanyanı son haftaya bırakırsan bütçeni rakiplerine yediriyorsun."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🎯",
-      "title": "İlk Kart = En Yüksek CTR'lı Ürün",
-      "body": "Carousel'in ilk kartı, kullanıcının kaydırıp kaydırmayacağına karar verdiği yerdir. Geçmiş kampanyalardan en yüksek tıklama oranına sahip ürünü öne koy. İlk 2 saniyede ilgi çekmezsen kaydırma oranı düşer, reklam maliyeti yükselir.",
+      "num_label": "Bilgi 01",
+      "icon": "📈",
+      "title": "CPM Enflasyonu Gerçek",
+      "body": "Black Friday ve Cyber Monday haftasında maliyetler tüm markaların aynı kitleye ulaşmaya çalışmasından fırlar. Kasım'ın 3. haftasından itibaren CPM ortalama %30-40 artar, bazı dikeylerde %60'a çıkar. Erken hazırlanmayan hesaplar bu artışı doğrudan ROAS düşüşü olarak yaşar.",
       "is_checklist": false,
-      "pill": "İlk kart en güçlü ürünün olsun."
+      "pill": "CPM artışını fiyatla değil, zamanlamayla yönet."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama 02",
-      "icon": "📊",
-      "title": "4 Kartlık Öncelik Sırası",
-      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><span class=\"sval\">En Yüksek CTR'lı Ürün</span></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><span class=\"sval\">En Yüksek Kâr Marjlı Ürün</span></div><div class=\"tier-row\"><span class=\"tier-rank\">03</span><span class=\"sval\">Sosyal Kanıtı Güçlü Ürün</span></div><div class=\"tier-row\"><span class=\"tier-rank\">04</span><span class=\"sval\">Tamamlayıcı Cross-Sell Ürünü</span></div>",
-      "pill": "Sıra, kâr ve dikkat dengesini kurar."
+      "num_label": "Adım 02",
+      "icon": "🗓️",
+      "title": "6 Haftalık Hazırlık Haritası",
+      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><div class=\"ttime\">Ekim S4</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Kampanya kurulur, öğrenme evresi başlar</div></div></div><div class=\"trow\"><div class=\"ttime\">Kasım S1</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Kreatif testleri + retargeting havuzu büyütme</div></div></div><div class=\"trow\"><div class=\"ttime\">Kasım S3</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">BF/CM zirvesi, bütçe kademeli artış</div></div></div><div class=\"trow\"><div class=\"ttime\">Aralık S1</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Son çekiş + kargo kesim tarihi mesajı</div></div></div><div class=\"trow\"><div class=\"ttime\">Aralık S3</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Yılbaşı son dakika + stok tükenme vurgusu</div></div></div></div>",
+      "pill": "Kampanyanı Ekim'in son haftasında kur, öğrenme evresini bitir."
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "🔢",
-      "title": "3-5 Kart Optimum Aralık",
-      "body": "2 karttan az ilgi çekmez, 8 karttan fazla dikkat dağıtır. Test verileri 3-5 kart arasının en yüksek etkileşimi verdiğini gösterir. Her kartın kendi CTA'sı ve linki farklı ürüne gitmeli, tek bir landing page'e yönlendirme performansı düşürür.",
+      "num_label": "İpucu 03",
+      "icon": "💰",
+      "title": "Bütçeyi Zıplatma, Kademelendir",
+      "body": "Q4'e girerken bütçeni bir günde 3 katına çıkarmak algoritmayı sıfırlar, öğrenme evresi yeniden başlar. Her 3-4 günde maksimum %20-30 artış yap. BF/CM haftasında bile bu kuralı bozma; günlük sıçrama yerine haftalık kademeli büyüme tercih et.",
       "is_checklist": false,
-      "pill": "3-5 kart kuralını aşma."
+      "pill": "3-4 günde bir %20-30 artış — asla tek seferde 2x."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "✍️",
-      "title": "Her Kartta Tek Fayda Cümlesi",
-      "body": "Ürün adı + net fayda (özellik değil)\nFiyat görünür ve güncel olsun\nStok durumu varsa vurgula (\"Son 3 adet\")\nHer kart farklı açıdan aynı markayı anlatsın",
-      "is_checklist": true,
-      "pill": "Kart başlıkları birbirinin kopyası olmasın."
+      "num_label": "İpucu 04",
+      "icon": "🎨",
+      "title": "Kreatif Yorgunluğu Erken Gelir",
+      "body": "Q4'te frekans normalden hızlı artar çünkü hedef kitle küçülür, rekabet büyür. Aynı kreatifi 10 gün üst üste göstermek yerine her hafta en az 2 yeni varyasyon ekle. BF/CM haftasında 3 günde bir kreatif rotasyonu yap.",
+      "is_checklist": false,
+      "pill": "Haftada minimum 2 yeni kreatif varyasyonu şart."
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05",
-      "icon": "⚠️",
-      "title": "Aynı Kategoriden 5 Ürün Koyma",
-      "body": "Algoritma çeşitliliği ödüllendirir. Aynı kategoriden art arda ürünler koymak kaydırma oranını düşürür. Farklı kategori veya fiyat segmentinden ürünleri karıştır, böylece her kullanıcı segmenti için bir 'kanca' olur.",
+      "num_label": "İpucu 05",
+      "icon": "🔁",
+      "title": "Kargo Kesim Tarihini Reklamına Yaz",
+      "body": "Aralık'ın 2. haftasından sonra 'kargo son gün' mesajı vermeyen markalar dönüşümü kaybeder. Organik trafik Q4'te normalden %50 fazla büyür — bu, retargeting havuzunu genişletmek için altın fırsat. Sepet terk eden ve sayfa ziyaretçisi havuzlarını Kasım başında yeniden aktive et.",
       "is_checklist": false,
-      "pill": "Kategori çeşitliliği kaydırmayı artırır."
+      "pill": "Kargo kesim tarihini son 10 gün boyunca metninde tekrarla."
     },
     {
       "kind": "cta",
-      "label": "Kaydet",
-      "title": "Sıralama Stratejini Bugün Test Et"
+      "label": "SIRADAKİ ADIM",
+      "title": "Q4'ü Kaostan Değil Plandan Yönet"
     }
   ],
-  "caption": "Carousel reklamlarında ürün sırasını rastgele mi seçiyorsun? İşte bu yüzden bazı ürünler hiç satmıyor. 👇\n\nKullanıcı ilk 2 saniyede kaydırıp kaydırmayacağına karar veriyor.\nBu carousel'de 4 kartlık sıralama stratejisini bulacaksın 👆\n\n─────────────────────\n🎯 İlk kart en yüksek CTR'lı ürün olmalı\n📊 4 kartlık öncelik sırası: CTR > marj > sosyal kanıt > cross-sell\n🔢 3-5 kart optimum aralık\n✍️ Her kartta tek fayda cümlesi\n⚠️ Aynı kategoriden art arda ürün koyma hatası\n─────────────────────\n\nEn büyük hata: Aynı kategoriden 5 ürünü art arda sıralamak. Algoritma çeşitliliği ödüllendirir, tekdüzeliği cezalandırır.\n\nDoğru sıralama, aynı bütçeyle daha fazla tıklama demek.\n\n💾 Kaydet — kampanya kurarken aç\n💬 Sen carousel reklamlarında ürünleri nasıl sıralıyorsun? Yorumda söyle!\n\n#carouselads #dpa #crossselling\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Black Friday'e 2 hafta kala kampanya kurmak, yarışa yarıdan başlamaktır. Q4'te CPM'ler öyle hızlı yükselir ki, erken hazırlanmayan hesap bütçesini rakiplerine kaptırır. 👇\n\nKasım-Aralık'ta herkes aynı kitleye reklam veriyor, algoritma öğrenmesi bile normalden yavaş işliyor.\nBu carousel'de 6 haftalık hazırlık haritasını ve bütçeyi doğru kademelemenin kuralını paylaştım 👆\n\n─────────────────────\n📈 CPM enflasyonu ve %30-40 artış gerçeği\n🗓️ 6 haftalık hazırlık zaman çizelgesi\n💰 Bütçeyi kademeli büyütme kuralı (%20-30)\n🎨 Kreatif yorgunluğunu önleme rotasyonu\n🔁 Retargeting havuzunu Q4'e göre büyütme\n─────────────────────\n\nEn büyük hata: Bütçeyi bir günde 2-3 katına çıkarmak. Bu, öğrenme evresini sıfırlar ve tam da en pahalı haftada algoritmanı yeniden eğitmeye zorlar.\n\nQ4 kaos değil, plan ister. Erken kur, kademeli büyüt, kreatifi taze tut.\n\n💾 Kaydet — Ekim ayı kampanya planlama toplantısından önce tekrar oku\n💬 Sen Q4 kampanyalarını ne zaman kurmaya başlıyorsun? Yorumda söyle!\n\n#blackfriday #q4strateji #mevsimselkampanya\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
