@@ -1,69 +1,65 @@
 {
-  "topic": "Reklam Metni (Ad Copy) Formülleri — AIDA ve PAS Çerçeveleri",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi",
-    "Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi",
-    "Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü"
-  ],
-  "special_kind": "comparison",
+  "topic": "Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "REKLAM METNİ STRATEJİSİ",
-      "title": "Reklam Metnini\nRastgele Yazma.\n**Formülü Var.**",
-      "subtitle": "AIDA mı PAS mı? Hangi durumda hangisi dönüşüm getirir, göstereceğim."
+      "tag": "CAROUSEL ADS STRATEJİSİ",
+      "title": "İlk Kart Yanlışsa\nTüm Reklam **Batar**",
+      "subtitle": "Ürün sıralaması rastgele değil, matematiksel olmalı."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🧠",
-      "title": "Neden Formülsüz Metin Satmıyor?",
-      "body": "Rastgele yazılan reklam metinleri, okuyucuyu belirli bir duygu-aksiyon sırasına sokmadığı için ortalama %40 daha düşük CTR üretir. Formül, dikkatten aksiyona giden yolu daraltır ve okuyucunun kafasında karar vermesini kolaylaştırır.",
-      "is_checklist": false,
-      "pill": "Formül = tahmin değil, sistematik ikna."
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02 / 07",
       "icon": "🎯",
-      "title": "AIDA Formülü: 4 Aşamalı Yapı",
-      "body": "Attention: İlk 5 kelimede dikkat çek (sayı, soru, iddia).\nInterest: Ürünün farkını tek cümlede anlat.\nDesire: Faydayı duygusal bir sonuca bağla.\nAction: Tek, net bir CTA ile kapat.",
-      "is_checklist": true,
-      "pill": "AIDA, soğuk trafik ve marka bilinirliği için en güçlüsü."
+      "title": "İlk Kart = En Yüksek CTR'lı Ürün",
+      "body": "Carousel'in ilk kartı, kullanıcının kaydırıp kaydırmayacağına karar verdiği yerdir. Geçmiş kampanyalardan en yüksek tıklama oranına sahip ürünü öne koy. İlk 2 saniyede ilgi çekmezsen kaydırma oranı düşer, reklam maliyeti yükselir.",
+      "is_checklist": false,
+      "pill": "İlk kart en güçlü ürünün olsun."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "⚖️",
-      "title": "AIDA mı, PAS mı? Doğru Seçim",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">AIDA</div><div class=\"tdesc\">Soğuk trafik, ilk temas, marka bilinirliği kampanyaları için etkili</div></div><div class=\"cmp-col best\"><div class=\"slabel\">PAS</div><div class=\"tdesc\">Sıcak trafik ve retargeting'de ortalama %25 daha yüksek dönüşüm</div></div></div>",
-      "pill": "Soğuk trafikte AIDA, sıcak trafikte PAS kullan."
+      "num_label": "Sıralama 02",
+      "icon": "📊",
+      "title": "4 Kartlık Öncelik Sırası",
+      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><span class=\"sval\">En Yüksek CTR'lı Ürün</span></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><span class=\"sval\">En Yüksek Kâr Marjlı Ürün</span></div><div class=\"tier-row\"><span class=\"tier-rank\">03</span><span class=\"sval\">Sosyal Kanıtı Güçlü Ürün</span></div><div class=\"tier-row\"><span class=\"tier-rank\">04</span><span class=\"sval\">Tamamlayıcı Cross-Sell Ürünü</span></div>",
+      "pill": "Sıra, kâr ve dikkat dengesini kurar."
+    },
+    {
+      "kind": "dark",
+      "num_label": "Adım 03",
+      "icon": "🔢",
+      "title": "3-5 Kart Optimum Aralık",
+      "body": "2 karttan az ilgi çekmez, 8 karttan fazla dikkat dağıtır. Test verileri 3-5 kart arasının en yüksek etkileşimi verdiğini gösterir. Her kartın kendi CTA'sı ve linki farklı ürüne gitmeli, tek bir landing page'e yönlendirme performansı düşürür.",
+      "is_checklist": false,
+      "pill": "3-5 kart kuralını aşma."
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "📝",
-      "title": "PAS Formülü: Sorunu Büyüt, Sonra Çöz",
-      "body": "Problem: Hedef kitlenin yaşadığı somut sorunu tek cümlede söyle. Agitate: Sorunun büyümesini ve sonuçlarını vurgulayarak aciliyet yarat. Solution: Ürününü sorunun doğrudan çözümü olarak sun, sayı veya yorumla kanıtla.",
-      "is_checklist": false,
-      "pill": "Agitate adımını atlarsan PAS işe yaramaz."
+      "icon": "✍️",
+      "title": "Her Kartta Tek Fayda Cümlesi",
+      "body": "Ürün adı + net fayda (özellik değil)\nFiyat görünür ve güncel olsun\nStok durumu varsa vurgula (\"Son 3 adet\")\nHer kart farklı açıdan aynı markayı anlatsın",
+      "is_checklist": true,
+      "pill": "Kart başlıkları birbirinin kopyası olmasın."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
+      "num_label": "Sinyal 05",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Formülleri Karıştırmak",
-      "body": "Tek reklamda hem AIDA hem PAS yapısını karıştırmak mesajı sulandırır ve CTA'yı zayıflatır. Bir reklamda tek formül, tek CTA, tek duygusal ton kullan; formülleri ayrı reklam setlerinde A/B testle karşılaştır.",
+      "title": "Aynı Kategoriden 5 Ürün Koyma",
+      "body": "Algoritma çeşitliliği ödüllendirir. Aynı kategoriden art arda ürünler koymak kaydırma oranını düşürür. Farklı kategori veya fiyat segmentinden ürünleri karıştır, böylece her kullanıcı segmenti için bir 'kanca' olur.",
       "is_checklist": false,
-      "pill": "Bir reklam = bir formül. Karıştırma."
+      "pill": "Kategori çeşitliliği kaydırmayı artırır."
     },
     {
       "kind": "cta",
-      "label": "SIRADAKİ ADIM",
-      "title": "Doğru Formülü Seç,\nMetnin Satışa Dönüşsün."
+      "label": "Kaydet",
+      "title": "Sıralama Stratejini Bugün Test Et"
     }
   ],
-  "caption": "Reklam metnini rastgele mi yazıyorsun? İşte bu yüzden dönüşmüyor. 👇\n\nAIDA ve PAS — ikisi de işe yarar ama yanlış yerde kullanırsan ikisi de boşa gider.\nHangi formülü ne zaman kullanacağını bu carousel'de anlatıyorum 👆\n\n─────────────────────\n🧠 Formülsüz metin neden satmıyor\n🎯 AIDA'nın 4 aşaması\n⚖️ AIDA mı PAS mı, doğru seçim\n📝 PAS formülü adım adım\n⚠️ En büyük hata: formülleri karıştırmak\n─────────────────────\n\nEn büyük hata: Bir reklamda iki formülü karıştırmak, CTA'yı öldürür.\n\nFormülü seç, metni ona göre kur — dönüşüm oranın değişecek.\n\n💾 Kaydet — yeni bir reklam metni yazmadan önce aç\n💬 Sen hangi formülü daha çok kullanıyorsun, AIDA mı PAS mı? Yorumda söyle!\n\n#adcopy #aida #pas\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Carousel reklamlarında ürün sırasını rastgele mi seçiyorsun? İşte bu yüzden bazı ürünler hiç satmıyor. 👇\n\nKullanıcı ilk 2 saniyede kaydırıp kaydırmayacağına karar veriyor.\nBu carousel'de 4 kartlık sıralama stratejisini bulacaksın 👆\n\n─────────────────────\n🎯 İlk kart en yüksek CTR'lı ürün olmalı\n📊 4 kartlık öncelik sırası: CTR > marj > sosyal kanıt > cross-sell\n🔢 3-5 kart optimum aralık\n✍️ Her kartta tek fayda cümlesi\n⚠️ Aynı kategoriden art arda ürün koyma hatası\n─────────────────────\n\nEn büyük hata: Aynı kategoriden 5 ürünü art arda sıralamak. Algoritma çeşitliliği ödüllendirir, tekdüzeliği cezalandırır.\n\nDoğru sıralama, aynı bütçeyle daha fazla tıklama demek.\n\n💾 Kaydet — kampanya kurarken aç\n💬 Sen carousel reklamlarında ürünleri nasıl sıralıyorsun? Yorumda söyle!\n\n#carouselads #dpa #crossselling\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
