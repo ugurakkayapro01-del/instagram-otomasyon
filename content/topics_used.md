@@ -25,6 +25,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 18 | Reklam Metni (Ad Copy) Formülleri — AIDA ve PAS Çerçeveleri | 7 | Otomatik üretildi (2026-09-24) |
 | 19 | Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi | 7 | Otomatik üretildi (2026-09-25) |
 | 20 | Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi | 7 | Otomatik üretildi (2026-09-25) |
+| 21 | Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü | 7 | Otomatik üretildi (2026-09-26) |
 
 ---
 

@@ -1,65 +1,65 @@
 {
-  "topic": "Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi",
+  "topic": "Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "timeline",
+  "special_kind": "funnel",
   "slides": [
     {
       "kind": "hook",
-      "tag": "Q4 KAMPANYA STRATEJİSİ",
-      "title": "Q4'te Herkes\nAynı Müzayedede.\n**Erken Kuran Kazanır**",
-      "subtitle": "CPM'ler Kasım'da %40'a kadar tırmanır. Kampanyanı son haftaya bırakırsan bütçeni rakiplerine yediriyorsun."
+      "tag": "INSTAGRAM SHOPPING STRATEJİSİ",
+      "title": "Etiketli Gönderin\nSessizce Para\n**Kaybettiriyor**",
+      "subtitle": "Organik ürün etiketlerini reklam kataloğuyla birleştirmezsen, en iyi içeriğin asla satışa dönüşmez."
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 01",
-      "icon": "📈",
-      "title": "CPM Enflasyonu Gerçek",
-      "body": "Black Friday ve Cyber Monday haftasında maliyetler tüm markaların aynı kitleye ulaşmaya çalışmasından fırlar. Kasım'ın 3. haftasından itibaren CPM ortalama %30-40 artar, bazı dikeylerde %60'a çıkar. Erken hazırlanmayan hesaplar bu artışı doğrudan ROAS düşüşü olarak yaşar.",
-      "is_checklist": false,
-      "pill": "CPM artışını fiyatla değil, zamanlamayla yönet."
+      "num_label": "Adım 01",
+      "icon": "🛍️",
+      "title": "Shopping Altyapısı 3 Şart İster",
+      "body": "Business veya Creator hesabı + Facebook sayfası bağlantısı\nOnaylı ürün kataloğu (Commerce Manager üzerinden)\nDesteklenen ülke ve para birimi uygunluğu\nHer üründe aktif fiyat + stok bilgisi senkronizasyonu",
+      "is_checklist": true,
+      "pill": "Onay olmadan hiçbir etiket reklama dönüşmez."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 02",
-      "icon": "🗓️",
-      "title": "6 Haftalık Hazırlık Haritası",
-      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><div class=\"ttime\">Ekim S4</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Kampanya kurulur, öğrenme evresi başlar</div></div></div><div class=\"trow\"><div class=\"ttime\">Kasım S1</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Kreatif testleri + retargeting havuzu büyütme</div></div></div><div class=\"trow\"><div class=\"ttime\">Kasım S3</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">BF/CM zirvesi, bütçe kademeli artış</div></div></div><div class=\"trow\"><div class=\"ttime\">Aralık S1</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Son çekiş + kargo kesim tarihi mesajı</div></div></div><div class=\"trow\"><div class=\"ttime\">Aralık S3</div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"tdesc\">Yılbaşı son dakika + stok tükenme vurgusu</div></div></div></div>",
-      "pill": "Kampanyanı Ekim'in son haftasında kur, öğrenme evresini bitir."
+      "num_label": "Sinyal 02",
+      "icon": "🔁",
+      "title": "Organik Etiket → Ücretli Reklam Hunisi",
+      "inner_html": "<div class=\"funnel\"><div class=\"fun-step s1f\"><div class=\"flabel\">Gösterim</div><div class=\"fval\">100.000</div></div><div class=\"fun-step s2f\"><div class=\"flabel\">Ürün Sayfası Tıklama</div><div class=\"fval\">%18</div></div><div class=\"fun-step s3f\"><div class=\"flabel\">Sepete Ekleme</div><div class=\"fval\">%6</div></div><div class=\"fun-step s4f\"><div class=\"flabel\">Satın Alma</div><div class=\"fval\">%2</div></div></div>",
+      "pill": "Bu huniyi kırmadan boost etme kararı verme."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03",
-      "icon": "💰",
-      "title": "Bütçeyi Zıplatma, Kademelendir",
-      "body": "Q4'e girerken bütçeni bir günde 3 katına çıkarmak algoritmayı sıfırlar, öğrenme evresi yeniden başlar. Her 3-4 günde maksimum %20-30 artış yap. BF/CM haftasında bile bu kuralı bozma; günlük sıçrama yerine haftalık kademeli büyüme tercih et.",
+      "num_label": "Adım 03",
+      "icon": "🔗",
+      "title": "Katalog Senkronu Reklamı Besler",
+      "body": "Etiketli organik gönderi, arka planda aynı Commerce Manager katalogunu kullanır. Reklamını Collection Ads veya Dynamic Product Ads formatıyla kurduğunda, sistem organik gönderideki ürünü reklamda da otomatik gösterir. Katalog güncel değilse, reklam eski fiyat veya tükenmiş ürünü gösterir — bu, tıklama başına maliyeti (CPC) %25'e kadar artırabilir.",
       "is_checklist": false,
-      "pill": "3-4 günde bir %20-30 artış — asla tek seferde 2x."
+      "pill": "Katalog güncelliği = reklam güvenilirliği."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04",
-      "icon": "🎨",
-      "title": "Kreatif Yorgunluğu Erken Gelir",
-      "body": "Q4'te frekans normalden hızlı artar çünkü hedef kitle küçülür, rekabet büyür. Aynı kreatifi 10 gün üst üste göstermek yerine her hafta en az 2 yeni varyasyon ekle. BF/CM haftasında 3 günde bir kreatif rotasyonu yap.",
-      "is_checklist": false,
-      "pill": "Haftada minimum 2 yeni kreatif varyasyonu şart."
+      "num_label": "Sinyal 04",
+      "icon": "📌",
+      "title": "Hangi Gönderi Boost Edilmeli?",
+      "body": "Kaydetme oranı %3'ün üzerinde olan gönderiler\nÜrün etiketine tıklama oranı ortalamanın 2 katı\nYorum ve DM'de fiyat/stok sorusu alan gönderiler\nİlk 48 saatte organik erişimi düşmeye başlayan gönderiler",
+      "is_checklist": true,
+      "pill": "Organik sinyal güçlüyse, reklam bütçesi daha az harcar."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05",
-      "icon": "🔁",
-      "title": "Kargo Kesim Tarihini Reklamına Yaz",
-      "body": "Aralık'ın 2. haftasından sonra 'kargo son gün' mesajı vermeyen markalar dönüşümü kaybeder. Organik trafik Q4'te normalden %50 fazla büyür — bu, retargeting havuzunu genişletmek için altın fırsat. Sepet terk eden ve sayfa ziyaretçisi havuzlarını Kasım başında yeniden aktive et.",
+      "num_label": "Uyarı 05",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Her Etiketli Gönderiyi Boost Etmek",
+      "body": "Etiketli her gönderiyi otomatik boost etmek, düşük performanslı ürünlere bütçe akıtır. Doğru yöntem: önce 48-72 saat organik veri topla, kaydetme ve tıklama oranı eşiğini geçen gönderiyi seç, sonra Collection Ads formatında büyüt. Aksi halde ROAS ortalaması %30'a kadar düşer.",
       "is_checklist": false,
-      "pill": "Kargo kesim tarihini son 10 gün boyunca metninde tekrarla."
+      "pill": "Önce veri, sonra bütçe — asla tersi değil."
     },
     {
       "kind": "cta",
       "label": "SIRADAKİ ADIM",
-      "title": "Q4'ü Kaostan Değil Plandan Yönet"
+      "title": "Etiketli Gönderin\nReklama Dönüşsün,\n**Şansa Kalmasın**"
     }
   ],
-  "caption": "Black Friday'e 2 hafta kala kampanya kurmak, yarışa yarıdan başlamaktır. Q4'te CPM'ler öyle hızlı yükselir ki, erken hazırlanmayan hesap bütçesini rakiplerine kaptırır. 👇\n\nKasım-Aralık'ta herkes aynı kitleye reklam veriyor, algoritma öğrenmesi bile normalden yavaş işliyor.\nBu carousel'de 6 haftalık hazırlık haritasını ve bütçeyi doğru kademelemenin kuralını paylaştım 👆\n\n─────────────────────\n📈 CPM enflasyonu ve %30-40 artış gerçeği\n🗓️ 6 haftalık hazırlık zaman çizelgesi\n💰 Bütçeyi kademeli büyütme kuralı (%20-30)\n🎨 Kreatif yorgunluğunu önleme rotasyonu\n🔁 Retargeting havuzunu Q4'e göre büyütme\n─────────────────────\n\nEn büyük hata: Bütçeyi bir günde 2-3 katına çıkarmak. Bu, öğrenme evresini sıfırlar ve tam da en pahalı haftada algoritmanı yeniden eğitmeye zorlar.\n\nQ4 kaos değil, plan ister. Erken kur, kademeli büyüt, kreatifi taze tut.\n\n💾 Kaydet — Ekim ayı kampanya planlama toplantısından önce tekrar oku\n💬 Sen Q4 kampanyalarını ne zaman kurmaya başlıyorsun? Yorumda söyle!\n\n#blackfriday #q4strateji #mevsimselkampanya\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Instagram'da etiketlediğin ürünler organik olarak iyi gidiyor ama satışa dönmüyor mu? Sorun ürün değil, sistemin kurulma şekli. 👇\n\nÇoğu e-ticaret sahibi organik etiketli gönderi ile reklam kataloğunu birbirinden kopuk yönetiyor.\nBu carousel'de o köprüyü nasıl kuracağını adım adım anlatıyorum. 👆\n\n─────────────────────\n🛍️ Shopping kurulumunun 3 zorunlu şartı\n🔁 Organik etiketten satışa kadar gerçek huni oranları\n🔗 Katalog senkronu bozulunca reklamda ne oluyor\n📌 Hangi gönderiyi boost etmelisin, hangisini asla etmemelisin\n⚠️ Herkesin yaptığı büyük hata\n─────────────────────\n\nEn büyük hata: Her etiketli gönderiyi otomatik boost etmek. Önce 48-72 saat organik veriye bak, sonra bütçe koy.\n\nBu sistemi kurduğunda organik içeriğin reklam bütçeni de daha verimli harcar.\n\n💾 Kaydet — kampanya kurmadan önce katalog kontrolü yaparken aç\n💬 Sen etiketli gönderilerini boost ederken neye bakıyorsun? Yorumda söyle!\n\n#instagramshopping #collectionads #dynamicproductads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
