@@ -26,6 +26,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 19 | Carousel Ads Formatı — Çoklu Ürün Reklamlarında Sıralama Stratejisi | 7 | Otomatik üretildi (2026-09-25) |
 | 20 | Mevsimsel Kampanya Planlaması — Q4 Bütçe ve Zamanlama Stratejisi | 7 | Otomatik üretildi (2026-09-25) |
 | 21 | Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü | 7 | Otomatik üretildi (2026-09-26) |
+| 22 | Instagram Reels Reklamı — Organik + Ücretli Hibrit Strateji | 7 | Otomatik üretildi (2026-09-27) |
 
 ---
 
