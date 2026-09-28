@@ -1,69 +1,65 @@
 {
-  "topic": "Instagram Reels Reklamı — Organik + Ücretli Hibrit Strateji",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Meta Pixel Event Match Quality Skoru — Eşleşme Kalitesini Yükseltme Teknikleri",
-    "Müşteri Yaşam Boyu Değeri (LTV) Bazlı Lookalike Segmentasyonu",
-    "Reklam Seti Sayısı ve Öğrenme Evresi Bölünmesi — Kaç Set Optimal (Learning Limited Önleme)"
-  ],
-  "special_kind": "stat",
+  "topic": "Meta Pixel Event Match Quality Skoru — Eşleşme Kalitesini Yükseltme Teknikleri",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "REELS STRATEJİSİ",
-      "title": "Reels'te Önce Organik Test Et\nSonra **Reklama** Çevir",
-      "subtitle": "Doğrudan reklam bütçesi yakmadan, hangi kreatifin patlayacağını önceden bil."
+      "tag": "PIXEL & CAPI OPTİMİZASYONU",
+      "title": "EMQ Skorun\nKaç?\n**Çoğu Marka Hiç Bakmıyor**",
+      "subtitle": "0-10 arası bir puan, reklamının doğru kişiye gidip gitmediğini belirliyor."
     },
     {
       "kind": "light",
-      "num_label": "Adım 01",
-      "icon": "🎬",
-      "title": "Organik Reels = Ücretsiz A/B Test",
-      "body": "Yeni bir kreatif fikrini doğrudan reklama vermeden önce, organik Reels olarak paylaş. 48-72 saat içinde toplanan veri, hangi hook'un işe yaradığını gösterir.\nBu; reklam bütçesi harcamadan yapılan gerçek pazar testi anlamına gelir.",
+      "num_label": "İpucu 01/07",
+      "icon": "📊",
+      "title": "EMQ Skoru Nedir?",
+      "body": "Event Match Quality (EMQ), gönderdiğin her pixel/CAPI olayının Meta'daki kullanıcı profiliyle ne kadar iyi eşleştiğini 0-10 arası puanlar. Events Manager > Kaynaklar > Olay Detayları altında görülür. Düşük skor, yanlış kişiye optimizasyon demektir.",
       "is_checklist": false,
-      "pill": "Reklamdan önce organik test = bedava veri"
+      "pill": "Events Manager'da EMQ skorunu haftalık kontrol et"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 02",
-      "icon": "📊",
-      "title": "Hangi Reels'i Reklama Çevirmelisin?",
-      "inner_html": "<div class=\"bignum\">%30+</div><div class=\"bignumsub\">Replay Rate (tekrar izlenme oranı) bu eşiği geçen Reels, ücretli reklama hazır demektir.</div><div class=\"bignum\">%30-</div><div class=\"bignumsub\">Bu eşiğin altındaysa hook zayıftır — reklama verme, önce kreatifi değiştir.</div>",
-      "pill": "Replay Rate %30 altı = reklama verme, hook'u değiştir"
+      "num_label": "Adım 02/07",
+      "icon": "🎯",
+      "title": "Skor Aralığın Ne Anlatıyor?",
+      "inner_html": "<div class=\"risk-row\"><div class=\"risk-dot danger\"></div><div class=\"tdesc\"><span class=\"thr-badge danger\">0-4</span> Düşük — Optimizasyon Kör Uçuyor</div></div><div class=\"risk-row\"><div class=\"risk-dot warn\"></div><div class=\"tdesc\"><span class=\"thr-badge warn\">5-7</span> Orta — İyileştirme Şart</div></div><div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"tdesc\"><span class=\"thr-badge high\">8-10</span> Yüksek — Güvenilir Eşleşme</div></div>",
+      "pill": "7 altı skorla optimizasyon yapma, önce parametre ekle"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "⚙️",
-      "title": "Advantage+ Placements Reels'i Otomatik Seçer",
-      "body": "Meta, Advantage+ Placements açıkken bütçeyi en iyi performans gösteren yerleşime kaydırır. Reels'te iyi performans varsa, sistem bütçenin büyük kısmını otomatik olarak oraya taşır.\nManuel yerleşim seçip Reels'i kapatmak genelde CPM'i yükseltir.",
-      "is_checklist": false,
-      "pill": "Yerleşimi kısıtlama, Advantage+ Reels'i kendi bulur"
+      "num_label": "İpucu 03/07",
+      "icon": "🔑",
+      "title": "Skoru Yükselten Parametreler",
+      "body": "Email (hashlenmiş, küçük harf)\nTelefon (ülke koduyla, boşluksuz)\nexternal_id (müşteri ID'si)\nfbc & fbp çerezleri\nclient_ip_address + user_agent",
+      "is_checklist": true,
+      "pill": "Ne kadar çok parametre, o kadar yüksek EMQ"
     },
     {
       "kind": "light",
-      "num_label": "Adım 04",
-      "icon": "📐",
-      "title": "Reels Reklam Formatı Kuralları",
-      "body": "9:16 dikey format, kırpılma olmadan tam ekran\nİlk ve son 250px'te metin/logo olmasın, UI elemanları üstüne biner\n15-30 saniye arası optimal, 90 saniyeye kadar izin var ama tamamlanma oranı düşer\nMüzik kapalı izlenirse de anlaşılır olsun, alt yazı ekle",
-      "is_checklist": true,
-      "pill": "Format hatası = otomatik düşük kalite skoru"
+      "num_label": "İpucu 04/07",
+      "icon": "🧹",
+      "title": "Hashleme Kurallarına Dikkat",
+      "body": "Email'i göndermeden önce küçük harfe çevir ve boşlukları sil. Telefonu ülke koduyla, + işaretsiz ve boşluksuz formatla. Yanlış formatlanmış veri, Meta tarafından eşleşmeyen veri olarak sayılır ve skorunu düşürür.",
+      "is_checklist": false,
+      "pill": "Hashleme öncesi normalize etmeden gönderme"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 05",
-      "icon": "🚫",
-      "title": "En Büyük Hata: Feed Kreatifini Reels'e Yapıştırmak",
-      "body": "Feed için çekilmiş kare veya yatay bir videoyu ortadan kırpıp Reels'e vermek, izleyiciye 'bu bir reklam' sinyalini anında verir.\nOrganik Reels tarzında (el kamerası hissi, doğal geçişler) çekilen reklamlar, Feed reklamlarına göre daha düşük CPM ile daha yüksek tamamlanma oranı alır.",
+      "num_label": "İpucu 05/07",
+      "icon": "🔁",
+      "title": "Pixel + CAPI'yi Birlikte Kullan",
+      "body": "Aynı olayı hem Pixel hem CAPI ile gönder, aynı event_id'yi kullan. Meta bunları deduplication ile birleştirir ve eksik tarayıcı verisini sunucu verisiyle tamamlar. Bu tek başına EMQ skorunu 2-3 puan artırabilir.",
       "is_checklist": false,
-      "pill": "Reels'e özel çek, Feed'den kırpma"
+      "pill": "event_id eşleşmesi olmadan CAPI verisi çift sayılabilir"
     },
     {
       "kind": "cta",
-      "label": "REELS'İ SATIŞA ÇEVİR",
-      "title": "Organik Test Et, Kazananı Reklama Çevir, Bütçeni Kurtar"
+      "label": "DIGITAL PRO",
+      "title": "EMQ Skorun Düşükse, Reklam Bütçen Kör Harcanıyor"
     }
   ],
-  "caption": "Reels'te reklam bütçeni doğrudan yakıyorsan yanlış yapıyorsun. 👇\n\nÇoğu marka, hiç test etmeden yeni bir kreatifi direkt reklama veriyor ve para öğrenme evresinde eriyor.\nÇözüm carousel'de: organik testten ücretli scale'e geçiş sistemi. 👆\n\n─────────────────────\n🎬 Yeni kreatifi önce organik Reels olarak paylaş\n📊 Replay Rate %30+ ise reklama hazır\n⚙️ Advantage+ Placements bütçeyi otomatik Reels'e kaydırır\n📐 9:16, 15-30 saniye, ilk/son 250px boş bırak\n🚫 Feed videosunu kırpıp Reels'e verme\n─────────────────────\n\nEn büyük hata: Feed için çekilmiş videoyu Reels'e sıkıştırmak. İzleyici bunu anında reklam olarak algılıyor ve kaydırıyor.\n\nOrganik test + doğru format = daha düşük CPM, daha yüksek tamamlanma oranı.\n\n💾 Kaydet — yeni bir Reels kreatifi çekmeden önce aç\n💬 Sen Reels reklamlarını organik test etmeden mi yayınlıyorsun? Yorumda söyle!\n\n#reelsads #advantageplus #replayrate\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "EMQ skorun kaç, biliyor musun? Çoğu marka bu skoru hiç kontrol etmiyor ve reklam bütçesini yanlış kişiye harcıyor. 👇\n\nPixel ve CAPI verisi doğru eşleşmiyorsa, Meta'nın algoritması senin için değil, rastgele biri için optimize ediyor.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n📊 EMQ skoru nedir, nerede görülür\n🎯 0-10 arası skor aralıkları ne anlatıyor\n🔑 Skoru yükselten 5 parametre\n🧹 Hashleme yaparken dikkat edilmesi gerekenler\n🔁 Pixel + CAPI'yi birlikte kullanmanın gücü\n─────────────────────\n\nEn büyük hata: Email ve telefonu hashlemeden, formatlamadan göndermek. Bu tek başına skorunu 3-4 puan düşürebilir.\n\nEMQ skorun 7'nin altındaysa, önce veri kalitesini düzelt — optimizasyon ondan sonra gelir.\n\n💾 Kaydet — Events Manager'ı açtığında tekrar bak\n💬 Senin EMQ skorun şu an kaç? Yorumda söyle!\n\n#eventmatchquality #conversionapi #pixeloptimizasyonu\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
