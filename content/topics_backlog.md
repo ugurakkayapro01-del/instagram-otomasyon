@@ -7,7 +7,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Müşteri Yaşam Boyu Değeri (LTV) Bazlı Lookalike Segmentasyonu
-- Reklam Seti Sayısı ve Öğrenme Evresi Bölünmesi — Kaç Set Optimal (Learning Limited Önleme)
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:

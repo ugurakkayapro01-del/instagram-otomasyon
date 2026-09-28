@@ -28,6 +28,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 21 | Instagram Shopping — Etiketli Gönderi ile Organik-Ücretli Köprüsü | 7 | Otomatik üretildi (2026-09-26) |
 | 22 | Instagram Reels Reklamı — Organik + Ücretli Hibrit Strateji | 7 | Otomatik üretildi (2026-09-27) |
 | 23 | Meta Pixel Event Match Quality Skoru — Eşleşme Kalitesini Yükseltme Teknikleri | 7 | Otomatik üretildi (2026-09-28) |
+| 24 | Reklam Seti Sayısı ve Öğrenme Evresi Bölünmesi — Kaç Set Optimal (Learning Limited Önleme) | 7 | Otomatik üretildi (2026-09-28) |
 
 ---
 
