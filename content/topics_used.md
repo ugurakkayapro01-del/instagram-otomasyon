@@ -30,6 +30,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 23 | Meta Pixel Event Match Quality Skoru — Eşleşme Kalitesini Yükseltme Teknikleri | 7 | Otomatik üretildi (2026-09-28) |
 | 24 | Reklam Seti Sayısı ve Öğrenme Evresi Bölünmesi — Kaç Set Optimal (Learning Limited Önleme) | 7 | Otomatik üretildi (2026-09-28) |
 | 25 | Müşteri Yaşam Boyu Değeri (LTV) Bazlı Lookalike Segmentasyonu | 7 | Otomatik üretildi (2026-09-29) |
+| 26 | CBO vs ABO — Bütçe Dağıtım Algoritmasının Gerçek Farkı | 7 | Otomatik üretildi (2026-09-29) |
 
 ---
 

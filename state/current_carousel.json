@@ -1,65 +1,69 @@
 {
-  "topic": "Müşteri Yaşam Boyu Değeri (LTV) Bazlı Lookalike Segmentasyonu",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "topic": "CBO vs ABO — Bütçe Dağıtım Algoritmasının Gerçek Farkı",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması",
+    "Broad Targeting vs Detaylı Hedefleme — Sinyal Yoğunluğu ve Algoritma Öğrenmesi",
+    "Dynamic Creative Optimization (DCO) — Otomatik Kreatif Kombinasyon Testi"
+  ],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "LTV Segmentasyon",
-      "title": "Lookalike'ların\n%90'ı Yanlış\n**Müşteriyi** Kopyalıyor",
-      "subtitle": "LTV segmentasyonu olmadan kurduğun her lookalike, düşük değerli müşterileri çoğaltıyor."
+      "tag": "BÜTÇE OPTİMİZASYONU",
+      "title": "CBO mu ABO mu?\nÇoğu Reklamveren\n**Yanlış Seçiyor**",
+      "subtitle": "Bütçeni algoritmaya mı bırakıyorsun yoksa kontrolü mü elinde tutuyorsun? Fark sandığından büyük."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01",
-      "icon": "📊",
-      "title": "LTV Nasıl Hesaplanır?",
-      "body": "Yaşam Boyu Değeri, bir müşterinin markanla ilişkisi boyunca bıraktığı toplam kazancı gösterir.\nFormül: Ortalama Sipariş Değeri × Satın Alma Sıklığı × Müşteri Ömrü (ay/yıl)\nÖrnek: 500 TL × 3 sipariş/yıl × 2 yıl = 3.000 TL LTV\nBu sayı olmadan lookalike kaynağı seçmek kör atış yapmaktır.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🎯",
+      "title": "CBO Nedir, Nasıl Çalışır?",
+      "body": "Campaign Budget Optimization (CBO), kampanya seviyesinde belirlediğin bütçeyi tüm reklam setlerine otomatik dağıtır. Algoritma, en düşük maliyetle sonuç getiren seti tespit eder ve bütçenin çoğunu oraya kaydırır. Bu dağıtım sabit değildir, saatlik güncellenir.",
       "is_checklist": false,
-      "pill": "LTV'siz lookalike kurmak kör atıştır"
+      "pill": "CBO = algoritma bütçeyi senin yerine dağıtır"
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "⚙️",
+      "title": "ABO Nedir, Ne Zaman Gerekli?",
+      "body": "Ad Set Budget Optimization (ABO), her reklam setine sabit bütçe atarsın; algoritma seti değiştirmez. Farklı hedef kitleleri (ör. lookalike %1 vs %5) adil test etmek istediğinde ABO zorunludur — CBO küçük setleri veriyi görmeden eler.",
+      "is_checklist": false,
+      "pill": "ABO = eşit test, adil karşılaştırma"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama 02",
-      "icon": "🏆",
-      "title": "Hangi Segment Lookalike Kaynağı Olmalı?",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><span class=\"hl\">Top %20 — VIP Müşteriler</span><br>Ortalama LTV 3-5x üstü. Lookalike kaynağı BURADAN seçilir.</div></div><div class=\"tier-row med\"><div class=\"tier-rank\">02</div><div class=\"tdesc\">Orta %60 — Standart Müşteriler<br>Tekrar alım potansiyeli var ama kaynak için yeterli değil.</div></div><div class=\"tier-row danger\"><div class=\"tier-rank\">03</div><div class=\"tdesc\">Alt %20 — Tek Seferlik Alıcılar<br>Lookalike kaynağı olarak KULLANILMAZ, kaliteyi düşürür.</div></div>",
-      "pill": "Sadece Top %20'den lookalike kur"
-    },
-    {
-      "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "💎",
-      "title": "Value-Based Lookalike Nasıl Kurulur?",
-      "body": "Meta Pixel'e her satın alma event'inde gerçek sipariş tutarını 'value' parametresiyle gönder.\nCustomer file'ı (email + telefon, SHA-256 hashli) CRM'den yükleyip LTV segmentine göre filtrele.\nLookalike oluştururken 'Value' seçeneğini aktif et — Meta yüksek harcayanlara ağırlık verir.\nSadece VIP segmentten kurulan lookalike, standart lookalike'tan %30-40 daha yüksek ROAS getirir.",
-      "is_checklist": false,
-      "pill": "Value optimization'ı mutlaka aktif et"
+      "num_label": "İpucu 03 / 07",
+      "icon": "⚖️",
+      "title": "CBO vs ABO — Hangi Durumda Hangisi?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">CBO</div><div class=\"fval\">3+ benzer performanslı set<br>Ölçeklendirme aşaması<br>Otomatik bütçe kayması</div></div><div class=\"cmp-col best\"><div class=\"flabel\">ABO</div><div class=\"fval\">A/B test senaryosu<br>Yeni/soğuk kitle denemesi<br>Eşit ve sabit bütçe kontrolü</div></div></div>",
+      "pill": "Test ediyorsan ABO, ölçekliyorsan CBO"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04",
-      "icon": "📏",
-      "title": "Kaynak Listesi Ne Kadar Büyük Olmalı?",
-      "body": "VIP segment listesi minimum 300-500 kişi olmalı; 300'ün altı Meta'nın öğrenmesi için yetersiz kalır.\nBenzerlik oranını %1-3 arasında tut — %1 en yüksek kalite, %3 daha geniş erişim sağlar.\nİlk testte %1'lik lookalike ile başla, sonuç stabilleşince %2-3'e genişlet.\n1.000+ kişilik VIP listesi varsa sonuçlar daha tutarlı olur.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "📊",
+      "title": "Minimum Bütçe Eşiği Neden Önemli?",
+      "body": "CBO'da her reklam seti günlük en az 1x hedef CPA kadar bütçe alabilmeli, yoksa algoritma o seti öğrenme fırsatı bulamadan kapatır. Örnek: Hedef CPA 100 TL ise, 3 setli bir kampanyada minimum günlük bütçe 300 TL olmalı.",
       "is_checklist": false,
-      "pill": "%1'lik lookalike ile başla, sonra genişlet"
+      "pill": "Minimum bütçe = set sayısı × hedef CPA"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Tüm Listeyi Kaynak Yapmak",
-      "body": "Tüm müşteri listesini (düşük LTV dahil) lookalike kaynağı yapmak, algoritmayı yanlış yönlendirir.\nAlt %20'lik tek seferlik alıcılar listeye girerse benzerlik kalitesi düşer ve ROAS geriler.\nLTV segmentini 60-90 günde bir güncelle — müşteri davranışı zamanla değişir.\nGüncel olmayan segment, eski davranış üzerinden yanlış kopya üretir.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "🚨",
+      "title": "En Büyük Hata: Karışık Set Yapısı",
+      "body": "CBO'yu farklı sıcaklıktaki kitlelerle (soğuk lookalike + retargeting) aynı kampanyada karıştırmak. Algoritma her zaman düşük maliyetli retargeting'e kayar, soğuk kitleye öğrenme şansı vermez. Kitle sıcaklığına göre kampanya ayır.",
       "is_checklist": false,
-      "pill": "Segmenti 60-90 günde bir yenile"
+      "pill": "Aynı sıcaklıktaki setler aynı kampanyada olmalı"
     },
     {
       "kind": "cta",
-      "label": "Kaydet • Yorum Yap • Takip Et",
-      "title": "Doğru Müşteriyi Kopyala, Rastgele Değil."
+      "label": "SIRADAKİ ADIM",
+      "title": "Bütçeni Doğru Dağıt,\nSonucu **Sen Belirle**"
     }
   ],
-  "caption": "Lookalike audience'larının çoğu, en değersiz müşterilerini kopyalıyor. Ve büyük ihtimalle farkında değilsin. 👇\n\nTüm müşteri listesini lookalike kaynağı yapmak, algoritmaya yanlış sinyal gönderir.\nDoğru segment seçimi ROAS'ı %30-40 artırabilir — çözüm bu carousel'de. 👆\n\n─────────────────────\n📊 LTV formülü: AOV × Sıklık × Ömür\n🏆 Hangi segment lookalike kaynağı olmalı (VIP/Orta/Alt)\n💎 Value-based lookalike nasıl kurulur\n📏 Minimum liste büyüklüğü ve %1-3 benzerlik kuralı\n⚠️ En büyük hata: tüm listeyi kaynak yapmak\n─────────────────────\n\nEn büyük hata: Alt %20'lik tek seferlik alıcıları listeye dahil etmek. Bu, algoritmanın kalitesiz kopyalar üretmesine yol açıyor.\n\nDoğru müşteriyi kopyalamak, rastgele hedeflemekten çok daha karlı.\n\n💾 Kaydet — Lookalike audience kurarken bu segmentasyonu uygula\n💬 Sen lookalike kaynağı olarak tüm müşteri listesini mi kullanıyorsun, yoksa segmentli mi? Yorumda söyle!\n\n#ltv #lookalikeaudience #valuebasedoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Kampanya kurarken CBO mu ABO mu seçtin? Çoğu reklamveren bunu rastgele seçiyor ve bütçesinin yarısını yanlış sete kaptırıyor. 👇\n\nAlgoritma senin yerine karar veriyor ama hangi kuralla?\nCevap carousel'de 👆\n\n─────────────────────\n🎯 CBO nasıl çalışır, bütçeyi nasıl dağıtır\n⚙️ ABO ne zaman zorunlu hale gelir\n⚖️ CBO vs ABO karşılaştırması — hangi durumda hangisi\n📊 Minimum bütçe eşiği formülü (set sayısı × hedef CPA)\n🚨 En büyük hata: farklı sıcaklıktaki kitleleri karıştırmak\n─────────────────────\n\nEn büyük hata: Soğuk ve sıcak kitleyi aynı CBO kampanyasında test etmek. Algoritma her zaman ucuz olanı seçer, soğuk kitleye asla şans tanımaz.\n\nBütçeni doğru yapılandırmak, harcamadan önce atman gereken tek adım.\n\n💾 Kaydet — kampanya kurarken aç\n💬 Sen CBO mu ABO mu kullanıyorsun? Yorumda söyle!\n\n#cbo #abo #reklambutcesi\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
