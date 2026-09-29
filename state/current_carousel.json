@@ -1,65 +1,65 @@
 {
-  "topic": "Reklam Seti Sayısı ve Öğrenme Evresi Bölünmesi — Kaç Set Optimal (Learning Limited Önleme)",
+  "topic": "Müşteri Yaşam Boyu Değeri (LTV) Bazlı Lookalike Segmentasyonu",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "risk",
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "META ALGORİTMA / ÖĞRENME EVRESİ",
-      "title": "Çok Fazla Reklam Seti\nSeni **Yavaşlatıyor**",
-      "subtitle": "Learning Limited durumu bütçeni sessizce yakıyor. Kaç set optimal, formülü burada."
+      "tag": "LTV Segmentasyon",
+      "title": "Lookalike'ların\n%90'ı Yanlış\n**Müşteriyi** Kopyalıyor",
+      "subtitle": "LTV segmentasyonu olmadan kurduğun her lookalike, düşük değerli müşterileri çoğaltıyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
+      "num_label": "İpucu 01",
       "icon": "📊",
-      "title": "Öğrenme Evresi Nedir?",
-      "body": "Meta, her reklam setinin performansını öğrenmek için veri toplar. Bu sürece 'öğrenme evresi' denir.\nHedef: haftada 50 optimizasyon eventi (genelde dönüşüm).\n50 eventine ulaşan set 'stabil' evreye geçer, CPA düşer, teslimat tutarlılaşır.",
+      "title": "LTV Nasıl Hesaplanır?",
+      "body": "Yaşam Boyu Değeri, bir müşterinin markanla ilişkisi boyunca bıraktığı toplam kazancı gösterir.\nFormül: Ortalama Sipariş Değeri × Satın Alma Sıklığı × Müşteri Ömrü (ay/yıl)\nÖrnek: 500 TL × 3 sipariş/yıl × 2 yıl = 3.000 TL LTV\nBu sayı olmadan lookalike kaynağı seçmek kör atış yapmaktır.",
       "is_checklist": false,
-      "pill": "50 event eşiği geçilmeden hiçbir reklam seti tam performans göstermez."
+      "pill": "LTV'siz lookalike kurmak kör atıştır"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02 / 07",
-      "icon": "⚠️",
-      "title": "Learning Limited Durumu",
-      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span class=\"flabel\">0-49 dönüşüm / 7 gün</span><span class=\"thr-badge danger\">Learning Limited</span></div><div class=\"risk-row\"><span class=\"risk-dot warn\"></span><span class=\"flabel\">50 dönüşüm eşiği</span><span class=\"thr-badge warn\">Sınırda — İzle</span></div><div class=\"risk-row\"><span class=\"risk-dot best\"></span><span class=\"flabel\">50+ dönüşüm / hafta sürekli</span><span class=\"thr-badge\">Stabil — CPA Düşük</span></div>",
-      "pill": "7 günde 50 dönüşüme ulaşamayan set asla stabilleşmez."
+      "num_label": "Sıralama 02",
+      "icon": "🏆",
+      "title": "Hangi Segment Lookalike Kaynağı Olmalı?",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><span class=\"hl\">Top %20 — VIP Müşteriler</span><br>Ortalama LTV 3-5x üstü. Lookalike kaynağı BURADAN seçilir.</div></div><div class=\"tier-row med\"><div class=\"tier-rank\">02</div><div class=\"tdesc\">Orta %60 — Standart Müşteriler<br>Tekrar alım potansiyeli var ama kaynak için yeterli değil.</div></div><div class=\"tier-row danger\"><div class=\"tier-rank\">03</div><div class=\"tdesc\">Alt %20 — Tek Seferlik Alıcılar<br>Lookalike kaynağı olarak KULLANILMAZ, kaliteyi düşürür.</div></div>",
+      "pill": "Sadece Top %20'den lookalike kur"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🧮",
-      "title": "Kaç Set Optimal? Formül",
-      "body": "Reklam seti sayısını haftalık bütçenle hesapla.\nHaftalık bütçe ÷ Ortalama CPA hedefin = Beklenen haftalık dönüşüm sayısı.\nBu sayıyı 50'ye böl → optimal reklam seti sayısını verir.\nÖrnek: 10.000 TL bütçe, 200 TL CPA → 50 dönüşüm → sadece 1 set optimal.",
+      "num_label": "Adım 03",
+      "icon": "💎",
+      "title": "Value-Based Lookalike Nasıl Kurulur?",
+      "body": "Meta Pixel'e her satın alma event'inde gerçek sipariş tutarını 'value' parametresiyle gönder.\nCustomer file'ı (email + telefon, SHA-256 hashli) CRM'den yükleyip LTV segmentine göre filtrele.\nLookalike oluştururken 'Value' seçeneğini aktif et — Meta yüksek harcayanlara ağırlık verir.\nSadece VIP segmentten kurulan lookalike, standart lookalike'tan %30-40 daha yüksek ROAS getirir.",
       "is_checklist": false,
-      "pill": "Bütçeni sete böldükçe öğrenme evresi süresi uzar, CPA yükselir."
+      "pill": "Value optimization'ı mutlaka aktif et"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🔄",
-      "title": "Öğrenme Evresini Sıfırlayan Değişiklikler",
-      "body": "Bütçede %20'den fazla değişiklik\nHedef kitlede yeni segment ekleme/çıkarma\nReklam setine yeni kreatif ekleme\nOptimizasyon hedefini değiştirme (ör. dönüşümden trafiğe)",
-      "is_checklist": true,
-      "pill": "Her sıfırlama, sıfırdan 50 event toplama sürecini yeniden başlatır."
+      "num_label": "İpucu 04",
+      "icon": "📏",
+      "title": "Kaynak Listesi Ne Kadar Büyük Olmalı?",
+      "body": "VIP segment listesi minimum 300-500 kişi olmalı; 300'ün altı Meta'nın öğrenmesi için yetersiz kalır.\nBenzerlik oranını %1-3 arasında tut — %1 en yüksek kalite, %3 daha geniş erişim sağlar.\nİlk testte %1'lik lookalike ile başla, sonuç stabilleşince %2-3'e genişlet.\n1.000+ kişilik VIP listesi varsa sonuçlar daha tutarlı olur.",
+      "is_checklist": false,
+      "pill": "%1'lik lookalike ile başla, sonra genişlet"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05 / 07",
-      "icon": "🚫",
-      "title": "En Büyük Hata: Set Enflasyonu",
-      "body": "Her ürün, her hedef kitle için ayrı set açmak mantıklı görünür ama bütçeyi paramparça eder.\n20 sette dağılan 10.000 TL, her sete 500 TL düşürür — hiçbiri 50 dönüşüme ulaşamaz.\nCBO (Campaign Budget Optimization) kullanarak bütçeyi otomatik en verimli sete yönlendir.",
+      "num_label": "Uyarı 05",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Tüm Listeyi Kaynak Yapmak",
+      "body": "Tüm müşteri listesini (düşük LTV dahil) lookalike kaynağı yapmak, algoritmayı yanlış yönlendirir.\nAlt %20'lik tek seferlik alıcılar listeye girerse benzerlik kalitesi düşer ve ROAS geriler.\nLTV segmentini 60-90 günde bir güncelle — müşteri davranışı zamanla değişir.\nGüncel olmayan segment, eski davranış üzerinden yanlış kopya üretir.",
       "is_checklist": false,
-      "pill": "Az set, yüksek bütçe yoğunluğu > çok set, dağınık bütçe."
+      "pill": "Segmenti 60-90 günde bir yenile"
     },
     {
       "kind": "cta",
-      "label": "TAKİP ET & UYGULA",
-      "title": "Reklam Setini **Azalt**,\nÖğrenme Evresini **Hızlandır**"
+      "label": "Kaydet • Yorum Yap • Takip Et",
+      "title": "Doğru Müşteriyi Kopyala, Rastgele Değil."
     }
   ],
-  "caption": "Reklam hesabında 15 farklı set açtın, hiçbiri stabilleşmedi mi? Sorun hedefleme değil, bütçe bölünmesi. 👇\n\nMeta algoritması her sete haftada en az 50 dönüşüm görmek istiyor. Set sayın arttıkça bu eşiğe ulaşmak zorlaşıyor, CPA'n yükseliyor.\nDoğru set sayısını hesaplamanın formülü carousel'de. 👆\n\n─────────────────────\n📊 Öğrenme evresi ve 50 event eşiği\n⚠️ Learning Limited sinyalleri\n🧮 Optimal set sayısı formülü\n🔄 Öğrenme evresini sıfırlayan 4 değişiklik\n🚫 Set enflasyonu hatası ve CBO çözümü\n─────────────────────\n\nEn büyük hata: Her ürün/hedef kitle için ayrı set açmak. Bütçen bölünüyor, hiçbir set 50 dönüşüme ulaşamıyor.\n\nAz set, yoğun bütçe = hızlı öğrenme, düşük CPA.\n\n💾 Kaydet — yeni kampanya kurarken set sayısını belirlerken aç\n💬 Kaç reklam setin var, hangisi hâlâ Learning Limited'de kaldı? Yorumda söyle!\n\n#learninglimited #cbo #campaignbudgetoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Lookalike audience'larının çoğu, en değersiz müşterilerini kopyalıyor. Ve büyük ihtimalle farkında değilsin. 👇\n\nTüm müşteri listesini lookalike kaynağı yapmak, algoritmaya yanlış sinyal gönderir.\nDoğru segment seçimi ROAS'ı %30-40 artırabilir — çözüm bu carousel'de. 👆\n\n─────────────────────\n📊 LTV formülü: AOV × Sıklık × Ömür\n🏆 Hangi segment lookalike kaynağı olmalı (VIP/Orta/Alt)\n💎 Value-based lookalike nasıl kurulur\n📏 Minimum liste büyüklüğü ve %1-3 benzerlik kuralı\n⚠️ En büyük hata: tüm listeyi kaynak yapmak\n─────────────────────\n\nEn büyük hata: Alt %20'lik tek seferlik alıcıları listeye dahil etmek. Bu, algoritmanın kalitesiz kopyalar üretmesine yol açıyor.\n\nDoğru müşteriyi kopyalamak, rastgele hedeflemekten çok daha karlı.\n\n💾 Kaydet — Lookalike audience kurarken bu segmentasyonu uygula\n💬 Sen lookalike kaynağı olarak tüm müşteri listesini mi kullanıyorsun, yoksa segmentli mi? Yorumda söyle!\n\n#ltv #lookalikeaudience #valuebasedoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
