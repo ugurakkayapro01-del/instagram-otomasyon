@@ -1,69 +1,65 @@
 {
-  "topic": "CBO vs ABO — Bütçe Dağıtım Algoritmasının Gerçek Farkı",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması",
-    "Broad Targeting vs Detaylı Hedefleme — Sinyal Yoğunluğu ve Algoritma Öğrenmesi",
-    "Dynamic Creative Optimization (DCO) — Otomatik Kreatif Kombinasyon Testi"
-  ],
+  "topic": "Broad Targeting vs Detaylı Hedefleme — Sinyal Yoğunluğu ve Algoritma Öğrenmesi",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
   "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "BÜTÇE OPTİMİZASYONU",
-      "title": "CBO mu ABO mu?\nÇoğu Reklamveren\n**Yanlış Seçiyor**",
-      "subtitle": "Bütçeni algoritmaya mı bırakıyorsun yoksa kontrolü mü elinde tutuyorsun? Fark sandığından büyük."
+      "tag": "HEDEFLEME STRATEJİSİ",
+      "title": "Broad mu, Detaylı mı?\nCevap **Sinyal Yoğunluğunda** Gizli",
+      "subtitle": "Çoğu marka hedeflemeyi yanlış zamanda daraltıyor. İşte algoritmanın perde arkasında gerçekte ne yaptığı."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🎯",
-      "title": "CBO Nedir, Nasıl Çalışır?",
-      "body": "Campaign Budget Optimization (CBO), kampanya seviyesinde belirlediğin bütçeyi tüm reklam setlerine otomatik dağıtır. Algoritma, en düşük maliyetle sonuç getiren seti tespit eder ve bütçenin çoğunu oraya kaydırır. Bu dağıtım sabit değildir, saatlik güncellenir.",
+      "icon": "🧠",
+      "title": "Sinyal Yoğunluğu Nedir?",
+      "body": "Meta'nın algoritması reklamını gösterirken pixel'den gelen dönüşüm sinyallerini kullanır. Hedefleme daralttıkça sinyal havuzu küçülür, algoritma daha az veriyle karar vermek zorunda kalır.\nBu yüzden 'dar hedefleme = isabetli hedefleme' varsayımı çoğu zaman yanlıştır.",
       "is_checklist": false,
-      "pill": "CBO = algoritma bütçeyi senin yerine dağıtır"
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "⚙️",
-      "title": "ABO Nedir, Ne Zaman Gerekli?",
-      "body": "Ad Set Budget Optimization (ABO), her reklam setine sabit bütçe atarsın; algoritma seti değiştirmez. Farklı hedef kitleleri (ör. lookalike %1 vs %5) adil test etmek istediğinde ABO zorunludur — CBO küçük setleri veriyi görmeden eler.",
-      "is_checklist": false,
-      "pill": "ABO = eşit test, adil karşılaştırma"
+      "pill": "Dar hedefleme sinyali değil, sadece havuzu daraltır"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 03 / 07",
+      "num_label": "İpucu 02 / 07",
       "icon": "⚖️",
-      "title": "CBO vs ABO — Hangi Durumda Hangisi?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">CBO</div><div class=\"fval\">3+ benzer performanslı set<br>Ölçeklendirme aşaması<br>Otomatik bütçe kayması</div></div><div class=\"cmp-col best\"><div class=\"flabel\">ABO</div><div class=\"fval\">A/B test senaryosu<br>Yeni/soğuk kitle denemesi<br>Eşit ve sabit bütçe kontrolü</div></div></div>",
-      "pill": "Test ediyorsan ABO, ölçekliyorsan CBO"
+      "title": "Broad vs Detaylı — Eşik Değeri",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">BROAD TARGETING</div><div class=\"sval\">50+</div><div class=\"tdesc\">dönüşüm / hafta üzeri<br>Algoritma sinyali zengin,<br>daraltma gereksiz</div></div><div class=\"cmp-col best\"><div class=\"flabel\">DETAYLI HEDEFLEME</div><div class=\"sval\">&lt;50</div><div class=\"tdesc\">dönüşüm / hafta altı<br>Sinyal az, ilgi alanı<br>katmanı yön verir</div></div></div>",
+      "pill": "Karar sınırı: haftalık 50 dönüşüm eşiği"
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🎯",
+      "title": "Broad Targeting Ne Zaman İşe Yarar?",
+      "body": "Pixel'de haftalık 50+ dönüşüm varsa\nAdvantage+ Audience aktif kullanılıyorsa\nKreatif çeşitliliği yüksekse (3+ varyasyon)\nÖğrenme evresi tamamlanmışsa (7 günde 50 dönüşüm)",
+      "is_checklist": true,
+      "pill": "Veri bol olduğunda algoritmaya alan aç"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "📊",
-      "title": "Minimum Bütçe Eşiği Neden Önemli?",
-      "body": "CBO'da her reklam seti günlük en az 1x hedef CPA kadar bütçe alabilmeli, yoksa algoritma o seti öğrenme fırsatı bulamadan kapatır. Örnek: Hedef CPA 100 TL ise, 3 setli bir kampanyada minimum günlük bütçe 300 TL olmalı.",
+      "icon": "🔍",
+      "title": "Detaylı Hedefleme Ne Zaman Gerekli?",
+      "body": "Yeni açılan hesaplarda veya haftalık 50 dönüşümün altında kalan kampanyalarda algoritmanın öğrenecek yeterli sinyali yoktur. Bu durumda 3-4 ilgi alanıyla sinyali yönlendirmek rastgele dağılımı önler.\nNiş ürünlerde (ör. B2B ekipman) de detaylı hedefleme hâlâ işe yarar çünkü kitle zaten küçüktür.",
       "is_checklist": false,
-      "pill": "Minimum bütçe = set sayısı × hedef CPA"
+      "pill": "Az veride hedefleme, algoritmaya pusula olur"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
-      "icon": "🚨",
-      "title": "En Büyük Hata: Karışık Set Yapısı",
-      "body": "CBO'yu farklı sıcaklıktaki kitlelerle (soğuk lookalike + retargeting) aynı kampanyada karıştırmak. Algoritma her zaman düşük maliyetli retargeting'e kayar, soğuk kitleye öğrenme şansı vermez. Kitle sıcaklığına göre kampanya ayır.",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: İlgi Alanı Yığma",
+      "body": "Bir reklam setine 5-6 farklı ilgi alanını üst üste eklemek daha isabetli hedefleme değil, sinyal karmaşasıdır. Algoritma hangi ilgiye göre optimize edeceğini şaşırır, CPA yükselir.\nKural: Tek sette en fazla 2-3 alakalı ilgi alanı kullan, gerisini ayrı sette test et.",
       "is_checklist": false,
-      "pill": "Aynı sıcaklıktaki setler aynı kampanyada olmalı"
+      "pill": "3'ten fazla ilgi alanı yığma = sinyal kirliliği"
     },
     {
       "kind": "cta",
-      "label": "SIRADAKİ ADIM",
-      "title": "Bütçeni Doğru Dağıt,\nSonucu **Sen Belirle**"
+      "label": "Hazır mısın?",
+      "title": "Hedeflemeyi Değil, Sinyali Yönet"
     }
   ],
-  "caption": "Kampanya kurarken CBO mu ABO mu seçtin? Çoğu reklamveren bunu rastgele seçiyor ve bütçesinin yarısını yanlış sete kaptırıyor. 👇\n\nAlgoritma senin yerine karar veriyor ama hangi kuralla?\nCevap carousel'de 👆\n\n─────────────────────\n🎯 CBO nasıl çalışır, bütçeyi nasıl dağıtır\n⚙️ ABO ne zaman zorunlu hale gelir\n⚖️ CBO vs ABO karşılaştırması — hangi durumda hangisi\n📊 Minimum bütçe eşiği formülü (set sayısı × hedef CPA)\n🚨 En büyük hata: farklı sıcaklıktaki kitleleri karıştırmak\n─────────────────────\n\nEn büyük hata: Soğuk ve sıcak kitleyi aynı CBO kampanyasında test etmek. Algoritma her zaman ucuz olanı seçer, soğuk kitleye asla şans tanımaz.\n\nBütçeni doğru yapılandırmak, harcamadan önce atman gereken tek adım.\n\n💾 Kaydet — kampanya kurarken aç\n💬 Sen CBO mu ABO mu kullanıyorsun? Yorumda söyle!\n\n#cbo #abo #reklambutcesi\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Broad targeting mi yoksa detaylı hedefleme mi kullanmalısın? Çoğu marka bu kararı veri seviyesine değil, sezgiye göre veriyor. 👇\n\nOysa Meta'nın algoritması sinyal havuzunun büyüklüğüne göre çalışıyor ve bunun net bir eşik değeri var.\nBu carousel'de o eşik değerini ve doğru kararı nasıl vereceğini gösteriyorum. 👆\n\n─────────────────────\n🧠 Sinyal yoğunluğu kavramı ve neden dar hedefleme yanılgısı\n⚖️ Broad vs Detaylı karar eşiği: haftalık 50 dönüşüm\n🎯 Broad targeting için 4 maddelik kullanım koşulu\n🔍 Detaylı hedeflemenin hâlâ gerekli olduğu 2 senaryo\n⚠️ En büyük hata: ilgi alanı yığma (interest stacking)\n─────────────────────\n\nEn büyük hata: Tek reklam setine 5-6 ilgi alanı eklemek. Bu isabet değil, sinyal kirliliği yaratır ve CPA'yı yükseltir.\n\nDoğru hedefleme, doğru veri seviyesinde doğru kararı vermekle başlar.\n\n💾 Kaydet — yeni kampanya kurarken hedefleme kararı verirken aç\n💬 Sen şu an broad mı yoksa detaylı hedefleme mi kullanıyorsun? Yorumda söyle!\n\n#broadtargeting #detailedtargeting #metaalgoritma\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
