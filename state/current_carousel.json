@@ -1,65 +1,65 @@
 {
-  "topic": "Broad Targeting vs Detaylı Hedefleme — Sinyal Yoğunluğu ve Algoritma Öğrenmesi",
+  "topic": "Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "HEDEFLEME STRATEJİSİ",
-      "title": "Broad mu, Detaylı mı?\nCevap **Sinyal Yoğunluğunda** Gizli",
-      "subtitle": "Çoğu marka hedeflemeyi yanlış zamanda daraltıyor. İşte algoritmanın perde arkasında gerçekte ne yaptığı."
+      "tag": "POST-PURCHASE STRATEJİ",
+      "title": "Satış Bitince\nİşin **Bitmiyor**",
+      "subtitle": "Doğru zamanlama olmadan upsell, müşteriyi kaçırır"
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🧠",
-      "title": "Sinyal Yoğunluğu Nedir?",
-      "body": "Meta'nın algoritması reklamını gösterirken pixel'den gelen dönüşüm sinyallerini kullanır. Hedefleme daralttıkça sinyal havuzu küçülür, algoritma daha az veriyle karar vermek zorunda kalır.\nBu yüzden 'dar hedefleme = isabetli hedefleme' varsayımı çoğu zaman yanlıştır.",
+      "icon": "🛍️",
+      "title": "Post-Purchase Segmentasyon Nedir?",
+      "body": "Satın alan her müşteri aynı anda hedef alınmamalı. Satın alma anından itibaren geçen süreye göre farklı mesaj, farklı teklif gerekir.\nBu segmentasyon yapılmazsa cross-sell ve upsell reklamları agresif algılanır, negatif geri bildirim oranı yükselir.",
       "is_checklist": false,
-      "pill": "Dar hedefleme sinyali değil, sadece havuzu daraltır"
+      "pill": "Zamanlama, teklif içeriğinden daha önemlidir"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "⚖️",
-      "title": "Broad vs Detaylı — Eşik Değeri",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">BROAD TARGETING</div><div class=\"sval\">50+</div><div class=\"tdesc\">dönüşüm / hafta üzeri<br>Algoritma sinyali zengin,<br>daraltma gereksiz</div></div><div class=\"cmp-col best\"><div class=\"flabel\">DETAYLI HEDEFLEME</div><div class=\"sval\">&lt;50</div><div class=\"tdesc\">dönüşüm / hafta altı<br>Sinyal az, ilgi alanı<br>katmanı yön verir</div></div></div>",
-      "pill": "Karar sınırı: haftalık 50 dönüşüm eşiği"
+      "num_label": "Adım 02",
+      "icon": "⏱️",
+      "title": "5 Aşamalı Zamanlama Penceresi",
+      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">0-3 Gün</div><div class=\"tdesc\">Teşekkür + kullanım rehberi, satış yok</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">4-14 Gün</div><div class=\"tdesc\">Tamamlayıcı ürün — cross-sell teklifi</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">15-45 Gün</div><div class=\"tdesc\">Üst paket/versiyon — upsell teklifi</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">46-90 Gün</div><div class=\"tdesc\">Yeniden sipariş hatırlatması</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">90+ Gün</div><div class=\"tdesc\">Win-back kampanyasına geçiş</div></div></div>",
+      "pill": "Her pencerenin farklı bir reklam seti olmalı"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 03 / 07",
       "icon": "🎯",
-      "title": "Broad Targeting Ne Zaman İşe Yarar?",
-      "body": "Pixel'de haftalık 50+ dönüşüm varsa\nAdvantage+ Audience aktif kullanılıyorsa\nKreatif çeşitliliği yüksekse (3+ varyasyon)\nÖğrenme evresi tamamlanmışsa (7 günde 50 dönüşüm)",
-      "is_checklist": true,
-      "pill": "Veri bol olduğunda algoritmaya alan aç"
+      "title": "Upsell mi, Cross-Sell mi?",
+      "body": "Upsell: aynı kategoride daha üst versiyon (tekli üründen 3'lü sete geçiş gibi). Cross-sell: farklı ama tamamlayıcı kategori (ayakkabı alana çorap gibi).\nİlk 14 günde cross-sell, 15. günden sonra upsell mesajı ver. Müşteri ürünü kullanmadan üst pakete zorlanmamalı.",
+      "is_checklist": false,
+      "pill": "Kullanım deneyimi olmadan upsell yapma"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "🔍",
-      "title": "Detaylı Hedefleme Ne Zaman Gerekli?",
-      "body": "Yeni açılan hesaplarda veya haftalık 50 dönüşümün altında kalan kampanyalarda algoritmanın öğrenecek yeterli sinyali yoktur. Bu durumda 3-4 ilgi alanıyla sinyali yönlendirmek rastgele dağılımı önler.\nNiş ürünlerde (ör. B2B ekipman) de detaylı hedefleme hâlâ işe yarar çünkü kitle zaten küçüktür.",
+      "icon": "📊",
+      "title": "LTV Bazlı Segmentasyon",
+      "body": "Müşterilerini LTV'ye göre üçe ayır. Üst %20'ye premium upsell, orta %50'ye cross-sell, alt %30'a sadece hatırlatma ve indirim göster.\nAynı bütçeyi her segmente eşit dağıtmak, en değerli müşteriyi ihmal etmek demektir.",
       "is_checklist": false,
-      "pill": "Az veride hedefleme, algoritmaya pusula olur"
+      "pill": "Üst %20 LTV grubuna özel reklam seti kur"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: İlgi Alanı Yığma",
-      "body": "Bir reklam setine 5-6 farklı ilgi alanını üst üste eklemek daha isabetli hedefleme değil, sinyal karmaşasıdır. Algoritma hangi ilgiye göre optimize edeceğini şaşırır, CPA yükselir.\nKural: Tek sette en fazla 2-3 alakalı ilgi alanı kullan, gerisini ayrı sette test et.",
+      "title": "En Büyük Hata: Cooldown'u Atlamak",
+      "body": "Aynı müşteriye art arda, boşluksuz farklı post-purchase reklamları göstermek negatif geri bildirim oranını 2 katına çıkarır.\nBir segmentten diğerine geçmeden önce eski reklam setini durdur, en az 5-7 gün bekle.",
       "is_checklist": false,
-      "pill": "3'ten fazla ilgi alanı yığma = sinyal kirliliği"
+      "pill": "Segmentler arası minimum 5 gün cooldown şart"
     },
     {
       "kind": "cta",
       "label": "Hazır mısın?",
-      "title": "Hedeflemeyi Değil, Sinyali Yönet"
+      "title": "Satış Sonrası Sessizlik,\nEn Pahalı **Hata**"
     }
   ],
-  "caption": "Broad targeting mi yoksa detaylı hedefleme mi kullanmalısın? Çoğu marka bu kararı veri seviyesine değil, sezgiye göre veriyor. 👇\n\nOysa Meta'nın algoritması sinyal havuzunun büyüklüğüne göre çalışıyor ve bunun net bir eşik değeri var.\nBu carousel'de o eşik değerini ve doğru kararı nasıl vereceğini gösteriyorum. 👆\n\n─────────────────────\n🧠 Sinyal yoğunluğu kavramı ve neden dar hedefleme yanılgısı\n⚖️ Broad vs Detaylı karar eşiği: haftalık 50 dönüşüm\n🎯 Broad targeting için 4 maddelik kullanım koşulu\n🔍 Detaylı hedeflemenin hâlâ gerekli olduğu 2 senaryo\n⚠️ En büyük hata: ilgi alanı yığma (interest stacking)\n─────────────────────\n\nEn büyük hata: Tek reklam setine 5-6 ilgi alanı eklemek. Bu isabet değil, sinyal kirliliği yaratır ve CPA'yı yükseltir.\n\nDoğru hedefleme, doğru veri seviyesinde doğru kararı vermekle başlar.\n\n💾 Kaydet — yeni kampanya kurarken hedefleme kararı verirken aç\n💬 Sen şu an broad mı yoksa detaylı hedefleme mi kullanıyorsun? Yorumda söyle!\n\n#broadtargeting #detailedtargeting #metaalgoritma\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Bir müşteri senden aldıktan sonra sessizliğe mi gömülüyor? Yoksa yanlış zamanda yanlış teklifle mi karşılaşıyor? 👇\n\nSatın alma anı, ilişkinin bittiği yer değil başladığı yer. Ama çoğu marka bunu yanlış zamanlamayla batırıyor.\nDoğru sıralama ve doğru zaman penceresi bu carousel'de 👆\n\n─────────────────────\n🛍️ Post-purchase segmentasyon neden şart\n⏱️ 5 aşamalı zamanlama penceresi (0-3 günden 90+ güne)\n🎯 Upsell ve cross-sell'i ne zaman kullanmalısın\n📊 LTV'ye göre bütçe dağıtımı (%20-%50-%30)\n⚠️ Cooldown atlamanın bedeli\n─────────────────────\n\nEn büyük hata: Tüm satın alanlara aynı gün yeni ürün reklamı göstermek. Bu, müşteri memnuniyetini satış baskısına çeviriyor.\n\nZamanlama doğru olursa, mevcut müşteri en ucuz ve en sadık satış kanalın olur.\n\n💾 Kaydet — kampanya takvimi kurarken aç\n💬 Sen post-purchase kampanyalarını kaç günlük pencerelerle ayırıyorsun? Yorumda söyle!\n\n#upsell #crosssell #postpurchase\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

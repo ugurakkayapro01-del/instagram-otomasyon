@@ -32,6 +32,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 25 | Müşteri Yaşam Boyu Değeri (LTV) Bazlı Lookalike Segmentasyonu | 7 | Otomatik üretildi (2026-09-29) |
 | 26 | CBO vs ABO — Bütçe Dağıtım Algoritmasının Gerçek Farkı | 7 | Otomatik üretildi (2026-09-29) |
 | 27 | Broad Targeting vs Detaylı Hedefleme — Sinyal Yoğunluğu ve Algoritma Öğrenmesi | 7 | Otomatik üretildi (2026-09-30) |
+| 28 | Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması | 7 | Otomatik üretildi (2026-09-30) |
 
 ---
 

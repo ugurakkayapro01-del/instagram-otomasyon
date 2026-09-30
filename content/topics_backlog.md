@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması
 - Dynamic Creative Optimization (DCO) — Otomatik Kreatif Kombinasyon Testi
 
 ## Yeni Konu Üretme Kuralları
