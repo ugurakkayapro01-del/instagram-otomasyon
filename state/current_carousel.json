@@ -1,65 +1,65 @@
 {
-  "topic": "Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması",
+  "topic": "Dynamic Creative Optimization (DCO) — Otomatik Kreatif Kombinasyon Testi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "timeline",
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "POST-PURCHASE STRATEJİ",
-      "title": "Satış Bitince\nİşin **Bitmiyor**",
-      "subtitle": "Doğru zamanlama olmadan upsell, müşteriyi kaçırır"
+      "tag": "KREATİF OTOMASYONU",
+      "title": "6.250 Kombinasyon.\nTek Reklam Seti.\n**Algoritma Seçsin.**",
+      "subtitle": "Hangi görsel-metin ikilisinin kazandığını sen değil, veri belirlesin."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🛍️",
-      "title": "Post-Purchase Segmentasyon Nedir?",
-      "body": "Satın alan her müşteri aynı anda hedef alınmamalı. Satın alma anından itibaren geçen süreye göre farklı mesaj, farklı teklif gerekir.\nBu segmentasyon yapılmazsa cross-sell ve upsell reklamları agresif algılanır, negatif geri bildirim oranı yükselir.",
+      "icon": "🧩",
+      "title": "DCO Nedir, Gerçekte Ne Yapar?",
+      "body": "Dynamic Creative Optimization, tek reklam setine 10 görsel/video, 5 başlık, 5 ana metin, 5 açıklama ve 5 CTA yüklemene izin verir. Meta bunları otomatik birleştirip test eder — hangi ikilinin kazanacağını sen tahmin etmezsin, sistem gerçek zamanlı sinyallerle öğrenir.",
       "is_checklist": false,
-      "pill": "Zamanlama, teklif içeriğinden daha önemlidir"
+      "pill": "Tek kurulumla onlarca kreatif varyasyonunu aynı anda test et."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 02",
-      "icon": "⏱️",
-      "title": "5 Aşamalı Zamanlama Penceresi",
-      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">0-3 Gün</div><div class=\"tdesc\">Teşekkür + kullanım rehberi, satış yok</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">4-14 Gün</div><div class=\"tdesc\">Tamamlayıcı ürün — cross-sell teklifi</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">15-45 Gün</div><div class=\"tdesc\">Üst paket/versiyon — upsell teklifi</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">46-90 Gün</div><div class=\"tdesc\">Yeniden sipariş hatırlatması</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">90+ Gün</div><div class=\"tdesc\">Win-back kampanyasına geçiş</div></div></div>",
-      "pill": "Her pencerenin farklı bir reklam seti olmalı"
+      "num_label": "İpucu 02 / 07",
+      "icon": "🔢",
+      "title": "Matematik Basit: 10×5×5×5×5",
+      "inner_html": "<div class=\"formula-box\"><div class=\"flabel\">TEORİK KOMBİNASYON SAYISI</div><div class=\"bignum\">6.250</div><div class=\"bignumsub\">10 görsel × 5 başlık × 5 ana metin × 5 açıklama × 5 CTA</div></div><div class=\"formula-box\"><div class=\"flabel\">GERÇEK EŞİK</div><div class=\"fval\">Reklam seti başına min. <span class=\"hl\">50 optimizasyon olayı</span> şartı DCO'da da geçerli — kombinasyon çoksa öğrenme yavaşlar.</div></div>",
+      "pill": "Çok kombinasyon değil, yeterli veri kazandırır."
     },
     {
       "kind": "dark",
       "num_label": "İpucu 03 / 07",
-      "icon": "🎯",
-      "title": "Upsell mi, Cross-Sell mi?",
-      "body": "Upsell: aynı kategoride daha üst versiyon (tekli üründen 3'lü sete geçiş gibi). Cross-sell: farklı ama tamamlayıcı kategori (ayakkabı alana çorap gibi).\nİlk 14 günde cross-sell, 15. günden sonra upsell mesajı ver. Müşteri ürünü kullanmadan üst pakete zorlanmamalı.",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Az Varyasyonla DCO Kurmak",
+      "body": "2 görsel ve 1 başlıkla DCO açmak, sistemin öğrenme gücünü sıfırlar. Gerçek optimizasyon için her kategoride en az 3-5 farklı varyasyon olmalı — yoksa algoritma test edecek yeterli çeşitlilik bulamaz ve bütçeyi rastgele dağıtır.",
       "is_checklist": false,
-      "pill": "Kullanım deneyimi olmadan upsell yapma"
+      "pill": "Az varyasyon = DCO'nun gücünü kullanmamak demektir."
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "📊",
-      "title": "LTV Bazlı Segmentasyon",
-      "body": "Müşterilerini LTV'ye göre üçe ayır. Üst %20'ye premium upsell, orta %50'ye cross-sell, alt %30'a sadece hatırlatma ve indirim göster.\nAynı bütçeyi her segmente eşit dağıtmak, en değerli müşteriyi ihmal etmek demektir.",
-      "is_checklist": false,
-      "pill": "Üst %20 LTV grubuna özel reklam seti kur"
+      "icon": "🔗",
+      "title": "Görsel-Metin Eşleştirme Kuralı",
+      "body": "Ürün görseliyle ürüne özel başlığı eşleştir\nVideo varsa, metni o videonun mesajıyla uyumlu tut\n\"Image and text pairing\" ayarıyla anlamsız kombinasyonları engelle\nHer kombinasyonu raporda ayrı ayrı izle",
+      "is_checklist": true,
+      "pill": "Rastgele eşleşme, tutarsız mesaj = düşük CTR."
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Cooldown'u Atlamak",
-      "body": "Aynı müşteriye art arda, boşluksuz farklı post-purchase reklamları göstermek negatif geri bildirim oranını 2 katına çıkarır.\nBir segmentten diğerine geçmeden önce eski reklam setini durdur, en az 5-7 gün bekle.",
+      "icon": "🔁",
+      "title": "Yorgunluğu Geciktiren Gizli Fayda",
+      "body": "DCO, kombinasyonları otomatik yenileyerek aynı kitleye farklı görsel-metin ikilileri gösterir. Bu, frekans birikimini yavaşlatır ve reklam yorgunluğunun (ad fatigue) başlama süresini uzatır — özellikle dar retargeting kitlelerinde fark yaratır.",
       "is_checklist": false,
-      "pill": "Segmentler arası minimum 5 gün cooldown şart"
+      "pill": "Otomatik çeşitlilik, frekans yorgunluğunu geciktirir."
     },
     {
       "kind": "cta",
-      "label": "Hazır mısın?",
-      "title": "Satış Sonrası Sessizlik,\nEn Pahalı **Hata**"
+      "label": "DIGITAL PRO",
+      "title": "Kazanan Kombinasyonu Bulduktan Sonra Onu Statik Reklama Çevir."
     }
   ],
-  "caption": "Bir müşteri senden aldıktan sonra sessizliğe mi gömülüyor? Yoksa yanlış zamanda yanlış teklifle mi karşılaşıyor? 👇\n\nSatın alma anı, ilişkinin bittiği yer değil başladığı yer. Ama çoğu marka bunu yanlış zamanlamayla batırıyor.\nDoğru sıralama ve doğru zaman penceresi bu carousel'de 👆\n\n─────────────────────\n🛍️ Post-purchase segmentasyon neden şart\n⏱️ 5 aşamalı zamanlama penceresi (0-3 günden 90+ güne)\n🎯 Upsell ve cross-sell'i ne zaman kullanmalısın\n📊 LTV'ye göre bütçe dağıtımı (%20-%50-%30)\n⚠️ Cooldown atlamanın bedeli\n─────────────────────\n\nEn büyük hata: Tüm satın alanlara aynı gün yeni ürün reklamı göstermek. Bu, müşteri memnuniyetini satış baskısına çeviriyor.\n\nZamanlama doğru olursa, mevcut müşteri en ucuz ve en sadık satış kanalın olur.\n\n💾 Kaydet — kampanya takvimi kurarken aç\n💬 Sen post-purchase kampanyalarını kaç günlük pencerelerle ayırıyorsun? Yorumda söyle!\n\n#upsell #crosssell #postpurchase\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Aynı reklamı 50 farklı versiyonda mı test ediyorsun? Buna gerek yok. 👇\n\nÇoğu marka hâlâ tek görsel + tek metinle reklam veriyor ve hangi kombinasyonun işe yaradığını asla öğrenmiyor.\nDynamic Creative Optimization (DCO) bu sorunu otomatik çözüyor — çözüm bu carousel'de. 👆\n\n─────────────────────\n🧩 DCO'nun gerçekte ne yaptığı\n🔢 10×5×5×5×5 kombinasyon matematiği\n⚠️ Az varyasyonla kurulan DCO'nun neden işe yaramadığı\n🔗 Görsel-metin eşleştirme kuralı\n🔁 Ad fatigue'i geciktiren gizli fayda\n─────────────────────\n\nEn büyük hata: 2 görsel, 1 başlıkla DCO açıp \"otomasyon çalışmadı\" demek. Sistem test edecek çeşitlilik bulamazsa bütçeyi rastgele dağıtır.\n\nDoğru kurulan DCO, elle asla yetişemeyeceğin kadar hızlı test yapar — sen sadece kazananı büyütürsün.\n\n💾 Kaydet — yeni bir DCO reklam seti kurarken tekrar bak.\n💬 Reklam setinde kaç görsel/başlık varyasyonu kullanıyorsun? Yorumda söyle!\n\n#dco #dynamiccreative #creativeoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
