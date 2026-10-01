@@ -1,65 +1,69 @@
 {
-  "topic": "Dynamic Creative Optimization (DCO) — Otomatik Kreatif Kombinasyon Testi",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "formula",
+  "topic": "Click-to-WhatsApp Reklamları — Mesajlaşma Tabanlı Dönüşüm Hunisi",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Meta Conversion Lift Test — Artımsal (Incremental) Etkiyi Ölçme",
+    "Business Manager ve Reklam Hesabı Mimarisi — Çoklu Marka/Ürün Yönetimi",
+    "Yerleşim (Placement) Kırılımı Analizi — Feed vs Stories vs Reels Performans Farkları"
+  ],
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KREATİF OTOMASYONU",
-      "title": "6.250 Kombinasyon.\nTek Reklam Seti.\n**Algoritma Seçsin.**",
-      "subtitle": "Hangi görsel-metin ikilisinin kazandığını sen değil, veri belirlesin."
+      "tag": "MESAJLAŞMA REKLAMLARI",
+      "title": "Formunu Dolduran\nDeğil, **Mesaj Atan**\nMüşteri Kazanıyor",
+      "subtitle": "Click-to-WhatsApp reklamları doğru kurulmazsa potansiyel müşteri 5 dakikada kayboluyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🧩",
-      "title": "DCO Nedir, Gerçekte Ne Yapar?",
-      "body": "Dynamic Creative Optimization, tek reklam setine 10 görsel/video, 5 başlık, 5 ana metin, 5 açıklama ve 5 CTA yüklemene izin verir. Meta bunları otomatik birleştirip test eder — hangi ikilinin kazanacağını sen tahmin etmezsin, sistem gerçek zamanlı sinyallerle öğrenir.",
+      "num_label": "İpucu 01/07",
+      "icon": "💬",
+      "title": "CTWA Nedir, Neden Şimdi?",
+      "body": "Click-to-WhatsApp (CTWA) reklamı, kullanıcıyı doğrudan WhatsApp sohbetine yönlendirir.\nTürkiye'de WhatsApp penetrasyonu %93'ün üzerinde — form doldurmaktan çok daha düşük sürtünme.\nTest verilerinde CTWA kampanyalarının CPA'sı, standart form reklamlarına göre ortalama %25-35 daha düşük çıkıyor.",
       "is_checklist": false,
-      "pill": "Tek kurulumla onlarca kreatif varyasyonunu aynı anda test et."
+      "pill": "Form değil, sohbet başlat — sürtünmeyi azalt."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🔢",
-      "title": "Matematik Basit: 10×5×5×5×5",
-      "inner_html": "<div class=\"formula-box\"><div class=\"flabel\">TEORİK KOMBİNASYON SAYISI</div><div class=\"bignum\">6.250</div><div class=\"bignumsub\">10 görsel × 5 başlık × 5 ana metin × 5 açıklama × 5 CTA</div></div><div class=\"formula-box\"><div class=\"flabel\">GERÇEK EŞİK</div><div class=\"fval\">Reklam seti başına min. <span class=\"hl\">50 optimizasyon olayı</span> şartı DCO'da da geçerli — kombinasyon çoksa öğrenme yavaşlar.</div></div>",
-      "pill": "Çok kombinasyon değil, yeterli veri kazandırır."
+      "num_label": "Kural 02/07",
+      "icon": "⏱️",
+      "title": "Yanıt Süresi Hayatta Kalma Eğrisi",
+      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><div class=\"tsec\">0-5 dk</div><div class=\"ttime\">%80 yanıt şansı</div><div class=\"tdesc\">Altın dilim — mesaj sıcakken yanıtla</div></div><div class=\"tconnect\"></div><div class=\"trow\"><div class=\"tsec\">5-60 dk</div><div class=\"ttime\">%45 yanıt şansı</div><div class=\"tdesc\">Kabul edilebilir — otomatik yanıt şart</div></div><div class=\"tconnect\"></div><div class=\"trow\"><div class=\"tsec\">1-24 saat</div><div class=\"ttime\">%15 yanıt şansı</div><div class=\"tdesc\">Risk bölgesi — müşteri başka yere gitti</div></div><div class=\"tconnect\"></div><div class=\"trow\"><div class=\"tsec\">24 saat+</div><div class=\"ttime\">%3 yanıt şansı</div><div class=\"tdesc\">Kayıp — bütçe boşa gitti</div></div></div>",
+      "pill": "İlk 5 dakika kuralı: yanıt hızı = dönüşüm oranı."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Az Varyasyonla DCO Kurmak",
-      "body": "2 görsel ve 1 başlıkla DCO açmak, sistemin öğrenme gücünü sıfırlar. Gerçek optimizasyon için her kategoride en az 3-5 farklı varyasyon olmalı — yoksa algoritma test edecek yeterli çeşitlilik bulamaz ve bütçeyi rastgele dağıtır.",
-      "is_checklist": false,
-      "pill": "Az varyasyon = DCO'nun gücünü kullanmamak demektir."
+      "num_label": "İpucu 03/07",
+      "icon": "🤖",
+      "title": "Otomatik Yanıt Mimarisi",
+      "body": "İlk mesaj 60 saniye içinde otomatik karşılama al\nMenü/hızlı yanıt butonlarıyla niyeti filtrele (fiyat, stok, kargo)\nİnsan devreye girene kadar botu asla boş bırakma\nMesai dışı saatlerde 'X saatte döneceğiz' net bilgisi ver",
+      "is_checklist": true,
+      "pill": "Bot hız kazandırır, insan satışı kapatır."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🔗",
-      "title": "Görsel-Metin Eşleştirme Kuralı",
-      "body": "Ürün görseliyle ürüne özel başlığı eşleştir\nVideo varsa, metni o videonun mesajıyla uyumlu tut\n\"Image and text pairing\" ayarıyla anlamsız kombinasyonları engelle\nHer kombinasyonu raporda ayrı ayrı izle",
-      "is_checklist": true,
-      "pill": "Rastgele eşleşme, tutarsız mesaj = düşük CTR."
+      "num_label": "İpucu 04/07",
+      "icon": "🎯",
+      "title": "Hedefleme ve Bütçe Ayrımı",
+      "body": "CTWA kampanyasını soğuk ve sıcak trafikten ayrı reklam setlerinde çalıştır.\nSoğuk trafikte mesaj hedefi optimizasyonu, sıcak trafikte (retargeting) doğrudan 'satın alma niyeti' mesajı kullan.\nCBO ile günlük bütçenin en az %60'ını sıcak segmente yönlendir — yanıt oranı 3 kata kadar yüksek çıkıyor.",
+      "is_checklist": false,
+      "pill": "Soğuk ve sıcak trafiği asla aynı sette yönetme."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "🔁",
-      "title": "Yorgunluğu Geciktiren Gizli Fayda",
-      "body": "DCO, kombinasyonları otomatik yenileyerek aynı kitleye farklı görsel-metin ikilileri gösterir. Bu, frekans birikimini yavaşlatır ve reklam yorgunluğunun (ad fatigue) başlama süresini uzatır — özellikle dar retargeting kitlelerinde fark yaratır.",
+      "num_label": "İpucu 05/07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Takip Kaybı",
+      "body": "Mesajlar WhatsApp'ta kalır, CRM'e işlenmezse veri kaybolur — kim müşteri oldu, kim olmadı bilinmez.\nConversions API ile 'mesaj başlatma' ve 'satış' eventlerini eşleştirmezsen optimizasyon kör kampanya çalışır.\nYanıt oranı %90 altına düşen hesaplarda Meta algoritması mesaj hedefini otomatik cezalandırır.",
       "is_checklist": false,
-      "pill": "Otomatik çeşitlilik, frekans yorgunluğunu geciktirir."
+      "pill": "CRM entegrasyonu yoksa CTWA sadece sohbet, satış değil."
     },
     {
       "kind": "cta",
       "label": "DIGITAL PRO",
-      "title": "Kazanan Kombinasyonu Bulduktan Sonra Onu Statik Reklama Çevir."
+      "title": "Mesajı Atan Her Kullanıcı\nBir **Satış Fırsatı** — Kaçırma"
     }
   ],
-  "caption": "Aynı reklamı 50 farklı versiyonda mı test ediyorsun? Buna gerek yok. 👇\n\nÇoğu marka hâlâ tek görsel + tek metinle reklam veriyor ve hangi kombinasyonun işe yaradığını asla öğrenmiyor.\nDynamic Creative Optimization (DCO) bu sorunu otomatik çözüyor — çözüm bu carousel'de. 👆\n\n─────────────────────\n🧩 DCO'nun gerçekte ne yaptığı\n🔢 10×5×5×5×5 kombinasyon matematiği\n⚠️ Az varyasyonla kurulan DCO'nun neden işe yaramadığı\n🔗 Görsel-metin eşleştirme kuralı\n🔁 Ad fatigue'i geciktiren gizli fayda\n─────────────────────\n\nEn büyük hata: 2 görsel, 1 başlıkla DCO açıp \"otomasyon çalışmadı\" demek. Sistem test edecek çeşitlilik bulamazsa bütçeyi rastgele dağıtır.\n\nDoğru kurulan DCO, elle asla yetişemeyeceğin kadar hızlı test yapar — sen sadece kazananı büyütürsün.\n\n💾 Kaydet — yeni bir DCO reklam seti kurarken tekrar bak.\n💬 Reklam setinde kaç görsel/başlık varyasyonu kullanıyorsun? Yorumda söyle!\n\n#dco #dynamiccreative #creativeoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Mesaj atan müşteri form dolduran müşteriden çok daha sıcak. Ama çoğu marka bu mesajı 5 dakika içinde yanıtlamadığı için kaybediyor. 👇\n\nClick-to-WhatsApp reklamları doğru kurulduğunda CPA'yı %25-35 düşürebiliyor.\nYanıt süresi, bot mimarisi ve CRM entegrasyonu olmadan bu sistem çöküyor. Çözüm bu carousel'de 👆\n\n─────────────────────\n💬 CTWA nedir, neden CPA'yı düşürüyor\n⏱️ Yanıt süresi hayatta kalma eğrisi (0-5dk altın dilim)\n🤖 Otomatik yanıt botu kurgusu\n🎯 Soğuk/sıcak trafik ayrımı ve bütçe dağılımı\n⚠️ En büyük hata: CRM'siz CTWA\n─────────────────────\n\nEn büyük hata: Mesajları WhatsApp'ta bırakıp CRM'e işlememek. Kim müşteri oldu bilmiyorsan optimizasyon kör çalışır.\n\nBu sistemi kurarsan mesajlaşma, satışa dönüşen gerçek bir huniye dönüşür.\n\n💾 Kaydet — WhatsApp reklamı kurarken referans al\n💬 CTWA kampanyası denedin mi, yanıt süren kaç dakika? Yorumda söyle!\n\n#clicktowhatsapp #ctwa #metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }

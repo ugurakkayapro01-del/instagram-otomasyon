@@ -34,6 +34,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 27 | Broad Targeting vs Detaylı Hedefleme — Sinyal Yoğunluğu ve Algoritma Öğrenmesi | 7 | Otomatik üretildi (2026-09-30) |
 | 28 | Post-Purchase Segmentasyonu — Upsell ve Cross-sell Kampanya Zamanlaması | 7 | Otomatik üretildi (2026-09-30) |
 | 29 | Dynamic Creative Optimization (DCO) — Otomatik Kreatif Kombinasyon Testi | 7 | Otomatik üretildi (2026-10-01) |
+| 30 | Click-to-WhatsApp Reklamları — Mesajlaşma Tabanlı Dönüşüm Hunisi | 7 | Otomatik üretildi (2026-10-01) |
 
 ---
 
