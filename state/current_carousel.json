@@ -1,65 +1,65 @@
 {
-  "topic": "Meta Conversion Lift Test — Artımsal (Incremental) Etkiyi Ölçme",
+  "topic": "Business Manager ve Reklam Hesabı Mimarisi — Çoklu Marka/Ürün Yönetimi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "INCREMENTALITY ÖLÇÜMÜ",
-      "title": "ROAS'ın Söylemediği Gerçek:\nO Satışlar **Zaten** Olacaktı",
-      "subtitle": "Reklamının gerçekten kaç satış kazandırdığını ölçmenin tek doğru yolu var."
+      "tag": "BUSINESS MANAGER • HESAP MİMARİSİ",
+      "title": "Tek Hesapta\nBüyümek\n**Seni Durduruyor**",
+      "subtitle": "Üç markan var ama hepsi aynı reklam hesabında mı? İşte bu yüzden veri karışıyor, risk tüm markalara yayılıyor."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🧪",
-      "title": "Conversion Lift Test Nedir?",
-      "body": "Kitlen rastgele ikiye bölünür. %90'ı reklamı görür (test grubu), %10'u görmez (holdout/kontrol grubu). Aradaki dönüşüm farkı, reklamın gerçek artımsal (incremental) etkisidir — geri kalanı zaten organik olurdu.",
+      "icon": "🏗️",
+      "title": "Neden Tek Hesap Yetmiyor?",
+      "body": "Her marka veya ürün grubu farklı bir müşteri kitlesine, farklı bir pixel geçmişine ihtiyaç duyar. Tüm markaları tek ad account'ta topladığında algoritma sinyalleri karışır, bir markanın kötü performansı diğerinin bütçesini de etkiler. Doğru mimari, her markayı izole ederek hem veri kalitesini hem risk yönetimini korur.",
       "is_checklist": false,
-      "pill": "Holdout grubu olmadan ROAS yanıltıcıdır"
+      "pill": "Her markaya kendi ad account'unu ver, sinyalleri karıştırma."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 02 / 07",
-      "icon": "⚖️",
-      "title": "Test Grubu vs Kontrol Grubu",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col best\"><div class=\"sval\">%4.8</div><div class=\"flabel\">Test Grubu<br>(Reklamı Gördü)</div></div><div class=\"cmp-col\"><div class=\"sval\">%3.1</div><div class=\"flabel\">Kontrol Grubu<br>(Reklamı Görmedi)</div></div></div><div class=\"formula-box\">Lift = <span class=\"hl\">%1.7</span> — gerçek artımsal etki bu kadarı</div>",
-      "pill": "Fark = gerçek artımsal satış, geri kalanı zaten gelecekti"
+      "num_label": "Yapı 02",
+      "icon": "🧱",
+      "title": "BM Hiyerarşisi: 4 Katman",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><strong>Business Manager</strong><br>Tüm reklam hesaplarının, sayfaların ve kullanıcıların üst kimliği.</div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div class=\"tdesc\"><strong>Ad Account</strong><br>Her marka veya ürün grubu için ayrı hesap — bütçe ve risk izole edilir.</div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div class=\"tdesc\"><strong>Pixel / Dataset</strong><br>Marka bazlı event ayrımı — veri ve attribution karışmaz.</div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\"><strong>Catalog</strong><br>DPA için ürün feed'i — marka başına ayrı katalog tutulur.</div></div>",
+      "pill": "Katmanları ayırmazsan, bir markanın hatası tümünü etkiler."
     },
     {
       "kind": "dark",
-      "num_label": "Kural 03 / 07",
-      "icon": "📐",
-      "title": "Testi Güvenilir Kılan Eşik Değerler",
-      "body": "Minimum 7 gün çalıştır, her grupta en az 500.000 kişiye erişim hedefle. İstatistiksel güven %90'ın altındaysa sonuç yorumlanamaz — erken durdurma en büyük hatadır.",
-      "is_checklist": false,
-      "pill": "7 gün + 500K erişim = güvenilir sonuç eşiği"
+      "num_label": "Adım 03",
+      "icon": "🔐",
+      "title": "Partner Erişimi ve Rol Ayrımı",
+      "body": "Admin rolü sadece sana ve güvendiğin 1 kişiye ait olsun\nAnaliz ekibine sadece 'Analyst' erişimi ver, reklam harcamasına dokunamasın\nAjans/partner eklerken Business Asset'leri tek tek paylaş, tüm BM'yi paylaşma\nBir kullanıcı en fazla 2 Business Manager'a admin olarak eklenebilir — hesap planlarken unutma",
+      "is_checklist": true,
+      "pill": "Yanlış rol ataması, bütün markanın reklam hesabını kilitleyebilir."
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
       "icon": "📊",
-      "title": "Lift Oranını Nasıl Okursun?",
-      "body": "Lift % = (Test grubu dönüşüm − Kontrol grubu dönüşüm) / Kontrol grubu dönüşüm × 100. %10'un altındaki lift, bütçenin büyük kısmının zaten organik satışı 'kaçırdığının' sinyalidir.",
+      "title": "Marka Bazlı Pixel Stratejisi",
+      "body": "Her markanın kendi pixel'i veya dataset'i olmalı, event_id ile deduplication marka içinde kalmalı. Ortak pixel kullanırsan bir markanın ROAS verisi diğerine karışır, Lookalike kaynakların kirlenir. Katalog da aynı mantıkla ayrılmalı — DPA kampanyaları yanlış ürünü yanlış markaya gösterebilir.",
       "is_checklist": false,
-      "pill": "Düşük lift = bütçe yanlış kitleye gidiyor demektir"
+      "pill": "Bir pixel, bir marka — asla paylaştırma."
     },
     {
       "kind": "dark",
       "num_label": "Uyarı 05 / 07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Sadece ROAS'a Bakmak",
-      "body": "Markaların çoğu lift testi hiç çalıştırmaz, yüksek ROAS'ı 'reklam harika çalışıyor' sanır. Oysa o satışların büyük kısmı reklam olmasa da gerçekleşecekti — bütçe yanlış kanalda büyütülür.",
+      "title": "En Büyük Hata: Tek BM'de Herkese Admin",
+      "body": "Ajans, stajyer, danışman — herkesi admin yaparsan tek bir yanlış tıklama tüm hesapları durdurabilir. Meta, şüpheli admin değişikliğinde güvenlik taraması başlatır ve bu süreçte reklamların tamamı askıya alınabilir. Rol bazlı erişim bir lüks değil, hesap güvenliğinin temelidir.",
       "is_checklist": false,
-      "pill": "ROAS tek başına asla incrementality kanıtı değildir"
+      "pill": "Admin sayısını minimumda tut, erişimi varlık bazlı ver."
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Gerçek Etkiyi Ölç, Tahmin Etme"
+      "label": "7/7 • Kapanış",
+      "title": "Hesap Mimarisi Doğruysa,\n**Büyüme Sınır Tanımaz**"
     }
   ],
-  "caption": "Yüksek ROAS görüyorsun ama emin misin? O satışların çoğu reklam olmasa da gerçekleşecekti. 👇\n\nPixel ve CAPI sana kim alışveriş yaptı der, ama reklam olmasaydı yine alır mıydı demez.\nBugünkü carousel'de bunu nasıl test edeceğini gösteriyorum 👆\n\n─────────────────────\n🧪 Conversion Lift Test nedir, holdout grubu mantığı\n⚖️ Test grubu vs kontrol grubu karşılaştırması\n📐 7 gün + 500K erişim güven eşiği\n📊 Lift oranı formülü ve yorumlama\n⚠️ En büyük hata: sadece ROAS'a bakmak\n─────────────────────\n\nEn büyük hata: Lift testi hiç çalıştırmadan ROAS'a güvenmek. O satışların bir kısmı zaten organikti.\n\nGerçek artımsal etkini bilmeden bütçe büyütme.\n\n💾 Kaydet — bir sonraki kampanya raporunu incelerken aç\n💬 Hiç lift testi denedin mi, sonuç seni şaşırttı mı? Yorumda söyle!\n\n#conversionlifttest #incrementality #metaads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Birden fazla markan var ama hepsi tek reklam hesabında mı yönetiliyor? 👇\n\nBu, büyüdükçe seni yavaşlatan ve riske sokan en yaygın hatalardan biri.\nDoğru Business Manager mimarisi carousel'de 👆\n\n─────────────────────\n🏗️ Neden tek hesap artık yetmiyor\n🧱 BM'nin 4 katmanlı doğru hiyerarşisi\n🔐 Partner erişimi ve rol ayrımı kuralları\n📊 Marka bazlı pixel ve katalog stratejisi\n⚠️ Tek BM'de herkese admin verme hatası\n─────────────────────\n\nEn büyük hata: Ajans, stajyer, danışman — herkesi admin yapmak. Meta şüpheli değişiklikte güvenlik taraması başlatır, tüm reklamların askıya alınma riski doğar.\n\nMimariyi doğru kurarsan, büyüme hiçbir markanı diğerinin riskine bağlamaz.\n\n💾 Kaydet — yeni bir marka veya ürün grubu eklerken tekrar bak\n💬 Kaç marka/ürün grubunu tek reklam hesabında yönetiyorsun? Yorumda söyle!\n\n#businessmanager #adaccountyapisi #pixelstratejisi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
