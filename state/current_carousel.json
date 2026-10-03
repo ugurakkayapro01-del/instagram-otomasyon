@@ -1,65 +1,65 @@
 {
-  "topic": "Business Manager ve Reklam Hesabı Mimarisi — Çoklu Marka/Ürün Yönetimi",
+  "topic": "Yerleşim (Placement) Kırılımı Analizi — Feed vs Stories vs Reels Performans Farkları",
   "is_new_topic": false,
   "new_backlog_candidates": [],
   "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "BUSINESS MANAGER • HESAP MİMARİSİ",
-      "title": "Tek Hesapta\nBüyümek\n**Seni Durduruyor**",
-      "subtitle": "Üç markan var ama hepsi aynı reklam hesabında mı? İşte bu yüzden veri karışıyor, risk tüm markalara yayılıyor."
+      "tag": "PLACEMENT STRATEJİSİ",
+      "title": "Otomatik Yerleşim\nSeni **Yanıltıyor**\nOlabilir",
+      "subtitle": "Feed, Stories ve Reels aynı bütçeyle çok farklı sonuç veriyor. Hangisine ne kadar verdiğini gerçekten biliyor musun?"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🏗️",
-      "title": "Neden Tek Hesap Yetmiyor?",
-      "body": "Her marka veya ürün grubu farklı bir müşteri kitlesine, farklı bir pixel geçmişine ihtiyaç duyar. Tüm markaları tek ad account'ta topladığında algoritma sinyalleri karışır, bir markanın kötü performansı diğerinin bütçesini de etkiler. Doğru mimari, her markayı izole ederek hem veri kalitesini hem risk yönetimini korur.",
+      "num_label": "İpucu 01/07",
+      "icon": "📊",
+      "title": "Placement Kırılımı Neden Şart?",
+      "body": "Advantage+ placements bütçeni otomatik dağıtır ama CPM ve CPA yerleşimler arasında %200'e kadar farklılaşabilir. Ads Manager'da Breakdown > Placement raporunu aç, her yerleşimin maliyetini ayrı gör. Minimum 3 gün ve 50 dönüşüm birikmeden hiçbir yerleşime karar verme.",
       "is_checklist": false,
-      "pill": "Her markaya kendi ad account'unu ver, sinyalleri karıştırma."
+      "pill": "Breakdown > Placement raporunu haftalık kontrol et"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Yapı 02",
-      "icon": "🧱",
-      "title": "BM Hiyerarşisi: 4 Katman",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><strong>Business Manager</strong><br>Tüm reklam hesaplarının, sayfaların ve kullanıcıların üst kimliği.</div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div class=\"tdesc\"><strong>Ad Account</strong><br>Her marka veya ürün grubu için ayrı hesap — bütçe ve risk izole edilir.</div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div class=\"tdesc\"><strong>Pixel / Dataset</strong><br>Marka bazlı event ayrımı — veri ve attribution karışmaz.</div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\"><strong>Catalog</strong><br>DPA için ürün feed'i — marka başına ayrı katalog tutulur.</div></div>",
-      "pill": "Katmanları ayırmazsan, bir markanın hatası tümünü etkiler."
+      "num_label": "İpucu 02/07",
+      "icon": "🏆",
+      "title": "Yerleşim Performans Sıralaması",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div><strong>Feed</strong><div class=\"tdesc\">En yüksek dönüşüm oranı, satın alma niyetli trafik, uzun kreatif ömrü</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div><strong>Reels</strong><div class=\"tdesc\">Düşük CPM, geniş organik benzeri erişim, genç kitlede güçlü etkileşim</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div><strong>Stories</strong><div class=\"tdesc\">Orta maliyet, hızlı tükenen kreatif, sık yenileme gerekir</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div><strong>Audience Network</strong><div class=\"tdesc\">Düşük kaliteli trafik, yüksek geçersiz tıklama riski, manuel hariç tutulmalı</div></div></div>",
+      "pill": "En iyi 2 yerleşime bütçenin %70'ini yönlendir"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "🔐",
-      "title": "Partner Erişimi ve Rol Ayrımı",
-      "body": "Admin rolü sadece sana ve güvendiğin 1 kişiye ait olsun\nAnaliz ekibine sadece 'Analyst' erişimi ver, reklam harcamasına dokunamasın\nAjans/partner eklerken Business Asset'leri tek tek paylaş, tüm BM'yi paylaşma\nBir kullanıcı en fazla 2 Business Manager'a admin olarak eklenebilir — hesap planlarken unutma",
-      "is_checklist": true,
-      "pill": "Yanlış rol ataması, bütün markanın reklam hesabını kilitleyebilir."
+      "num_label": "İpucu 03/07",
+      "icon": "🎯",
+      "title": "Stories ve Reels'te Kreatif Farkı",
+      "body": "Feed kreatifini Stories veya Reels'e birebir kopyalamak dönüşümü düşürür. Dikey tam ekran format zorunlu, ilk 1 saniyede hareket olmalı. Metin alanı ekranın %20'sini aşmamalı, CTA sticker kullan — yerleşime özel kreatif her zaman daha ucuz sonuç verir.",
+      "is_checklist": false,
+      "pill": "Feed kreatifini Stories'e birebir kopyalama"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "📊",
-      "title": "Marka Bazlı Pixel Stratejisi",
-      "body": "Her markanın kendi pixel'i veya dataset'i olmalı, event_id ile deduplication marka içinde kalmalı. Ortak pixel kullanırsan bir markanın ROAS verisi diğerine karışır, Lookalike kaynakların kirlenir. Katalog da aynı mantıkla ayrılmalı — DPA kampanyaları yanlış ürünü yanlış markaya gösterebilir.",
-      "is_checklist": false,
-      "pill": "Bir pixel, bir marka — asla paylaştırma."
+      "num_label": "İpucu 04/07",
+      "icon": "🔍",
+      "title": "Manuel vs Otomatik Yerleşim Testi",
+      "body": "Advantage+ placements ile başla, min 3 gün veri topla\nBreakdown > Placement raporunu aç\nCPA'si ortalamanın %50 üstünde olan yerleşimi manuel çıkar\nAudience Network'ü e-ticarette varsayılan olarak hariç tut",
+      "is_checklist": true,
+      "pill": "Audience Network'ü manuel placement ile devre dışı bırak"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05 / 07",
+      "num_label": "İpucu 05/07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Tek BM'de Herkese Admin",
-      "body": "Ajans, stajyer, danışman — herkesi admin yaparsan tek bir yanlış tıklama tüm hesapları durdurabilir. Meta, şüpheli admin değişikliğinde güvenlik taraması başlatır ve bu süreçte reklamların tamamı askıya alınabilir. Rol bazlı erişim bir lüks değil, hesap güvenliğinin temelidir.",
+      "title": "En Büyük Hata: Tek Yerleşime Bütçe Kilitleme",
+      "body": "Sadece Feed veya sadece Reels'e manuel kilitlenmek erişimi daraltır ve CPM'i yükseltir. Çözüm: 2-3 yerleşimi birlikte test et, haftalık breakdown ile zayıf olanı çıkar. İlk 3 günde erken karar verme, öğrenme evresini sıfırlarsın.",
       "is_checklist": false,
-      "pill": "Admin sayısını minimumda tut, erişimi varlık bazlı ver."
+      "pill": "Erken optimizasyon, öğrenme evresini sıfırlar"
     },
     {
       "kind": "cta",
-      "label": "7/7 • Kapanış",
-      "title": "Hesap Mimarisi Doğruysa,\n**Büyüme Sınır Tanımaz**"
+      "label": "Yerleşimini Doğru Seç",
+      "title": "Her Yerleşim\nAynı Müşteriyi Getirmez"
     }
   ],
-  "caption": "Birden fazla markan var ama hepsi tek reklam hesabında mı yönetiliyor? 👇\n\nBu, büyüdükçe seni yavaşlatan ve riske sokan en yaygın hatalardan biri.\nDoğru Business Manager mimarisi carousel'de 👆\n\n─────────────────────\n🏗️ Neden tek hesap artık yetmiyor\n🧱 BM'nin 4 katmanlı doğru hiyerarşisi\n🔐 Partner erişimi ve rol ayrımı kuralları\n📊 Marka bazlı pixel ve katalog stratejisi\n⚠️ Tek BM'de herkese admin verme hatası\n─────────────────────\n\nEn büyük hata: Ajans, stajyer, danışman — herkesi admin yapmak. Meta şüpheli değişiklikte güvenlik taraması başlatır, tüm reklamların askıya alınma riski doğar.\n\nMimariyi doğru kurarsan, büyüme hiçbir markanı diğerinin riskine bağlamaz.\n\n💾 Kaydet — yeni bir marka veya ürün grubu eklerken tekrar bak\n💬 Kaç marka/ürün grubunu tek reklam hesabında yönetiyorsun? Yorumda söyle!\n\n#businessmanager #adaccountyapisi #pixelstratejisi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Aynı reklama aynı bütçeyi veriyorsun ama Feed, Stories ve Reels sana farklı müşteri getiriyor. 👇\n\nÇoğu e-ticaret sahibi Advantage+ placements'ı açıp unutuyor, hangi yerleşimin parasını hangi yerleşimin yediğini hiç görmüyor.\nBu carousel'de yerleşim kırılımını nasıl okuyacağını ve neyi kapatman gerektiğini gösteriyorum. 👆\n\n─────────────────────\n📊 Placement kırılımı raporunu nasıl okuyacağın\n🏆 Feed, Reels, Stories, Audience Network sıralaması\n🎯 Stories/Reels için kreatif farkı kuralı\n🔍 Manuel vs otomatik yerleşim testi checklist'i\n⚠️ Tek yerleşime bütçe kilitleme hatası\n─────────────────────\n\nEn büyük hata: Erken karar verip 3 gün dolmadan yerleşim kapatmak. Bu, öğrenme evresini sıfırlıyor ve CPA'yi yükseltiyor.\n\nDoğru kırılımı okuyan hesap, aynı bütçeyle çok daha fazla dönüşüm alır.\n\n💾 Kaydet — yeni kampanya kurarken placement raporunu açmadan önce bak\n💬 Sen hangi yerleşimde en düşük CPA'yi yakaladın? Yorumda söyle!\n\n#placementoptimizasyonu #reelsads #adsmanager\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
