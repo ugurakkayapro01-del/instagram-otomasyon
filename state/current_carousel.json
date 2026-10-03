@@ -1,65 +1,69 @@
 {
-  "topic": "Yerleşim (Placement) Kırılımı Analizi — Feed vs Stories vs Reels Performans Farkları",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
+  "topic": "Exclusion Audience (Hariç Tutma Kitleleri) — Mükerrer Gösterimi ve Bütçe Kanibalizasyonunu Önleme",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Teklif Stratejileri (Bid Strategy) — Lowest Cost vs Cost Cap vs Bid Cap Farkları",
+    "Dönüşüm Atıf Penceresi (Attribution Window) — 1 Gün vs 7 Gün Tıklama Seçiminin Bütçe Dağılımına Etkisi",
+    "Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler"
+  ],
   "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "PLACEMENT STRATEJİSİ",
-      "title": "Otomatik Yerleşim\nSeni **Yanıltıyor**\nOlabilir",
-      "subtitle": "Feed, Stories ve Reels aynı bütçeyle çok farklı sonuç veriyor. Hangisine ne kadar verdiğini gerçekten biliyor musun?"
+      "tag": "HEDEF KİTLE STRATEJİSİ",
+      "title": "Kendi Reklamınla\nKendine **Rakip**\nOluyorsun",
+      "subtitle": "Aynı kullanıcıya 3 farklı setten reklam gösteriyorsan, bütçeni kendi müzayedende harcıyorsun."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01/07",
-      "icon": "📊",
-      "title": "Placement Kırılımı Neden Şart?",
-      "body": "Advantage+ placements bütçeni otomatik dağıtır ama CPM ve CPA yerleşimler arasında %200'e kadar farklılaşabilir. Ads Manager'da Breakdown > Placement raporunu aç, her yerleşimin maliyetini ayrı gör. Minimum 3 gün ve 50 dönüşüm birikmeden hiçbir yerleşime karar verme.",
+      "num_label": "Sinyal 01",
+      "icon": "🎯",
+      "title": "Auction Overlap Gerçeği",
+      "body": "Aynı kişi birden fazla reklam setinin hedef kitlesindeyse, Meta o kullanıcı için kendi kampanyalarınla rekabete girer. Sonuç: CPM yükselir, teslimat düşer, bütçe iki sete bölünür. Ads Manager'daki 'Audience Overlap' aracı bu çakışmayı yüzde olarak gösterir.",
       "is_checklist": false,
-      "pill": "Breakdown > Placement raporunu haftalık kontrol et"
+      "pill": "Overlap %30'u geçtiyse acil müdahale gerek"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02/07",
-      "icon": "🏆",
-      "title": "Yerleşim Performans Sıralaması",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div><strong>Feed</strong><div class=\"tdesc\">En yüksek dönüşüm oranı, satın alma niyetli trafik, uzun kreatif ömrü</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div><strong>Reels</strong><div class=\"tdesc\">Düşük CPM, geniş organik benzeri erişim, genç kitlede güçlü etkileşim</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div><strong>Stories</strong><div class=\"tdesc\">Orta maliyet, hızlı tükenen kreatif, sık yenileme gerekir</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div><strong>Audience Network</strong><div class=\"tdesc\">Düşük kaliteli trafik, yüksek geçersiz tıklama riski, manuel hariç tutulmalı</div></div></div>",
-      "pill": "En iyi 2 yerleşime bütçenin %70'ini yönlendir"
+      "num_label": "Öncelik Sırası",
+      "icon": "🚫",
+      "title": "Hangi Kitleyi Önce Hariç Tutmalısın",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><strong>Son 180 Gün Satın Alanlar</strong><br>Soğuk ve ılık kampanyalardan hariç tut, ayrı upsell seti kur</div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div class=\"tdesc\"><strong>Mevcut Müşteri Listesi</strong><br>Yeni müşteri kazanım kampanyalarından tamamen çıkar</div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div class=\"tdesc\"><strong>Sepete Ekleyip Almayanlar (30 gün)</strong><br>Geniş retargeting setinden hariç tut, özel sette ayrı yönet</div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\"><strong>Video %75 İzleyenler</strong><br>Broad ve Lookalike setlerinden hariç tut</div></div>",
+      "pill": "Her yeni set kurmadan önce exclusion listesini güncelle"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03/07",
-      "icon": "🎯",
-      "title": "Stories ve Reels'te Kreatif Farkı",
-      "body": "Feed kreatifini Stories veya Reels'e birebir kopyalamak dönüşümü düşürür. Dikey tam ekran format zorunlu, ilk 1 saniyede hareket olmalı. Metin alanı ekranın %20'sini aşmamalı, CTA sticker kullan — yerleşime özel kreatif her zaman daha ucuz sonuç verir.",
+      "num_label": "Sinyal 02",
+      "icon": "🔁",
+      "title": "Lookalike'lar Birbirini Yiyor",
+      "body": "%1 Lookalike ile %1-3 Lookalike aynı anda çalışıyorsa geniş kitle dar kitleyi kapsar. %1-3'ü kurarken %1'i mutlaka hariç tut, yoksa iki set aynı kullanıcıyı paylaşır. Kural: her genişleyen Lookalike katmanı bir önceki katmanı exclusion olarak içermeli.",
       "is_checklist": false,
-      "pill": "Feed kreatifini Stories'e birebir kopyalama"
+      "pill": "Katmanlı Lookalike kuruyorsan katman katman hariç tut"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04/07",
-      "icon": "🔍",
-      "title": "Manuel vs Otomatik Yerleşim Testi",
-      "body": "Advantage+ placements ile başla, min 3 gün veri topla\nBreakdown > Placement raporunu aç\nCPA'si ortalamanın %50 üstünde olan yerleşimi manuel çıkar\nAudience Network'ü e-ticarette varsayılan olarak hariç tut",
-      "is_checklist": true,
-      "pill": "Audience Network'ü manuel placement ile devre dışı bırak"
+      "num_label": "Sinyal 03",
+      "icon": "🧩",
+      "title": "Retargeting Kendi İçinde Çakışır",
+      "body": "Sepet terk eden, ürün görüntüleyen ve son 7 günde satın alan aynı pixel verisinden beslenir, çoğu zaman üst üste biner. Her segmenti bir öncekinden hariç tutmazsan en sıcak kullanıcıya 3 farklı reklamdan bombardıman yaparsın. Frekans 5'i geçer, negatif geri bildirim artar.",
+      "is_checklist": false,
+      "pill": "Sıcak segmentleri birbirinden mutlaka izole et"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05/07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Tek Yerleşime Bütçe Kilitleme",
-      "body": "Sadece Feed veya sadece Reels'e manuel kilitlenmek erişimi daraltır ve CPM'i yükseltir. Çözüm: 2-3 yerleşimi birlikte test et, haftalık breakdown ile zayıf olanı çıkar. İlk 3 günde erken karar verme, öğrenme evresini sıfırlarsın.",
+      "num_label": "İpucu 05",
+      "icon": "⚙️",
+      "title": "Advantage+ Kampanyalarda Kural Değişir",
+      "body": "Advantage+ Shopping kampanyalarında manuel exclusion sınırlıdır, algoritma kendi içinde optimize eder. Burada interest bazlı hariç tutmaya girme, sadece 'müşteri listesi hariç tutma' ayarını kullan — sistem zaten geniş sinyalle çalışıyor.",
       "is_checklist": false,
-      "pill": "Erken optimizasyon, öğrenme evresini sıfırlar"
+      "pill": "Advantage+'ta sadece müşteri listesi exclusion kullan"
     },
     {
       "kind": "cta",
-      "label": "Yerleşimini Doğru Seç",
-      "title": "Her Yerleşim\nAynı Müşteriyi Getirmez"
+      "label": "SIRADA NE VAR?",
+      "title": "Kendi Kitlenle\nYarışmayı **Bırak**"
     }
   ],
-  "caption": "Aynı reklama aynı bütçeyi veriyorsun ama Feed, Stories ve Reels sana farklı müşteri getiriyor. 👇\n\nÇoğu e-ticaret sahibi Advantage+ placements'ı açıp unutuyor, hangi yerleşimin parasını hangi yerleşimin yediğini hiç görmüyor.\nBu carousel'de yerleşim kırılımını nasıl okuyacağını ve neyi kapatman gerektiğini gösteriyorum. 👆\n\n─────────────────────\n📊 Placement kırılımı raporunu nasıl okuyacağın\n🏆 Feed, Reels, Stories, Audience Network sıralaması\n🎯 Stories/Reels için kreatif farkı kuralı\n🔍 Manuel vs otomatik yerleşim testi checklist'i\n⚠️ Tek yerleşime bütçe kilitleme hatası\n─────────────────────\n\nEn büyük hata: Erken karar verip 3 gün dolmadan yerleşim kapatmak. Bu, öğrenme evresini sıfırlıyor ve CPA'yi yükseltiyor.\n\nDoğru kırılımı okuyan hesap, aynı bütçeyle çok daha fazla dönüşüm alır.\n\n💾 Kaydet — yeni kampanya kurarken placement raporunu açmadan önce bak\n💬 Sen hangi yerleşimde en düşük CPA'yi yakaladın? Yorumda söyle!\n\n#placementoptimizasyonu #reelsads #adsmanager\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Birden fazla reklam setin varsa, muhtemelen aynı kullanıcıya üç kere reklam gösteriyorsun. 👇\n\nBu çakışma CPM'ini yükseltir, bütçeni böler ve sonuçların neden düştüğünü anlayamazsın.\nÇözüm 'exclusion audience' kurgusunda saklı — carousel'de adım adım anlattım. 👆\n\n─────────────────────\n🎯 Auction overlap neden bütçeni böler\n🚫 Hariç tutulacak 4 kitlenin öncelik sırası\n🔁 Lookalike katmanları birbirini neden yer\n🧩 Retargeting segmentleri kendi içinde nasıl çakışır\n⚙️ Advantage+ kampanyalarında exclusion kuralı nasıl değişir\n─────────────────────\n\nEn büyük hata: Her yeni reklam seti kurarken bir önceki seti exclusion listesine eklemeyi unutmak. Bu tek adım, bütçeni kendi kendinle paylaşmaktan kurtarır.\n\nDoğru kurduğunda aynı bütçeyle çok daha fazla benzersiz kullanıcıya ulaşırsın.\n\n💾 Kaydet — yeni reklam seti kurarken exclusion listesini kontrol etmek için\n💬 Audience Overlap aracında en yüksek yüzdeyi hangi iki setinde gördün? Yorumda söyle!\n\n#exclusionaudience #audienceoverlap #retargeting\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
