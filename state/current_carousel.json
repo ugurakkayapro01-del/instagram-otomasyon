@@ -1,69 +1,65 @@
 {
-  "topic": "Exclusion Audience (Hariç Tutma Kitleleri) — Mükerrer Gösterimi ve Bütçe Kanibalizasyonunu Önleme",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Teklif Stratejileri (Bid Strategy) — Lowest Cost vs Cost Cap vs Bid Cap Farkları",
-    "Dönüşüm Atıf Penceresi (Attribution Window) — 1 Gün vs 7 Gün Tıklama Seçiminin Bütçe Dağılımına Etkisi",
-    "Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler"
-  ],
+  "topic": "Teklif Stratejileri (Bid Strategy) — Lowest Cost vs Cost Cap vs Bid Cap Farkları",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
   "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "HEDEF KİTLE STRATEJİSİ",
-      "title": "Kendi Reklamınla\nKendine **Rakip**\nOluyorsun",
-      "subtitle": "Aynı kullanıcıya 3 farklı setten reklam gösteriyorsan, bütçeni kendi müzayedende harcıyorsun."
+      "tag": "TEKLİF STRATEJİSİ",
+      "title": "Doğru Stratejiyi\nSeçmezsen\n**Bütçen Yanlış Yere Gider**",
+      "subtitle": "Lowest Cost, Cost Cap, Bid Cap — hangisi ne zaman kullanılır? Çoğu reklamveren bunu hiç bilmiyor."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01",
-      "icon": "🎯",
-      "title": "Auction Overlap Gerçeği",
-      "body": "Aynı kişi birden fazla reklam setinin hedef kitlesindeyse, Meta o kullanıcı için kendi kampanyalarınla rekabete girer. Sonuç: CPM yükselir, teslimat düşer, bütçe iki sete bölünür. Ads Manager'daki 'Audience Overlap' aracı bu çakışmayı yüzde olarak gösterir.",
+      "num_label": "Strateji 01",
+      "icon": "⚡",
+      "title": "Lowest Cost — Varsayılan Otomasyon",
+      "body": "Meta'nın default stratejisi. Sistem, bütçeni en düşük maliyetle en çok sonucu almak için otomatik dağıtır.\nYeni kampanyalarda ve öğrenme evresinde en güvenli seçimdir.\nMaliyet kontrolü yoktur — CPA kampanya boyunca dalgalanabilir.",
       "is_checklist": false,
-      "pill": "Overlap %30'u geçtiyse acil müdahale gerek"
+      "pill": "Yeni kampanya ve test aşamasında bunu kullan"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Öncelik Sırası",
-      "icon": "🚫",
-      "title": "Hangi Kitleyi Önce Hariç Tutmalısın",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><strong>Son 180 Gün Satın Alanlar</strong><br>Soğuk ve ılık kampanyalardan hariç tut, ayrı upsell seti kur</div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div class=\"tdesc\"><strong>Mevcut Müşteri Listesi</strong><br>Yeni müşteri kazanım kampanyalarından tamamen çıkar</div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div class=\"tdesc\"><strong>Sepete Ekleyip Almayanlar (30 gün)</strong><br>Geniş retargeting setinden hariç tut, özel sette ayrı yönet</div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\"><strong>Video %75 İzleyenler</strong><br>Broad ve Lookalike setlerinden hariç tut</div></div>",
-      "pill": "Her yeni set kurmadan önce exclusion listesini güncelle"
+      "num_label": "Karşılaştırma",
+      "icon": "📊",
+      "title": "Üç Stratejinin Gerçek Farkı",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"s1f\">Lowest Cost</div><div class=\"s2f\">Maks. hacim, kontrolsüz maliyet, öğrenme evresi için ideal</div></div><div class=\"tier-row med\"><div class=\"tier-rank\">02</div><div class=\"s1f\">Cost Cap</div><div class=\"s2f\">Ortalama CPA hedefi, hacim dalgalı ama kontrollü</div></div><div class=\"tier-row high\"><div class=\"tier-rank\">03</div><div class=\"s1f\">Bid Cap</div><div class=\"s2f\">Maks. teklif sınırı, en sıkı kontrol, hacim riski yüksek</div></div>",
+      "pill": "Olgun kampanyada Cost Cap'e geç, Bid Cap'i sadece deneyimliyse kullan"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 02",
-      "icon": "🔁",
-      "title": "Lookalike'lar Birbirini Yiyor",
-      "body": "%1 Lookalike ile %1-3 Lookalike aynı anda çalışıyorsa geniş kitle dar kitleyi kapsar. %1-3'ü kurarken %1'i mutlaka hariç tut, yoksa iki set aynı kullanıcıyı paylaşır. Kural: her genişleyen Lookalike katmanı bir önceki katmanı exclusion olarak içermeli.",
+      "num_label": "Adım 02",
+      "icon": "🎯",
+      "title": "Cost Cap Nasıl Kurulur?",
+      "body": "Ortalama hedef CPA belirle — son 30 günün gerçek ortalamasının %10-15 üzerinde başla.\nMeta bazı açık artırmalarda bu rakamın üstüne çıkar, bazılarında altında kalır; sistem ortalamayı tutturmaya çalışır.\nMinimum 15-20 dönüşüm/hafta olmadan Cost Cap kurma, sistem optimize edemez.",
       "is_checklist": false,
-      "pill": "Katmanlı Lookalike kuruyorsan katman katman hariç tut"
+      "pill": "Hedef CPA'yı gerçek ortalamanın %10-15 üstünden gir"
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 03",
-      "icon": "🧩",
-      "title": "Retargeting Kendi İçinde Çakışır",
-      "body": "Sepet terk eden, ürün görüntüleyen ve son 7 günde satın alan aynı pixel verisinden beslenir, çoğu zaman üst üste biner. Her segmenti bir öncekinden hariç tutmazsan en sıcak kullanıcıya 3 farklı reklamdan bombardıman yaparsın. Frekans 5'i geçer, negatif geri bildirim artar.",
+      "num_label": "Adım 03",
+      "icon": "🔒",
+      "title": "Bid Cap — Ne Zaman Riskli?",
+      "body": "Her açık artırmada koyduğun tavanı asla aşmaz, bu yüzden hacim en çok düşen stratejidir.\nSadece kesin bir ROAS/CPA sınırın varsa ve hacim kaybını göze alabiliyorsan kullan.\nDüşük bütçeli hesaplarda Bid Cap neredeyse hiç teslimat almaz.",
       "is_checklist": false,
-      "pill": "Sıcak segmentleri birbirinden mutlaka izole et"
+      "pill": "Bid Cap'i sadece net kârlılık sınırın varsa dene"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05",
-      "icon": "⚙️",
-      "title": "Advantage+ Kampanyalarda Kural Değişir",
-      "body": "Advantage+ Shopping kampanyalarında manuel exclusion sınırlıdır, algoritma kendi içinde optimize eder. Burada interest bazlı hariç tutmaya girme, sadece 'müşteri listesi hariç tutma' ayarını kullan — sistem zaten geniş sinyalle çalışıyor.",
+      "num_label": "Uyarı",
+      "icon": "🧠",
+      "title": "En Büyük Hata: Erken Geçiş",
+      "body": "Reklamverenlerin çoğu Lowest Cost'tan hemen Bid Cap'e atlıyor, öğrenme evresi sıfırlanıyor.\nGeçiş sırası her zaman şöyle olmalı: Lowest Cost → Cost Cap → Bid Cap.\nHer geçişte en az 50 dönüşümlük yeni öğrenme verisi bekle.",
       "is_checklist": false,
-      "pill": "Advantage+'ta sadece müşteri listesi exclusion kullan"
+      "pill": "Stratejiyi değiştirmeden önce 50 dönüşüm biriktir"
     },
     {
       "kind": "cta",
-      "label": "SIRADA NE VAR?",
-      "title": "Kendi Kitlenle\nYarışmayı **Bırak**"
+      "label": "TEKLİF STRATEJİSİ",
+      "title": "Doğru Strateji,\nDoğru Zamanda\n**Kullanılırsa İşe Yarar**"
     }
   ],
-  "caption": "Birden fazla reklam setin varsa, muhtemelen aynı kullanıcıya üç kere reklam gösteriyorsun. 👇\n\nBu çakışma CPM'ini yükseltir, bütçeni böler ve sonuçların neden düştüğünü anlayamazsın.\nÇözüm 'exclusion audience' kurgusunda saklı — carousel'de adım adım anlattım. 👆\n\n─────────────────────\n🎯 Auction overlap neden bütçeni böler\n🚫 Hariç tutulacak 4 kitlenin öncelik sırası\n🔁 Lookalike katmanları birbirini neden yer\n🧩 Retargeting segmentleri kendi içinde nasıl çakışır\n⚙️ Advantage+ kampanyalarında exclusion kuralı nasıl değişir\n─────────────────────\n\nEn büyük hata: Her yeni reklam seti kurarken bir önceki seti exclusion listesine eklemeyi unutmak. Bu tek adım, bütçeni kendi kendinle paylaşmaktan kurtarır.\n\nDoğru kurduğunda aynı bütçeyle çok daha fazla benzersiz kullanıcıya ulaşırsın.\n\n💾 Kaydet — yeni reklam seti kurarken exclusion listesini kontrol etmek için\n💬 Audience Overlap aracında en yüksek yüzdeyi hangi iki setinde gördün? Yorumda söyle!\n\n#exclusionaudience #audienceoverlap #retargeting\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Lowest Cost'ta kalmak güvenli ama yanlış zamanda Bid Cap'e geçmek bütçeni çöpe atar. Çoğu e-ticaret sahibi bu üç stratejiyi birbirine karıştırıyor. 👇\n\nHangi stratejiyi ne zaman kullanman gerektiğini bilmiyorsan, Meta algoritması senin yerine karar veriyor demektir.\nDoğru geçiş sırası ve zamanlama bu carousel'de 👆\n\n─────────────────────\n⚡ Lowest Cost — yeni kampanya ve test evresinin varsayılanı\n📊 Üç stratejinin tier karşılaştırması\n🎯 Cost Cap kurulumu — hedef CPA'yı doğru belirleme\n🔒 Bid Cap — hacim riski ve ne zaman kullanılır\n🧠 En büyük hata: erken geçiş ve öğrenme evresi sıfırlanması\n─────────────────────\n\nEn büyük hata: Lowest Cost'tan direkt Bid Cap'e atlamak. Geçiş sırası her zaman Lowest Cost → Cost Cap → Bid Cap olmalı.\n\nTeklif stratejini doğru sırayla değiştir, bütçeni algoritmaya değil sana çalıştır.\n\n💾 Kaydet — kampanya kurarken hangi stratejiyi seçeceğini unutursan buraya bak\n💬 Sen hangi teklif stratejisini kullanıyorsun? Yorumda söyle!\n\n#bidstrategy #costcap #metaads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

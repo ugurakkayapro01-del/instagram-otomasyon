@@ -39,6 +39,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 32 | Business Manager ve Reklam Hesabı Mimarisi — Çoklu Marka/Ürün Yönetimi | 7 | Otomatik üretildi (2026-10-02) |
 | 33 | Yerleşim (Placement) Kırılımı Analizi — Feed vs Stories vs Reels Performans Farkları | 7 | Otomatik üretildi (2026-10-03) |
 | 34 | Exclusion Audience (Hariç Tutma Kitleleri) — Mükerrer Gösterimi ve Bütçe Kanibalizasyonunu Önleme | 7 | Otomatik üretildi (2026-10-03) |
+| 35 | Teklif Stratejileri (Bid Strategy) — Lowest Cost vs Cost Cap vs Bid Cap Farkları | 7 | Otomatik üretildi (2026-10-15) |
 
 ---
 
