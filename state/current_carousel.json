@@ -1,65 +1,65 @@
 {
-  "topic": "Teklif Stratejileri (Bid Strategy) — Lowest Cost vs Cost Cap vs Bid Cap Farkları",
+  "topic": "Dönüşüm Atıf Penceresi (Attribution Window) — 1 Gün vs 7 Gün Tıklama Seçiminin Bütçe Dağılımına Etkisi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "TEKLİF STRATEJİSİ",
-      "title": "Doğru Stratejiyi\nSeçmezsen\n**Bütçen Yanlış Yere Gider**",
-      "subtitle": "Lowest Cost, Cost Cap, Bid Cap — hangisi ne zaman kullanılır? Çoğu reklamveren bunu hiç bilmiyor."
+      "tag": "ATTRIBUTION WINDOW",
+      "title": "ROAS'ın Yalan Söylediği An:\n**Atıf Penceresi** Seçimi",
+      "subtitle": "1 gün mü, 7 gün mü? Yanlış seçim, iyi çalışan reklamları sessizce öldürür."
     },
     {
       "kind": "light",
-      "num_label": "Strateji 01",
-      "icon": "⚡",
-      "title": "Lowest Cost — Varsayılan Otomasyon",
-      "body": "Meta'nın default stratejisi. Sistem, bütçeni en düşük maliyetle en çok sonucu almak için otomatik dağıtır.\nYeni kampanyalarda ve öğrenme evresinde en güvenli seçimdir.\nMaliyet kontrolü yoktur — CPA kampanya boyunca dalgalanabilir.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🎯",
+      "title": "Atıf Penceresi Nedir?",
+      "body": "Attribution window, kullanıcının reklamınla etkileşiminden (tıklama veya görüntüleme) sonra gerçekleşen dönüşümün o reklama atfedilebileceği süredir.\nMeta'da iki temel seçenek var: 1-day click (24 saat) ve 7-day click (7 gün).",
       "is_checklist": false,
-      "pill": "Yeni kampanya ve test aşamasında bunu kullan"
+      "pill": "Pencere seçimi = hangi dönüşümün reklama 'ait' sayılacağının kuralı"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Karşılaştırma",
-      "icon": "📊",
-      "title": "Üç Stratejinin Gerçek Farkı",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"s1f\">Lowest Cost</div><div class=\"s2f\">Maks. hacim, kontrolsüz maliyet, öğrenme evresi için ideal</div></div><div class=\"tier-row med\"><div class=\"tier-rank\">02</div><div class=\"s1f\">Cost Cap</div><div class=\"s2f\">Ortalama CPA hedefi, hacim dalgalı ama kontrollü</div></div><div class=\"tier-row high\"><div class=\"tier-rank\">03</div><div class=\"s1f\">Bid Cap</div><div class=\"s2f\">Maks. teklif sınırı, en sıkı kontrol, hacim riski yüksek</div></div>",
-      "pill": "Olgun kampanyada Cost Cap'e geç, Bid Cap'i sadece deneyimliyse kullan"
+      "num_label": "İpucu 02 / 07",
+      "icon": "⚖️",
+      "title": "1 Gün mü, 7 Gün mü?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">1-Day Click</div><div class=\"fval\">Sadece 24 saat</div><p>Tıklamadan sonraki 24 saat içindeki dönüşümler sayılır. Impulse-buy, düşük fiyatlı ürünlerde gerçekçi veri verir.</p></div><div class=\"cmp-col best\"><div class=\"flabel\">7-Day Click</div><div class=\"fval\">Tam 7 gün</div><p>Tıklamadan sonraki 7 gün içindeki dönüşümler sayılır. Yüksek fiyatlı, uzun karar süreçli ürünlerde doğru veriyi yakalar.</p></div></div>",
+      "pill": "AOV ve karar süresi, doğru pencereyi belirler"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 02",
-      "icon": "🎯",
-      "title": "Cost Cap Nasıl Kurulur?",
-      "body": "Ortalama hedef CPA belirle — son 30 günün gerçek ortalamasının %10-15 üzerinde başla.\nMeta bazı açık artırmalarda bu rakamın üstüne çıkar, bazılarında altında kalır; sistem ortalamayı tutturmaya çalışır.\nMinimum 15-20 dönüşüm/hafta olmadan Cost Cap kurma, sistem optimize edemez.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🧠",
+      "title": "Algoritma Bu Pencereye Göre Karar Veriyor",
+      "body": "CBO ve Advantage+ bütçe dağıtımını, seçtiğin atıf penceresindeki dönüşüm verisine göre yapar.\nKısa pencere seçersen, uzun karar süreçli ürünlerin reklam setleri 'düşük performanslı' görünüp bütçesi kesilir — oysa dönüşüm 5. günde gerçekleşmiştir, sadece sayılmamıştır.",
       "is_checklist": false,
-      "pill": "Hedef CPA'yı gerçek ortalamanın %10-15 üstünden gir"
+      "pill": "Yanlış pencere, iyi çalışan reklam setini öldürür"
     },
     {
       "kind": "light",
-      "num_label": "Adım 03",
-      "icon": "🔒",
-      "title": "Bid Cap — Ne Zaman Riskli?",
-      "body": "Her açık artırmada koyduğun tavanı asla aşmaz, bu yüzden hacim en çok düşen stratejidir.\nSadece kesin bir ROAS/CPA sınırın varsa ve hacim kaybını göze alabiliyorsan kullan.\nDüşük bütçeli hesaplarda Bid Cap neredeyse hiç teslimat almaz.",
-      "is_checklist": false,
-      "pill": "Bid Cap'i sadece net kârlılık sınırın varsa dene"
+      "num_label": "İpucu 04 / 07",
+      "icon": "📐",
+      "title": "Doğru Pencereyi Seçme Eşiği",
+      "body": "Ortalama sipariş değeri 500 TL üzeri → 7-day click kullan\nKarar süresi 3 günden uzun ürünlerde → 7-day click kullan\nImpulse-buy, düşük fiyatlı ürünlerde → 1-day click yeterli\nB2B veya yüksek bilinirlik gerektiren teklif → 7-day click + 1-day view",
+      "is_checklist": true,
+      "pill": "Ürün tipi penceresi seçer, pencere algoritmayı yönlendirir"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı",
-      "icon": "🧠",
-      "title": "En Büyük Hata: Erken Geçiş",
-      "body": "Reklamverenlerin çoğu Lowest Cost'tan hemen Bid Cap'e atlıyor, öğrenme evresi sıfırlanıyor.\nGeçiş sırası her zaman şöyle olmalı: Lowest Cost → Cost Cap → Bid Cap.\nHer geçişte en az 50 dönüşümlük yeni öğrenme verisi bekle.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata",
+      "body": "Kampanya ortasında atıf penceresini değiştirmek, reklam setinin öğrenme evresini (learning phase) sıfırlar.\nBunun yerine Ads Manager'da 'Atıf ayarı' sütununu ekleyip pencereleri karşılaştırmalı raporla, sonra yeni kampanyada doğru pencereyle başla.",
       "is_checklist": false,
-      "pill": "Stratejiyi değiştirmeden önce 50 dönüşüm biriktir"
+      "pill": "Pencereyi test et, mevcut kampanyada değiştirme"
     },
     {
       "kind": "cta",
-      "label": "TEKLİF STRATEJİSİ",
-      "title": "Doğru Strateji,\nDoğru Zamanda\n**Kullanılırsa İşe Yarar**"
+      "label": "Hemen Uygula",
+      "title": "Doğru Pencere, Doğru Karar.\n**Veriyi Yanlış Okuma.**"
     }
   ],
-  "caption": "Lowest Cost'ta kalmak güvenli ama yanlış zamanda Bid Cap'e geçmek bütçeni çöpe atar. Çoğu e-ticaret sahibi bu üç stratejiyi birbirine karıştırıyor. 👇\n\nHangi stratejiyi ne zaman kullanman gerektiğini bilmiyorsan, Meta algoritması senin yerine karar veriyor demektir.\nDoğru geçiş sırası ve zamanlama bu carousel'de 👆\n\n─────────────────────\n⚡ Lowest Cost — yeni kampanya ve test evresinin varsayılanı\n📊 Üç stratejinin tier karşılaştırması\n🎯 Cost Cap kurulumu — hedef CPA'yı doğru belirleme\n🔒 Bid Cap — hacim riski ve ne zaman kullanılır\n🧠 En büyük hata: erken geçiş ve öğrenme evresi sıfırlanması\n─────────────────────\n\nEn büyük hata: Lowest Cost'tan direkt Bid Cap'e atlamak. Geçiş sırası her zaman Lowest Cost → Cost Cap → Bid Cap olmalı.\n\nTeklif stratejini doğru sırayla değiştir, bütçeni algoritmaya değil sana çalıştır.\n\n💾 Kaydet — kampanya kurarken hangi stratejiyi seçeceğini unutursan buraya bak\n💬 Sen hangi teklif stratejisini kullanıyorsun? Yorumda söyle!\n\n#bidstrategy #costcap #metaads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "ROAS raporun yalan söylüyor olabilir — suçlu reklam değil, atıf penceresi seçimin olabilir. 👇\n\nÇoğu e-ticaret sahibi '1-day click' ile '7-day click' arasındaki farkı hiç sorgulamıyor.\nOysa bu tek ayar, hangi reklam setinin kapatılıp hangisinin büyütüleceğine karar veriyor. 👆\n\n─────────────────────\n🎯 Attribution window nedir, 2 temel seçenek\n⚖️ 1-day click vs 7-day click karşılaştırması\n🧠 Algoritma bu pencereye göre bütçe dağıtıyor\n📐 Hangi pencereyi ne zaman seçmelisin (AOV eşiği)\n⚠️ En büyük hata: pencereyi kampanya ortasında değiştirmek\n─────────────────────\n\nEn büyük hata: Kampanya çalışırken atıf penceresini değiştirmek. Bu, öğrenme evresini resetler ve günler süren veriyi sıfırlar.\n\nDoğru pencere seçimi, iyi çalışan bir reklam setini kapatmaktan seni kurtarabilir.\n\n💾 Kaydet — yeni kampanya kurarken atıf ayarını seçmeden önce aç\n💬 Sen hangi atıf penceresini kullanıyorsun, 1 gün mü 7 gün mü? Yorumda söyle!\n\n#attributionwindow #conversiontracking #metaads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Dönüşüm Atıf Penceresi (Attribution Window) — 1 Gün vs 7 Gün Tıklama Seçiminin Bütçe Dağılımına Etkisi
 - Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler
 
 ## Yeni Konu Üretme Kuralları
