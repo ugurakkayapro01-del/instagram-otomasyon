@@ -41,6 +41,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 34 | Exclusion Audience (Hariç Tutma Kitleleri) — Mükerrer Gösterimi ve Bütçe Kanibalizasyonunu Önleme | 7 | Otomatik üretildi (2026-10-03) |
 | 35 | Teklif Stratejileri (Bid Strategy) — Lowest Cost vs Cost Cap vs Bid Cap Farkları | 7 | Otomatik üretildi (2026-10-15) |
 | 36 | Dönüşüm Atıf Penceresi (Attribution Window) — 1 Gün vs 7 Gün Tıklama Seçiminin Bütçe Dağılımına Etkisi | 7 | Otomatik üretildi (2026-10-16) |
+| 37 | Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler | 7 | Otomatik üretildi (2026-10-16) |
 
 ---
 

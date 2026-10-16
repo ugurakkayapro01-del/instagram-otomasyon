@@ -1,65 +1,65 @@
 {
-  "topic": "Dönüşüm Atıf Penceresi (Attribution Window) — 1 Gün vs 7 Gün Tıklama Seçiminin Bütçe Dağılımına Etkisi",
+  "topic": "Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "ATTRIBUTION WINDOW",
-      "title": "ROAS'ın Yalan Söylediği An:\n**Atıf Penceresi** Seçimi",
-      "subtitle": "1 gün mü, 7 gün mü? Yanlış seçim, iyi çalışan reklamları sessizce öldürür."
+      "tag": "ÖĞRENME EVRESİ",
+      "title": "Kampanyanı\nSıfırdan Başlatan\n**Görünmez Hata**",
+      "subtitle": "Yaptığın 'küçük' bir değişiklik, 7 günlük veriyi tek saniyede çöpe atabilir."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🎯",
-      "title": "Atıf Penceresi Nedir?",
-      "body": "Attribution window, kullanıcının reklamınla etkileşiminden (tıklama veya görüntüleme) sonra gerçekleşen dönüşümün o reklama atfedilebileceği süredir.\nMeta'da iki temel seçenek var: 1-day click (24 saat) ve 7-day click (7 gün).",
+      "icon": "🧠",
+      "title": "Öğrenme Evresi Nedir?",
+      "body": "Meta, yeni bir reklam setini yayınladığında onu tanımak için veri toplar. Bu evre genelde 50 optimizasyon olayı (çoğunlukla dönüşüm) birikene kadar sürer — ortalama 7 gün. Bu süre dolmadan önemli bir değişiklik yaparsan sayaç sıfırlanır ve sistem yeniden öğrenmeye başlar.",
       "is_checklist": false,
-      "pill": "Pencere seçimi = hangi dönüşümün reklama 'ait' sayılacağının kuralı"
+      "pill": "50 dönüşüm toplanmadan büyük değişiklik yapma"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "⚖️",
-      "title": "1 Gün mü, 7 Gün mü?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">1-Day Click</div><div class=\"fval\">Sadece 24 saat</div><p>Tıklamadan sonraki 24 saat içindeki dönüşümler sayılır. Impulse-buy, düşük fiyatlı ürünlerde gerçekçi veri verir.</p></div><div class=\"cmp-col best\"><div class=\"flabel\">7-Day Click</div><div class=\"fval\">Tam 7 gün</div><p>Tıklamadan sonraki 7 gün içindeki dönüşümler sayılır. Yüksek fiyatlı, uzun karar süreçli ürünlerde doğru veriyi yakalar.</p></div></div>",
-      "pill": "AOV ve karar süresi, doğru pencereyi belirler"
+      "num_label": "Risk 02 / 07",
+      "icon": "⚠️",
+      "title": "Bu Değişiklikler Sıfırlıyor",
+      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span>Bütçede %20'den fazla artış/azalış</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span>Hedef kitle (audience) değişikliği</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span>Bid stratejisi veya optimizasyon hedefi değişimi</span></div><div class=\"risk-row\"><span class=\"risk-dot warn\"></span><span>Reklam setinin 7+ gün kapalı kalıp tekrar açılması</span></div><div class=\"risk-row\"><span class=\"risk-dot med\"></span><span>Sete %50+ oranında yeni reklam eklemek</span></div>",
+      "pill": "Öğrenme evresinde bu 5 değişiklikten kaçın"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🧠",
-      "title": "Algoritma Bu Pencereye Göre Karar Veriyor",
-      "body": "CBO ve Advantage+ bütçe dağıtımını, seçtiğin atıf penceresindeki dönüşüm verisine göre yapar.\nKısa pencere seçersen, uzun karar süreçli ürünlerin reklam setleri 'düşük performanslı' görünüp bütçesi kesilir — oysa dönüşüm 5. günde gerçekleşmiştir, sadece sayılmamıştır.",
+      "num_label": "Bilgi 03 / 07",
+      "icon": "✅",
+      "title": "Bunlar Sıfırlamaz",
+      "body": "Metin veya görselde küçük düzenleme, bütçede %10'un altında oynama, mevcut reklamlara küçük açıklama eklemek öğrenme evresini sıfırlamaz. Meta algoritması bunları 'önemsiz' sayar, veri birikimi kesintisiz devam eder.",
       "is_checklist": false,
-      "pill": "Yanlış pencere, iyi çalışan reklam setini öldürür"
+      "pill": "Güvenli eşik: %10 altı bütçe değişimi"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "📐",
-      "title": "Doğru Pencereyi Seçme Eşiği",
-      "body": "Ortalama sipariş değeri 500 TL üzeri → 7-day click kullan\nKarar süresi 3 günden uzun ürünlerde → 7-day click kullan\nImpulse-buy, düşük fiyatlı ürünlerde → 1-day click yeterli\nB2B veya yüksek bilinirlik gerektiren teklif → 7-day click + 1-day view",
+      "icon": "⏱️",
+      "title": "7 Gün Kuralı",
+      "body": "Değişiklik sonrası saat sıfırlanır, yeniden 50 dönüşüm beklenir\nİlk 3-4 günde CPA'de geçici yükselme normaldir\nSabırsız optimizasyon uzun vadede maliyeti artırır\nDeğişikliği haftanın başında yap, hafta sonu trafiğini kaybetme",
       "is_checklist": true,
-      "pill": "Ürün tipi penceresi seçer, pencere algoritmayı yönlendirir"
+      "pill": "Değişiklik sonrası minimum 3 gün bekle, veri biriksin"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
+      "num_label": "Uyarı 05 / 07",
+      "icon": "🚫",
       "title": "En Büyük Hata",
-      "body": "Kampanya ortasında atıf penceresini değiştirmek, reklam setinin öğrenme evresini (learning phase) sıfırlar.\nBunun yerine Ads Manager'da 'Atıf ayarı' sütununu ekleyip pencereleri karşılaştırmalı raporla, sonra yeni kampanyada doğru pencereyle başla.",
+      "body": "CPA yükseldiğinde panikleyip aynı anda hem bütçeyi hem hedef kitleyi değiştirmek. Bu, öğrenme evresini art arda sıfırlar ve kampanya hiçbir zaman stabil hıza ulaşamaz. Tek seferde tek değişiklik yap, sonucu gör, sonra ikinciyi dene.",
       "is_checklist": false,
-      "pill": "Pencereyi test et, mevcut kampanyada değiştirme"
+      "pill": "Aynı anda 2 değişiklik yapma, sırayla test et"
     },
     {
       "kind": "cta",
-      "label": "Hemen Uygula",
-      "title": "Doğru Pencere, Doğru Karar.\n**Veriyi Yanlış Okuma.**"
+      "label": "KAPANIŞ",
+      "title": "Sabırlı Optimizasyon\n**Kazandırır**"
     }
   ],
-  "caption": "ROAS raporun yalan söylüyor olabilir — suçlu reklam değil, atıf penceresi seçimin olabilir. 👇\n\nÇoğu e-ticaret sahibi '1-day click' ile '7-day click' arasındaki farkı hiç sorgulamıyor.\nOysa bu tek ayar, hangi reklam setinin kapatılıp hangisinin büyütüleceğine karar veriyor. 👆\n\n─────────────────────\n🎯 Attribution window nedir, 2 temel seçenek\n⚖️ 1-day click vs 7-day click karşılaştırması\n🧠 Algoritma bu pencereye göre bütçe dağıtıyor\n📐 Hangi pencereyi ne zaman seçmelisin (AOV eşiği)\n⚠️ En büyük hata: pencereyi kampanya ortasında değiştirmek\n─────────────────────\n\nEn büyük hata: Kampanya çalışırken atıf penceresini değiştirmek. Bu, öğrenme evresini resetler ve günler süren veriyi sıfırlar.\n\nDoğru pencere seçimi, iyi çalışan bir reklam setini kapatmaktan seni kurtarabilir.\n\n💾 Kaydet — yeni kampanya kurarken atıf ayarını seçmeden önce aç\n💬 Sen hangi atıf penceresini kullanıyorsun, 1 gün mü 7 gün mü? Yorumda söyle!\n\n#attributionwindow #conversiontracking #metaads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Reklam setini optimize etmek için yaptığın 'küçük' değişiklik, aslında 7 günlük veriyi çöpe atıyor olabilir. Çoğu reklamveren bunun farkında bile değil. 👇\n\nMeta'nın öğrenme evresi, kampanyanın stabil performansa ulaşmasının anahtarı.\nHangi değişikliklerin bu evreyi sıfırladığını bilmek bütçeni korur. 👆\n\n─────────────────────\n🧠 Öğrenme evresi nedir, kaç gün sürer\n⚠️ Sıfırlayan 5 değişiklik (bütçe, hedef kitle, bid)\n✅ Sıfırlamayan güvenli değişiklikler\n⏱️ 7 gün kuralı ve bekleme stratejisi\n🚫 Reklamverenlerin en sık yaptığı panik hatası\n─────────────────────\n\nEn büyük hata: CPA yükselince aynı anda birden fazla değişiklik yapmak. Bu, kampanyanın asla stabil hıza ulaşmasını engeller.\n\nSabırlı optimizasyon her zaman kazandırır — veri birikmeden karar verme.\n\n💾 Kaydet — kampanya düzenlemesi yapmadan önce aç\n💬 Sen kaç gün bekliyorsun değişiklik sonrası? Yorumda söyle!\n\n#learningphase #kampanyaoptimizasyonu #metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
