@@ -1,65 +1,69 @@
 {
-  "topic": "Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "risk",
+  "topic": "Minimum ROAS Eşiği (Break-even ROAS) Hesaplama — Kâr Marjı Bazlı Formül",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Value-Based Lookalike (VBO) — Satın Alma Değerine Göre Kitle Ağırlıklandırma",
+    "Cross-Device Attribution — Mobil/Masaüstü Dönüşüm Yolunun Gerçek Etkisi",
+    "Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri"
+  ],
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "ÖĞRENME EVRESİ",
-      "title": "Kampanyanı\nSıfırdan Başlatan\n**Görünmez Hata**",
-      "subtitle": "Yaptığın 'küçük' bir değişiklik, 7 günlük veriyi tek saniyede çöpe atabilir."
+      "tag": "KÂR & ROAS ANALİZİ",
+      "title": "ROAS 3 İyi mi?\nCevap: **Bilinmez.**",
+      "subtitle": "Kâr marjını hesaba katmadan ROAS'ı yorumlamak, işletmeni sessizce batırabilir."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🧠",
-      "title": "Öğrenme Evresi Nedir?",
-      "body": "Meta, yeni bir reklam setini yayınladığında onu tanımak için veri toplar. Bu evre genelde 50 optimizasyon olayı (çoğunlukla dönüşüm) birikene kadar sürer — ortalama 7 gün. Bu süre dolmadan önemli bir değişiklik yaparsan sayaç sıfırlanır ve sistem yeniden öğrenmeye başlar.",
+      "icon": "📉",
+      "title": "ROAS Tek Başına Yanıltır",
+      "body": "ROAS = Reklam Geliri ÷ Reklam Harcaması. Ama bu rakam ciro, kâr değil.\nKargo, komisyon, ürün maliyeti ve iade oranı bu hesaba dahil değil.\n3.0 ROAS, %15 kâr marjlı bir üründe hâlâ zarar anlamına gelebilir.",
       "is_checklist": false,
-      "pill": "50 dönüşüm toplanmadan büyük değişiklik yapma"
+      "pill": "ROAS'a bakmadan önce kâr marjını masaya koy"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Risk 02 / 07",
-      "icon": "⚠️",
-      "title": "Bu Değişiklikler Sıfırlıyor",
-      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span>Bütçede %20'den fazla artış/azalış</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span>Hedef kitle (audience) değişikliği</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span>Bid stratejisi veya optimizasyon hedefi değişimi</span></div><div class=\"risk-row\"><span class=\"risk-dot warn\"></span><span>Reklam setinin 7+ gün kapalı kalıp tekrar açılması</span></div><div class=\"risk-row\"><span class=\"risk-dot med\"></span><span>Sete %50+ oranında yeni reklam eklemek</span></div>",
-      "pill": "Öğrenme evresinde bu 5 değişiklikten kaçın"
+      "num_label": "İpucu 02 / 07",
+      "icon": "🧮",
+      "title": "Break-even ROAS Formülü",
+      "inner_html": "<div class=\"formula-box\">Break-even ROAS = 1 ÷ Kâr Marjı</div><div class=\"tdesc\">Örnek: Kâr marjın %40 ise<br>1 ÷ 0.40 = <span class=\"hl\">2.5</span></div><div class=\"tdesc\">Bu üründe 2.5'in altındaki her ROAS, sana zarar ettiriyor demektir.</div>",
+      "pill": "2.5 altındaki ROAS bu üründe zarar demektir"
     },
     {
       "kind": "dark",
-      "num_label": "Bilgi 03 / 07",
-      "icon": "✅",
-      "title": "Bunlar Sıfırlamaz",
-      "body": "Metin veya görselde küçük düzenleme, bütçede %10'un altında oynama, mevcut reklamlara küçük açıklama eklemek öğrenme evresini sıfırlamaz. Meta algoritması bunları 'önemsiz' sayar, veri birikimi kesintisiz devam eder.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🎯",
+      "title": "Hedef ROAS Nasıl Belirlenir",
+      "body": "Hedef ROAS = Break-even ROAS + istediğin net kâr payı.\nÖrnek: Break-even 2.5, %20 net kâr istiyorsan hedef ROAS 3.1-3.2 civarı olmalı.\nHer ürün ve kategori için ayrı hesapla — tek ROAS hedefi tüm kataloğa uygulanmaz.",
       "is_checklist": false,
-      "pill": "Güvenli eşik: %10 altı bütçe değişimi"
+      "pill": "Tek bir ROAS hedefi yanlış ürünleri kurtarır, doğru ürünleri öldürür"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "⏱️",
-      "title": "7 Gün Kuralı",
-      "body": "Değişiklik sonrası saat sıfırlanır, yeniden 50 dönüşüm beklenir\nİlk 3-4 günde CPA'de geçici yükselme normaldir\nSabırsız optimizasyon uzun vadede maliyeti artırır\nDeğişikliği haftanın başında yap, hafta sonu trafiğini kaybetme",
+      "icon": "🧾",
+      "title": "Hesaba Katman Gereken 5 Kalem",
+      "body": "Ürün maliyeti (COGS)\nKargo ve paketleme\nPazaryeri/ödeme komisyonu\nİade oranı (yüzde olarak düş)\nReklam yönetim/ajans maliyeti",
       "is_checklist": true,
-      "pill": "Değişiklik sonrası minimum 3 gün bekle, veri biriksin"
+      "pill": "Bu 5 kalemi eksik hesaplayan, her zaman yanlış ROAS hedefi koyar"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05 / 07",
-      "icon": "🚫",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
       "title": "En Büyük Hata",
-      "body": "CPA yükseldiğinde panikleyip aynı anda hem bütçeyi hem hedef kitleyi değiştirmek. Bu, öğrenme evresini art arda sıfırlar ve kampanya hiçbir zaman stabil hıza ulaşamaz. Tek seferde tek değişiklik yap, sonucu gör, sonra ikinciyi dene.",
+      "body": "Raporda \"ROAS 4!\" görüp sevinmek, ama bu rakamın hangi kâr marjına denk geldiğini bilmemek.\nDüşük marjlı üründe yüksek ROAS bile zarar olabilir, yüksek marjlı üründe düşük ROAS kârlı olabilir.",
       "is_checklist": false,
-      "pill": "Aynı anda 2 değişiklik yapma, sırayla test et"
+      "pill": "ROAS'ı kâr marjından bağımsız yorumlamak en pahalı hatadır"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Sabırlı Optimizasyon\n**Kazandırır**"
+      "label": "KÂRLI REKLAM YÖNETİMİ",
+      "title": "ROAS'a Değil, **Break-even'e** Göre Optimize Et"
     }
   ],
-  "caption": "Reklam setini optimize etmek için yaptığın 'küçük' değişiklik, aslında 7 günlük veriyi çöpe atıyor olabilir. Çoğu reklamveren bunun farkında bile değil. 👇\n\nMeta'nın öğrenme evresi, kampanyanın stabil performansa ulaşmasının anahtarı.\nHangi değişikliklerin bu evreyi sıfırladığını bilmek bütçeni korur. 👆\n\n─────────────────────\n🧠 Öğrenme evresi nedir, kaç gün sürer\n⚠️ Sıfırlayan 5 değişiklik (bütçe, hedef kitle, bid)\n✅ Sıfırlamayan güvenli değişiklikler\n⏱️ 7 gün kuralı ve bekleme stratejisi\n🚫 Reklamverenlerin en sık yaptığı panik hatası\n─────────────────────\n\nEn büyük hata: CPA yükselince aynı anda birden fazla değişiklik yapmak. Bu, kampanyanın asla stabil hıza ulaşmasını engeller.\n\nSabırlı optimizasyon her zaman kazandırır — veri birikmeden karar verme.\n\n💾 Kaydet — kampanya düzenlemesi yapmadan önce aç\n💬 Sen kaç gün bekliyorsun değişiklik sonrası? Yorumda söyle!\n\n#learningphase #kampanyaoptimizasyonu #metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "ROAS 3 gördüğünde sevinme — o rakam seni batırıyor olabilir. 👇\n\nÇoğu e-ticaret sahibi ROAS'ı tek başına \"iyi/kötü\" diye yorumluyor, kâr marjını hiç hesaba katmıyor.\nOysa doğru hedef, kâr marjından çıkan break-even ROAS'tır — çözümü carousel'de. 👆\n\n─────────────────────\n📉 ROAS neden tek başına yanıltıcı\n🧮 Break-even ROAS formülü: 1 ÷ Kâr Marjı\n🎯 Hedef ROAS nasıl belirlenir\n🧾 Hesaba katman gereken 5 maliyet kalemi\n⚠️ En büyük hata: ROAS'ı kâr marjından bağımsız okumak\n─────────────────────\n\nEn büyük hata: Yüksek ROAS'ı otomatik olarak \"kârlıyım\" sanmak. Düşük marjlı üründe bu seni iflasa götürür.\n\nBu formülü bir kez hesapla, her kampanyanda referans olarak kullan.\n\n💾 Kaydet — yeni kampanya kurarken hedef ROAS belirlemeden önce aç\n💬 Sen kampanyalarında hedef ROAS'ı nasıl belirliyorsun? Yorumda söyle!\n\n#roas #breakevenroas #karmarji\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
