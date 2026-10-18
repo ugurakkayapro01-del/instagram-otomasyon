@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Cross-Device Attribution — Mobil/Masaüstü Dönüşüm Yolunun Gerçek Etkisi
 - Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri
 
 ## Yeni Konu Üretme Kuralları

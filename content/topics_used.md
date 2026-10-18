@@ -44,6 +44,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 37 | Öğrenme Evresi Sıfırlanması (Learning Phase Reset) — Hangi Değişiklikler Tetikler | 7 | Otomatik üretildi (2026-10-16) |
 | 38 | Minimum ROAS Eşiği (Break-even ROAS) Hesaplama — Kâr Marjı Bazlı Formül | 7 | Otomatik üretildi (2026-10-17) |
 | 39 | Value-Based Lookalike (VBO) — Satın Alma Değerine Göre Kitle Ağırlıklandırma | 7 | Otomatik üretildi (2026-10-18) |
+| 40 | Cross-Device Attribution — Mobil/Masaüstü Dönüşüm Yolunun Gerçek Etkisi | 7 | Otomatik üretildi (2026-10-18) |
 
 ---
 
