@@ -1,69 +1,65 @@
 {
-  "topic": "Minimum ROAS Eşiği (Break-even ROAS) Hesaplama — Kâr Marjı Bazlı Formül",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Value-Based Lookalike (VBO) — Satın Alma Değerine Göre Kitle Ağırlıklandırma",
-    "Cross-Device Attribution — Mobil/Masaüstü Dönüşüm Yolunun Gerçek Etkisi",
-    "Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri"
-  ],
-  "special_kind": "formula",
+  "topic": "Value-Based Lookalike (VBO) — Satın Alma Değerine Göre Kitle Ağırlıklandırma",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KÂR & ROAS ANALİZİ",
-      "title": "ROAS 3 İyi mi?\nCevap: **Bilinmez.**",
-      "subtitle": "Kâr marjını hesaba katmadan ROAS'ı yorumlamak, işletmeni sessizce batırabilir."
+      "tag": "LOOKALIKE STRATEJİSİ",
+      "title": "Her Müşteri\nAynı Değerde Değil.\n**Lookalike'ın Bunu Bilmesi Gerek**",
+      "subtitle": "1.000 TL'lik alıcıyla 100 TL'lik alıcıyı aynı kefeye koyan kitle, bütçeni yanlış yere harcıyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "📉",
-      "title": "ROAS Tek Başına Yanıltır",
-      "body": "ROAS = Reklam Geliri ÷ Reklam Harcaması. Ama bu rakam ciro, kâr değil.\nKargo, komisyon, ürün maliyeti ve iade oranı bu hesaba dahil değil.\n3.0 ROAS, %15 kâr marjlı bir üründe hâlâ zarar anlamına gelebilir.",
+      "num_label": "İpucu 01 / 05",
+      "icon": "🎯",
+      "title": "Standart Lookalike Neyi Kaçırır?",
+      "body": "Klasik Purchase Lookalike kaynağı her alıcıyı eşit sayar. 50 TL'lik tek seferlik alıcı ile 5.000 TL'lik sadık müşteri, algoritmaya aynı sinyali verir. Sonuç: yüksek hacimli ama düşük değerli bir kitle klonlanır.",
       "is_checklist": false,
-      "pill": "ROAS'a bakmadan önce kâr marjını masaya koy"
+      "pill": "Eşit ağırlık = ortalama müşteriyi bulursun, en iyisini değil"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🧮",
-      "title": "Break-even ROAS Formülü",
-      "inner_html": "<div class=\"formula-box\">Break-even ROAS = 1 ÷ Kâr Marjı</div><div class=\"tdesc\">Örnek: Kâr marjın %40 ise<br>1 ÷ 0.40 = <span class=\"hl\">2.5</span></div><div class=\"tdesc\">Bu üründe 2.5'in altındaki her ROAS, sana zarar ettiriyor demektir.</div>",
-      "pill": "2.5 altındaki ROAS bu üründe zarar demektir"
+      "num_label": "İpucu 02 / 05",
+      "icon": "⚖️",
+      "title": "Standart vs Value-Based Lookalike",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">STANDART</div><div class=\"sval\">Her Alıcı Eşit</div><div class=\"tdesc\">Purchase event, değer parametresi yok. Hacim yüksek, kalite düşük.</div></div><div class=\"cmp-col best\"><div class=\"slabel\">VALUE-BASED</div><div class=\"sval\">Değere Göre Ağırlıklı</div><div class=\"tdesc\">Purchase + value parametresi. Kaynak, en değerli alıcıyı önceliklendirir.</div></div></div>",
+      "pill": "Değer parametresi olmayan kaynak, iki kitleyi de aynı üretir"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🎯",
-      "title": "Hedef ROAS Nasıl Belirlenir",
-      "body": "Hedef ROAS = Break-even ROAS + istediğin net kâr payı.\nÖrnek: Break-even 2.5, %20 net kâr istiyorsan hedef ROAS 3.1-3.2 civarı olmalı.\nHer ürün ve kategori için ayrı hesapla — tek ROAS hedefi tüm kataloğa uygulanmaz.",
+      "num_label": "İpucu 03 / 05",
+      "icon": "⚙️",
+      "title": "Nasıl Kurulur?",
+      "body": "Pixel veya CAPI'deki Purchase event'ine 'value' ve 'currency' parametresi eklenir. Meta, bu veriyi Customer Value kaynağı üzerinden lookalike motoruna besler. Minimum 100 yüksek değerli alıcı olmadan sinyal zayıf kalır ve kitle standarttan ayrışmaz.",
       "is_checklist": false,
-      "pill": "Tek bir ROAS hedefi yanlış ürünleri kurtarır, doğru ürünleri öldürür"
+      "pill": "Value parametresi olmayan pixel, VBO'yu asla çalıştıramaz"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🧾",
-      "title": "Hesaba Katman Gereken 5 Kalem",
-      "body": "Ürün maliyeti (COGS)\nKargo ve paketleme\nPazaryeri/ödeme komisyonu\nİade oranı (yüzde olarak düş)\nReklam yönetim/ajans maliyeti",
-      "is_checklist": true,
-      "pill": "Bu 5 kalemi eksik hesaplayan, her zaman yanlış ROAS hedefi koyar"
+      "num_label": "İpucu 04 / 05",
+      "icon": "💎",
+      "title": "En Değerli %20'yi Ayır",
+      "body": "Tüm alıcılarını LTV'ye göre sırala. En değerli %20'lik dilimi ayrı bir Customer List olarak yükle. Bu listeden oluşturulan %1 Lookalike, standart Purchase Lookalike'tan ortalama %25-40 daha yüksek AOV getirir.",
+      "is_checklist": false,
+      "pill": "Düşük değerli alıcıları listeye katma, kitleyi sulandırır"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
+      "num_label": "İpucu 05 / 05",
       "icon": "⚠️",
       "title": "En Büyük Hata",
-      "body": "Raporda \"ROAS 4!\" görüp sevinmek, ama bu rakamın hangi kâr marjına denk geldiğini bilmemek.\nDüşük marjlı üründe yüksek ROAS bile zarar olabilir, yüksek marjlı üründe düşük ROAS kârlı olabilir.",
+      "body": "Value-Based kaynağı kurup hemen geniş bütçeyle yayına almak. Önce günlük 100-150 TL ile 7 gün test et, CPA ve AOV'yi standart lookalike ile kıyasla. Fark yoksa veri kaynağın yeterince büyük değil demektir.",
       "is_checklist": false,
-      "pill": "ROAS'ı kâr marjından bağımsız yorumlamak en pahalı hatadır"
+      "pill": "Test etmeden ölçeklendirme, bütçeni çöpe atar"
     },
     {
       "kind": "cta",
-      "label": "KÂRLI REKLAM YÖNETİMİ",
-      "title": "ROAS'a Değil, **Break-even'e** Göre Optimize Et"
+      "label": "KAPANIŞ",
+      "title": "Her Müşteri Eşit Değil.\n**Bütçeni En Değerliye Yönlendir.**"
     }
   ],
-  "caption": "ROAS 3 gördüğünde sevinme — o rakam seni batırıyor olabilir. 👇\n\nÇoğu e-ticaret sahibi ROAS'ı tek başına \"iyi/kötü\" diye yorumluyor, kâr marjını hiç hesaba katmıyor.\nOysa doğru hedef, kâr marjından çıkan break-even ROAS'tır — çözümü carousel'de. 👆\n\n─────────────────────\n📉 ROAS neden tek başına yanıltıcı\n🧮 Break-even ROAS formülü: 1 ÷ Kâr Marjı\n🎯 Hedef ROAS nasıl belirlenir\n🧾 Hesaba katman gereken 5 maliyet kalemi\n⚠️ En büyük hata: ROAS'ı kâr marjından bağımsız okumak\n─────────────────────\n\nEn büyük hata: Yüksek ROAS'ı otomatik olarak \"kârlıyım\" sanmak. Düşük marjlı üründe bu seni iflasa götürür.\n\nBu formülü bir kez hesapla, her kampanyanda referans olarak kullan.\n\n💾 Kaydet — yeni kampanya kurarken hedef ROAS belirlemeden önce aç\n💬 Sen kampanyalarında hedef ROAS'ı nasıl belirliyorsun? Yorumda söyle!\n\n#roas #breakevenroas #karmarji\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Her müşterin aynı değerde mi sanıyorsun? Değil. Ve lookalike kitlen hâlâ bunu bilmiyorsa, bütçenin büyük kısmı ortalama alıcıyı klonlamaya gidiyor. 👇\n\n1.000 TL'lik sadık müşteriyle 50 TL'lik tek seferlik alıcı, Meta'nın gözünde aynı sinyali veriyorsa, en değerli müşteri profilin asla çoğalmıyor.\nÇözüm Value-Based Lookalike'ta — carousel'de adım adım anlattım 👆\n\n─────────────────────\n🎯 Standart lookalike'ın gözden kaçırdığı şey\n⚖️ Standart vs Value-Based kıyaslaması\n⚙️ Pixel/CAPI'de value parametresi kurulumu\n💎 En değerli %20'yi ayırma stratejisi\n⚠️ Ölçeklendirmeden önce yapılması gereken test\n─────────────────────\n\nEn büyük hata: Value-Based kaynağı kurup hemen geniş bütçeyle yayına almak. Önce küçük bütçeyle test et, farkı gör.\n\nDoğru kurulan Value-Based Lookalike, aynı bütçeyle daha yüksek AOV getiren bir kitle demek.\n\n💾 Kaydet — yeni lookalike kaynağı oluştururken tekrar bak\n💬 Sen lookalike kitlelerinde value parametresi kullanıyor musun? Yorumda söyle!\n\n#lookalikeaudience #valuebasedoptimization #metapixel\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
