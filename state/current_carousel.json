@@ -1,65 +1,65 @@
 {
-  "topic": "Cross-Device Attribution — Mobil/Masaüstü Dönüşüm Yolunun Gerçek Etkisi",
+  "topic": "Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri",
   "is_new_topic": false,
   "new_backlog_candidates": [],
   "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "ATTRIBUTION STRATEJİSİ",
-      "title": "Mobilde Gördü,\nMasaüstünde Aldı.\n**Reklamın Bunu Görüyor mu?**",
-      "subtitle": "Cross-device dönüşümlerin büyük kısmı yanlış kampanyaya yazılıyor."
+      "tag": "Hedefleme Stratejisi",
+      "title": "Kitle Daraltırken\n**AND Mantığını**\nYanlış Kullanıyorsun",
+      "subtitle": "İki ilgi alanını üst üste koymak seni küçük kitleye hapsediyor. Doğru katmanlama bütçeni kurtarır."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "📱",
-      "title": "Dönüşüm Yolu Artık Tek Cihazda Bitmiyor",
-      "body": "E-ticarette alışveriş yolculuğunun ortalama %30-35'i birden fazla cihaz üzerinden tamamlanıyor. Kullanıcı mobilde reklamı görüyor, masaüstünde ödeme yapıyor. Pixel bu iki olayı aynı kişi olarak eşleştiremezse, dönüşüm başka bir kaynağa yazılır ve gerçek ROAS gözden kaçar.",
+      "num_label": "Taktik 01/05",
+      "icon": "🎯",
+      "title": "OR mu, AND mı? Önce Mantığı Ayır",
+      "body": "Flexible Targeting'de aynı grup içindeki ilgi alanları OR mantığıyla çalışır — biri yeterli, kitle büyür. Farklı gruplar arasına \"Must Also Match\" eklediğinde AND mantığı devreye girer, ikisi birden şart olur ve kitle küçülür.\nBu ikisini karıştırmak ya kitleyi gereksiz şişirir ya da teslimatı tıkar.",
       "is_checklist": false,
-      "pill": "Cross-device kaybı = yanlış kampanyaya giden bütçe"
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🔗",
-      "title": "Meta Eşleştirmeyi Login Verisiyle Yapar",
-      "body": "Facebook/Instagram hesabına giriş yapılan her cihaz tek kullanıcı ID'sine bağlanır\nLogin olmayan tarayıcılarda (gizli sekme, farklı hesap) eşleştirme kopar\nAdvanced Matching açıkken email/telefon hash'i ek sinyal olarak eklenir",
-      "is_checklist": true,
-      "pill": "Login dışı trafik = kopan zincir"
+      "pill": "Aynı grup = OR, farklı grup = AND — önce mantığı netleştir"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 03 / 07",
-      "icon": "💻",
-      "title": "İki Cihazın Rolü Farklıdır",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">MOBİL</div><div class=\"sval\">İlk Temas</div><div class=\"tdesc\">Reklamı gören, dikkat çeken, ilk tıklayan cihaz. Dönüşüm yolculuğunun %70'i burada başlar.</div></div><div class=\"cmp-col high\"><div class=\"slabel\">MASAÜSTÜ</div><div class=\"sval\">Satın Alma</div><div class=\"tdesc\">Ödeme bilgisi girilen, güven duyulan cihaz. Dönüşümlerin %55'i burada tamamlanır.</div></div></div>",
-      "pill": "Mobil tanıtır, masaüstü kapatır — ikisini de ölç"
-    },
-    {
-      "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🧩",
-      "title": "CAPI ile Eşleşme Kalitesini Artır",
-      "body": "Conversions API üzerinden gönderilen hashlenmiş email ve telefon numarası, cihaz bağımsız bir kimlik katmanı oluşturur. Kullanıcı mobilde tıklasa, masaüstünde satın alsa bile iki olay aynı event_id altında eşleşir. Match kalitesi arttıkça cross-device dönüşümlerin görünürlüğü de artar.",
-      "is_checklist": false,
-      "pill": "Email/telefon hash'i = cihazdan bağımsız kimlik"
+      "num_label": "Taktik 02/05",
+      "icon": "⚖️",
+      "title": "Genişletme ve Daraltmanın Gerçek Farkı",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"s1f\">OR — Genişletme</div><div class=\"tdesc\">\"Fitness\" <span class=\"hl\">veya</span> \"Sağlıklı Beslenme\" seçince kitle 2-3 kat büyür, sinyal yoğunluğu düşer.</div></div><div class=\"cmp-col best\"><div class=\"s2f\">AND — Daraltma</div><div class=\"tdesc\">\"Fitness\" <span class=\"hl\">ve</span> \"Sağlıklı Beslenme\" aynı anda şart olunca kitle küçülür, alaka %40-60 artar.</div></div></div>",
+      "pill": "Daraltma alaka getirir, genişletme erişim — ikisine de doğru anda ihtiyacın var"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⏱️",
-      "title": "Dar Pencere Cross-Device'ı Görmez",
-      "body": "1 günlük tıklama penceresi, 3-4 gün sonra farklı cihazdan gelen satın almayı kampanyaya yazmaz\n7 gün tıklama + 1 gün görüntüleme penceresi cihaz geçiş yolculuğunu daha doğru yakalar\nEn büyük hata: Dar pencereyle 'düşük performans' sanıp iyi çalışan kampanyayı kapatmak",
-      "is_checklist": true,
-      "pill": "Pencereyi daraltmadan önce cihaz geçiş süresini ölç"
+      "num_label": "Taktik 03/05",
+      "icon": "🧩",
+      "title": "Daraltmada 2-3 Katman Sınırı",
+      "body": "Bir AND zincirine art arda 4-5 katman eklemek kitleyi genelde 50.000'in altına düşürür — bu noktada teslimat \"Limited Reach\" uyarısı verir. Pratik kural: en fazla 2-3 AND katmanı kullan, her katmandan sonra tahmini erişimi kontrol et.\nKitle 100.000'in altına inerse bir katman geri çıkar.",
+      "is_checklist": false,
+      "pill": "3 katmandan sonra erişimi kontrol et, 100 bin altı tehlike sinyali"
+    },
+    {
+      "kind": "light",
+      "num_label": "Taktik 04/05",
+      "icon": "📈",
+      "title": "Otomatik Genişletme Ne Zaman Açılır?",
+      "body": "Meta'nın \"Detailed Targeting Expansion\" özelliği, dönüşüm hedefli kampanyalarda seçtiğin ilgi alanlarının dışına otomatik çıkar. Bu, günlük bütçe en az 500-750 TL ve kampanya 50+ dönüşüm topladığında anlamlı sonuç verir.\nDüşük bütçeli test kampanyalarında bu özelliği kapat, sinyal zaten yetersiz.",
+      "is_checklist": false,
+      "pill": "Genişletmeyi sadece yeterli bütçe ve veri varken aç"
+    },
+    {
+      "kind": "dark",
+      "num_label": "Taktik 05/05",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Aşırı Daraltma",
+      "body": "Üst üste 4+ AND katmanı ekleyip kitleyi 20-30 bine düşürmek CPM'i 2-3 kat artırır ve algoritmanın öğrenme evresini sonsuza kadar uzatır. Daraltma alaka için yapılır, hapis için değil.\nKitle küçüldükçe frekans hızla yükselir — bu da erken yorgunluğa yol açar.",
+      "is_checklist": false,
+      "pill": "Kitle 50 bin altına inmeden önce bir katman çıkar"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Dönüşümü Tek Cihaza Sıkıştırma,\n**Tüm Yolculuğu Gör**"
+      "label": "Hedefleme Sinyalini Netleştir",
+      "title": "Doğru Katman,\nDoğru Bütçe,\n**Doğru Kitle**"
     }
   ],
-  "caption": "Reklamın mobilde iyi çalışıyor sanıyorsun ama asıl satış masaüstünde kapanıyor. Pixel bu ikisini birleştiremezse, en çok satış getiren kampanyan 'düşük performanslı' görünür 👇\n\nCross-device dönüşümler görünmediğinde bütçeni yanlış kampanyaya kaydırırsın.\nÇözüm bu carousel'de 👆\n\n─────────────────────\n📱 Dönüşümlerin %30-35'i birden fazla cihazda tamamlanıyor\n🔗 Meta eşleştirmeyi login verisiyle yapıyor\n💻 Mobil tanıtır, masaüstü satın alır — ikisi de ölçülmeli\n🧩 CAPI ile email/telefon hash'i cihaz bağımsız kimlik oluşturur\n⏱️ Dar attribution penceresi cross-device yolculuğunu kaçırır\n─────────────────────\n\nEn büyük hata: Dar pencereyle performansı yanlış yorumlayıp iyi çalışan kampanyayı kapatmak.\n\nDoğru ölçüm, doğru bütçe kararı demektir.\n\n💾 Kaydet — kampanya optimizasyonu yaparken aç\n💬 Sen hiç cross-device yüzünden yanlış kampanya kapattın mı? Yorumda söyle!\n\n#crossdeviceattribution #conversionapi #attributionwindow\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Çoğu reklamveren OR ile AND mantığını karıştırıyor ve kitlesini yanlışlıkla eritiyor. Bu küçük detay, bütçenin nereye gittiğini belirliyor. 👇\n\nİki ilgi alanını yan yana mı koyuyorsun, yoksa kesiştiriyor musun? Cevap kampanyanın erişimini ve maliyetini doğrudan etkiliyor.\nDoğru katmanlama tekniği bu carousel'de. 👆\n\n─────────────────────\n🎯 OR ve AND mantığının gerçek farkı\n⚖️ Genişletme vs daraltmanın kitleye etkisi\n🧩 Daraltmada 2-3 katman sınırı\n📈 Otomatik genişletmeyi ne zaman açman gerektiği\n⚠️ Aşırı daraltmanın maliyeti\n─────────────────────\n\nEn büyük hata: 4+ AND katmanı ekleyip kitleyi 20-30 bine düşürmek. Bu, CPM'i 2-3 kat artırıyor ve öğrenme evresini sonsuza uzatıyor.\n\nHedefleme mantığını doğru kurduğunda bütçen gereksiz yere erimiyor.\n\n💾 Kaydet — bir sonraki kampanya kitlesini kurarken aç\n💬 Sen genelde OR mu kullanıyorsun AND mı? Yorumda söyle!\n\n#flexibletargeting #detailedtargeting #audiencetargeting\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
