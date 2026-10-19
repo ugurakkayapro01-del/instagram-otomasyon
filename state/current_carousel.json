@@ -1,65 +1,69 @@
 {
-  "topic": "Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "topic": "Minimum Günlük Bütçe Eşiği — Doğru Başlangıç Bütçesini CPA'ya Göre Hesaplama",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim",
+    "Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme",
+    "Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma"
+  ],
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "Hedefleme Stratejisi",
-      "title": "Kitle Daraltırken\n**AND Mantığını**\nYanlış Kullanıyorsun",
-      "subtitle": "İki ilgi alanını üst üste koymak seni küçük kitleye hapsediyor. Doğru katmanlama bütçeni kurtarır."
+      "tag": "BÜTÇE STRATEJİSİ",
+      "title": "Bütçen Çok Düşükse\nAlgoritma Hiçbir Zaman\n**Öğrenemez**",
+      "subtitle": "Kaç TL ile başlaman gerektiğini biliyor musun? Basit bir formül var."
     },
     {
       "kind": "light",
-      "num_label": "Taktik 01/05",
-      "icon": "🎯",
-      "title": "OR mu, AND mı? Önce Mantığı Ayır",
-      "body": "Flexible Targeting'de aynı grup içindeki ilgi alanları OR mantığıyla çalışır — biri yeterli, kitle büyür. Farklı gruplar arasına \"Must Also Match\" eklediğinde AND mantığı devreye girer, ikisi birden şart olur ve kitle küçülür.\nBu ikisini karıştırmak ya kitleyi gereksiz şişirir ya da teslimatı tıkar.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "⚠️",
+      "title": "Düşük Bütçenin Gizli Maliyeti",
+      "body": "Meta'nın algoritması her reklam seti için veri toplayıp optimize olur. Günlük bütçe çok düşükse sistem yeterli gösterim ve dönüşüm toplayamaz, öğrenme evresini asla tamamlayamaz. Sonuç: yüksek CPA, tutarsız sonuçlar.",
       "is_checklist": false,
-      "pill": "Aynı grup = OR, farklı grup = AND — önce mantığı netleştir"
+      "pill": "Düşük bütçe = algoritma kör çalışır"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Taktik 02/05",
-      "icon": "⚖️",
-      "title": "Genişletme ve Daraltmanın Gerçek Farkı",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"s1f\">OR — Genişletme</div><div class=\"tdesc\">\"Fitness\" <span class=\"hl\">veya</span> \"Sağlıklı Beslenme\" seçince kitle 2-3 kat büyür, sinyal yoğunluğu düşer.</div></div><div class=\"cmp-col best\"><div class=\"s2f\">AND — Daraltma</div><div class=\"tdesc\">\"Fitness\" <span class=\"hl\">ve</span> \"Sağlıklı Beslenme\" aynı anda şart olunca kitle küçülür, alaka %40-60 artar.</div></div></div>",
-      "pill": "Daraltma alaka getirir, genişletme erişim — ikisine de doğru anda ihtiyacın var"
+      "num_label": "Adım 01",
+      "icon": "🧮",
+      "title": "Minimum Bütçe Formülü",
+      "inner_html": "<div class='formula-box'>Minimum Günlük Bütçe =<br>Hedef CPA × 3<br><br>Optimal Öğrenme Bütçesi =<br>Hedef CPA × 7-10</div>",
+      "pill": "CPA 100 TL ise minimum bütçe 300 TL/gün"
     },
     {
       "kind": "dark",
-      "num_label": "Taktik 03/05",
-      "icon": "🧩",
-      "title": "Daraltmada 2-3 Katman Sınırı",
-      "body": "Bir AND zincirine art arda 4-5 katman eklemek kitleyi genelde 50.000'in altına düşürür — bu noktada teslimat \"Limited Reach\" uyarısı verir. Pratik kural: en fazla 2-3 AND katmanı kullan, her katmandan sonra tahmini erişimi kontrol et.\nKitle 100.000'in altına inerse bir katman geri çıkar.",
+      "num_label": "İpucu 02 / 07",
+      "icon": "📊",
+      "title": "Öğrenme Evresi ile Bağlantı",
+      "body": "Meta'nın öğrenme evresini tamamlaması için 7 gün içinde minimum 50 dönüşüm gerekir. Bütçen bu 50 dönüşümü 7 günde toplamaya yetmiyorsa reklam seti sürekli 'learning limited' durumunda kalır ve performans asla stabilize olmaz.",
       "is_checklist": false,
-      "pill": "3 katmandan sonra erişimi kontrol et, 100 bin altı tehlike sinyali"
+      "pill": "7 günde 50 dönüşüm = stabil performans eşiği"
     },
     {
       "kind": "light",
-      "num_label": "Taktik 04/05",
-      "icon": "📈",
-      "title": "Otomatik Genişletme Ne Zaman Açılır?",
-      "body": "Meta'nın \"Detailed Targeting Expansion\" özelliği, dönüşüm hedefli kampanyalarda seçtiğin ilgi alanlarının dışına otomatik çıkar. Bu, günlük bütçe en az 500-750 TL ve kampanya 50+ dönüşüm topladığında anlamlı sonuç verir.\nDüşük bütçeli test kampanyalarında bu özelliği kapat, sinyal zaten yetersiz.",
-      "is_checklist": false,
-      "pill": "Genişletmeyi sadece yeterli bütçe ve veri varken aç"
+      "num_label": "İpucu 03 / 07",
+      "icon": "🎯",
+      "title": "Hedefe Göre Bütçe Farkı",
+      "body": "Trafik: Hedef CPC × 15-20\nDönüşüm: Hedef CPA × 3-5\nKatalog Satışı: Hedef CPA × 5-7\nVideo İzlenme: Günlük 50-100 TL yeterli",
+      "is_checklist": true,
+      "pill": "Hedefini değiştirmeden formülü uygula"
     },
     {
       "kind": "dark",
-      "num_label": "Taktik 05/05",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Aşırı Daraltma",
-      "body": "Üst üste 4+ AND katmanı ekleyip kitleyi 20-30 bine düşürmek CPM'i 2-3 kat artırır ve algoritmanın öğrenme evresini sonsuza kadar uzatır. Daraltma alaka için yapılır, hapis için değil.\nKitle küçüldükçe frekans hızla yükselir — bu da erken yorgunluğa yol açar.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "🚫",
+      "title": "En Büyük Hata: Küçük Başlayıp Sık Artırmak",
+      "body": "İşletmeler genelde '100 TL ile deneyelim' der, sonuç gelmeyince her gün bütçeyi değiştirir. Her %20'den fazla bütçe artışı öğrenme evresini sıfırlar. Doğru yöntem: formülle hesapla, 7 gün dokunma, sonra karar ver.",
       "is_checklist": false,
-      "pill": "Kitle 50 bin altına inmeden önce bir katman çıkar"
+      "pill": "7 gün sabır, sonra optimize et"
     },
     {
       "kind": "cta",
-      "label": "Hedefleme Sinyalini Netleştir",
-      "title": "Doğru Katman,\nDoğru Bütçe,\n**Doğru Kitle**"
+      "label": "ŞİMDİ UYGULA",
+      "title": "Bütçeni Tahminle Değil,\n**Formülle** Belirle"
     }
   ],
-  "caption": "Çoğu reklamveren OR ile AND mantığını karıştırıyor ve kitlesini yanlışlıkla eritiyor. Bu küçük detay, bütçenin nereye gittiğini belirliyor. 👇\n\nİki ilgi alanını yan yana mı koyuyorsun, yoksa kesiştiriyor musun? Cevap kampanyanın erişimini ve maliyetini doğrudan etkiliyor.\nDoğru katmanlama tekniği bu carousel'de. 👆\n\n─────────────────────\n🎯 OR ve AND mantığının gerçek farkı\n⚖️ Genişletme vs daraltmanın kitleye etkisi\n🧩 Daraltmada 2-3 katman sınırı\n📈 Otomatik genişletmeyi ne zaman açman gerektiği\n⚠️ Aşırı daraltmanın maliyeti\n─────────────────────\n\nEn büyük hata: 4+ AND katmanı ekleyip kitleyi 20-30 bine düşürmek. Bu, CPM'i 2-3 kat artırıyor ve öğrenme evresini sonsuza uzatıyor.\n\nHedefleme mantığını doğru kurduğunda bütçen gereksiz yere erimiyor.\n\n💾 Kaydet — bir sonraki kampanya kitlesini kurarken aç\n💬 Sen genelde OR mu kullanıyorsun AND mı? Yorumda söyle!\n\n#flexibletargeting #detailedtargeting #audiencetargeting\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Çoğu e-ticaret sahibi reklam bütçesini tahminle belirliyor. 'Önce 100 TL deneyelim' diyor, sonuç gelmeyince paniklik yapıp bütçeyi her gün değiştiriyor. 👇\n\nGerçek şu: Meta'nın algoritması belirli bir veri eşiğine ulaşmadan asla optimize olamaz.\nDoğru başlangıç bütçesini hesaplayan basit bir formül var — bu carousel'de. 👆\n\n─────────────────────\n⚠️ Düşük bütçenin algoritmayı nasıl kör bıraktığı\n🧮 Minimum bütçe formülü: Hedef CPA × 3\n📊 7 günde 50 dönüşüm eşiğinin bütçeyle bağlantısı\n🎯 Kampanya hedefine göre bütçe farkları (trafik/dönüşüm/katalog)\n🚫 En büyük hata: küçük başlayıp sık sık bütçe değiştirmek\n─────────────────────\n\nEn büyük hata: Bütçeyi hesaplamadan başlatıp, sonuç gelmeyince her gün değiştirmek. Bu, öğrenme evresini sürekli sıfırlıyor ve asla stabil performansa ulaşamıyorsun.\n\nFormülü uygula, 7 gün dokunma, sonra karar ver. Sabır burada strateji.\n\n💾 Kaydet — yeni kampanya kurarken bütçeni belirlemeden önce aç\n💬 Sen kaç TL ile başlıyorsun kampanyalarına? Yorumda söyle!\n\n#cpa #learningphase #budgetoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

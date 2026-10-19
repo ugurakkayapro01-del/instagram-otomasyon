@@ -6,6 +6,9 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
+- Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim
+- Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme
+- Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:
