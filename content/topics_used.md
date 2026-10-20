@@ -47,6 +47,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 40 | Cross-Device Attribution — Mobil/Masaüstü Dönüşüm Yolunun Gerçek Etkisi | 7 | Otomatik üretildi (2026-10-18) |
 | 41 | Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri | 7 | Otomatik üretildi (2026-10-19) |
 | 42 | Minimum Günlük Bütçe Eşiği — Doğru Başlangıç Bütçesini CPA'ya Göre Hesaplama | 7 | Otomatik üretildi (2026-10-19) |
+| 43 | Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim | 7 | Otomatik üretildi (2026-10-20) |
 
 ---
 

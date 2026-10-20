@@ -1,69 +1,65 @@
 {
-  "topic": "Minimum Günlük Bütçe Eşiği — Doğru Başlangıç Bütçesini CPA'ya Göre Hesaplama",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim",
-    "Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme",
-    "Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma"
-  ],
-  "special_kind": "formula",
+  "topic": "Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "BÜTÇE STRATEJİSİ",
-      "title": "Bütçen Çok Düşükse\nAlgoritma Hiçbir Zaman\n**Öğrenemez**",
-      "subtitle": "Kaç TL ile başlaman gerektiğini biliyor musun? Basit bir formül var."
+      "tag": "PIXEL OPTİMİZASYONU",
+      "title": "Custom Conversion\nKullanıyorsan\n**Algoritmayı Köreltiyor** Olabilirsin",
+      "subtitle": "Standart event yerine custom conversion seçmek, optimizasyon kalitesini sessizce düşürür."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "⚠️",
-      "title": "Düşük Bütçenin Gizli Maliyeti",
-      "body": "Meta'nın algoritması her reklam seti için veri toplayıp optimize olur. Günlük bütçe çok düşükse sistem yeterli gösterim ve dönüşüm toplayamaz, öğrenme evresini asla tamamlayamaz. Sonuç: yüksek CPA, tutarsız sonuçlar.",
+      "icon": "🎯",
+      "title": "Standart Event Neden Önceliklidir?",
+      "body": "Meta'nın makine öğrenmesi modeli, 17 standart event'i (Purchase, Lead, AddToCart gibi) milyonlarca hesaptan topladığı veriyle önceden eğitir.\nCustom conversion ise sıfırdan öğrenme sürecine girer, bu da optimizasyonun yavaşlamasına neden olur.",
       "is_checklist": false,
-      "pill": "Düşük bütçe = algoritma kör çalışır"
+      "pill": "Standart event varsa her zaman onu optimizasyon hedefi yap."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 01",
-      "icon": "🧮",
-      "title": "Minimum Bütçe Formülü",
-      "inner_html": "<div class='formula-box'>Minimum Günlük Bütçe =<br>Hedef CPA × 3<br><br>Optimal Öğrenme Bütçesi =<br>Hedef CPA × 7-10</div>",
-      "pill": "CPA 100 TL ise minimum bütçe 300 TL/gün"
+      "num_label": "Karşılaştırma",
+      "icon": "⚖️",
+      "title": "Standart mı, Custom mu?",
+      "inner_html": "<div class=\"split-row\"><div class=\"split-col best\"><div class=\"slabel\">STANDART EVENT</div><div class=\"sval\">✓ Önceliklendirilmiş optimizasyon</div><div class=\"sval\">✓ Yüksek Match Quality skoru</div><div class=\"sval\">✓ Hızlı öğrenme evresi</div></div><div class=\"split-col\"><div class=\"slabel\">CUSTOM CONVERSION</div><div class=\"sval\">✗ Sıfırdan öğrenme süreci</div><div class=\"sval\">✗ Düşük Match Quality eğilimi</div><div class=\"sval\">✓ Kod değişikliği gerektirmez</div></div></div>",
+      "pill": "Mümkün olan her yerde standart event'i önceliklendir."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "📊",
-      "title": "Öğrenme Evresi ile Bağlantı",
-      "body": "Meta'nın öğrenme evresini tamamlaması için 7 gün içinde minimum 50 dönüşüm gerekir. Bütçen bu 50 dönüşümü 7 günde toplamaya yetmiyorsa reklam seti sürekli 'learning limited' durumunda kalır ve performans asla stabilize olmaz.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🔢",
+      "title": "40 Custom Conversion Limiti",
+      "body": "Her reklam hesabı en fazla 40 custom conversion oluşturabilir, bunların sadece ilk 8'i reklam setinde optimizasyon hedefi olarak kullanılabilir.\nLimiti doldurmadan önce, ihtiyacının gerçekten yeni bir event mi yoksa mevcut standart event'e eklenecek bir parametre mi olduğuna karar ver.",
       "is_checklist": false,
-      "pill": "7 günde 50 dönüşüm = stabil performans eşiği"
+      "pill": "Custom conversion oluşturmadan önce limiti ve önceliği kontrol et."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🎯",
-      "title": "Hedefe Göre Bütçe Farkı",
-      "body": "Trafik: Hedef CPC × 15-20\nDönüşüm: Hedef CPA × 3-5\nKatalog Satışı: Hedef CPA × 5-7\nVideo İzlenme: Günlük 50-100 TL yeterli",
-      "is_checklist": true,
-      "pill": "Hedefini değiştirmeden formülü uygula"
+      "num_label": "İpucu 04 / 07",
+      "icon": "🧩",
+      "title": "En Güçlü Kombinasyon: Event + Parametre",
+      "body": "Standart event'i (ör. Purchase) kullanıp üzerine custom parametre (content_category, value gibi) eklemek en güçlü sonucu verir.\nBöylece hem algoritmanın önceliklendirdiği event korunur hem de segmentasyon esnekliği kazanılır.",
+      "is_checklist": false,
+      "pill": "Yeni event eklemeden önce mevcut standart event'e parametre ekle."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🚫",
-      "title": "En Büyük Hata: Küçük Başlayıp Sık Artırmak",
-      "body": "İşletmeler genelde '100 TL ile deneyelim' der, sonuç gelmeyince her gün bütçeyi değiştirir. Her %20'den fazla bütçe artışı öğrenme evresini sıfırlar. Doğru yöntem: formülle hesapla, 7 gün dokunma, sonra karar ver.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Value Parametresi Eksikliği",
+      "body": "Standart event'i doğru kurup value (sipariş tutarı) parametresini eksik bırakmak ROAS hesaplamasını tamamen bozar.\nAyrıca event_id tutarsızlığı deduplication'ı kırar ve aynı dönüşüm iki kez sayılabilir.",
       "is_checklist": false,
-      "pill": "7 gün sabır, sonra optimize et"
+      "pill": "Her Purchase event'inde value ve currency parametresi zorunlu olsun."
     },
     {
       "kind": "cta",
-      "label": "ŞİMDİ UYGULA",
-      "title": "Bütçeni Tahminle Değil,\n**Formülle** Belirle"
+      "label": "KAPANIŞ",
+      "title": "Doğru Event Yapısı,\n**Doğru Optimizasyon** Demektir"
     }
   ],
-  "caption": "Çoğu e-ticaret sahibi reklam bütçesini tahminle belirliyor. 'Önce 100 TL deneyelim' diyor, sonuç gelmeyince paniklik yapıp bütçeyi her gün değiştiriyor. 👇\n\nGerçek şu: Meta'nın algoritması belirli bir veri eşiğine ulaşmadan asla optimize olamaz.\nDoğru başlangıç bütçesini hesaplayan basit bir formül var — bu carousel'de. 👆\n\n─────────────────────\n⚠️ Düşük bütçenin algoritmayı nasıl kör bıraktığı\n🧮 Minimum bütçe formülü: Hedef CPA × 3\n📊 7 günde 50 dönüşüm eşiğinin bütçeyle bağlantısı\n🎯 Kampanya hedefine göre bütçe farkları (trafik/dönüşüm/katalog)\n🚫 En büyük hata: küçük başlayıp sık sık bütçe değiştirmek\n─────────────────────\n\nEn büyük hata: Bütçeyi hesaplamadan başlatıp, sonuç gelmeyince her gün değiştirmek. Bu, öğrenme evresini sürekli sıfırlıyor ve asla stabil performansa ulaşamıyorsun.\n\nFormülü uygula, 7 gün dokunma, sonra karar ver. Sabır burada strateji.\n\n💾 Kaydet — yeni kampanya kurarken bütçeni belirlemeden önce aç\n💬 Sen kaç TL ile başlıyorsun kampanyalarına? Yorumda söyle!\n\n#cpa #learningphase #budgetoptimization\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Pixel'inde her dönüşüm için custom conversion oluşturuyorsan, algoritmayı kendi elinle yavaşlatıyor olabilirsin. 👇\n\nÇoğu e-ticaret sahibi standart event varken custom conversion'a yöneliyor çünkü kurulumu daha kolay görünüyor.\nAma bu carousel'de neden bunun optimizasyonu köreltiğini ve doğru yapının ne olduğunu anlatıyorum. 👆\n\n─────────────────────\n🎯 Standart event neden önceliklidir\n⚖️ Standart vs custom conversion karşılaştırması\n🔢 40 custom conversion limiti ve ilk 8 kuralı\n🧩 En güçlü kombinasyon: event + custom parametre\n⚠️ En büyük hata: value parametresi eksikliği\n─────────────────────\n\nEn büyük hata: Value parametresini eksik bırakmak. Bu tek hata ROAS hesaplamanı baştan sona yanlış gösterir.\n\nPixel'in ne kurduğunu bilmek, kampanyanın ne kadar hızlı öğreneceğini belirler.\n\n💾 Kaydet — pixel event'lerini yeniden yapılandırırken aç\n💬 Hesabında şu an kaç tane custom conversion var? Yorumda söyle!\n\n#metapixel #customconversions\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
