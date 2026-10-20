@@ -1,65 +1,65 @@
 {
-  "topic": "Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim",
+  "topic": "Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "PIXEL OPTİMİZASYONU",
-      "title": "Custom Conversion\nKullanıyorsan\n**Algoritmayı Köreltiyor** Olabilirsin",
-      "subtitle": "Standart event yerine custom conversion seçmek, optimizasyon kalitesini sessizce düşürür."
+      "tag": "OFFLINE CONVERSIONS API",
+      "title": "Fiziksel Mağaza Satışların\nReklam Algoritmasına\n**Hiç Ulaşmıyor**",
+      "subtitle": "Offline Conversions API olmadan algoritman kör çalışıyor — en değerli satışlarını hiç görmüyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🎯",
-      "title": "Standart Event Neden Önceliklidir?",
-      "body": "Meta'nın makine öğrenmesi modeli, 17 standart event'i (Purchase, Lead, AddToCart gibi) milyonlarca hesaptan topladığı veriyle önceden eğitir.\nCustom conversion ise sıfırdan öğrenme sürecine girer, bu da optimizasyonun yavaşlamasına neden olur.",
+      "num_label": "Bilgi 01/07",
+      "icon": "🏬",
+      "title": "Pixel Sadece Online'ı Görür",
+      "body": "Meta Pixel'in yakaladığı tek şey web sitesi ziyaretleri ve online satın almalar. Fiziksel mağazadan, telefonla veya WhatsApp'tan kapanan satışlar algoritmanın hiç haberi olmadan gerçekleşir. Sonuç: algoritma 'kim gerçekten satın alıyor' sorusuna yanlış cevap verir ve optimizasyon yanlış kitleye kayar.",
       "is_checklist": false,
-      "pill": "Standart event varsa her zaman onu optimizasyon hedefi yap."
+      "pill": "Offline satış = algoritma için görünmez veri"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Karşılaştırma",
-      "icon": "⚖️",
-      "title": "Standart mı, Custom mu?",
-      "inner_html": "<div class=\"split-row\"><div class=\"split-col best\"><div class=\"slabel\">STANDART EVENT</div><div class=\"sval\">✓ Önceliklendirilmiş optimizasyon</div><div class=\"sval\">✓ Yüksek Match Quality skoru</div><div class=\"sval\">✓ Hızlı öğrenme evresi</div></div><div class=\"split-col\"><div class=\"slabel\">CUSTOM CONVERSION</div><div class=\"sval\">✗ Sıfırdan öğrenme süreci</div><div class=\"sval\">✗ Düşük Match Quality eğilimi</div><div class=\"sval\">✓ Kod değişikliği gerektirmez</div></div></div>",
-      "pill": "Mümkün olan her yerde standart event'i önceliklendir."
+      "num_label": "Bilgi 02/07",
+      "icon": "⏱",
+      "title": "Yükleme Zaman Penceresi",
+      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">0-48 Saat</div><div class=\"tdesc\">En yüksek eşleşme — match rate %70-80, taze cihaz/çerez verisi</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">7 Gün</div><div class=\"tdesc\">İyi eşleşme — kampanya optimizasyonuna hâlâ güçlü katkı sağlar</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">28 Gün</div><div class=\"tdesc\">Orta eşleşme — gecikmiş veri, LTV hesaplamalarında değerli</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">62 Gün</div><div class=\"tdesc\">Son sınır — bu tarihten sonraki event kabul edilmez</div></div></div>",
+      "pill": "48 saat içinde yükle, %70+ eşleşme yakala"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🔢",
-      "title": "40 Custom Conversion Limiti",
-      "body": "Her reklam hesabı en fazla 40 custom conversion oluşturabilir, bunların sadece ilk 8'i reklam setinde optimizasyon hedefi olarak kullanılabilir.\nLimiti doldurmadan önce, ihtiyacının gerçekten yeni bir event mi yoksa mevcut standart event'e eklenecek bir parametre mi olduğuna karar ver.",
-      "is_checklist": false,
-      "pill": "Custom conversion oluşturmadan önce limiti ve önceliği kontrol et."
+      "num_label": "Bilgi 03/07",
+      "icon": "🔑",
+      "title": "Eşleştirme İçin Doğru Veri Seti",
+      "body": "E-posta — hashlenmiş, en güçlü tekil sinyal\nTelefon numarası — ülke koduyla birlikte\nAd-soyad + açık adres — e-posta/telefon yoksa yedek\nCihaz kimliği (varsa POS sisteminden) — mobil ödeme eşleşmesi",
+      "is_checklist": true,
+      "pill": "Tek alan değil, çoklu alan eşleşmeyi 2-3 kat artırır"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🧩",
-      "title": "En Güçlü Kombinasyon: Event + Parametre",
-      "body": "Standart event'i (ör. Purchase) kullanıp üzerine custom parametre (content_category, value gibi) eklemek en güçlü sonucu verir.\nBöylece hem algoritmanın önceliklendirdiği event korunur hem de segmentasyon esnekliği kazanılır.",
+      "num_label": "Bilgi 04/07",
+      "icon": "🎯",
+      "title": "Offline Veri Nerede Kullanılır",
+      "body": "Offline satın alanlardan oluşturulan Lookalike Audience, online veriden türetilenden genelde daha kaliteli çıkar çünkü gerçek parayla satın alma kanıtı taşır. Ayrıca mevcut offline müşteriler reklam gösteriminden hariç tutularak (exclusion) bütçe aynı kişiye tekrar harcanmaz.",
       "is_checklist": false,
-      "pill": "Yeni event eklemeden önce mevcut standart event'e parametre ekle."
+      "pill": "Offline veri = daha kaliteli Lookalike kaynağı"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Value Parametresi Eksikliği",
-      "body": "Standart event'i doğru kurup value (sipariş tutarı) parametresini eksik bırakmak ROAS hesaplamasını tamamen bozar.\nAyrıca event_id tutarsızlığı deduplication'ı kırar ve aynı dönüşüm iki kez sayılabilir.",
+      "num_label": "Bilgi 05/07",
+      "icon": "🚫",
+      "title": "En Büyük Hata: Haftalık Toplu Yükleme",
+      "body": "Çoğu işletme offline satışları haftada bir elle Excel'den yüklüyor. Bu gecikme eşleşme oranını %70'ten %20'nin altına düşürür çünkü cihaz/çerez verisi bu sürede geçerliliğini yitirir. Doğru yöntem: POS sistemini API'ye bağlayıp günlük, mümkünse saatlik otomatik aktarım kurmak.",
       "is_checklist": false,
-      "pill": "Her Purchase event'inde value ve currency parametresi zorunlu olsun."
+      "pill": "Gecikme = kaybolan eşleşme, kaybolan optimizasyon"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Doğru Event Yapısı,\n**Doğru Optimizasyon** Demektir"
+      "label": "Hazırsın",
+      "title": "Mağazan ve Reklamın Artık\n**Aynı Veriyi Konuşuyor**"
     }
   ],
-  "caption": "Pixel'inde her dönüşüm için custom conversion oluşturuyorsan, algoritmayı kendi elinle yavaşlatıyor olabilirsin. 👇\n\nÇoğu e-ticaret sahibi standart event varken custom conversion'a yöneliyor çünkü kurulumu daha kolay görünüyor.\nAma bu carousel'de neden bunun optimizasyonu köreltiğini ve doğru yapının ne olduğunu anlatıyorum. 👆\n\n─────────────────────\n🎯 Standart event neden önceliklidir\n⚖️ Standart vs custom conversion karşılaştırması\n🔢 40 custom conversion limiti ve ilk 8 kuralı\n🧩 En güçlü kombinasyon: event + custom parametre\n⚠️ En büyük hata: value parametresi eksikliği\n─────────────────────\n\nEn büyük hata: Value parametresini eksik bırakmak. Bu tek hata ROAS hesaplamanı baştan sona yanlış gösterir.\n\nPixel'in ne kurduğunu bilmek, kampanyanın ne kadar hızlı öğreneceğini belirler.\n\n💾 Kaydet — pixel event'lerini yeniden yapılandırırken aç\n💬 Hesabında şu an kaç tane custom conversion var? Yorumda söyle!\n\n#metapixel #customconversions\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Fiziksel mağazanda her gün satış yapıyorsun ama reklam algoritman bundan habersiz. 👇\n\nMeta Pixel sadece online davranışı görür — kapıdan giren müşteri, telefonla kapanan sipariş algoritma için yok sayılır.\nOffline Conversions API bu kör noktayı kapatıyor. 👆\n\n─────────────────────\n🏬 Pixel neden sadece online'ı görür\n⏱ Offline event yükleme zaman penceresi (48 saat kritik)\n🔑 Eşleşme kalitesi için doğru veri seti\n🎯 Offline veriden Lookalike ve exclusion kitlesi\n🚫 Haftalık toplu yüklemenin maliyeti\n─────────────────────\n\nEn büyük hata: Satışları haftada bir elle yüklemek. Bu gecikme eşleşme oranını %70'ten %20'nin altına düşürüyor.\n\nPOS sistemin API'ye bağlıysa, mağazan artık reklamının en güçlü veri kaynağı olur.\n\n💾 Kaydet — POS entegrasyonu kurarken referans al\n💬 Mağaza satışlarını reklam hesabına hiç bağladın mı? Yorumda söyle!\n\n#offlineconversions #capi #matchrate\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

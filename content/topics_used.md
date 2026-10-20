@@ -48,6 +48,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 41 | Flexible Targeting (AND/OR Mantığı) ile Kitle Daraltma/Genişletme Teknikleri | 7 | Otomatik üretildi (2026-10-19) |
 | 42 | Minimum Günlük Bütçe Eşiği — Doğru Başlangıç Bütçesini CPA'ya Göre Hesaplama | 7 | Otomatik üretildi (2026-10-19) |
 | 43 | Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim | 7 | Otomatik üretildi (2026-10-20) |
+| 44 | Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme | 7 | Otomatik üretildi (2026-10-20) |
 
 ---
 
