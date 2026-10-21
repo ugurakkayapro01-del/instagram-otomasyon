@@ -1,65 +1,65 @@
 {
-  "topic": "Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme",
+  "topic": "Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma",
   "is_new_topic": false,
   "new_backlog_candidates": [],
   "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "OFFLINE CONVERSIONS API",
-      "title": "Fiziksel Mağaza Satışların\nReklam Algoritmasına\n**Hiç Ulaşmıyor**",
-      "subtitle": "Offline Conversions API olmadan algoritman kör çalışıyor — en değerli satışlarını hiç görmüyor."
+      "tag": "RETENTION STRATEJİSİ",
+      "title": "Müşterini\nKaybetmeden\n**Önce** Yakala",
+      "subtitle": "Çoğu marka churn gerçekleştikten SONRA harekete geçiyor. Doğru zaman penceresi kaybı %40'a kadar önler."
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 01/07",
-      "icon": "🏬",
-      "title": "Pixel Sadece Online'ı Görür",
-      "body": "Meta Pixel'in yakaladığı tek şey web sitesi ziyaretleri ve online satın almalar. Fiziksel mağazadan, telefonla veya WhatsApp'tan kapanan satışlar algoritmanın hiç haberi olmadan gerçekleşir. Sonuç: algoritma 'kim gerçekten satın alıyor' sorusuna yanlış cevap verir ve optimizasyon yanlış kitleye kayar.",
-      "is_checklist": false,
-      "pill": "Offline satış = algoritma için görünmez veri"
+      "num_label": "İpucu 01 / 07",
+      "icon": "📉",
+      "title": "Churn Sinyalleri Sessizce Başlar",
+      "body": "Müşteri kaybı aniden olmaz, önce davranış değişir. Son satın almadan 21 gün sonra email açma oranı %35 düşerse bu erken uyarı sinyalidir.\nSite ziyaret sıklığı azalması\nSepete ekleyip tamamlamama artışı\nEmail/bildirim etkileşiminde düşüş",
+      "is_checklist": true,
+      "pill": "Sinyali satın almadan önce yakala, indirimden önce davranışı izle"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Bilgi 02/07",
-      "icon": "⏱",
-      "title": "Yükleme Zaman Penceresi",
-      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">0-48 Saat</div><div class=\"tdesc\">En yüksek eşleşme — match rate %70-80, taze cihaz/çerez verisi</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">7 Gün</div><div class=\"tdesc\">İyi eşleşme — kampanya optimizasyonuna hâlâ güçlü katkı sağlar</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">28 Gün</div><div class=\"tdesc\">Orta eşleşme — gecikmiş veri, LTV hesaplamalarında değerli</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">62 Gün</div><div class=\"tdesc\">Son sınır — bu tarihten sonraki event kabul edilmez</div></div></div>",
-      "pill": "48 saat içinde yükle, %70+ eşleşme yakala"
+      "num_label": "Adım 02 / 07",
+      "icon": "⏳",
+      "title": "Churn Risk Zaman Çizelgesi",
+      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><div class=\"ttime\">0-30 Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Düşük Risk</div><div class=\"tdesc\">Değer hatırlatma — ürün kullanım ipucu, indirimsiz içerik</div></div><div class=\"trow\"><div class=\"ttime\">31-60 Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Orta Risk</div><div class=\"tdesc\">Kişiselleştirilmiş teşvik — %10-15 aralığı indirim</div></div><div class=\"trow\"><div class=\"ttime\">61-90 Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Yüksek Risk</div><div class=\"tdesc\">Son çağrı — kısıtlı süreli büyük teklif</div></div><div class=\"trow\"><div class=\"ttime\">90+ Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Kayıp Sayılır</div><div class=\"tdesc\">Win-back — farklı kreatif, yeni ürün/marka hikayesi</div></div></div>",
+      "pill": "Her zaman penceresinde farklı mesaj, indirimi erkenden harcama"
     },
     {
       "kind": "dark",
-      "num_label": "Bilgi 03/07",
-      "icon": "🔑",
-      "title": "Eşleştirme İçin Doğru Veri Seti",
-      "body": "E-posta — hashlenmiş, en güçlü tekil sinyal\nTelefon numarası — ülke koduyla birlikte\nAd-soyad + açık adres — e-posta/telefon yoksa yedek\nCihaz kimliği (varsa POS sisteminden) — mobil ödeme eşleşmesi",
+      "num_label": "Adım 03 / 07",
+      "icon": "🎯",
+      "title": "RFM Segmentasyonu ile Önceliklendirme",
+      "body": "Recency (son alışveriş), Frequency (sıklık), Monetary (harcama) üç ekseninde müşteriyi puanla. Yüksek F+M ama düşük R skoru, en değerli ama kaybolmakta olan segmenttir — bütçenin önceliği buraya gitmeli.\nBu segmente özel reklam seti ayır\nGenel kitleyle asla karıştırma",
       "is_checklist": true,
-      "pill": "Tek alan değil, çoklu alan eşleşmeyi 2-3 kat artırır"
+      "pill": "Yüksek değerli, düşük Recency segmenti = acil müdahale kitlesi"
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 04/07",
-      "icon": "🎯",
-      "title": "Offline Veri Nerede Kullanılır",
-      "body": "Offline satın alanlardan oluşturulan Lookalike Audience, online veriden türetilenden genelde daha kaliteli çıkar çünkü gerçek parayla satın alma kanıtı taşır. Ayrıca mevcut offline müşteriler reklam gösteriminden hariç tutularak (exclusion) bütçe aynı kişiye tekrar harcanmaz.",
+      "num_label": "Adım 04 / 07",
+      "icon": "✉️",
+      "title": "Mesaj Segmente Göre Değişmeli",
+      "body": "0-30 gün aralığında indirim yerine değer hatırlatma kullan, reklam yorgunluğu yaratmadan markayı hatırlat. 60+ gün aralığında doğrudan teklif ve aciliyet dili gerekir; iki segmente aynı reklam setini göstermek bütçeyi boşa harcar.",
       "is_checklist": false,
-      "pill": "Offline veri = daha kaliteli Lookalike kaynağı"
+      "pill": "Erken segment: değer mesajı. Geç segment: teklif + aciliyet."
     },
     {
       "kind": "dark",
-      "num_label": "Bilgi 05/07",
-      "icon": "🚫",
-      "title": "En Büyük Hata: Haftalık Toplu Yükleme",
-      "body": "Çoğu işletme offline satışları haftada bir elle Excel'den yüklüyor. Bu gecikme eşleşme oranını %70'ten %20'nin altına düşürür çünkü cihaz/çerez verisi bu sürede geçerliliğini yitirir. Doğru yöntem: POS sistemini API'ye bağlayıp günlük, mümkünse saatlik otomatik aktarım kurmak.",
+      "num_label": "Adım 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Tek Kampanya, Tek Mesaj",
+      "body": "Tüm pasif müşterilere aynı 'seni özledik' reklamını aynı anda göstermek, bütçeyi en düşük dönüşüm ihtimaline sahip kitleye eşit dağıtmak demektir. 90+ gün kitlesi genelde %2-3 dönüşür, 30-60 gün kitlesi %8-12 dönüşebilir — bütçe buna göre ağırlıklandırılmalı.",
       "is_checklist": false,
-      "pill": "Gecikme = kaybolan eşleşme, kaybolan optimizasyon"
+      "pill": "Bütçenin çoğunu 30-60 gün aralığındaki 'kurtarılabilir' segmente ver"
     },
     {
       "kind": "cta",
-      "label": "Hazırsın",
-      "title": "Mağazan ve Reklamın Artık\n**Aynı Veriyi Konuşuyor**"
+      "label": "KAPANIŞ",
+      "title": "Müşteriyi Kaybetmeden\nÖnce **Elinde Tut**"
     }
   ],
-  "caption": "Fiziksel mağazanda her gün satış yapıyorsun ama reklam algoritman bundan habersiz. 👇\n\nMeta Pixel sadece online davranışı görür — kapıdan giren müşteri, telefonla kapanan sipariş algoritma için yok sayılır.\nOffline Conversions API bu kör noktayı kapatıyor. 👆\n\n─────────────────────\n🏬 Pixel neden sadece online'ı görür\n⏱ Offline event yükleme zaman penceresi (48 saat kritik)\n🔑 Eşleşme kalitesi için doğru veri seti\n🎯 Offline veriden Lookalike ve exclusion kitlesi\n🚫 Haftalık toplu yüklemenin maliyeti\n─────────────────────\n\nEn büyük hata: Satışları haftada bir elle yüklemek. Bu gecikme eşleşme oranını %70'ten %20'nin altına düşürüyor.\n\nPOS sistemin API'ye bağlıysa, mağazan artık reklamının en güçlü veri kaynağı olur.\n\n💾 Kaydet — POS entegrasyonu kurarken referans al\n💬 Mağaza satışlarını reklam hesabına hiç bağladın mı? Yorumda söyle!\n\n#offlineconversions #capi #matchrate\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Çoğu marka müşteri kaybolduktan SONRA 'seni özledik' reklamı gönderiyor. Oysa churn gerçekleşmeden önce davranışta net sinyaller var. 👇\n\nDoğru zaman penceresini kaçırırsan, en değerli segment sessizce gider.\nÇözüm bu carousel'de 👆\n\n─────────────────────\n📉 Churn sinyalleri nasıl erken yakalanır\n⏳ Risk zaman çizelgesi: 0-30 / 31-60 / 61-90 / 90+ gün\n🎯 RFM segmentasyonu ile önceliklendirme\n✉️ Segmente göre mesaj farklılaştırma\n⚠️ En büyük hata: tek kampanya tek mesaj\n─────────────────────\n\nEn büyük hata: Tüm pasif müşterilere aynı reklamı aynı anda göstermek, bütçeyi en düşük dönüşüm ihtimaline sahip kitleye eşit dağıtmak demek.\n\nRetention, yeni müşteri kazanmaktan çok daha ucuz. Doğru zamanlama + doğru segment, gerçek kazanç demek.\n\n💾 Kaydet — pasif müşteri kampanyası kurarken aç\n💬 Sen hangi zaman penceresinde reaktivasyon kampanyası gönderiyorsun? Yorumda söyle!\n\n#retentionmarketing #rfmsegmentasyonu #reengagement\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

@@ -49,6 +49,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 42 | Minimum Günlük Bütçe Eşiği — Doğru Başlangıç Bütçesini CPA'ya Göre Hesaplama | 7 | Otomatik üretildi (2026-10-19) |
 | 43 | Custom Conversions vs Standard Events — Pixel Olay Yapılandırmasında Doğru Seçim | 7 | Otomatik üretildi (2026-10-20) |
 | 44 | Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme | 7 | Otomatik üretildi (2026-10-20) |
+| 45 | Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma | 7 | Otomatik üretildi (2026-10-21) |
 
 ---
 
