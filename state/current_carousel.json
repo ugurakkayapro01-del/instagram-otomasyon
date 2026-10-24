@@ -1,65 +1,69 @@
 {
-  "topic": "Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "timeline",
+  "topic": "Meta Ads Automated Rules — Kampanya Yönetimini Kural Bazlı Otomatikleştirme",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Aggregated Event Measurement (AEM) — 8 Öncelikli Event Limiti ile Veri Kaybını Yönetme",
+    "Audience Overlap (Kitle Çakışması) Analizi — Reklam Setleri Arası Bütçe Rekabetini Önleme",
+    "Lead Ads Instant Forms Optimizasyonu — Form Uzunluğu ve CRM Entegrasyonu ile Kalite Artırma"
+  ],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "RETENTION STRATEJİSİ",
-      "title": "Müşterini\nKaybetmeden\n**Önce** Yakala",
-      "subtitle": "Çoğu marka churn gerçekleştikten SONRA harekete geçiyor. Doğru zaman penceresi kaybı %40'a kadar önler."
+      "tag": "KAMPANYA OTOMASYONU",
+      "title": "Kampanyanı\nSen Uyurken\n**O Yönetsin**",
+      "subtitle": "Her gün panele girip kontrol etmek yerine, Meta'nın kural motorunu senin yerine çalıştır."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "📉",
-      "title": "Churn Sinyalleri Sessizce Başlar",
-      "body": "Müşteri kaybı aniden olmaz, önce davranış değişir. Son satın almadan 21 gün sonra email açma oranı %35 düşerse bu erken uyarı sinyalidir.\nSite ziyaret sıklığı azalması\nSepete ekleyip tamamlamama artışı\nEmail/bildirim etkileşiminde düşüş",
+      "icon": "⚙️",
+      "title": "Automated Rules Nedir, Neden Şart?",
+      "body": "Meta Ads Manager'daki Automated Rules, belirlediğin koşullar gerçekleştiğinde kampanyayı otomatik durdurur, bütçesini değiştirir veya sana bildirim yollar. Günde 3-4 kez panel kontrol etmek yerine sistem 24 saat senin adına izler. Özellikle çoklu reklam seti yöneten hesaplarda, insan gözünün kaçırdığı zararlı harcamayı saniyeler içinde durdurur.",
+      "is_checklist": false,
+      "pill": "Kural kur, sistem senin yerine izlesin."
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "🎯",
+      "title": "Hangi Eşiklerde Kural Kurulmalı?",
+      "body": "Harcama 300 TL'yi geçti ve satın alma 0 ise reklam setini durdur\n3 günlük ortalama ROAS 1.5'in altına düşerse bütçeyi %20 azalt\nFrekans 4'ü geçerse bildirim gönder ve kreatifi yenile\nCPA, hedef CPA'nın %50 üzerine çıkarsa harcamayı durdur",
       "is_checklist": true,
-      "pill": "Sinyali satın almadan önce yakala, indirimden önce davranışı izle"
+      "pill": "Eşik sayısı olmadan kural, kural değildir."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 02 / 07",
-      "icon": "⏳",
-      "title": "Churn Risk Zaman Çizelgesi",
-      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><div class=\"ttime\">0-30 Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Düşük Risk</div><div class=\"tdesc\">Değer hatırlatma — ürün kullanım ipucu, indirimsiz içerik</div></div><div class=\"trow\"><div class=\"ttime\">31-60 Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Orta Risk</div><div class=\"tdesc\">Kişiselleştirilmiş teşvik — %10-15 aralığı indirim</div></div><div class=\"trow\"><div class=\"ttime\">61-90 Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Yüksek Risk</div><div class=\"tdesc\">Son çağrı — kısıtlı süreli büyük teklif</div></div><div class=\"trow\"><div class=\"ttime\">90+ Gün</div><div class=\"tconnect\"></div><div class=\"tsec\">Kayıp Sayılır</div><div class=\"tdesc\">Win-back — farklı kreatif, yeni ürün/marka hikayesi</div></div></div>",
-      "pill": "Her zaman penceresinde farklı mesaj, indirimi erkenden harcama"
-    },
-    {
-      "kind": "dark",
-      "num_label": "Adım 03 / 07",
-      "icon": "🎯",
-      "title": "RFM Segmentasyonu ile Önceliklendirme",
-      "body": "Recency (son alışveriş), Frequency (sıklık), Monetary (harcama) üç ekseninde müşteriyi puanla. Yüksek F+M ama düşük R skoru, en değerli ama kaybolmakta olan segmenttir — bütçenin önceliği buraya gitmeli.\nBu segmente özel reklam seti ayır\nGenel kitleyle asla karıştırma",
-      "is_checklist": true,
-      "pill": "Yüksek değerli, düşük Recency segmenti = acil müdahale kitlesi"
+      "num_label": "İpucu 03 / 07",
+      "icon": "⚡",
+      "title": "Manuel Kontrol mü, Otomatik Kural mı?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Manuel Kontrol</div><div class=\"sval\">Günde 2-3 kontrol · Gecikmeli müdahale · İnsan hatası riski yüksek</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Automated Rules</div><div class=\"sval\">7/24 izleme · Anında müdahale · Tutarlı eşik uygulaması</div></div></div>",
+      "pill": "Otomasyon hız kaybını değil, insan hatasını yok eder."
     },
     {
       "kind": "light",
-      "num_label": "Adım 04 / 07",
-      "icon": "✉️",
-      "title": "Mesaj Segmente Göre Değişmeli",
-      "body": "0-30 gün aralığında indirim yerine değer hatırlatma kullan, reklam yorgunluğu yaratmadan markayı hatırlat. 60+ gün aralığında doğrudan teklif ve aciliyet dili gerekir; iki segmente aynı reklam setini göstermek bütçeyi boşa harcar.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "🔁",
+      "title": "AND/OR Mantığı ile Kural Kombinasyonu",
+      "body": "Tek koşul yerine birden fazla koşulu birleştir. Örnek: 'Harcama > 200 TL VE Dönüşüm = 0' kuralı, yalnızca harcama şartı kullanmaktan çok daha güvenlidir. Kontrol sıklığını saatlik, 3 saatte bir veya günlük ayarlayabilirsin — hızlı tükenen bütçelerde saatlik kontrol kritik hale gelir.",
       "is_checklist": false,
-      "pill": "Erken segment: değer mesajı. Geç segment: teklif + aciliyet."
+      "pill": "Tek koşullu kural, yanlış alarm riskini artırır."
     },
     {
       "kind": "dark",
-      "num_label": "Adım 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Tek Kampanya, Tek Mesaj",
-      "body": "Tüm pasif müşterilere aynı 'seni özledik' reklamını aynı anda göstermek, bütçeyi en düşük dönüşüm ihtimaline sahip kitleye eşit dağıtmak demektir. 90+ gün kitlesi genelde %2-3 dönüşür, 30-60 gün kitlesi %8-12 dönüşebilir — bütçe buna göre ağırlıklandırılmalı.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "🚨",
+      "title": "En Büyük Hata: Öğrenme Evresini Bozan Kurallar",
+      "body": "Kampanya öğrenme evresindeyken (ilk 7 gün, 50 dönüşüm altı) agresif bütçe değişikliği kuralları kurmak algoritmayı sıfırlar ve CPA'yı yükseltir. Otomatik kuralları öğrenme evresi bittikten sonra devreye girecek şekilde zamanla. Aynı anda çakışan kurallar (biri artırırken diğeri azaltırken) kampanyayı kararsız hale getirir.",
       "is_checklist": false,
-      "pill": "Bütçenin çoğunu 30-60 gün aralığındaki 'kurtarılabilir' segmente ver"
+      "pill": "Kural kur ama öğrenme evresine dokunma."
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Müşteriyi Kaybetmeden\nÖnce **Elinde Tut**"
+      "label": "7 / 7",
+      "title": "Kuralları Kur,\n**Zamanını** Geri Al"
     }
   ],
-  "caption": "Çoğu marka müşteri kaybolduktan SONRA 'seni özledik' reklamı gönderiyor. Oysa churn gerçekleşmeden önce davranışta net sinyaller var. 👇\n\nDoğru zaman penceresini kaçırırsan, en değerli segment sessizce gider.\nÇözüm bu carousel'de 👆\n\n─────────────────────\n📉 Churn sinyalleri nasıl erken yakalanır\n⏳ Risk zaman çizelgesi: 0-30 / 31-60 / 61-90 / 90+ gün\n🎯 RFM segmentasyonu ile önceliklendirme\n✉️ Segmente göre mesaj farklılaştırma\n⚠️ En büyük hata: tek kampanya tek mesaj\n─────────────────────\n\nEn büyük hata: Tüm pasif müşterilere aynı reklamı aynı anda göstermek, bütçeyi en düşük dönüşüm ihtimaline sahip kitleye eşit dağıtmak demek.\n\nRetention, yeni müşteri kazanmaktan çok daha ucuz. Doğru zamanlama + doğru segment, gerçek kazanç demek.\n\n💾 Kaydet — pasif müşteri kampanyası kurarken aç\n💬 Sen hangi zaman penceresinde reaktivasyon kampanyası gönderiyorsun? Yorumda söyle!\n\n#retentionmarketing #rfmsegmentasyonu #reengagement\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Kampanyanı her gün elle kontrol etmekten yoruldun mu? Çoğu e-ticaret sahibi zararlı harcamayı 2-3 gün geç fark ediyor. 👇\n\nOysa Meta Ads Manager'ın Automated Rules özelliği bu işi senin için 7/24 yapabilir.\nNasıl kurulacağını bu carousel'de anlattım 👆\n\n─────────────────────\n⚙️ Automated Rules'un ne işe yaradığı\n🎯 Kurulması gereken 4 kritik eşik değeri\n⚡ Manuel kontrol vs otomatik kural farkı\n🔁 AND/OR mantığıyla kural kombinasyonu\n🚨 Öğrenme evresini bozan en büyük hata\n─────────────────────\n\nEn büyük hata: Öğrenme evresindeki bir kampanyaya agresif bütçe kuralı kurmak. Bu, algoritmayı sıfırlar ve CPA'nı ciddi şekilde yükseltir.\n\nDoğru kurulan kurallar, harcamanı korur ve zamanını geri verir.\n\n💾 Kaydet — kampanya kurarken eşik değerlerini buradan uygula\n💬 Sen hangi metrik için otomatik kural kullanıyorsun? Yorumda söyle!\n\n#automatedrules #metaadsmanager #kampanyaotomasyonu\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
