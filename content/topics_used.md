@@ -51,6 +51,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 44 | Offline Conversions API — Fiziksel Mağaza Satışlarını Reklam Optimizasyonuna Entegre Etme | 7 | Otomatik üretildi (2026-10-20) |
 | 45 | Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma | 7 | Otomatik üretildi (2026-10-21) |
 | 46 | Meta Ads Automated Rules — Kampanya Yönetimini Kural Bazlı Otomatikleştirme | 7 | Otomatik üretildi (2026-10-24) |
+| 47 | Aggregated Event Measurement (AEM) — 8 Öncelikli Event Limiti ile Veri Kaybını Yönetme | 7 | Otomatik üretildi (2026-10-24) |
 
 ---
 
