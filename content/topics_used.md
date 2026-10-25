@@ -52,6 +52,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 45 | Retention/Re-engagement Kampanyaları — Churn Öncesi Zaman Penceresi ile Müşteri Elde Tutma | 7 | Otomatik üretildi (2026-10-21) |
 | 46 | Meta Ads Automated Rules — Kampanya Yönetimini Kural Bazlı Otomatikleştirme | 7 | Otomatik üretildi (2026-10-24) |
 | 47 | Aggregated Event Measurement (AEM) — 8 Öncelikli Event Limiti ile Veri Kaybını Yönetme | 7 | Otomatik üretildi (2026-10-24) |
+| 48 | Audience Overlap (Kitle Çakışması) Analizi — Reklam Setleri Arası Bütçe Rekabetini Önleme | 7 | Otomatik üretildi (2026-10-25) |
 
 ---
 

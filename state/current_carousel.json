@@ -1,65 +1,65 @@
 {
-  "topic": "Aggregated Event Measurement (AEM) — 8 Öncelikli Event Limiti ile Veri Kaybını Yönetme",
+  "topic": "Audience Overlap (Kitle Çakışması) Analizi — Reklam Setleri Arası Bütçe Rekabetini Önleme",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "META PIXEL • VERİ YÖNETİMİ",
-      "title": "8 Event Limiti\nSeni **Kör** Ediyor Olabilir",
-      "subtitle": "iOS 14.5 sonrası domain başına sadece 8 öncelikli event izlenebiliyor. Yanlış sıralama, en değerli dönüşümlerini görünmez yapar."
+      "tag": "KİTLE ÇAKIŞMASI ANALİZİ",
+      "title": "Reklam Setlerin\nBirbirine Rakip mi?\n**Kendi Bütçeni** Kendine Harcatıyorsun",
+      "subtitle": "Aynı kullanıcıya 3 farklı reklam setinden giriyorsun. Meta senin yerine karar veriyor, sen kaybediyorsun."
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 01",
-      "icon": "🧩",
-      "title": "AEM Nedir, Neden Var?",
-      "body": "Aggregated Event Measurement, iOS 14.5+ ATT (App Tracking Transparency) sonrası Apple'ın izinsiz veri paylaşımını engellemesiyle geldi. Meta, izin vermeyen kullanıcıların etkileşimlerini tekil değil, domain bazında toplu raporluyor. Her domain için en fazla 8 event önceliklendirilebilir — dışında kalan event'ler bu kullanıcılar için optimize edilemez.",
+      "num_label": "Sinyal 01",
+      "icon": "⚔️",
+      "title": "Overlap Nedir, Neden Para Yakar",
+      "body": "İki reklam setin aynı kişiye aynı anda girdiğinde, Meta'nın açık artırması (auction) o kişi için kendi kampanyalarını birbirine rakip yapar. Sonuç: CPM yükselir, frekans gereksiz şişer, bütçe aynı kitleye tekrar tekrar harcanır. Bu durum özellikle 'tüm takipçiler' ile 'son 30 gün ziyaretçiler' gibi benzer kitleleri farklı setlerde kullandığında ortaya çıkar.",
       "is_checklist": false,
-      "pill": "Domain başına sadece 8 event optimize edilebilir."
+      "pill": "Aynı kişiye 2 reklam seti giriyorsa biri gereksiz bütçe yakıyor"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02",
-      "icon": "🏆",
-      "title": "Öncelik Sırası Nasıl Kurulur?",
-      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><span>Purchase — Satın Alma</span></div><div class=\"tier-row high\"><span class=\"tier-rank\">02</span><span>AddPaymentInfo — Ödeme Bilgisi</span></div><div class=\"tier-row high\"><span class=\"tier-rank\">03</span><span>InitiateCheckout — Ödeme Başlatma</span></div><div class=\"tier-row med\"><span class=\"tier-rank\">04</span><span>AddToCart — Sepete Ekleme</span></div><div class=\"tier-row med\"><span class=\"tier-rank\">05</span><span>Lead — Potansiyel Müşteri</span></div><div class=\"tier-row med\"><span class=\"tier-rank\">06</span><span>CompleteRegistration — Kayıt</span></div><div class=\"tier-row\"><span class=\"tier-rank\">07</span><span>ViewContent — İçerik Görüntüleme</span></div><div class=\"tier-row\"><span class=\"tier-rank\">08</span><span>Search — Arama</span></div>",
-      "pill": "En değerli event her zaman 1. sırada olmalı."
+      "num_label": "Eşik 02",
+      "icon": "🚨",
+      "title": "Overlap Oranına Göre Risk Seviyesi",
+      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot best\"></span><span class=\"flabel\">%0-15 Çakışma</span><span class=\"sval\">Güvenli — normal dalgalanma</span></div><div class=\"risk-row\"><span class=\"risk-dot med warn\"></span><span class=\"flabel\">%15-30 Çakışma</span><span class=\"sval\">İzleme — haftalık kontrol et</span></div><div class=\"risk-row\"><span class=\"risk-dot high danger\"></span><span class=\"flabel\">%30+ Çakışma</span><span class=\"sval\">Tehlike — exclusion şart</span></div><div class=\"formula-box\">Overlap % yükseldikçe CPM artar, frekans beklenenin üstüne çıkar — bu ikisi birlikte görülüyorsa setler birbirini yiyor demektir.</div>",
+      "pill": "Çakışma %30'u geçtiyse reklam setlerin birbirini yiyor demektir"
     },
     {
       "kind": "dark",
-      "num_label": "Bilgi 03",
-      "icon": "⚠️",
-      "title": "Sınırın Dışında Kalan Event Ne Olur?",
-      "body": "8 event limitini aşan her ek event, ATT reddeden kullanıcılar için tamamen görünmez olur — optimizasyon ve raporlama dışı kalır. Daha kötüsü: bir event'i önceliklendirip sonra çıkarırsan, o reklam setinin öğrenme evresi sıfırlanır. Config değişikliğini haftada birden fazla yapma.",
+      "num_label": "Adım 03",
+      "icon": "🧩",
+      "title": "Exclusion Audience ile Çakışmayı Kes",
+      "body": "Her reklam setine, diğer setlerin hedef kitlesini 'hariç tut' olarak ekle. Örnek: Retargeting setinde yeni müşteri kazanma setinin kitlesini dışla, satın alanları lookalike setinden çıkar. Bu, aynı kişiye iki kez bütçe harcanmasını engeller ve her setin kendi görevine odaklanmasını sağlar.",
       "is_checklist": false,
-      "pill": "Config değişikliğini haftada 1 ile sınırla."
+      "pill": "Her sete, diğerinin kitlesini hariç tut olarak ekle"
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 04",
-      "icon": "⏱️",
-      "title": "Raporlama Neden 72 Saat Gecikir?",
-      "body": "ATT reddeden kullanıcıların verisi anlık değil, toplu ve gecikmeli işlenir. Meta bu veriyi gizlilik için rastgele bir pencerede (24-72 saat) gönderir. Bu yüzden kampanya performansını ilk 3 gün içinde değerlendirmek yanlış sonuç verir — gerçek rakamlar genelde 3. günden sonra netleşir.",
+      "num_label": "Karşılaştırma 04",
+      "icon": "⚖️",
+      "title": "CBO mu, ABO mu — Hangisi Overlap'i Yönetir",
+      "body": "Campaign Budget Optimization (CBO) kullanıyorsan Meta bütçeyi otomatik olarak en iyi performans gösteren sete kaydırır, aynı kampanya içindeki overlap'in zararını kısmen kendi azaltır. Ad Set Budget Optimization (ABO)'da bu otomasyon yok — overlap'i manuel exclusion ile sen yönetmek zorundasın. Farklı kampanyalar arası çakışmada exclusion her iki durumda da zorunlu.",
       "is_checklist": false,
-      "pill": "Performans kararını ilk 72 saatte verme."
+      "pill": "CBO içeride otomatik yönetir, kampanyalar arası çakışmayı sen keseceksin"
     },
     {
       "kind": "dark",
-      "num_label": "Bilgi 05",
+      "num_label": "Hata 05",
       "icon": "🎯",
-      "title": "Doğru Event Setini Seçme Kuralı",
-      "body": "Katalog/sepet akışı olan e-ticaretlerde sıra net: Purchase > InitiateCheckout > AddToCart > ViewContent. Lead-bazlı işlerde Lead > CompleteRegistration > Schedule öne alınır. Basit kural: hangi event gelire en yakınsa, listenin en tepesine o konur.",
+      "title": "En Büyük Hata: Funnel Aşamalarını Karıştırmak",
+      "body": "Soğuk kitle (TOF), ısınmış kitle (MOF) ve satın alma niyetli kitle (BOF) için ayrı reklam setleri kurup her birine exclusion eklemeden yayına almak en büyük hatadır. Sonuç: BOF seti TOF'un bütçesini yer, retargeting seti prospecting'i kanibalize eder. Her funnel aşamasını net sınırlarla ayır.",
       "is_checklist": false,
-      "pill": "Gelire en yakın event her zaman 1. sırada."
+      "pill": "TOF-MOF-BOF setlerini birbirinden mutlaka hariç tut ile ayır"
     },
     {
       "kind": "cta",
-      "label": "HAZIRSAN BAŞLAYALIM",
-      "title": "8 Event'ini Doğru Sırala,\nVeri Kaybını **Durdur**"
+      "label": "AUDIENCE OVERLAP ANALİZİ",
+      "title": "Bütçeni Kendi Reklamına\nKaptırma, **Kontrolü Sen Al**"
     }
   ],
-  "caption": "iOS 14.5 güncellemesinden sonra reklamların bir kısmı 'kör' çalışıyor olabilir. Çünkü domain başına sadece 8 event'i önceliklendirebiliyorsun — gerisi algoritma için yok hükmünde. 👇\n\nÇoğu e-ticaret sahibi bu 8 event'i rastgele sıralıyor ve en değerli dönüşümünü (Purchase) ikinci, üçüncü sıraya düşürüyor.\nDoğru sıralama + config disiplini carousel'de. 👆\n\n─────────────────────\n🧩 AEM nedir, iOS 14.5 sonrası neden zorunlu\n🏆 8 event'i doğru önceliklendirme sırası\n⚠️ Limit dışı kalan event'e ne olur\n⏱️ Raporlama neden 72 saat gecikir\n🎯 Katalog/sepet vs Lead işleri için doğru sıralama kuralı\n─────────────────────\n\nEn büyük hata: Purchase'ı 1. sıraya koymayıp AddToCart'ı önde tutmak. Bu, en değerli müşterini algoritmaya görünmez yapıyor.\n\n8 event'ini bir kez doğru kurarsan, hafta hafta veri kaybı yaşamazsın.\n\n💾 Kaydet — Events Manager'da öncelik sırası ayarlarken aç\n💬 Şu an hangi event'i 1. sırada tutuyorsun? Yorumda söyle!\n\n#aem #ios14 #metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Reklam setlerin birbirine rakip olduğunu fark etmeden bütçeni çöpe atıyor olabilirsin. 👇\n\nAynı kişiye 2-3 farklı reklam setinden giriyorsan, Meta senin kampanyalarını kendi aranda yarıştırıyor demektir.\nBu carousel'de çakışmayı nasıl tespit edip keseceğini anlatıyorum. 👆\n\n─────────────────────\n⚔️ Overlap neden CPM'i ve frekansı şişiriyor\n🚨 %0-15 / %15-30 / %30+ risk eşikleri\n🧩 Exclusion audience ile çakışmayı kesme adımları\n⚖️ CBO vs ABO — hangisi overlap'i otomatik yönetir\n🎯 TOF-MOF-BOF karıştırma hatası ve çözümü\n─────────────────────\n\nEn büyük hata: Funnel aşamalarını ayrı reklam setlerine koyup exclusion eklemeden yayına almak. Bu, retargeting setinin prospecting bütçeni yemesine yol açar.\n\nDoğru kurulan exclusion yapısı, aynı bütçeyle daha fazla benzersiz kişiye ulaşmanı sağlar.\n\n💾 Kaydet — yeni kampanya kurarken exclusion listesini oluştururken aç\n💬 Reklam setlerinde şu ana kadar exclusion audience kullandın mı? Yorumda söyle!\n\n#audienceoverlap #exclusionaudience #metaadsmanager\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

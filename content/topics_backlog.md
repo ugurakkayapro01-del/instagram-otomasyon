@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Audience Overlap (Kitle Çakışması) Analizi — Reklam Setleri Arası Bütçe Rekabetini Önleme
 - Lead Ads Instant Forms Optimizasyonu — Form Uzunluğu ve CRM Entegrasyonu ile Kalite Artırma
 
 ## Yeni Konu Üretme Kuralları
