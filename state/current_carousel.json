@@ -1,65 +1,65 @@
 {
-  "topic": "Audience Overlap (Kitle Çakışması) Analizi — Reklam Setleri Arası Bütçe Rekabetini Önleme",
+  "topic": "Lead Ads Instant Forms Optimizasyonu — Form Uzunluğu ve CRM Entegrasyonu ile Kalite Artırma",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "risk",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KİTLE ÇAKIŞMASI ANALİZİ",
-      "title": "Reklam Setlerin\nBirbirine Rakip mi?\n**Kendi Bütçeni** Kendine Harcatıyorsun",
-      "subtitle": "Aynı kullanıcıya 3 farklı reklam setinden giriyorsun. Meta senin yerine karar veriyor, sen kaybediyorsun."
+      "tag": "LEAD ADS OPTİMİZASYONU",
+      "title": "Formun Uzunluğu\nSatışını **Öldürüyor**\nOlabilir",
+      "subtitle": "Çok soru = az lead. Az soru = düşük kalite. Doğru denge nerede?"
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01",
-      "icon": "⚔️",
-      "title": "Overlap Nedir, Neden Para Yakar",
-      "body": "İki reklam setin aynı kişiye aynı anda girdiğinde, Meta'nın açık artırması (auction) o kişi için kendi kampanyalarını birbirine rakip yapar. Sonuç: CPM yükselir, frekans gereksiz şişer, bütçe aynı kitleye tekrar tekrar harcanır. Bu durum özellikle 'tüm takipçiler' ile 'son 30 gün ziyaretçiler' gibi benzer kitleleri farklı setlerde kullandığında ortaya çıkar.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "📝",
+      "title": "Instant Form Neden Farklı Çalışır",
+      "body": "Lead Ads formları Instagram/Facebook içinde açılır, kullanıcı siteye hiç gitmez. Bu doldurma oranını artırır ama 'tembel lead' riskini de doğurur. Her ek soru, form tamamlama oranını ortalama %10-15 düşürür.",
       "is_checklist": false,
-      "pill": "Aynı kişiye 2 reklam seti giriyorsa biri gereksiz bütçe yakıyor"
+      "pill": "Kural: Her gereksiz alan bir lead kaybıdır."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Eşik 02",
-      "icon": "🚨",
-      "title": "Overlap Oranına Göre Risk Seviyesi",
-      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot best\"></span><span class=\"flabel\">%0-15 Çakışma</span><span class=\"sval\">Güvenli — normal dalgalanma</span></div><div class=\"risk-row\"><span class=\"risk-dot med warn\"></span><span class=\"flabel\">%15-30 Çakışma</span><span class=\"sval\">İzleme — haftalık kontrol et</span></div><div class=\"risk-row\"><span class=\"risk-dot high danger\"></span><span class=\"flabel\">%30+ Çakışma</span><span class=\"sval\">Tehlike — exclusion şart</span></div><div class=\"formula-box\">Overlap % yükseldikçe CPM artar, frekans beklenenin üstüne çıkar — bu ikisi birlikte görülüyorsa setler birbirini yiyor demektir.</div>",
-      "pill": "Çakışma %30'u geçtiyse reklam setlerin birbirini yiyor demektir"
+      "num_label": "Karşılaştırma",
+      "icon": "⚖️",
+      "title": "Kısa Form mu, Uzun Form mu?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">KISA FORM (3-4 soru)</div><div class=\"sval best\">%38 doldurma</div><div class=\"tdesc\">Hacim yüksek, kalite değişken</div></div><div class=\"cmp-col\"><div class=\"slabel\">UZUN FORM (7+ soru)</div><div class=\"sval\">%14 doldurma</div><div class=\"tdesc\">Hacim düşük, kalite yüksek</div></div></div>",
+      "pill": "Doğru denge: 5 soru + prefill alanları"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "🧩",
-      "title": "Exclusion Audience ile Çakışmayı Kes",
-      "body": "Her reklam setine, diğer setlerin hedef kitlesini 'hariç tut' olarak ekle. Örnek: Retargeting setinde yeni müşteri kazanma setinin kitlesini dışla, satın alanları lookalike setinden çıkar. Bu, aynı kişiye iki kez bütçe harcanmasını engeller ve her setin kendi görevine odaklanmasını sağlar.",
+      "num_label": "İpucu 02 / 07",
+      "icon": "⚡",
+      "title": "Prefill Alanları Kaliteyi Düşürmez, Hızı Artırır",
+      "body": "Ad, e-posta, telefon gibi alanlar Facebook profilinden otomatik dolar (prefill). Bu alanlar doldurma oranını düşürmez çünkü kullanıcı tek dokunuşla geçer. Asıl filtre senin eklediğin özel sorular olmalı — onları en fazla 2 ile sınırla.",
       "is_checklist": false,
-      "pill": "Her sete, diğerinin kitlesini hariç tut olarak ekle"
+      "pill": "Prefill = ücretsiz hız. Özel soru = maliyetli filtre."
     },
     {
       "kind": "light",
-      "num_label": "Karşılaştırma 04",
-      "icon": "⚖️",
-      "title": "CBO mu, ABO mu — Hangisi Overlap'i Yönetir",
-      "body": "Campaign Budget Optimization (CBO) kullanıyorsan Meta bütçeyi otomatik olarak en iyi performans gösteren sete kaydırır, aynı kampanya içindeki overlap'in zararını kısmen kendi azaltır. Ad Set Budget Optimization (ABO)'da bu otomasyon yok — overlap'i manuel exclusion ile sen yönetmek zorundasın. Farklı kampanyalar arası çakışmada exclusion her iki durumda da zorunlu.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🔗",
+      "title": "CRM Entegrasyonu Olmadan Lead Ads Yarım Kalır",
+      "body": "Lead formundan gelen veri Facebook'ta sadece 90 gün saklanır, sonra silinir. Zapier veya native CRM entegrasyonu yoksa lead'ler manuel indirilir, yanıt süresi saatlerle uzar. 5 dakika içinde aranan lead, 1 saat sonra aranana göre dönüşüme 7 kat daha yakındır.",
       "is_checklist": false,
-      "pill": "CBO içeride otomatik yönetir, kampanyalar arası çakışmayı sen keseceksin"
+      "pill": "Entegrasyon yoksa lead'in yarısı soğuyor."
     },
     {
       "kind": "dark",
-      "num_label": "Hata 05",
-      "icon": "🎯",
-      "title": "En Büyük Hata: Funnel Aşamalarını Karıştırmak",
-      "body": "Soğuk kitle (TOF), ısınmış kitle (MOF) ve satın alma niyetli kitle (BOF) için ayrı reklam setleri kurup her birine exclusion eklemeden yayına almak en büyük hatadır. Sonuç: BOF seti TOF'un bütçesini yer, retargeting seti prospecting'i kanibalize eder. Her funnel aşamasını net sınırlarla ayır.",
+      "num_label": "En Büyük Hata",
+      "icon": "🚨",
+      "title": "Lead Kalitesini Satışa Göre Değil, Forma Göre Ölçmek",
+      "body": "Meta algoritması varsayılan olarak 'form tamamlama' olayını optimize eder, 'satışa dönüşen lead' olayını değil. Offline Conversions API ile CRM'deki gerçek satış verisini Meta'ya geri gönderirsen, algoritma kaliteli lead getiren kullanıcı profiline yönelmeye başlar.",
       "is_checklist": false,
-      "pill": "TOF-MOF-BOF setlerini birbirinden mutlaka hariç tut ile ayır"
+      "pill": "Geri bildirim döngüsü olmayan Lead Ads kör uçar."
     },
     {
       "kind": "cta",
-      "label": "AUDIENCE OVERLAP ANALİZİ",
-      "title": "Bütçeni Kendi Reklamına\nKaptırma, **Kontrolü Sen Al**"
+      "label": "Meta Reklam Danışmanlığı",
+      "title": "Formun Her Sorusu\nBir **Karar** Demek"
     }
   ],
-  "caption": "Reklam setlerin birbirine rakip olduğunu fark etmeden bütçeni çöpe atıyor olabilirsin. 👇\n\nAynı kişiye 2-3 farklı reklam setinden giriyorsan, Meta senin kampanyalarını kendi aranda yarıştırıyor demektir.\nBu carousel'de çakışmayı nasıl tespit edip keseceğini anlatıyorum. 👆\n\n─────────────────────\n⚔️ Overlap neden CPM'i ve frekansı şişiriyor\n🚨 %0-15 / %15-30 / %30+ risk eşikleri\n🧩 Exclusion audience ile çakışmayı kesme adımları\n⚖️ CBO vs ABO — hangisi overlap'i otomatik yönetir\n🎯 TOF-MOF-BOF karıştırma hatası ve çözümü\n─────────────────────\n\nEn büyük hata: Funnel aşamalarını ayrı reklam setlerine koyup exclusion eklemeden yayına almak. Bu, retargeting setinin prospecting bütçeni yemesine yol açar.\n\nDoğru kurulan exclusion yapısı, aynı bütçeyle daha fazla benzersiz kişiye ulaşmanı sağlar.\n\n💾 Kaydet — yeni kampanya kurarken exclusion listesini oluştururken aç\n💬 Reklam setlerinde şu ana kadar exclusion audience kullandın mı? Yorumda söyle!\n\n#audienceoverlap #exclusionaudience #metaadsmanager\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Lead Ads formunun her sorusu bir satış kaybı demek olabilir. Çoğu marka ya çok soruyor ya da hiç filtrelemiyor. 👇\n\nDoğru denge; form uzunluğu, prefill kullanımı ve CRM hızının birleşiminde saklı.\nBu carousel'de o dengeyi nasıl kurduğumu adım adım anlatıyorum 👆\n\n─────────────────────\n📝 Form uzunluğu - terk oranı ilişkisi\n⚖️ Kısa form vs uzun form karşılaştırması\n⚡ Prefill alanlarının gerçek etkisi\n🔗 CRM entegrasyonu olmadan lead'in yarısı kaybolur\n🚨 En büyük hata: satışa göre değil, forma göre optimize etmek\n─────────────────────\n\nEn büyük hata: Meta'ya satış verisini geri bildirmeyen hesaplar, kaliteli lead getiren kullanıcı profilini asla öğrenemiyor.\n\nLead Ads sadece form toplama aracı değil, doğru kurulduğunda satış hunisinin en hızlı girişi.\n\n💾 Kaydet — form kurarken aç\n💬 Sen kaç soru soruyorsun formunda? Yorumda söyle!\n\n#leadads #instantform #crm\n#metareklamlari #facebookads #dijitalpazarlama #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }

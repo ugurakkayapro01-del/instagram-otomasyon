@@ -53,6 +53,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 46 | Meta Ads Automated Rules — Kampanya Yönetimini Kural Bazlı Otomatikleştirme | 7 | Otomatik üretildi (2026-10-24) |
 | 47 | Aggregated Event Measurement (AEM) — 8 Öncelikli Event Limiti ile Veri Kaybını Yönetme | 7 | Otomatik üretildi (2026-10-24) |
 | 48 | Audience Overlap (Kitle Çakışması) Analizi — Reklam Setleri Arası Bütçe Rekabetini Önleme | 7 | Otomatik üretildi (2026-10-25) |
+| 49 | Lead Ads Instant Forms Optimizasyonu — Form Uzunluğu ve CRM Entegrasyonu ile Kalite Artırma | 7 | Otomatik üretildi (2026-10-26) |
 
 ---
 
