@@ -1,69 +1,65 @@
 {
-  "topic": "Meta Catalog Set Segmentasyonu — Ürün Kümelerine Göre Bütçe ve Hedefleme Ayrıştırma",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Branded Content Ads (Influencer Whitelisting) — Creator İçeriğini Marka Reklam Hesabından Yayınlama",
-    "Instagram Story/Reels Drop-off Analizi — Tamamlama Oranına Göre Kreatif Süre Optimizasyonu",
-    "Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme"
-  ],
-  "special_kind": "tier",
+  "topic": "Branded Content Ads (Influencer Whitelisting) — Creator İçeriğini Marka Reklam Hesabından Yayınlama",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KATALOG OTOMASYONU",
-      "title": "Tek Katalog\nKullanmak\n**Bütçeni Öldürüyor**",
-      "subtitle": "Her ürün aynı değere sahip değil. Peki reklamın bunu biliyor mu?"
+      "tag": "CREATOR REKLAMCILIĞI",
+      "title": "Influencer Postunu\n**Reklam Hesabından**\nYayınlama Sistemi",
+      "subtitle": "Creator'ın erişimini, senin bütçenle çarpan Meta özelliği: Partnership Ads"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "📦",
-      "title": "Tek Set = Kör Optimizasyon",
-      "body": "Meta, tüm kataloğunu tek set olarak gönderdiğinde algoritma her ürüne eşit önem verir. Ama %20 ürün, satışların %80'ini yapıyor (Pareto kuralı). Düşük performanslı %80 ürün, bütçeni yiyor.\nSet ayrımı yapılmadığında CPA ortalaması gerçek potansiyeli maskeliyor.",
+      "num_label": "Adım 01",
+      "icon": "🤝",
+      "title": "Whitelisting Nedir, Gerçekte Ne Değişir?",
+      "body": "Creator kendi hesabından paylaştığı içeriği senin reklam hesabına 'partner' olarak bağlar. Sen o postu normal reklam gibi hedefler, optimize eder ve bütçelendirirsin. İçerik creator'ın profilinden görünür, reklamı sen yönetirsin.",
       "is_checklist": false,
-      "pill": "Kataloğunu tek set yerine performans bazlı ayır."
+      "pill": "Creator'ın sesi + senin hedefleme gücün = tek reklam"
+    },
+    {
+      "kind": "dark",
+      "num_label": "Adım 02",
+      "icon": "🔐",
+      "title": "İzin Süreci: 24-48 Saat Kuralı",
+      "body": "Creator, Business Manager'dan 'Ortak Reklam İzni' vermeden hiçbir şey yayınlanamaz. Bu onay genelde 24-48 saat içinde tamamlanır. İzin olmadan Partnership Ads Hub'da creator görünmez — bu adım atlanamaz.",
+      "is_checklist": false,
+      "pill": "İzin olmadan whitelisting hiç başlamaz"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama",
-      "icon": "🏆",
-      "title": "4 Katmanlı Set Önceliği",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><div class=\"s1f\">Bestseller Set</div><div class=\"s2f\">Son 30 gün top %10 ürün · Bütçenin %40'ı</div></div></div><div class=\"tier-row high\"><div class=\"tier-rank\">02</div><div class=\"tdesc\"><div class=\"s1f\">Yüksek Marj Set</div><div class=\"s2f\">Kâr marjı %35+ ürünler · Bütçenin %30'u</div></div></div><div class=\"tier-row med\"><div class=\"tier-rank\">03</div><div class=\"tdesc\"><div class=\"s1f\">Sepette Unutulan Set</div><div class=\"s2f\">Dynamic retargeting odaklı · Bütçenin %20'si</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\"><div class=\"s1f\">Düşük Stok / Durgun Set</div><div class=\"s2f\">Sadece organik + minimum bütçe · %10</div></div></div>",
-      "pill": "4 set yeterli, bütçeni önceliğe göre dağıt."
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🎯",
-      "title": "Set Bazlı Hedefleme Ayrıştırması",
-      "body": "Her set farklı kitleye gitmeli. Bestseller seti geniş/Advantage+ hedeflemeyle soğuk trafiğe, sepette unutulan set ise son 14 gün ziyaretçisine (dynamic retargeting) gösterilir.\nAynı seti iki farklı kampanyada kullanmak, kendi reklamınla rekabet etmen (audience overlap) anlamına gelir.",
-      "is_checklist": false,
-      "pill": "Set + kitle eşleşmesini asla karıştırma."
+      "num_label": "Adım 03",
+      "icon": "📊",
+      "title": "Standart Reklam mı, Whitelisted Reklam mı?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Marka Hesabından Reklam</div><div class=\"sval\">Standart CTR, 'reklam' algısı yüksek</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Whitelisted Reklam</div><div class=\"sval\">%20-30 Daha Yüksek CTR, 'post' algısı</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Güven Sinyali</div><div class=\"sval\">Marka konuşuyor</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Güven Sinyali</div><div class=\"sval\">Creator konuşuyor</div></div></div>",
+      "pill": "Sosyal kanıt, reklam algısını kırar"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🔄",
-      "title": "Otomatik Kurallarla Set Güncelleme",
-      "body": "Set üyeliği statik olmamalı. Product feed'deki 'custom label' alanlarını kullanarak satış hızına göre otomatik güncelleme kur: son 30 günde 10+ satış → Bestseller etiketi, 60 gün hareketsiz → Durgun etiketi.\nBu, manuel katalog düzenlemesini tamamen ortadan kaldırır.",
+      "num_label": "Adım 04",
+      "icon": "🎯",
+      "title": "Creator Kitlesinden Lookalike Çıkar",
+      "body": "Whitelisted reklamla etkileşime giren kullanıcılardan özel kitle oluşturabilirsin. Bu kitle, creator'ın takipçi profiline yakın ama senin pikseline hiç dokunmamış yeni bir segmenttir. Minimum 1.000 etkileşim sonrası Lookalike kaynağı olarak kullan.",
       "is_checklist": false,
-      "pill": "Custom label = otomatik set güncellemesinin anahtarı."
+      "pill": "Yeni kitle, sıfırdan soğuk trafik değil"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
+      "num_label": "Uyarı 05",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Set Sayısını Abartmak",
-      "body": "4-5 setten fazlası öğrenme evresini böler, her set yeterli veri toplayamaz. Meta'nın optimize edebilmesi için set başına haftada minimum 50 dönüşüm gerekir.\nÇok fazla mikro-segment, az veri = kötü optimizasyon demektir.",
+      "title": "En Büyük Hata: Tek Creator'a Bağlı Kalmak",
+      "body": "Tek creator ile 2 haftadan uzun whitelisted kampanya, frekansı hızla yükseltir çünkü kitle havuzu sınırlıdır. Aynı anda minimum 3-5 farklı creator testi yap, performansı düşen reklamı hemen değiştir.",
       "is_checklist": false,
-      "pill": "4 set yeterli. Fazlası veri seyreltir."
+      "pill": "3-5 creator rotasyonu, yorgunluğu önler"
     },
     {
       "kind": "cta",
-      "label": "SONRAKİ ADIM",
-      "title": "Kataloğunu\nSegmentlere **Böl**\nBütçeni Doğru Yönlendir"
+      "label": "KAPANIŞ",
+      "title": "Creator'ın Sesini,\n**Senin Stratejinle** Birleştir"
     }
   ],
-  "caption": "Kataloğundaki her ürün aynı bütçeyi hak etmiyor. Ama çoğu e-ticaret sahibi hâlâ tüm ürünleri tek pakette gönderiyor. 👇\n\nBu yüzden bestseller ürünün bütçesi, hiç satmayan ürüne gidiyor.\nÇözüm carousel'de — 4 katmanlı set stratejisi. 👆\n\n─────────────────────\n📦 Tek set neden kör optimizasyon yaratır\n🏆 4 katmanlı set önceliklendirmesi\n🎯 Set bazlı hedefleme ayrıştırması\n🔄 Custom label ile otomatik güncelleme\n⚠️ En büyük hata: set sayısını abartmak\n─────────────────────\n\nEn büyük hata: 4-5'ten fazla set açıp öğrenme evresini bölmek. Meta'nın optimize edebilmesi için set başına haftada min. 50 dönüşüm lazım.\n\nKataloğunu doğru segmentlere ayır, bütçen kendi işini yapsın.\n\n💾 Kaydet — katalog yapını güncellerken aç\n💬 Kaç set kullanıyorsun, yorumda söyle!\n\n#productfeed #catalogsegmentation #dynamicads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Influencer'ın postu organik olarak uçup gidiyor, sen ise aynı ürün için sıfırdan reklam kreatifi üretiyorsun. Oysa o postu reklam hesabından yayınlayıp hedefleyebilirsin. 👇\n\nÇoğu marka bu özelliği bilmiyor çünkü 'whitelisting' terimi hâlâ yeterince konuşulmuyor.\nÇözüm bu carousel'de — adım adım. 👆\n\n─────────────────────\n🤝 Partnership Ads mekanizması nasıl çalışır\n🔐 24-48 saatlik izin süreci\n📊 Standart reklam vs whitelisted reklam CTR farkı\n🎯 Creator kitlesinden Lookalike çıkarma\n⚠️ Tek creator'a bağlı kalma hatası\n─────────────────────\n\nEn büyük hata: Tek bir creator ile uzun süre whitelisted kampanya yürütmek. Kitle havuzu sınırlı olduğu için frekans hızla yükseliyor, performans düşüyor.\n\n3-5 creator rotasyonuyla hem reklam yorgunluğunu önlersin hem de yeni kitlelere sürekli erişirsin.\n\n💾 Kaydet — creator işbirliği kurarken bu adımları tekrar oku\n💬 Hiç whitelisted reklam denedin mi, yoksa sadece organik paylaşım mı yaptırdın? Yorumda söyle!\n\n#partnershipads #whitelisting #influencermarketing\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
