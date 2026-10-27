@@ -1,65 +1,69 @@
 {
-  "topic": "Lead Ads Instant Forms Optimizasyonu — Form Uzunluğu ve CRM Entegrasyonu ile Kalite Artırma",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "topic": "Meta Catalog Set Segmentasyonu — Ürün Kümelerine Göre Bütçe ve Hedefleme Ayrıştırma",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Branded Content Ads (Influencer Whitelisting) — Creator İçeriğini Marka Reklam Hesabından Yayınlama",
+    "Instagram Story/Reels Drop-off Analizi — Tamamlama Oranına Göre Kreatif Süre Optimizasyonu",
+    "Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme"
+  ],
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "LEAD ADS OPTİMİZASYONU",
-      "title": "Formun Uzunluğu\nSatışını **Öldürüyor**\nOlabilir",
-      "subtitle": "Çok soru = az lead. Az soru = düşük kalite. Doğru denge nerede?"
+      "tag": "KATALOG OTOMASYONU",
+      "title": "Tek Katalog\nKullanmak\n**Bütçeni Öldürüyor**",
+      "subtitle": "Her ürün aynı değere sahip değil. Peki reklamın bunu biliyor mu?"
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "📝",
-      "title": "Instant Form Neden Farklı Çalışır",
-      "body": "Lead Ads formları Instagram/Facebook içinde açılır, kullanıcı siteye hiç gitmez. Bu doldurma oranını artırır ama 'tembel lead' riskini de doğurur. Her ek soru, form tamamlama oranını ortalama %10-15 düşürür.",
+      "icon": "📦",
+      "title": "Tek Set = Kör Optimizasyon",
+      "body": "Meta, tüm kataloğunu tek set olarak gönderdiğinde algoritma her ürüne eşit önem verir. Ama %20 ürün, satışların %80'ini yapıyor (Pareto kuralı). Düşük performanslı %80 ürün, bütçeni yiyor.\nSet ayrımı yapılmadığında CPA ortalaması gerçek potansiyeli maskeliyor.",
       "is_checklist": false,
-      "pill": "Kural: Her gereksiz alan bir lead kaybıdır."
+      "pill": "Kataloğunu tek set yerine performans bazlı ayır."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Karşılaştırma",
-      "icon": "⚖️",
-      "title": "Kısa Form mu, Uzun Form mu?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">KISA FORM (3-4 soru)</div><div class=\"sval best\">%38 doldurma</div><div class=\"tdesc\">Hacim yüksek, kalite değişken</div></div><div class=\"cmp-col\"><div class=\"slabel\">UZUN FORM (7+ soru)</div><div class=\"sval\">%14 doldurma</div><div class=\"tdesc\">Hacim düşük, kalite yüksek</div></div></div>",
-      "pill": "Doğru denge: 5 soru + prefill alanları"
+      "num_label": "Sıralama",
+      "icon": "🏆",
+      "title": "4 Katmanlı Set Önceliği",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\"><div class=\"s1f\">Bestseller Set</div><div class=\"s2f\">Son 30 gün top %10 ürün · Bütçenin %40'ı</div></div></div><div class=\"tier-row high\"><div class=\"tier-rank\">02</div><div class=\"tdesc\"><div class=\"s1f\">Yüksek Marj Set</div><div class=\"s2f\">Kâr marjı %35+ ürünler · Bütçenin %30'u</div></div></div><div class=\"tier-row med\"><div class=\"tier-rank\">03</div><div class=\"tdesc\"><div class=\"s1f\">Sepette Unutulan Set</div><div class=\"s2f\">Dynamic retargeting odaklı · Bütçenin %20'si</div></div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\"><div class=\"s1f\">Düşük Stok / Durgun Set</div><div class=\"s2f\">Sadece organik + minimum bütçe · %10</div></div></div>",
+      "pill": "4 set yeterli, bütçeni önceliğe göre dağıt."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "⚡",
-      "title": "Prefill Alanları Kaliteyi Düşürmez, Hızı Artırır",
-      "body": "Ad, e-posta, telefon gibi alanlar Facebook profilinden otomatik dolar (prefill). Bu alanlar doldurma oranını düşürmez çünkü kullanıcı tek dokunuşla geçer. Asıl filtre senin eklediğin özel sorular olmalı — onları en fazla 2 ile sınırla.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🎯",
+      "title": "Set Bazlı Hedefleme Ayrıştırması",
+      "body": "Her set farklı kitleye gitmeli. Bestseller seti geniş/Advantage+ hedeflemeyle soğuk trafiğe, sepette unutulan set ise son 14 gün ziyaretçisine (dynamic retargeting) gösterilir.\nAynı seti iki farklı kampanyada kullanmak, kendi reklamınla rekabet etmen (audience overlap) anlamına gelir.",
       "is_checklist": false,
-      "pill": "Prefill = ücretsiz hız. Özel soru = maliyetli filtre."
+      "pill": "Set + kitle eşleşmesini asla karıştırma."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🔗",
-      "title": "CRM Entegrasyonu Olmadan Lead Ads Yarım Kalır",
-      "body": "Lead formundan gelen veri Facebook'ta sadece 90 gün saklanır, sonra silinir. Zapier veya native CRM entegrasyonu yoksa lead'ler manuel indirilir, yanıt süresi saatlerle uzar. 5 dakika içinde aranan lead, 1 saat sonra aranana göre dönüşüme 7 kat daha yakındır.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "🔄",
+      "title": "Otomatik Kurallarla Set Güncelleme",
+      "body": "Set üyeliği statik olmamalı. Product feed'deki 'custom label' alanlarını kullanarak satış hızına göre otomatik güncelleme kur: son 30 günde 10+ satış → Bestseller etiketi, 60 gün hareketsiz → Durgun etiketi.\nBu, manuel katalog düzenlemesini tamamen ortadan kaldırır.",
       "is_checklist": false,
-      "pill": "Entegrasyon yoksa lead'in yarısı soğuyor."
+      "pill": "Custom label = otomatik set güncellemesinin anahtarı."
     },
     {
       "kind": "dark",
-      "num_label": "En Büyük Hata",
-      "icon": "🚨",
-      "title": "Lead Kalitesini Satışa Göre Değil, Forma Göre Ölçmek",
-      "body": "Meta algoritması varsayılan olarak 'form tamamlama' olayını optimize eder, 'satışa dönüşen lead' olayını değil. Offline Conversions API ile CRM'deki gerçek satış verisini Meta'ya geri gönderirsen, algoritma kaliteli lead getiren kullanıcı profiline yönelmeye başlar.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Set Sayısını Abartmak",
+      "body": "4-5 setten fazlası öğrenme evresini böler, her set yeterli veri toplayamaz. Meta'nın optimize edebilmesi için set başına haftada minimum 50 dönüşüm gerekir.\nÇok fazla mikro-segment, az veri = kötü optimizasyon demektir.",
       "is_checklist": false,
-      "pill": "Geri bildirim döngüsü olmayan Lead Ads kör uçar."
+      "pill": "4 set yeterli. Fazlası veri seyreltir."
     },
     {
       "kind": "cta",
-      "label": "Meta Reklam Danışmanlığı",
-      "title": "Formun Her Sorusu\nBir **Karar** Demek"
+      "label": "SONRAKİ ADIM",
+      "title": "Kataloğunu\nSegmentlere **Böl**\nBütçeni Doğru Yönlendir"
     }
   ],
-  "caption": "Lead Ads formunun her sorusu bir satış kaybı demek olabilir. Çoğu marka ya çok soruyor ya da hiç filtrelemiyor. 👇\n\nDoğru denge; form uzunluğu, prefill kullanımı ve CRM hızının birleşiminde saklı.\nBu carousel'de o dengeyi nasıl kurduğumu adım adım anlatıyorum 👆\n\n─────────────────────\n📝 Form uzunluğu - terk oranı ilişkisi\n⚖️ Kısa form vs uzun form karşılaştırması\n⚡ Prefill alanlarının gerçek etkisi\n🔗 CRM entegrasyonu olmadan lead'in yarısı kaybolur\n🚨 En büyük hata: satışa göre değil, forma göre optimize etmek\n─────────────────────\n\nEn büyük hata: Meta'ya satış verisini geri bildirmeyen hesaplar, kaliteli lead getiren kullanıcı profilini asla öğrenemiyor.\n\nLead Ads sadece form toplama aracı değil, doğru kurulduğunda satış hunisinin en hızlı girişi.\n\n💾 Kaydet — form kurarken aç\n💬 Sen kaç soru soruyorsun formunda? Yorumda söyle!\n\n#leadads #instantform #crm\n#metareklamlari #facebookads #dijitalpazarlama #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Kataloğundaki her ürün aynı bütçeyi hak etmiyor. Ama çoğu e-ticaret sahibi hâlâ tüm ürünleri tek pakette gönderiyor. 👇\n\nBu yüzden bestseller ürünün bütçesi, hiç satmayan ürüne gidiyor.\nÇözüm carousel'de — 4 katmanlı set stratejisi. 👆\n\n─────────────────────\n📦 Tek set neden kör optimizasyon yaratır\n🏆 4 katmanlı set önceliklendirmesi\n🎯 Set bazlı hedefleme ayrıştırması\n🔄 Custom label ile otomatik güncelleme\n⚠️ En büyük hata: set sayısını abartmak\n─────────────────────\n\nEn büyük hata: 4-5'ten fazla set açıp öğrenme evresini bölmek. Meta'nın optimize edebilmesi için set başına haftada min. 50 dönüşüm lazım.\n\nKataloğunu doğru segmentlere ayır, bütçen kendi işini yapsın.\n\n💾 Kaydet — katalog yapını güncellerken aç\n💬 Kaç set kullanıyorsun, yorumda söyle!\n\n#productfeed #catalogsegmentation #dynamicads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
