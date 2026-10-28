@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Instagram Story/Reels Drop-off Analizi — Tamamlama Oranına Göre Kreatif Süre Optimizasyonu
 - Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme
 
 ## Yeni Konu Üretme Kuralları
