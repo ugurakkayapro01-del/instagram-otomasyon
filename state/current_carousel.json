@@ -1,65 +1,65 @@
 {
-  "topic": "Instagram Story/Reels Drop-off Analizi — Tamamlama Oranına Göre Kreatif Süre Optimizasyonu",
+  "topic": "Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "timeline",
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "Kreatif Optimizasyonu",
-      "title": "Reels İzleyicisinin\n%58'i İlk <em>3 Saniyede</em>\nKayboluyor",
-      "subtitle": "Video süresi değil, drop-off noktası sonucu belirler. Veriyi okumayı bilmeyen her kreatifte şansa oynar."
+      "tag": "ATTRIBUTION MODELLEME",
+      "title": "Son Tıklamaya\nGüvenmek Seni\n**Yanlış Kanala**\nYönlendiriyor",
+      "subtitle": "Hangi reklamın gerçekten satış getirdiğini bilmeden bütçe harcıyorsun."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01",
-      "icon": "📊",
-      "title": "Meta'nın Gizli Kalan 4 Metriği",
-      "body": "Ads Manager'da 'Video Plays at 25/50/75/95%' kırılımı, izleyicinin videoyu ne kadarını izlediğini gösterir. En kritik olan %95 metriğidir — bu oran düşükse video gereğinden uzun demektir. Çoğu hesap sahibi bu kırılımı hiç açmıyor, sadece izlenme sayısına bakıyor.",
+      "num_label": "İpucu 02 / 07",
+      "icon": "🎯",
+      "title": "Last-Click Yanılgısı",
+      "body": "Last-click modeli, satın almadan hemen önceki tıklamaya tüm krediyi verir. Müşteri genelde satın almadan önce 3-5 temas noktasından geçer: Reels, arama, retargeting. Last-click öncekileri 'sıfır katkı' sayar — bu yüzden üst huni kampanyaları haksız yere kapatılır.",
       "is_checklist": false,
-      "pill": "Her raporda 'Video Plays at 25/50/75/95%' kırılımını kontrol et"
+      "pill": "Tek temas noktasına güvenme, tüm yolculuğa bak"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Harita 01",
-      "icon": "⏱️",
-      "title": "Saniye Bazlı Kayıp Haritası",
-      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><div class=\"ttime\">0-3sn</div><div class=\"tconnect\"></div><div class=\"tdesc\">İzleyicinin %58'i bu aralıkta kayboluyor — hook zayıfsa hemen kaydırılıyor.</div></div><div class=\"trow\"><div class=\"ttime\">3-7sn</div><div class=\"tconnect\"></div><div class=\"tdesc\">Kalanların %20'si merak unsuru yoksa bu noktada çıkıyor.</div></div><div class=\"trow\"><div class=\"ttime\">7-15sn</div><div class=\"tconnect\"></div><div class=\"tdesc\">Değer net değilse izleyici burada ayrılıyor, mesaj tekrarı şart.</div></div><div class=\"trow\"><div class=\"ttime\">15sn+</div><div class=\"tconnect\"></div><div class=\"tdesc\">Bu noktaya ulaşanların %70'i videoyu tamamlıyor — CTA burada güçlü olmalı.</div></div></div>",
-      "pill": "İlk 3 saniyedeki kaybı %58'in altına indiren kreatif kazanır"
+      "num_label": "Sıralama 03 / 07",
+      "icon": "📊",
+      "title": "5 Attribution Modeli Karşılaştırması",
+      "inner_html": "<div class=\"tier-row\"><div class=\"tier-rank\">01</div><div class=\"tdesc\">Last Click — Sadece son tıklamaya %100 kredi verir, üst huniyi görmezden gelir</div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div class=\"tdesc\">Linear — Tüm temas noktalarına eşit pay verir, gerçekçi değildir</div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div class=\"tdesc\">Time Decay — Satışa yakın temaslara daha fazla ağırlık verir</div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\">Position Based — İlk ve son temasa %40/%40, araya %20 dağıtır</div></div><div class=\"tier-row best\"><div class=\"tier-rank\">05</div><div class=\"tdesc\">Data-Driven (DDA) — Makine öğrenmesiyle her temasın gerçek katkısını hesaplar</div></div>",
+      "pill": "Meta, Data-Driven Attribution'ı varsayılan model olarak kullanıyor"
     },
     {
       "kind": "dark",
-      "num_label": "Kural 01",
-      "icon": "🎯",
-      "title": "Tamamlama Oranına Göre Süre Kararı",
-      "body": "Completion rate %50'nin altındaysa video çok uzun demektir, süreyi kısalt. 15 saniyenin altındaki videolarda hedef %50+, 30 saniyelik videolarda hedef %25+ tamamlama oranıdır. %95 Plays oranı %20'nin altındaysa kreatifin bitişi neredeyse hiç görülmüyor demektir.",
+      "num_label": "Adım 04 / 07",
+      "icon": "🧠",
+      "title": "DDA Nasıl Hesaplanır?",
+      "body": "Meta'nın DDA modeli, dönüşüm yapan ve yapmayan kullanıcıların temas geçmişini karşılaştırır. Her etkileşimin (görüntüleme, tıklama) satın alma olasılığını ne kadar artırdığını istatistiksel olarak ölçer. Minimum 300 dönüşüm/hafta verisi olmadan model güvenilir çalışmaz, az veri varsayılan ağırlıklara döner.",
       "is_checklist": false,
-      "pill": "Completion rate %50'nin altındaysa süreyi kısalt, mesajı sıkıştır"
+      "pill": "300 dönüşüm/hafta altında DDA verisi güvenilmez"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01",
-      "icon": "✂️",
-      "title": "İlk 3 Saniyeyi Hook'a Dönüştürme",
-      "body": "Yüz/göz teması ilk karede olmalı, izleyici 0.4 saniyede karar veriyor\nMetin overlay hook cümlesini tekrar etmeli, sessiz izleyenlerin %85'i metinle anlıyor\nHareket/geçiş efekti ilk 1 saniyede olmalı, statik kare kaydırmayı tetikliyor",
-      "is_checklist": true,
-      "pill": "Hook'u görsel + metin + hareket üçlüsüyle güçlendir"
+      "num_label": "İpucu 05 / 07",
+      "icon": "🔄",
+      "title": "Kanallar Arası Tutarsızlığı Çöz",
+      "body": "Google Analytics, Meta ve TikTok kendi attribution modelini kullanır — her platform kendi reklamına daha fazla kredi verme eğilimindedir (self-attribution bias). Toplam raporlanan dönüşüm, gerçek satışın %130-150'sine çıkabilir. Tek doğruluk kaynağı olarak sipariş yönetim sisteminden gelen gerçek ciroyu referans al.",
+      "is_checklist": false,
+      "pill": "Platform raporlarının toplamı asla gerçek ciro değildir"
     },
     {
       "kind": "dark",
-      "num_label": "Hata 01",
+      "num_label": "Uyarı 06 / 07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: CTA'yı Sona Saklamak",
-      "body": "İzleyicinin sadece %20-25'i videoyu %95 noktasına kadar izliyor. CTA'yı yalnızca son saniyeye koyarsan izleyicinin %75'i hiç görmeden kaydırmış olur. Çözüm: CTA'yı 7. saniye civarında bir kez, sonda bir kez daha tekrarla.",
+      "title": "En Büyük Hata: Tek Modelle Karar Vermek",
+      "body": "Sadece last-click raporuna bakıp üst huni kampanyalarını kapatmak en büyük bütçe hatasıdır. Awareness ve retargeting kampanyalarını aynı ROAS beklentisiyle karşılaştırma, farklı görevleri var. DDA raporunu günlük değil, en az 2 haftalık toplanmış veriyle değerlendir.",
       "is_checklist": false,
-      "pill": "CTA'yı videonun ortasına da yerleştir, sadece sona güvenme"
+      "pill": "Her kampanyayı huninin neresinde olduğuna göre değerlendir"
     },
     {
       "kind": "cta",
-      "label": "Takip Et & Kaydet",
-      "title": "Kreatifini Veriye Göre Kes,\nTahmine Göre Değil"
+      "label": "HAZIRSAN BAŞLAYALIM",
+      "title": "Doğru Modeli Kullanmayan,\n**Yanlış Kanalı** Besliyor"
     }
   ],
-  "caption": "Reels'ine bütçe akıtıyorsun ama izleyici 3. saniyede kayboluyorsa, o kreatif daha hiç şans bulamadan ölmüş demektir. 👇\n\nÇoğu hesap sahibi izlenme sayısına bakıyor, ama asıl hikaye 'nerede kaybettiğinde' saklı.\nBu carousel'de Meta'nın gösterdiği ama kimsenin okumadığı drop-off verisini açıyorum. 👆\n\n─────────────────────\n📊 Video Plays at 25/50/75/95% — Ads Manager'ın gizli kalan metriği\n⏱️ Saniye bazlı kayıp haritası — 0-3sn / 3-7sn / 7-15sn / 15sn+\n🎯 Completion rate %50 kuralı — video ne zaman çok uzun demektir\n✂️ İlk 3 saniyeyi hook'a dönüştüren 3 teknik\n⚠️ CTA'yı sona saklama hatası ve çözümü\n─────────────────────\n\nEn büyük hata: CTA'yı videonun en sonuna koymak. İzleyicinin %75'i oraya hiç ulaşmıyor bile.\n\nSüreyi tahminle değil, tamamlama verisiyle kes. Fark kampanyanın ROAS'ına direkt yansır.\n\n💾 Kaydet — bir sonraki Reels kreatifini kurgulamadan önce aç\n💬 Reels'lerin genelde kaçıncı saniyede düşüyor? Yorumda söyle!\n\n#dropoffanalizi #reelsads #completionrate\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #instagramreklamlari"
+  "caption": "Reklamın hangisi satış getirdi? Son tıklamaya bakıyorsan, yanlış soruyu soruyorsun. 👇\n\nÇoğu marka awareness kampanyalarını 'satış getirmiyor' diye kapatıyor — ama ölçüm modeli yanlış.\nGerçek katkıyı gösteren sistem carousel'de. 👆\n\n─────────────────────\n🎯 Last-click neden yanıltıyor\n📊 5 attribution modeli karşılaştırması\n🧠 Data-Driven Attribution nasıl hesaplanıyor\n🔄 Kanallar arası raporlama tutarsızlığı\n⚠️ En büyük hata: tek modelle karar vermek\n─────────────────────\n\nEn büyük hata: Awareness kampanyasını satış kampanyasıyla aynı ROAS beklentisiyle yargılamak. İkisinin görevi farklı.\n\nDoğru model, doğru bütçe kararı demek.\n\n💾 Kaydet — kampanya bütçesi keserken tekrar bak\n💬 Hangi attribution modelini kullanıyorsun? Yorumda söyle!\n\n#attributionmodeling #datadrivenattribution #marketingattribution\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

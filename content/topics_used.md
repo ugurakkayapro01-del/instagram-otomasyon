@@ -57,6 +57,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 50 | Meta Catalog Set Segmentasyonu — Ürün Kümelerine Göre Bütçe ve Hedefleme Ayrıştırma | 7 | Otomatik üretildi (2026-10-27) |
 | 51 | Branded Content Ads (Influencer Whitelisting) — Creator İçeriğini Marka Reklam Hesabından Yayınlama | 7 | Otomatik üretildi (2026-10-27) |
 | 52 | Instagram Story/Reels Drop-off Analizi — Tamamlama Oranına Göre Kreatif Süre Optimizasyonu | 7 | Otomatik üretildi (2026-10-28) |
+| 53 | Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme | 7 | Otomatik üretildi (2026-10-28) |
 
 ---
 
