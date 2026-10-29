@@ -1,69 +1,65 @@
 {
-  "topic": "Meta Ads Relevance Diagnostics — Quality, Engagement ve Conversion Ranking Skorlarını Yükseltme Teknikleri",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Dayparting (Saat Bazlı Bütçe Pacing) — Dönüşüm Yoğunluğuna Göre Reklam Zamanlama Optimizasyonu",
-    "Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi",
-    "Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi"
-  ],
-  "special_kind": "risk",
+  "topic": "Dayparting (Saat Bazlı Bütçe Pacing) — Dönüşüm Yoğunluğuna Göre Reklam Zamanlama Optimizasyonu",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "META ADS DIAGNOSTICS",
-      "title": "CPM'in Neden\nBu Kadar Yüksek?\n**Relevance Skorun** Düşük",
-      "subtitle": "3 gizli metrik reklam maliyetini doğrudan belirliyor. Çoğu reklamveren bunları hiç kontrol etmiyor."
+      "tag": "ZAMANLAMA & BÜTÇE PACING",
+      "title": "Günün Her Saati\nAynı Değeri\n**Taşımıyor**",
+      "subtitle": "Bütçenin yarısı, kimsenin alışveriş yapmadığı saatlerde eriyor. Çözüm saat bazlı planlamada."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🎯",
-      "title": "3 Ranking, Tek Skor Değil",
-      "body": "Meta, her reklamı 3 ayrı diagnostics metriğiyle değerlendirir: Quality Ranking, Engagement Rate Ranking, Conversion Rate Ranking. Bunlar eski 'relevance score'un yerini aldı — her biri farklı bir sinyali ölçer.",
+      "num_label": "Taktik 01 / 07",
+      "icon": "⏱️",
+      "title": "Bütçe Eşit Dağılır, Talep Eşit Dağılmaz",
+      "body": "Günlük bütçe otomatik olarak 24 saate eşit yayılır. Ama dönüşüm, saatlere göre ciddi şekilde dalgalanır. Gece 03:00'teki tıklama ile akşam 21:00'deki tıklama aynı maliyeti taşır — ama aynı satışı getirmez.",
       "is_checklist": false,
-      "pill": "Tek bir relevance score yok, 3 bağımsız skor var"
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "📊",
-      "title": "Skorlar CPM'i Doğrudan Etkiler",
-      "body": "Below Average (alt %35) skor alan reklamlar, Above Average reklamlara göre aynı kitlede %20-30 daha yüksek CPM öder. Algoritma düşük skorlu reklamı daha az gösterir, bu da maliyeti artırır.",
-      "is_checklist": false,
-      "pill": "Düşük skor = Daha az gösterim = Daha yüksek maliyet"
+      "pill": "Harcama saati = satış saati değilse bütçe sızdırıyorsun"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🚦",
-      "title": "Skorun Neresindesin?",
-      "inner_html": "<div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"flabel\">Quality Ranking</div><div class=\"sval\">Üst %35 — Above Average</div></div><div class=\"risk-row\"><div class=\"risk-dot med\"></div><div class=\"flabel\">Engagement Rate Ranking</div><div class=\"sval\">Orta %20 — Average</div></div><div class=\"risk-row\"><div class=\"risk-dot danger\"></div><div class=\"flabel\">Conversion Rate Ranking</div><div class=\"sval\">Alt %35 — Below Average</div></div><div class=\"thr-badge warn\">Below Average = CPM'de %20-30 artış riski</div>",
-      "pill": "Below Average aldığın skoru önce düzelt, bütçeyi sonra artır"
-    },
-    {
-      "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🖼️",
-      "title": "Quality Ranking'i Ne Düşürür?",
-      "body": "Clickbait veya yanıltıcı başlık\nAşırı metin yoğunluğu (görselde %20 üzeri yazı)\nKullanıcı şikayeti/gizleme oranı yüksek kreatif\nAlakasız açılış sayfası deneyimi",
-      "is_checklist": true,
-      "pill": "Kreatifi temizle, Quality Ranking'i hesap genelinde iyileştir"
+      "num_label": "Taktik 02 / 07",
+      "icon": "📊",
+      "title": "Günün Dönüşüm Haritasını Çıkar",
+      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">00:00 - 07:00</div><div class=\"tdesc\">Düşük yoğunluk — bütçenin önemli kısmı burada boşa yanıyor</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">12:00 - 14:00</div><div class=\"tdesc\">Öğle arası küçük tepe — mobil trafik artıyor</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">19:00 - 23:00</div><div class=\"tdesc\">Zirve dönüşüm — satın alma kararlarının çoğu burada</div></div></div>",
+      "pill": "Zirve saatlere bütçenin en az %50'sini kaydır"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
+      "num_label": "Taktik 03 / 07",
       "icon": "⚙️",
-      "title": "Conversion Ranking'i Yükseltme",
-      "body": "Bu skor, aynı optimizasyon hedefini seçen reklamverenlerle kıyaslanarak hesaplanır. Düşükse önce pixel/CAPI veri kalitesini kontrol et, sonra landing page yükleme hızını 3 saniyenin altına indir.",
+      "title": "Ad Scheduling Sadece Lifetime Budget'ta Çalışır",
+      "body": "Meta'nın saat bazlı zamanlama (ad scheduling) özelliği sadece lifetime budget seçili kampanyalarda aktif olur. Günlük bütçe (daily budget) kullanıyorsan bu seçenek gri görünür çünkü algoritma günü kendi başına optimize ettiğini varsayar.",
       "is_checklist": false,
-      "pill": "Düşük Conversion Ranking çoğu zaman landing page sorunudur"
+      "pill": "Saat planlaması istiyorsan lifetime budget'a geç"
+    },
+    {
+      "kind": "light",
+      "num_label": "Taktik 04 / 07",
+      "icon": "🔍",
+      "title": "Saat Kırılımını Ads Manager'da Oku",
+      "body": "Raporlar'da saat kırılımını (reklamın hesap saat diliminde) aç. Güvenilir karar için minimum 14 gün veri ve segment başına en az 50 dönüşüm bekle — daha azı gürültü, gerçek sinyal değil.",
+      "is_checklist": false,
+      "pill": "14 gün / 50 dönüşüm altı veriyle karar verme"
+    },
+    {
+      "kind": "dark",
+      "num_label": "Taktik 05 / 07",
+      "icon": "🚫",
+      "title": "En Büyük Hata: Düşük Saatleri Tamamen Kapatmak",
+      "body": "Zayıf performans gösteren saatleri sıfıra çekmek öğrenme evresini sıfırlar ve kampanyayı yeniden öğrenme durumuna düşürür. Kapatmak yerine ağırlıklandır — bütçeyi azalt, tamamen kesme.",
+      "is_checklist": false,
+      "pill": "Kapatma, ağırlıklandır — öğrenmeyi sıfırlama"
     },
     {
       "kind": "cta",
-      "label": "META ADS DIAGNOSTICS",
-      "title": "Skorun Düşükse\n**Bütçe Çözüm Değil**"
+      "label": "KAPANIŞ",
+      "title": "Doğru Saatte Harcama, Her Saat Harcamaktan Daha Değerli"
     }
   ],
-  "caption": "Reklamın CPM'i sürekli yükseliyor ama neden bilmiyorsun. Büyük ihtimalle 3 gizli skorundan biri 'Below Average' bölgede. 👇\n\nMeta artık tek bir relevance score kullanmıyor — Quality, Engagement Rate ve Conversion Rate Ranking diye 3 ayrı metrik var.\nBu carousel'de her birini nasıl okuyacağını ve nasıl düzelteceğini anlatıyorum. 👆\n\n─────────────────────\n🎯 3 ranking metriği ve ne ölçtükleri\n📊 Below Average skorun CPM'e etkisi (%20-30)\n🚦 Üç skor da renk kodlu, nerede durduğunu gör\n🖼️ Quality Ranking'i düşüren 4 kreatif hatası\n⚙️ Conversion Ranking'i yükseltmenin gerçek yolu\n─────────────────────\n\nEn büyük hata: Skor düşükken bütçeyi artırmak. Bu, düşük performansı daha pahalı hale getirmekten başka bir işe yaramaz.\n\nÖnce skoru düzelt, sonra ölçeklendir — sıra bu.\n\n💾 Kaydet — kampanya raporunu incelerken diagnostics sekmesine bakmadan önce aç\n💬 Hesabında hangi ranking 'Below Average' çıktı? Yorumda söyle!\n\n#relevancediagnostics #qualityranking #conversionranking\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Bütçenin yarısı, kimsenin alışveriş yapmadığı saatlerde eriyip gidiyor. 👇\n\nÇoğu marka günlük bütçeyi 24 saate eşit dağıtıyor — ama müşteri eşit dağılmıyor.\nÇözüm, saat bazlı bütçe planlamasında (dayparting) saklı. 👆\n\n─────────────────────\n⏱️ Bütçe eşit, talep eşit değil — saatlik maliyet-satış farkı\n📊 Günün dönüşüm haritası — zirve saatleri bulma\n⚙️ Ad scheduling sadece lifetime budget'ta aktif oluyor\n🔍 Ads Manager'da saat kırılımını doğru okuma (14 gün / 50 dönüşüm kuralı)\n🚫 En büyük hata: zayıf saatleri kapatmak, ağırlıklandırmak yerine\n─────────────────────\n\nEn büyük hata: Düşük performanslı saatleri sıfıra çekmek kampanyayı yeniden öğrenme evresine düşürüyor. Kapatma, ağırlıklandır.\n\nDoğru saatte harcamak, her saat harcamaktan daha değerli. Bunu uygulayan hesaplarda CPA gözle görülür şekilde düşüyor.\n\n💾 Kaydet — kampanya bütçesini planlarken tekrar bak\n💬 Senin sektöründe zirve satış saati kaçta? Yorumda söyle!\n\n#dayparting #adscheduling #budgetpacing\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
