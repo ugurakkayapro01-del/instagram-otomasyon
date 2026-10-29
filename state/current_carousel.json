@@ -1,65 +1,69 @@
 {
-  "topic": "Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "topic": "Meta Ads Relevance Diagnostics — Quality, Engagement ve Conversion Ranking Skorlarını Yükseltme Teknikleri",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Dayparting (Saat Bazlı Bütçe Pacing) — Dönüşüm Yoğunluğuna Göre Reklam Zamanlama Optimizasyonu",
+    "Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi",
+    "Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi"
+  ],
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "ATTRIBUTION MODELLEME",
-      "title": "Son Tıklamaya\nGüvenmek Seni\n**Yanlış Kanala**\nYönlendiriyor",
-      "subtitle": "Hangi reklamın gerçekten satış getirdiğini bilmeden bütçe harcıyorsun."
+      "tag": "META ADS DIAGNOSTICS",
+      "title": "CPM'in Neden\nBu Kadar Yüksek?\n**Relevance Skorun** Düşük",
+      "subtitle": "3 gizli metrik reklam maliyetini doğrudan belirliyor. Çoğu reklamveren bunları hiç kontrol etmiyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 02 / 07",
+      "num_label": "İpucu 01 / 07",
       "icon": "🎯",
-      "title": "Last-Click Yanılgısı",
-      "body": "Last-click modeli, satın almadan hemen önceki tıklamaya tüm krediyi verir. Müşteri genelde satın almadan önce 3-5 temas noktasından geçer: Reels, arama, retargeting. Last-click öncekileri 'sıfır katkı' sayar — bu yüzden üst huni kampanyaları haksız yere kapatılır.",
+      "title": "3 Ranking, Tek Skor Değil",
+      "body": "Meta, her reklamı 3 ayrı diagnostics metriğiyle değerlendirir: Quality Ranking, Engagement Rate Ranking, Conversion Rate Ranking. Bunlar eski 'relevance score'un yerini aldı — her biri farklı bir sinyali ölçer.",
       "is_checklist": false,
-      "pill": "Tek temas noktasına güvenme, tüm yolculuğa bak"
+      "pill": "Tek bir relevance score yok, 3 bağımsız skor var"
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "📊",
+      "title": "Skorlar CPM'i Doğrudan Etkiler",
+      "body": "Below Average (alt %35) skor alan reklamlar, Above Average reklamlara göre aynı kitlede %20-30 daha yüksek CPM öder. Algoritma düşük skorlu reklamı daha az gösterir, bu da maliyeti artırır.",
+      "is_checklist": false,
+      "pill": "Düşük skor = Daha az gösterim = Daha yüksek maliyet"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama 03 / 07",
-      "icon": "📊",
-      "title": "5 Attribution Modeli Karşılaştırması",
-      "inner_html": "<div class=\"tier-row\"><div class=\"tier-rank\">01</div><div class=\"tdesc\">Last Click — Sadece son tıklamaya %100 kredi verir, üst huniyi görmezden gelir</div></div><div class=\"tier-row\"><div class=\"tier-rank\">02</div><div class=\"tdesc\">Linear — Tüm temas noktalarına eşit pay verir, gerçekçi değildir</div></div><div class=\"tier-row\"><div class=\"tier-rank\">03</div><div class=\"tdesc\">Time Decay — Satışa yakın temaslara daha fazla ağırlık verir</div></div><div class=\"tier-row\"><div class=\"tier-rank\">04</div><div class=\"tdesc\">Position Based — İlk ve son temasa %40/%40, araya %20 dağıtır</div></div><div class=\"tier-row best\"><div class=\"tier-rank\">05</div><div class=\"tdesc\">Data-Driven (DDA) — Makine öğrenmesiyle her temasın gerçek katkısını hesaplar</div></div>",
-      "pill": "Meta, Data-Driven Attribution'ı varsayılan model olarak kullanıyor"
-    },
-    {
-      "kind": "dark",
-      "num_label": "Adım 04 / 07",
-      "icon": "🧠",
-      "title": "DDA Nasıl Hesaplanır?",
-      "body": "Meta'nın DDA modeli, dönüşüm yapan ve yapmayan kullanıcıların temas geçmişini karşılaştırır. Her etkileşimin (görüntüleme, tıklama) satın alma olasılığını ne kadar artırdığını istatistiksel olarak ölçer. Minimum 300 dönüşüm/hafta verisi olmadan model güvenilir çalışmaz, az veri varsayılan ağırlıklara döner.",
-      "is_checklist": false,
-      "pill": "300 dönüşüm/hafta altında DDA verisi güvenilmez"
+      "num_label": "İpucu 03 / 07",
+      "icon": "🚦",
+      "title": "Skorun Neresindesin?",
+      "inner_html": "<div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"flabel\">Quality Ranking</div><div class=\"sval\">Üst %35 — Above Average</div></div><div class=\"risk-row\"><div class=\"risk-dot med\"></div><div class=\"flabel\">Engagement Rate Ranking</div><div class=\"sval\">Orta %20 — Average</div></div><div class=\"risk-row\"><div class=\"risk-dot danger\"></div><div class=\"flabel\">Conversion Rate Ranking</div><div class=\"sval\">Alt %35 — Below Average</div></div><div class=\"thr-badge warn\">Below Average = CPM'de %20-30 artış riski</div>",
+      "pill": "Below Average aldığın skoru önce düzelt, bütçeyi sonra artır"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 05 / 07",
-      "icon": "🔄",
-      "title": "Kanallar Arası Tutarsızlığı Çöz",
-      "body": "Google Analytics, Meta ve TikTok kendi attribution modelini kullanır — her platform kendi reklamına daha fazla kredi verme eğilimindedir (self-attribution bias). Toplam raporlanan dönüşüm, gerçek satışın %130-150'sine çıkabilir. Tek doğruluk kaynağı olarak sipariş yönetim sisteminden gelen gerçek ciroyu referans al.",
-      "is_checklist": false,
-      "pill": "Platform raporlarının toplamı asla gerçek ciro değildir"
+      "num_label": "İpucu 04 / 07",
+      "icon": "🖼️",
+      "title": "Quality Ranking'i Ne Düşürür?",
+      "body": "Clickbait veya yanıltıcı başlık\nAşırı metin yoğunluğu (görselde %20 üzeri yazı)\nKullanıcı şikayeti/gizleme oranı yüksek kreatif\nAlakasız açılış sayfası deneyimi",
+      "is_checklist": true,
+      "pill": "Kreatifi temizle, Quality Ranking'i hesap genelinde iyileştir"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 06 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Tek Modelle Karar Vermek",
-      "body": "Sadece last-click raporuna bakıp üst huni kampanyalarını kapatmak en büyük bütçe hatasıdır. Awareness ve retargeting kampanyalarını aynı ROAS beklentisiyle karşılaştırma, farklı görevleri var. DDA raporunu günlük değil, en az 2 haftalık toplanmış veriyle değerlendir.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚙️",
+      "title": "Conversion Ranking'i Yükseltme",
+      "body": "Bu skor, aynı optimizasyon hedefini seçen reklamverenlerle kıyaslanarak hesaplanır. Düşükse önce pixel/CAPI veri kalitesini kontrol et, sonra landing page yükleme hızını 3 saniyenin altına indir.",
       "is_checklist": false,
-      "pill": "Her kampanyayı huninin neresinde olduğuna göre değerlendir"
+      "pill": "Düşük Conversion Ranking çoğu zaman landing page sorunudur"
     },
     {
       "kind": "cta",
-      "label": "HAZIRSAN BAŞLAYALIM",
-      "title": "Doğru Modeli Kullanmayan,\n**Yanlış Kanalı** Besliyor"
+      "label": "META ADS DIAGNOSTICS",
+      "title": "Skorun Düşükse\n**Bütçe Çözüm Değil**"
     }
   ],
-  "caption": "Reklamın hangisi satış getirdi? Son tıklamaya bakıyorsan, yanlış soruyu soruyorsun. 👇\n\nÇoğu marka awareness kampanyalarını 'satış getirmiyor' diye kapatıyor — ama ölçüm modeli yanlış.\nGerçek katkıyı gösteren sistem carousel'de. 👆\n\n─────────────────────\n🎯 Last-click neden yanıltıyor\n📊 5 attribution modeli karşılaştırması\n🧠 Data-Driven Attribution nasıl hesaplanıyor\n🔄 Kanallar arası raporlama tutarsızlığı\n⚠️ En büyük hata: tek modelle karar vermek\n─────────────────────\n\nEn büyük hata: Awareness kampanyasını satış kampanyasıyla aynı ROAS beklentisiyle yargılamak. İkisinin görevi farklı.\n\nDoğru model, doğru bütçe kararı demek.\n\n💾 Kaydet — kampanya bütçesi keserken tekrar bak\n💬 Hangi attribution modelini kullanıyorsun? Yorumda söyle!\n\n#attributionmodeling #datadrivenattribution #marketingattribution\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Reklamın CPM'i sürekli yükseliyor ama neden bilmiyorsun. Büyük ihtimalle 3 gizli skorundan biri 'Below Average' bölgede. 👇\n\nMeta artık tek bir relevance score kullanmıyor — Quality, Engagement Rate ve Conversion Rate Ranking diye 3 ayrı metrik var.\nBu carousel'de her birini nasıl okuyacağını ve nasıl düzelteceğini anlatıyorum. 👆\n\n─────────────────────\n🎯 3 ranking metriği ve ne ölçtükleri\n📊 Below Average skorun CPM'e etkisi (%20-30)\n🚦 Üç skor da renk kodlu, nerede durduğunu gör\n🖼️ Quality Ranking'i düşüren 4 kreatif hatası\n⚙️ Conversion Ranking'i yükseltmenin gerçek yolu\n─────────────────────\n\nEn büyük hata: Skor düşükken bütçeyi artırmak. Bu, düşük performansı daha pahalı hale getirmekten başka bir işe yaramaz.\n\nÖnce skoru düzelt, sonra ölçeklendir — sıra bu.\n\n💾 Kaydet — kampanya raporunu incelerken diagnostics sekmesine bakmadan önce aç\n💬 Hesabında hangi ranking 'Below Average' çıktı? Yorumda söyle!\n\n#relevancediagnostics #qualityranking #conversionranking\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
