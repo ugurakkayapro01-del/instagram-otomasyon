@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi
 - Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi
 
 ## Yeni Konu Üretme Kuralları

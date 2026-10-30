@@ -1,65 +1,65 @@
 {
-  "topic": "Dayparting (Saat Bazlı Bütçe Pacing) — Dönüşüm Yoğunluğuna Göre Reklam Zamanlama Optimizasyonu",
+  "topic": "Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "timeline",
+  "special_kind": "funnel",
   "slides": [
     {
       "kind": "hook",
-      "tag": "ZAMANLAMA & BÜTÇE PACING",
-      "title": "Günün Her Saati\nAynı Değeri\n**Taşımıyor**",
-      "subtitle": "Bütçenin yarısı, kimsenin alışveriş yapmadığı saatlerde eriyor. Çözüm saat bazlı planlamada."
+      "tag": "COLLECTION ADS STRATEJİSİ",
+      "title": "Tek Görsel Yetmez.\nMobilde **Mikro Mağaza**\nDeneyimi Kur.",
+      "subtitle": "Collection Ads formatı, kullanıcıyı uygulamadan çıkarmadan tam bir alışveriş deneyimine sokuyor. İşte mekanizması."
     },
     {
       "kind": "light",
-      "num_label": "Taktik 01 / 07",
-      "icon": "⏱️",
-      "title": "Bütçe Eşit Dağılır, Talep Eşit Dağılmaz",
-      "body": "Günlük bütçe otomatik olarak 24 saate eşit yayılır. Ama dönüşüm, saatlere göre ciddi şekilde dalgalanır. Gece 03:00'teki tıklama ile akşam 21:00'deki tıklama aynı maliyeti taşır — ama aynı satışı getirmez.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🛍️",
+      "title": "Collection Ads Nasıl Çalışır?",
+      "body": "Kapak görseli veya videosu altında 4 ürün görseli grid halinde gösterilir. Kullanıcı reklama dokununca, Instagram'dan hiç çıkmadan tam ekran 'Instant Experience' açılır — siteye yönlendirmeden önce ürünleri keşfetme imkanı sunar.",
       "is_checklist": false,
-      "pill": "Harcama saati = satış saati değilse bütçe sızdırıyorsun"
+      "pill": "Kapak + 4 ürün grid = tek dokunuşla mikro mağaza"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Taktik 02 / 07",
-      "icon": "📊",
-      "title": "Günün Dönüşüm Haritasını Çıkar",
-      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">00:00 - 07:00</div><div class=\"tdesc\">Düşük yoğunluk — bütçenin önemli kısmı burada boşa yanıyor</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">12:00 - 14:00</div><div class=\"tdesc\">Öğle arası küçük tepe — mobil trafik artıyor</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">19:00 - 23:00</div><div class=\"tdesc\">Zirve dönüşüm — satın alma kararlarının çoğu burada</div></div></div>",
-      "pill": "Zirve saatlere bütçenin en az %50'sini kaydır"
+      "num_label": "İpucu 02 / 07",
+      "icon": "🔁",
+      "title": "Dönüşüm Hunisi Nasıl İşliyor?",
+      "inner_html": "<div class=\"funnel\"><div class=\"fun-step s1f\"><div class=\"fval\">%100</div><div class=\"flabel\">Reklamı Görüntüleme</div></div><div class=\"fun-step s2f\"><div class=\"fval\">%38</div><div class=\"flabel\">Instant Experience Açma</div></div><div class=\"fun-step s3f\"><div class=\"fval\">%19</div><div class=\"flabel\">Ürün Detay İnceleme</div></div><div class=\"fun-step s4f\"><div class=\"fval\">%6</div><div class=\"flabel\">Satın Alma / Sepete Ekleme</div></div></div>",
+      "pill": "Her aşamada kayıp oranını Ads Manager'dan takip et"
     },
     {
       "kind": "dark",
-      "num_label": "Taktik 03 / 07",
-      "icon": "⚙️",
-      "title": "Ad Scheduling Sadece Lifetime Budget'ta Çalışır",
-      "body": "Meta'nın saat bazlı zamanlama (ad scheduling) özelliği sadece lifetime budget seçili kampanyalarda aktif olur. Günlük bütçe (daily budget) kullanıyorsan bu seçenek gri görünür çünkü algoritma günü kendi başına optimize ettiğini varsayar.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "📦",
+      "title": "Katalog Seçimi Rastgele Olmaz",
+      "body": "Kapak görseline en yüksek marjlı veya en çok satan ürünü koy. Grid'deki 4 ürün farklı kategorilerden seçilmeli — aynı ürünün renk varyasyonları değil, farklı ihtiyaçlara hitap eden ürünler keşif oranını artırır.",
       "is_checklist": false,
-      "pill": "Saat planlaması istiyorsan lifetime budget'a geç"
+      "pill": "Kapak = en güçlü ürün, grid = çeşitlilik"
     },
     {
       "kind": "light",
-      "num_label": "Taktik 04 / 07",
-      "icon": "🔍",
-      "title": "Saat Kırılımını Ads Manager'da Oku",
-      "body": "Raporlar'da saat kırılımını (reklamın hesap saat diliminde) aç. Güvenilir karar için minimum 14 gün veri ve segment başına en az 50 dönüşüm bekle — daha azı gürültü, gerçek sinyal değil.",
-      "is_checklist": false,
-      "pill": "14 gün / 50 dönüşüm altı veriyle karar verme"
+      "num_label": "İpucu 04 / 07",
+      "icon": "🎬",
+      "title": "Instant Experience Tasarım Kuralları",
+      "body": "Kapak videosu 15 saniyeyi geçmemeli\nEn az 4, en fazla 50 ürün bloğu eklenebilir\nHer ürün kartında net fiyat ve tek CTA olmalı\nYükleme süresi 3 saniyeyi aşarsa terk oranı artar",
+      "is_checklist": true,
+      "pill": "Hız ve sadelik, Instant Experience'ın can damarı"
     },
     {
       "kind": "dark",
-      "num_label": "Taktik 05 / 07",
-      "icon": "🚫",
-      "title": "En Büyük Hata: Düşük Saatleri Tamamen Kapatmak",
-      "body": "Zayıf performans gösteren saatleri sıfıra çekmek öğrenme evresini sıfırlar ve kampanyayı yeniden öğrenme durumuna düşürür. Kapatmak yerine ağırlıklandır — bütçeyi azalt, tamamen kesme.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Statik Katalog Kullanmak",
+      "body": "Collection Ads'i bir kere kurup unutmak en büyük hata. Katalogdaki stok dışı ürünler otomatik gizlenmeli, mevsimsel ürünler haftalık güncellenmeli. Donmuş katalog, tıklama oranını 3 hafta içinde %40'a kadar düşürebilir.",
       "is_checklist": false,
-      "pill": "Kapatma, ağırlıklandır — öğrenmeyi sıfırlama"
+      "pill": "Katalog canlı kalmalı, yoksa format kendini yiyip bitirir"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Doğru Saatte Harcama, Her Saat Harcamaktan Daha Değerli"
+      "label": "HEMEN UYGULA",
+      "title": "Mağazanı Tek Dokunuşla\n**Keşfedilebilir** Yap"
     }
   ],
-  "caption": "Bütçenin yarısı, kimsenin alışveriş yapmadığı saatlerde eriyip gidiyor. 👇\n\nÇoğu marka günlük bütçeyi 24 saate eşit dağıtıyor — ama müşteri eşit dağılmıyor.\nÇözüm, saat bazlı bütçe planlamasında (dayparting) saklı. 👆\n\n─────────────────────\n⏱️ Bütçe eşit, talep eşit değil — saatlik maliyet-satış farkı\n📊 Günün dönüşüm haritası — zirve saatleri bulma\n⚙️ Ad scheduling sadece lifetime budget'ta aktif oluyor\n🔍 Ads Manager'da saat kırılımını doğru okuma (14 gün / 50 dönüşüm kuralı)\n🚫 En büyük hata: zayıf saatleri kapatmak, ağırlıklandırmak yerine\n─────────────────────\n\nEn büyük hata: Düşük performanslı saatleri sıfıra çekmek kampanyayı yeniden öğrenme evresine düşürüyor. Kapatma, ağırlıklandır.\n\nDoğru saatte harcamak, her saat harcamaktan daha değerli. Bunu uygulayan hesaplarda CPA gözle görülür şekilde düşüyor.\n\n💾 Kaydet — kampanya bütçesini planlarken tekrar bak\n💬 Senin sektöründe zirve satış saati kaçta? Yorumda söyle!\n\n#dayparting #adscheduling #budgetpacing\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "\"Collection Ads kurduk ama sonuç yok\" diyenlerin çoğu, formatı sadece güzel görünsün diye kullanıyor. 👇\n\nOysa bu format, kullanıcıyı Instagram'dan hiç çıkarmadan tam bir mağaza deneyimine sokmak için tasarlandı.\nDoğru kurulmazsa huninin her aşamasında kayıp yaşarsın. 👆\n\n─────────────────────\n🛍️ Collection Ads'in gerçek çalışma mekanizması\n🔁 4 aşamalı dönüşüm hunisi ve kayıp oranları\n📦 Kapak + grid ürün seçim stratejisi\n🎬 Instant Experience tasarım kuralları\n⚠️ Katalogların statik kalmasının maliyeti\n─────────────────────\n\nEn büyük hata: Collection Ads'i kurup unutmak. Stok dışı ürün gizlenmezse, donmuş katalog tıklama oranını haftalar içinde eritir.\n\nBu format doğru kurulursa, mobilde gerçek bir mikro mağaza deneyimi yaratır — ve bu, e-ticarette fark yaratan küçük bir detaydır.\n\n💾 Kaydet — Collection Ads kampanyası kurarken referans al\n💬 Collection Ads'i denedin mi, sonuç nasıldı? Yorumda söyle!\n\n#collectionads #instantexperience #mobilecommerce\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

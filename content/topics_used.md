@@ -60,6 +60,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 53 | Multi-Touch Attribution Modelleme — Data-Driven Attribution ile Kanal Katkısını Doğru Ölçme | 7 | Otomatik üretildi (2026-10-28) |
 | 54 | Meta Ads Relevance Diagnostics — Quality, Engagement ve Conversion Ranking Skorlarını Yükseltme Teknikleri | 7 | Otomatik üretildi (2026-10-29) |
 | 55 | Dayparting (Saat Bazlı Bütçe Pacing) — Dönüşüm Yoğunluğuna Göre Reklam Zamanlama Optimizasyonu | 7 | Otomatik üretildi (2026-10-29) |
+| 56 | Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi | 7 | Otomatik üretildi (2026-10-30) |
 
 ---
 
