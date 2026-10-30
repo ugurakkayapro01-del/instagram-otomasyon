@@ -1,65 +1,65 @@
 {
-  "topic": "Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi",
+  "topic": "Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
   "special_kind": "funnel",
   "slides": [
     {
       "kind": "hook",
-      "tag": "COLLECTION ADS STRATEJİSİ",
-      "title": "Tek Görsel Yetmez.\nMobilde **Mikro Mağaza**\nDeneyimi Kur.",
-      "subtitle": "Collection Ads formatı, kullanıcıyı uygulamadan çıkarmadan tam bir alışveriş deneyimine sokuyor. İşte mekanizması."
+      "tag": "FUNNEL OPTİMİZASYONU",
+      "title": "Purchase Verisi\nYetersizse\n**Algoritma Kör Kalır**",
+      "subtitle": "Dönüşüm sayın azken doğru ara sinyali seçmek, kampanyayı kurtarır."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🛍️",
-      "title": "Collection Ads Nasıl Çalışır?",
-      "body": "Kapak görseli veya videosu altında 4 ürün görseli grid halinde gösterilir. Kullanıcı reklama dokununca, Instagram'dan hiç çıkmadan tam ekran 'Instant Experience' açılır — siteye yönlendirmeden önce ürünleri keşfetme imkanı sunar.",
-      "is_checklist": false,
-      "pill": "Kapak + 4 ürün grid = tek dokunuşla mikro mağaza"
+      "num_label": "Adım 01 / 07",
+      "icon": "🔍",
+      "title": "Mikro-Dönüşüm Nedir?",
+      "body": "ViewContent — ürünü gördü\nAddToCart — sepete attı\nInitiateCheckout — ödemeye geçti\nPurchase — satın aldı",
+      "is_checklist": true,
+      "pill": "Her aşama algoritmaya 'bu kullanıcı satın alır mı' sinyali verir."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🔁",
-      "title": "Dönüşüm Hunisi Nasıl İşliyor?",
-      "inner_html": "<div class=\"funnel\"><div class=\"fun-step s1f\"><div class=\"fval\">%100</div><div class=\"flabel\">Reklamı Görüntüleme</div></div><div class=\"fun-step s2f\"><div class=\"fval\">%38</div><div class=\"flabel\">Instant Experience Açma</div></div><div class=\"fun-step s3f\"><div class=\"fval\">%19</div><div class=\"flabel\">Ürün Detay İnceleme</div></div><div class=\"fun-step s4f\"><div class=\"fval\">%6</div><div class=\"flabel\">Satın Alma / Sepete Ekleme</div></div></div>",
-      "pill": "Her aşamada kayıp oranını Ads Manager'dan takip et"
+      "num_label": "Sinyal 02 / 07",
+      "icon": "📉",
+      "title": "Düşüş Oranları Neyi Gösterir?",
+      "inner_html": "<div class=\"funnel\"><div class=\"fun-step s1f\"><span class=\"flabel\">ViewContent</span><span class=\"fval\">%100</span></div><div class=\"fun-step s2f\"><span class=\"flabel\">AddToCart</span><span class=\"fval\">%18</span></div><div class=\"fun-step s3f\"><span class=\"flabel\">InitiateCheckout</span><span class=\"fval\">%7</span></div><div class=\"fun-step s4f\"><span class=\"flabel\">Purchase</span><span class=\"fval\">%2.5</span></div></div>",
+      "pill": "Bir kademede %50'den fazla kayıp varsa, orası optimize edilmeli."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "📦",
-      "title": "Katalog Seçimi Rastgele Olmaz",
-      "body": "Kapak görseline en yüksek marjlı veya en çok satan ürünü koy. Grid'deki 4 ürün farklı kategorilerden seçilmeli — aynı ürünün renk varyasyonları değil, farklı ihtiyaçlara hitap eden ürünler keşif oranını artırır.",
+      "num_label": "Eşik 03 / 07",
+      "icon": "⚙️",
+      "title": "50 Olay Kuralı",
+      "body": "Meta'nın algoritması öğrenme evresini kapatmak için reklam seti başına haftada yaklaşık 50 dönüşüm olayı ister. Haftalık satın alma sayın bunun altındaysa, optimizasyon hedefini geçici olarak AddToCart veya InitiateCheckout'a çek.",
       "is_checklist": false,
-      "pill": "Kapak = en güçlü ürün, grid = çeşitlilik"
+      "pill": "Haftada 50 satın alma yoksa, hedefi bir basamak geriye al."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🎬",
-      "title": "Instant Experience Tasarım Kuralları",
-      "body": "Kapak videosu 15 saniyeyi geçmemeli\nEn az 4, en fazla 50 ürün bloğu eklenebilir\nHer ürün kartında net fiyat ve tek CTA olmalı\nYükleme süresi 3 saniyeyi aşarsa terk oranı artar",
-      "is_checklist": true,
-      "pill": "Hız ve sadelik, Instant Experience'ın can damarı"
+      "num_label": "Adım 04 / 07",
+      "icon": "💰",
+      "title": "Hacim mi, Değer mi?",
+      "body": "Haftalık 50+ dönüşüme ulaştığında hacim bazlı (Highest Volume) optimizasyondan değer bazlı (Highest Value) optimizasyona geç. Bu geçiş, sepeti düşük müşteriyi değil, ortalama sipariş değeri yüksek alıcıyı önceliklendirir.",
+      "is_checklist": false,
+      "pill": "Değer bazlı optimizasyon, karlı alıcıyı hedefler — ucuz alıcıyı değil."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Statik Katalog Kullanmak",
-      "body": "Collection Ads'i bir kere kurup unutmak en büyük hata. Katalogdaki stok dışı ürünler otomatik gizlenmeli, mevsimsel ürünler haftalık güncellenmeli. Donmuş katalog, tıklama oranını 3 hafta içinde %40'a kadar düşürebilir.",
+      "num_label": "Uyarı 05 / 07",
+      "icon": "🚨",
+      "title": "En Büyük Hata",
+      "body": "Düşük olay hacmiyle doğrudan Purchase'a optimize etmek, algoritmayı rastgele harcamaya iter. İkinci hata: hacim arttığında mikro hedefte takılı kalıp tekrar Purchase'a geçmemek.",
       "is_checklist": false,
-      "pill": "Katalog canlı kalmalı, yoksa format kendini yiyip bitirir"
+      "pill": "Mikro hedef bir basamaktır, kalıcı çözüm değil."
     },
     {
       "kind": "cta",
-      "label": "HEMEN UYGULA",
-      "title": "Mağazanı Tek Dokunuşla\n**Keşfedilebilir** Yap"
+      "label": "SIRADA SEN VARSIN",
+      "title": "Doğru Sinyali Seç,\nAlgoritma Senin İçin Çalışsın"
     }
   ],
-  "caption": "\"Collection Ads kurduk ama sonuç yok\" diyenlerin çoğu, formatı sadece güzel görünsün diye kullanıyor. 👇\n\nOysa bu format, kullanıcıyı Instagram'dan hiç çıkarmadan tam bir mağaza deneyimine sokmak için tasarlandı.\nDoğru kurulmazsa huninin her aşamasında kayıp yaşarsın. 👆\n\n─────────────────────\n🛍️ Collection Ads'in gerçek çalışma mekanizması\n🔁 4 aşamalı dönüşüm hunisi ve kayıp oranları\n📦 Kapak + grid ürün seçim stratejisi\n🎬 Instant Experience tasarım kuralları\n⚠️ Katalogların statik kalmasının maliyeti\n─────────────────────\n\nEn büyük hata: Collection Ads'i kurup unutmak. Stok dışı ürün gizlenmezse, donmuş katalog tıklama oranını haftalar içinde eritir.\n\nBu format doğru kurulursa, mobilde gerçek bir mikro mağaza deneyimi yaratır — ve bu, e-ticarette fark yaratan küçük bir detaydır.\n\n💾 Kaydet — Collection Ads kampanyası kurarken referans al\n💬 Collection Ads'i denedin mi, sonuç nasıldı? Yorumda söyle!\n\n#collectionads #instantexperience #mobilecommerce\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Dönüşüm sayın az geldiği için kampanyan hiç öğrenemiyor olabilir. 👇\n\nÇoğu marka doğrudan Purchase'a optimize eder ama haftalık 50 satın alma yoksa algoritma kör gezer.\nDoğru ara sinyali seçmek bu sorunu çözüyor — çözüm bu carousel'de 👆\n\n─────────────────────\n🔍 Mikro-dönüşüm aşamaları: ViewContent → Purchase\n📉 Funnel düşüş oranlarını okuma\n⚙️ 50 olay eşiği ve optimizasyon hedefi değişimi\n💰 Hacim bazlı vs değer bazlı optimizasyon\n🚨 En büyük hata: yanlış zamanda yanlış hedef\n─────────────────────\n\nEn büyük hata: Düşük hacimle direkt Purchase'a optimize etmek, bütçeyi rastgele harcatır.\n\nDoğru sinyal, doğru zamanda seçilirse algoritma senin için öğrenir.\n\n💾 Kaydet — kampanya kurarken hangi olaya optimize edeceğini bilemediğinde aç\n💬 Sen hangi olaya optimize ediyorsun: AddToCart mı, Purchase mı? Yorumda söyle!\n\n#microconversion #funneloptimizasyonu #addtocart\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

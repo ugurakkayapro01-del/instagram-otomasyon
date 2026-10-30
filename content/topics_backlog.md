@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:
