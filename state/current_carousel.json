@@ -1,65 +1,69 @@
 {
-  "topic": "Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "funnel",
+  "topic": "Bütçe Pacing Stratejisi — Standard vs Accelerated Delivery'nin Harcama Hızına Etkisi",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi",
+    "Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri",
+    "Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları"
+  ],
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "FUNNEL OPTİMİZASYONU",
-      "title": "Purchase Verisi\nYetersizse\n**Algoritma Kör Kalır**",
-      "subtitle": "Dönüşüm sayın azken doğru ara sinyali seçmek, kampanyayı kurtarır."
+      "tag": "BÜTÇE PACING STRATEJİSİ",
+      "title": "Bütçeni Doğru\nHızda **Harcamıyorsan**\nParanı Çöpe Atıyorsun",
+      "subtitle": "Standard ve Accelerated delivery arasındaki fark, kampanyanın CPA'sını %40'a kadar değiştirebilir."
     },
     {
       "kind": "light",
-      "num_label": "Adım 01 / 07",
-      "icon": "🔍",
-      "title": "Mikro-Dönüşüm Nedir?",
-      "body": "ViewContent — ürünü gördü\nAddToCart — sepete attı\nInitiateCheckout — ödemeye geçti\nPurchase — satın aldı",
-      "is_checklist": true,
-      "pill": "Her aşama algoritmaya 'bu kullanıcı satın alır mı' sinyali verir."
+      "num_label": "İpucu 01 / 07",
+      "icon": "📊",
+      "title": "Standard Delivery Nasıl Çalışır?",
+      "body": "Meta, günlük bütçeni 24 saate yayarak harcar. Algoritma her saat en ucuz ve en kaliteli dönüşüm fırsatını arar, bütçeyi erken tüketmez. Bu mod öğrenme evresini korur ve CPA'yı zamanla düşürür.",
+      "is_checklist": false,
+      "pill": "Varsayılan mod: Her zaman önce bunu dene."
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "⚡",
+      "title": "Accelerated Delivery Ne Zaman Açılır?",
+      "body": "Bu mod sadece manuel teklif stratejilerinde (Bid Cap) seçilebilir — Lowest Cost'ta kapalıdır. Bütçeyi mümkün olduğunca hızlı harcar, ilk 2-4 saatte günlük bütçenin %70-80'i biter.",
+      "is_checklist": false,
+      "pill": "Sadece zaman kısıtlı kampanyalarda kullan."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02 / 07",
-      "icon": "📉",
-      "title": "Düşüş Oranları Neyi Gösterir?",
-      "inner_html": "<div class=\"funnel\"><div class=\"fun-step s1f\"><span class=\"flabel\">ViewContent</span><span class=\"fval\">%100</span></div><div class=\"fun-step s2f\"><span class=\"flabel\">AddToCart</span><span class=\"fval\">%18</span></div><div class=\"fun-step s3f\"><span class=\"flabel\">InitiateCheckout</span><span class=\"fval\">%7</span></div><div class=\"fun-step s4f\"><span class=\"flabel\">Purchase</span><span class=\"fval\">%2.5</span></div></div>",
-      "pill": "Bir kademede %50'den fazla kayıp varsa, orası optimize edilmeli."
-    },
-    {
-      "kind": "dark",
-      "num_label": "Eşik 03 / 07",
-      "icon": "⚙️",
-      "title": "50 Olay Kuralı",
-      "body": "Meta'nın algoritması öğrenme evresini kapatmak için reklam seti başına haftada yaklaşık 50 dönüşüm olayı ister. Haftalık satın alma sayın bunun altındaysa, optimizasyon hedefini geçici olarak AddToCart veya InitiateCheckout'a çek.",
-      "is_checklist": false,
-      "pill": "Haftada 50 satın alma yoksa, hedefi bir basamak geriye al."
+      "num_label": "İpucu 03 / 07",
+      "icon": "⏱️",
+      "title": "Accelerated Modda Harcama Haritası",
+      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><span class=\"ttime\">0-2 Saat</span><span class=\"tconnect s1f\"></span><span class=\"tsec\">%70</span><span class=\"tdesc\">Bütçenin çoğu hemen harcanır, pahalı gösterimler alınır</span></div><div class=\"trow\"><span class=\"ttime\">2-6 Saat</span><span class=\"tconnect s2f\"></span><span class=\"tsec\">%20</span><span class=\"tdesc\">Harcama yavaşlar, kalan kitleye ulaşılır</span></div><div class=\"trow\"><span class=\"ttime\">6-24 Saat</span><span class=\"tconnect s3f\"></span><span class=\"tsec\">%10</span><span class=\"tdesc\">Bütçe tükenmiş olabilir, gösterim durur</span></div></div>",
+      "pill": "Standard'da bu dağılım %25-%25-%50 şeklinde dengelidir."
     },
     {
       "kind": "light",
-      "num_label": "Adım 04 / 07",
-      "icon": "💰",
-      "title": "Hacim mi, Değer mi?",
-      "body": "Haftalık 50+ dönüşüme ulaştığında hacim bazlı (Highest Volume) optimizasyondan değer bazlı (Highest Value) optimizasyona geç. Bu geçiş, sepeti düşük müşteriyi değil, ortalama sipariş değeri yüksek alıcıyı önceliklendirir.",
-      "is_checklist": false,
-      "pill": "Değer bazlı optimizasyon, karlı alıcıyı hedefler — ucuz alıcıyı değil."
+      "num_label": "İpucu 04 / 07",
+      "icon": "🎯",
+      "title": "Hangi Durumda Accelerated Kullanılır?",
+      "body": "Sadece 24-48 saatlik flash indirim kampanyaları\nCanlı etkinlik veya haber döngüsüne bağlı promosyonlar\nStok tükenmeden hızlı satış yapılması gereken ürünler\nUzun vadeli marka bilinirliği kampanyalarında ASLA kullanılmaz",
+      "is_checklist": true,
+      "pill": "Accelerated = acil durum modu, varsayılan değil."
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05 / 07",
+      "num_label": "İpucu 05 / 07",
       "icon": "🚨",
-      "title": "En Büyük Hata",
-      "body": "Düşük olay hacmiyle doğrudan Purchase'a optimize etmek, algoritmayı rastgele harcamaya iter. İkinci hata: hacim arttığında mikro hedefte takılı kalıp tekrar Purchase'a geçmemek.",
+      "title": "En Büyük Hata: Öğrenme Evresini Bozmak",
+      "body": "Accelerated mod, algoritmanın öğrenme evresi için ihtiyaç duyduğu 50 dönüşüm/hafta eşiğine ulaşmadan bütçeyi tüketir. Sonuç: CPA %20-40 artar, kampanya 'Learning Limited' durumuna düşebilir.",
       "is_checklist": false,
-      "pill": "Mikro hedef bir basamaktır, kalıcı çözüm değil."
+      "pill": "Öğrenme evresindeki setlerde Accelerated asla açma."
     },
     {
       "kind": "cta",
-      "label": "SIRADA SEN VARSIN",
-      "title": "Doğru Sinyali Seç,\nAlgoritma Senin İçin Çalışsın"
+      "label": "UA DIGITAL PRO",
+      "title": "Bütçeni Doğru Hızda Harca,\nSonucu **Gör**"
     }
   ],
-  "caption": "Dönüşüm sayın az geldiği için kampanyan hiç öğrenemiyor olabilir. 👇\n\nÇoğu marka doğrudan Purchase'a optimize eder ama haftalık 50 satın alma yoksa algoritma kör gezer.\nDoğru ara sinyali seçmek bu sorunu çözüyor — çözüm bu carousel'de 👆\n\n─────────────────────\n🔍 Mikro-dönüşüm aşamaları: ViewContent → Purchase\n📉 Funnel düşüş oranlarını okuma\n⚙️ 50 olay eşiği ve optimizasyon hedefi değişimi\n💰 Hacim bazlı vs değer bazlı optimizasyon\n🚨 En büyük hata: yanlış zamanda yanlış hedef\n─────────────────────\n\nEn büyük hata: Düşük hacimle direkt Purchase'a optimize etmek, bütçeyi rastgele harcatır.\n\nDoğru sinyal, doğru zamanda seçilirse algoritma senin için öğrenir.\n\n💾 Kaydet — kampanya kurarken hangi olaya optimize edeceğini bilemediğinde aç\n💬 Sen hangi olaya optimize ediyorsun: AddToCart mı, Purchase mı? Yorumda söyle!\n\n#microconversion #funneloptimizasyonu #addtocart\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Bütçeni doğru harcamıyorsan, aslında parayı çöpe atıyorsun. Çoğu e-ticaret sahibi bunun farkında bile değil 👇\n\nStandard ve Accelerated delivery arasındaki fark sadece bir ayar değil — CPA'nı %40'a kadar değiştirebilen bir mekanizma.\nHangi modu ne zaman kullanman gerektiği bu carousel'de 👆\n\n─────────────────────\n📊 Standard delivery bütçeyi 24 saate nasıl yayar\n⚡ Accelerated delivery sadece hangi teklif stratejisinde açılır\n⏱️ İlk 2 saatte bütçenin %70'i nasıl biter\n🎯 Accelerated'ı sadece hangi 3 durumda kullanmalısın\n🚨 Öğrenme evresini bozan en büyük hata\n─────────────────────\n\nEn büyük hata: Accelerated modu 'daha hızlı sonuç' sanıp öğrenme evresindeki reklam setlerinde açmak. Sonuç tam tersi oluyor — CPA fırlıyor.\n\nDoğru pacing stratejisi, aynı bütçeyle çok daha iyi sonuç almanı sağlar.\n\n💾 Kaydet — flash indirim kampanyası kurarken tekrar bak\n💬 Sen hiç Accelerated delivery kullandın mı, sonucu nasıldı? Yorumda söyle!\n\n#budgetpacing #accelerateddelivery #metaads\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
