@@ -1,69 +1,65 @@
 {
-  "topic": "Bütçe Pacing Stratejisi — Standard vs Accelerated Delivery'nin Harcama Hızına Etkisi",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi",
-    "Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri",
-    "Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları"
-  ],
-  "special_kind": "timeline",
+  "topic": "Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "BÜTÇE PACING STRATEJİSİ",
-      "title": "Bütçeni Doğru\nHızda **Harcamıyorsan**\nParanı Çöpe Atıyorsun",
-      "subtitle": "Standard ve Accelerated delivery arasındaki fark, kampanyanın CPA'sını %40'a kadar değiştirebilir."
+      "tag": "VİDEO REKLAM OPTİMİZASYONU",
+      "title": "ThruPlay mı,\n2 Saniye mi?\n**Yanlış Event Seçimi**\nBütçeni Yakıyor",
+      "subtitle": "Video kampanyalarının çoğu, optimizasyon event'i yanlış seçildiği için gereğinden pahalıya çalışıyor."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "📊",
-      "title": "Standard Delivery Nasıl Çalışır?",
-      "body": "Meta, günlük bütçeni 24 saate yayarak harcar. Algoritma her saat en ucuz ve en kaliteli dönüşüm fırsatını arar, bütçeyi erken tüketmez. Bu mod öğrenme evresini korur ve CPA'yı zamanla düşürür.",
+      "icon": "🎬",
+      "title": "ThruPlay Nasıl Sayılır?",
+      "body": "Video 15 saniyeden kısaysa, tamamlanma = ThruPlay.\nVideo 15 saniyeden uzunsa, en az 15 saniye izlenme = ThruPlay.\nMeta bu sinyali 'gerçek ilgi' olarak okur ve optimizasyonu buna göre kurar.",
       "is_checklist": false,
-      "pill": "Varsayılan mod: Her zaman önce bunu dene."
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "⚡",
-      "title": "Accelerated Delivery Ne Zaman Açılır?",
-      "body": "Bu mod sadece manuel teklif stratejilerinde (Bid Cap) seçilebilir — Lowest Cost'ta kapalıdır. Bütçeyi mümkün olduğunca hızlı harcar, ilk 2-4 saatte günlük bütçenin %70-80'i biter.",
-      "is_checklist": false,
-      "pill": "Sadece zaman kısıtlı kampanyalarda kullan."
+      "pill": "15 saniye altı videolarda ThruPlay en doğru tercih"
     },
     {
       "kind": "special",
       "background": "dark",
+      "num_label": "Karşılaştırma",
+      "icon": "⚖️",
+      "title": "İki Event, İki Farklı Sinyal",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col best\"><div class=\"slabel\">ThruPlay</div><div class=\"sval\">15sn+ izlenme = tamamlanma</div><div class=\"sval\">Yüksek niyetli izleyici</div><div class=\"sval\">CPM: Orta-Yüksek</div></div><div class=\"cmp-col\"><div class=\"slabel\">2 Saniyelik İzlenme</div><div class=\"sval\">2sn kesintisiz + %50 görünürlük</div><div class=\"sval\">Geniş, düşük niyetli kitle</div><div class=\"sval\">CPM: Düşük</div></div></div>",
+      "pill": "Alt huni hedefi = ThruPlay, üst huni erişim = 2 saniyelik"
+    },
+    {
+      "kind": "dark",
       "num_label": "İpucu 03 / 07",
-      "icon": "⏱️",
-      "title": "Accelerated Modda Harcama Haritası",
-      "inner_html": "<div class=\"timeline\"><div class=\"trow\"><span class=\"ttime\">0-2 Saat</span><span class=\"tconnect s1f\"></span><span class=\"tsec\">%70</span><span class=\"tdesc\">Bütçenin çoğu hemen harcanır, pahalı gösterimler alınır</span></div><div class=\"trow\"><span class=\"ttime\">2-6 Saat</span><span class=\"tconnect s2f\"></span><span class=\"tsec\">%20</span><span class=\"tdesc\">Harcama yavaşlar, kalan kitleye ulaşılır</span></div><div class=\"trow\"><span class=\"ttime\">6-24 Saat</span><span class=\"tconnect s3f\"></span><span class=\"tsec\">%10</span><span class=\"tdesc\">Bütçe tükenmiş olabilir, gösterim durur</span></div></div>",
-      "pill": "Standard'da bu dağılım %25-%25-%50 şeklinde dengelidir."
+      "icon": "🎯",
+      "title": "Hangi Durumda Hangisi?",
+      "body": "Ürün tanıtımı, kullanım videosu veya dönüşüm öncesi ısınma hedefliyorsan ThruPlay seç.\nMarka bilinirliği, geniş erişim veya düşük bütçeli test kampanyalarında 2 saniyelik izlenmeyi kullan.\nHuni ortası-altı kampanyalarda ThruPlay her zaman daha kaliteli trafik getirir.",
+      "is_checklist": false,
+      "pill": "Dönüşüm hunisi alt katmanında ThruPlay şart"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "🎯",
-      "title": "Hangi Durumda Accelerated Kullanılır?",
-      "body": "Sadece 24-48 saatlik flash indirim kampanyaları\nCanlı etkinlik veya haber döngüsüne bağlı promosyonlar\nStok tükenmeden hızlı satış yapılması gereken ürünler\nUzun vadeli marka bilinirliği kampanyalarında ASLA kullanılmaz",
-      "is_checklist": true,
-      "pill": "Accelerated = acil durum modu, varsayılan değil."
+      "icon": "⏱️",
+      "title": "Video Süresi = Maliyet Belirleyici",
+      "body": "15 saniyenin altındaki videolarda ThruPlay maliyeti çok daha düşük çalışır, çünkü tamamlanma kolaylaşır.\n15 saniyenin üzerindeki videolarda ThruPlay maliyeti artar; ilk 15 saniyeye hook'u sıkıştırmak gerekir.\nUzun videolarda (30sn+) 2 saniyelik izlenme optimizasyonu çoğu zaman daha verimli sonuç verir.",
+      "is_checklist": false,
+      "pill": "15 saniye altı kurgu = düşük maliyetli ThruPlay"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
-      "icon": "🚨",
-      "title": "En Büyük Hata: Öğrenme Evresini Bozmak",
-      "body": "Accelerated mod, algoritmanın öğrenme evresi için ihtiyaç duyduğu 50 dönüşüm/hafta eşiğine ulaşmadan bütçeyi tüketir. Sonuç: CPA %20-40 artar, kampanya 'Learning Limited' durumuna düşebilir.",
+      "icon": "⚠️",
+      "title": "En Büyük Hata",
+      "body": "30 saniyelik bir videoyu ThruPlay ile optimize etmek, az izleyiciye yüksek maliyetle ulaşmak demektir.\nAynı şekilde satış hedefli bir kampanyada 2 saniyelik izlenme seçmek, düşük niyetli kalabalığı reklamla boğar.\nEvent seçimi, video süresiyle ve huni aşamasıyla birebir uyumlu olmalı.",
       "is_checklist": false,
-      "pill": "Öğrenme evresindeki setlerde Accelerated asla açma."
+      "pill": "Video süresi ile event seçimi uyuşmuyorsa bütçe boşa gider"
     },
     {
       "kind": "cta",
-      "label": "UA DIGITAL PRO",
-      "title": "Bütçeni Doğru Hızda Harca,\nSonucu **Gör**"
+      "label": "KAYDET & UYGULA",
+      "title": "Video event'ini doğru seç,\n**bütçeni boşa harcama**"
     }
   ],
-  "caption": "Bütçeni doğru harcamıyorsan, aslında parayı çöpe atıyorsun. Çoğu e-ticaret sahibi bunun farkında bile değil 👇\n\nStandard ve Accelerated delivery arasındaki fark sadece bir ayar değil — CPA'nı %40'a kadar değiştirebilen bir mekanizma.\nHangi modu ne zaman kullanman gerektiği bu carousel'de 👆\n\n─────────────────────\n📊 Standard delivery bütçeyi 24 saate nasıl yayar\n⚡ Accelerated delivery sadece hangi teklif stratejisinde açılır\n⏱️ İlk 2 saatte bütçenin %70'i nasıl biter\n🎯 Accelerated'ı sadece hangi 3 durumda kullanmalısın\n🚨 Öğrenme evresini bozan en büyük hata\n─────────────────────\n\nEn büyük hata: Accelerated modu 'daha hızlı sonuç' sanıp öğrenme evresindeki reklam setlerinde açmak. Sonuç tam tersi oluyor — CPA fırlıyor.\n\nDoğru pacing stratejisi, aynı bütçeyle çok daha iyi sonuç almanı sağlar.\n\n💾 Kaydet — flash indirim kampanyası kurarken tekrar bak\n💬 Sen hiç Accelerated delivery kullandın mı, sonucu nasıldı? Yorumda söyle!\n\n#budgetpacing #accelerateddelivery #metaads\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Video reklamların için yanlış optimizasyon event'i seçiyorsan, bütçenin büyük kısmı boşa gidiyor olabilir. 👇\n\nÇoğu marka ThruPlay ile 2 saniyelik izlenmeyi birbirinin yerine kullanıyor — oysa ikisi tamamen farklı sinyaller üretiyor.\nDoğru seçim hangisi, carousel'de anlatıyorum 👆\n\n─────────────────────\n🎬 ThruPlay'in gerçek hesaplama mantığı\n⚖️ ThruPlay vs 2 Saniyelik karşılaştırması\n🎯 Hangi huni aşamasında hangisi kullanılır\n⏱️ Video süresi maliyeti nasıl belirliyor\n⚠️ En büyük hata: süre-event uyumsuzluğu\n─────────────────────\n\nEn büyük hata: 30 saniyelik bir videoyu ThruPlay ile optimize etmek. Az izleyiciye yüksek maliyetle ulaşırsın.\n\nEvent seçimini video süresine ve huni aşamasına göre yap — maliyetin düşsün, kalite artsın.\n\n💾 Kaydet — yeni video kampanyası kurarken event seçimini kontrol et\n💬 Sen kampanyalarında ThruPlay mi, 2 saniyelik izlenme mi kullanıyorsun? Yorumda söyle!\n\n#thruplay #videoreklamoptimizasyonu #videoads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #reklamstratejisi #instagramreklamlari"
 }

@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi
 - Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri
 - Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları
 

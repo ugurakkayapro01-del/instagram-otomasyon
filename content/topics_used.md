@@ -63,6 +63,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 56 | Instagram Collection Ads (Anında Deneyim) — Mobilde Katalog Tabanlı Mikro-Mağaza Deneyimi | 7 | Otomatik üretildi (2026-10-30) |
 | 57 | Micro-Conversion Funnel Optimizasyonu — ViewContent'ten Purchase'a Ara Sinyal Yönetimi | 7 | Otomatik üretildi (2026-10-30) |
 | 58 | Bütçe Pacing Stratejisi — Standard vs Accelerated Delivery'nin Harcama Hızına Etkisi | 7 | Otomatik üretildi (2026-11-01) |
+| 59 | Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi | 7 | Otomatik üretildi (2026-11-02) |
 
 ---
 
