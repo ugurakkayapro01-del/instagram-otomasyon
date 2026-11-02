@@ -1,65 +1,65 @@
 {
-  "topic": "Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi",
+  "topic": "Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "VİDEO REKLAM OPTİMİZASYONU",
-      "title": "ThruPlay mı,\n2 Saniye mi?\n**Yanlış Event Seçimi**\nBütçeni Yakıyor",
-      "subtitle": "Video kampanyalarının çoğu, optimizasyon event'i yanlış seçildiği için gereğinden pahalıya çalışıyor."
+      "tag": "MÜŞTERİ EŞLEŞTİRME",
+      "title": "Listeni Yüklüyorsun.\nMeta Yarısını\n**Tanımıyor.**",
+      "subtitle": "Customer Match'te eşleşme oranı düşükse, lookalike'ın da pixel'in de verisi eksik kalır."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "🎬",
-      "title": "ThruPlay Nasıl Sayılır?",
-      "body": "Video 15 saniyeden kısaysa, tamamlanma = ThruPlay.\nVideo 15 saniyeden uzunsa, en az 15 saniye izlenme = ThruPlay.\nMeta bu sinyali 'gerçek ilgi' olarak okur ve optimizasyonu buna göre kurar.",
+      "num_label": "Adım 01",
+      "icon": "🔐",
+      "title": "Hashing Mantığı Nasıl İşler?",
+      "body": "Müşteri listeni yüklediğinde, e-posta ve telefon bilgilerin tarayıcında SHA-256 ile hash'lenir. Meta ham veriyi asla görmez, sadece hash'lenmiş kodu kendi sistemindeki kullanıcı hash'leriyle karşılaştırır. Eşleşme, bu iki hash'in birebir aynı olmasına bağlıdır — tek bir boşluk veya büyük harf eşleşmeyi bozar.",
       "is_checklist": false,
-      "pill": "15 saniye altı videolarda ThruPlay en doğru tercih"
+      "pill": "Hash'ler aynı olmazsa eşleşme hiç gerçekleşmez."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Karşılaştırma",
-      "icon": "⚖️",
-      "title": "İki Event, İki Farklı Sinyal",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col best\"><div class=\"slabel\">ThruPlay</div><div class=\"sval\">15sn+ izlenme = tamamlanma</div><div class=\"sval\">Yüksek niyetli izleyici</div><div class=\"sval\">CPM: Orta-Yüksek</div></div><div class=\"cmp-col\"><div class=\"slabel\">2 Saniyelik İzlenme</div><div class=\"sval\">2sn kesintisiz + %50 görünürlük</div><div class=\"sval\">Geniş, düşük niyetli kitle</div><div class=\"sval\">CPM: Düşük</div></div></div>",
-      "pill": "Alt huni hedefi = ThruPlay, üst huni erişim = 2 saniyelik"
+      "num_label": "Sinyal 01",
+      "icon": "📊",
+      "title": "Hangi Veri En Güçlü Eşleşir?",
+      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><span class=\"tdesc\">E-posta + Telefon birlikte</span><span class=\"sval\">%85+</span></div><div class=\"tier-row high\"><span class=\"tier-rank\">02</span><span class=\"tdesc\">Sadece E-posta (temiz format)</span><span class=\"sval\">%65-75</span></div><div class=\"tier-row med\"><span class=\"tier-rank\">03</span><span class=\"tdesc\">Sadece Telefon Numarası</span><span class=\"sval\">%50-60</span></div><div class=\"tier-row danger\"><span class=\"tier-rank\">04</span><span class=\"tdesc\">Sadece İsim + Şehir</span><span class=\"sval\">%20-30</span></div>",
+      "pill": "İki identifier birlikte kullanmak eşleşme oranını ikiye katlar."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🎯",
-      "title": "Hangi Durumda Hangisi?",
-      "body": "Ürün tanıtımı, kullanım videosu veya dönüşüm öncesi ısınma hedefliyorsan ThruPlay seç.\nMarka bilinirliği, geniş erişim veya düşük bütçeli test kampanyalarında 2 saniyelik izlenmeyi kullan.\nHuni ortası-altı kampanyalarda ThruPlay her zaman daha kaliteli trafik getirir.",
+      "num_label": "Adım 02",
+      "icon": "🧹",
+      "title": "Format Hatası Eşleşmeyi Öldürür",
+      "body": "E-posta küçük harfe çevrilmeli, boşluk ve nokta hataları temizlenmeli. Telefon numarası ülke koduyla birlikte (+90) ve boşluksuz girilmeli. Meta'nın format kılavuzuna uymayan satırların büyük kısmı, hash eşleşmesine hiç girmeden elenir.",
       "is_checklist": false,
-      "pill": "Dönüşüm hunisi alt katmanında ThruPlay şart"
+      "pill": "Yüklemeden önce listeni Meta'nın format kurallarına göre normalize et."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "⏱️",
-      "title": "Video Süresi = Maliyet Belirleyici",
-      "body": "15 saniyenin altındaki videolarda ThruPlay maliyeti çok daha düşük çalışır, çünkü tamamlanma kolaylaşır.\n15 saniyenin üzerindeki videolarda ThruPlay maliyeti artar; ilk 15 saniyeye hook'u sıkıştırmak gerekir.\nUzun videolarda (30sn+) 2 saniyelik izlenme optimizasyonu çoğu zaman daha verimli sonuç verir.",
+      "num_label": "Adım 03",
+      "icon": "🧩",
+      "title": "Tek İdentifier Yetmez",
+      "body": "Sadece e-posta ile yüklenen bir liste genelde %60-70 eşleşir. Aynı listeye telefon, ad-soyad ve şehir bilgisi eklendiğinde Meta birden fazla hash kombinasyonunu dener ve eşleşme oranı %85-90'a çıkabilir. Her ek identifier, bir yedek anahtar gibi çalışır.",
       "is_checklist": false,
-      "pill": "15 saniye altı kurgu = düşük maliyetli ThruPlay"
+      "pill": "4+ identifier kullanan listeler en yüksek eşleşmeyi verir."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata",
-      "body": "30 saniyelik bir videoyu ThruPlay ile optimize etmek, az izleyiciye yüksek maliyetle ulaşmak demektir.\nAynı şekilde satış hedefli bir kampanyada 2 saniyelik izlenme seçmek, düşük niyetli kalabalığı reklamla boğar.\nEvent seçimi, video süresiyle ve huni aşamasıyla birebir uyumlu olmalı.",
+      "num_label": "Adım 04",
+      "icon": "⏳",
+      "title": "Liste Yaşı Eşleşmeyi Düşürür",
+      "body": "30 günden eski bir müşteri listesi, telefon değişimi ve pasif e-postalar yüzünden eşleşme gücünü kaybeder. Listeni 30-45 günde bir yeniden yükle, özellikle son 90 gün içinde alışveriş yapanları önceliklendir.",
       "is_checklist": false,
-      "pill": "Video süresi ile event seçimi uyuşmuyorsa bütçe boşa gider"
+      "pill": "Güncel liste = güncel lookalike kaynağı."
     },
     {
       "kind": "cta",
-      "label": "KAYDET & UYGULA",
-      "title": "Video event'ini doğru seç,\n**bütçeni boşa harcama**"
+      "label": "Hemen Uygula",
+      "title": "Eşleşme Oranın Düşükse,\nLookalike'ın da **Zayıf.**"
     }
   ],
-  "caption": "Video reklamların için yanlış optimizasyon event'i seçiyorsan, bütçenin büyük kısmı boşa gidiyor olabilir. 👇\n\nÇoğu marka ThruPlay ile 2 saniyelik izlenmeyi birbirinin yerine kullanıyor — oysa ikisi tamamen farklı sinyaller üretiyor.\nDoğru seçim hangisi, carousel'de anlatıyorum 👆\n\n─────────────────────\n🎬 ThruPlay'in gerçek hesaplama mantığı\n⚖️ ThruPlay vs 2 Saniyelik karşılaştırması\n🎯 Hangi huni aşamasında hangisi kullanılır\n⏱️ Video süresi maliyeti nasıl belirliyor\n⚠️ En büyük hata: süre-event uyumsuzluğu\n─────────────────────\n\nEn büyük hata: 30 saniyelik bir videoyu ThruPlay ile optimize etmek. Az izleyiciye yüksek maliyetle ulaşırsın.\n\nEvent seçimini video süresine ve huni aşamasına göre yap — maliyetin düşsün, kalite artsın.\n\n💾 Kaydet — yeni video kampanyası kurarken event seçimini kontrol et\n💬 Sen kampanyalarında ThruPlay mi, 2 saniyelik izlenme mi kullanıyorsun? Yorumda söyle!\n\n#thruplay #videoreklamoptimizasyonu #videoads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #reklamstratejisi #instagramreklamlari"
+  "caption": "Müşteri listeni Meta'ya yüklüyorsun ama yarısı eşleşmiyor mu? Bunun nedeni genelde veri kalitesi değil, format ve identifier sayısı. 👇\n\nTek e-posta ile yüklenen listeler çoğu zaman %60-70'te takılı kalır.\nEşleşme oranını yükseltmenin net bir sistemi var 👆\n\n─────────────────────\n🔐 Hashing nasıl çalışır, Meta ham veriyi neden görmez\n📊 Hangi identifier kombinasyonu en güçlü eşleşir\n🧹 Format hatalarının eşleşmeyi nasıl sıfırladığı\n🧩 Tek identifier yerine çoklu identifier stratejisi\n⏳ Liste yaşının eşleşme oranına etkisi\n─────────────────────\n\nEn büyük hata: Sadece e-posta ile yükleyip düşük eşleşme oranını normal sanmak. Oysa 2-3 identifier eklemek oranı neredeyse ikiye katlıyor.\n\nCustomer Match doğru kurulduğunda, lookalike kaynağın da pixel verin de çok daha güçlü oluyor.\n\n💾 Kaydet — müşteri listesi yüklemeden önce aç\n💬 Customer Match'te en çok hangi identifier'ı kullanıyorsun? Yorumda söyle!\n\n#customermatch #hashing #metareklamlari\n#facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
