@@ -1,65 +1,65 @@
 {
-  "topic": "Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri",
+  "topic": "Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "MÜŞTERİ EŞLEŞTİRME",
-      "title": "Listeni Yüklüyorsun.\nMeta Yarısını\n**Tanımıyor.**",
-      "subtitle": "Customer Match'te eşleşme oranı düşükse, lookalike'ın da pixel'in de verisi eksik kalır."
+      "tag": "BÜTÇE GÜVENLİĞİ",
+      "title": "Harcama Sınırı\nKoydun, Kampanyan\n**Durdu.** Neden?",
+      "subtitle": "Çoğu kişi bu ayarı yanlış kuruyor ve haberi bile olmuyor."
     },
     {
       "kind": "light",
-      "num_label": "Adım 01",
-      "icon": "🔐",
-      "title": "Hashing Mantığı Nasıl İşler?",
-      "body": "Müşteri listeni yüklediğinde, e-posta ve telefon bilgilerin tarayıcında SHA-256 ile hash'lenir. Meta ham veriyi asla görmez, sadece hash'lenmiş kodu kendi sistemindeki kullanıcı hash'leriyle karşılaştırır. Eşleşme, bu iki hash'in birebir aynı olmasına bağlıdır — tek bir boşluk veya büyük harf eşleşmeyi bozar.",
-      "is_checklist": false,
-      "pill": "Hash'ler aynı olmazsa eşleşme hiç gerçekleşmez."
+      "num_label": "İpucu 01 / 07",
+      "icon": "🚦",
+      "title": "Hesap Mı, Kampanya Mı?",
+      "body": "Account Spend Limit, Ads Manager'ın fatura ayarlarından tanımlanır.\nHesaptaki TÜM kampanyaların toplam harcamasını kapsar.\nLimit dolduğunda hesaptaki her kampanya aynı anda durur.\nAjans/çoklu marka yönetiminde tehlikelidir: tek limit tüm markaları durdurabilir.",
+      "is_checklist": true,
+      "pill": "Tek limit, hesaptaki her şeyi durdurabilir"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 01",
-      "icon": "📊",
-      "title": "Hangi Veri En Güçlü Eşleşir?",
-      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><span class=\"tdesc\">E-posta + Telefon birlikte</span><span class=\"sval\">%85+</span></div><div class=\"tier-row high\"><span class=\"tier-rank\">02</span><span class=\"tdesc\">Sadece E-posta (temiz format)</span><span class=\"sval\">%65-75</span></div><div class=\"tier-row med\"><span class=\"tier-rank\">03</span><span class=\"tdesc\">Sadece Telefon Numarası</span><span class=\"sval\">%50-60</span></div><div class=\"tier-row danger\"><span class=\"tier-rank\">04</span><span class=\"tdesc\">Sadece İsim + Şehir</span><span class=\"sval\">%20-30</span></div>",
-      "pill": "İki identifier birlikte kullanmak eşleşme oranını ikiye katlar."
+      "num_label": "İpucu 02 / 07",
+      "icon": "⚖️",
+      "title": "Account vs Campaign: Fark Net",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Kapsam</div><div class=\"sval\">Hesaptaki tüm aktif kampanyalar</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Kapsam</div><div class=\"sval\">Sadece seçili tek kampanya</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Limit Dolunca</div><div class=\"sval\">TÜM kampanyalar aynı anda durur</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Limit Dolunca</div><div class=\"sval\">Sadece o kampanya durur, diğerleri sürer</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Nerede Kurulur</div><div class=\"sval\">Fatura ayarları (hesap seviyesi)</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Nerede Kurulur</div><div class=\"sval\">Kampanya düzenleme ekranı</div></div></div>",
+      "pill": "Campaign Spend Limit, hesabın geri kalanını etkilemez"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 02",
-      "icon": "🧹",
-      "title": "Format Hatası Eşleşmeyi Öldürür",
-      "body": "E-posta küçük harfe çevrilmeli, boşluk ve nokta hataları temizlenmeli. Telefon numarası ülke koduyla birlikte (+90) ve boşluksuz girilmeli. Meta'nın format kılavuzuna uymayan satırların büyük kısmı, hash eşleşmesine hiç girmeden elenir.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "💰",
+      "title": "Lifetime Budget'la Karıştırma",
+      "body": "Lifetime budget, pacing algoritmasının parçasıdır; Meta harcamayı kampanya süresine optimize ederek dağıtır. Spend limit ise sert bir finansal tavandır, optimizasyona hiç dahil edilmez, sadece 'dur' der. İkisi aynı anda kullanılabilir ama spend limit'i düşük koymak öğrenme evresini yarıda keser. Spend limit, kampanya performansından tamamen bağımsız çalışan bir güvenlik mekanizmasıdır.",
       "is_checklist": false,
-      "pill": "Yüklemeden önce listeni Meta'nın format kurallarına göre normalize et."
+      "pill": "Spend limit optimize etmez, sadece durdurur"
     },
     {
       "kind": "light",
-      "num_label": "Adım 03",
-      "icon": "🧩",
-      "title": "Tek İdentifier Yetmez",
-      "body": "Sadece e-posta ile yüklenen bir liste genelde %60-70 eşleşir. Aynı listeye telefon, ad-soyad ve şehir bilgisi eklendiğinde Meta birden fazla hash kombinasyonunu dener ve eşleşme oranı %85-90'a çıkabilir. Her ek identifier, bir yedek anahtar gibi çalışır.",
-      "is_checklist": false,
-      "pill": "4+ identifier kullanan listeler en yüksek eşleşmeyi verir."
+      "num_label": "İpucu 04 / 07",
+      "icon": "🛡️",
+      "title": "Ne Zaman Kullanmalısın?",
+      "body": "Automated Rules kurduğunda yedek güvenlik ağı olarak.\nEkip üyesine/stajyere hesap erişimi verirken üst sınır koymak için.\nTest kampanyalarında bütçenin kontrolsüz büyümesini engellemek için.\nQ4 gibi yoğun dönemlerde ani CPM artışına karşı finansal tampon için.",
+      "is_checklist": true,
+      "pill": "Spend limit, insan hatasına karşı sigorta"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 04",
-      "icon": "⏳",
-      "title": "Liste Yaşı Eşleşmeyi Düşürür",
-      "body": "30 günden eski bir müşteri listesi, telefon değişimi ve pasif e-postalar yüzünden eşleşme gücünü kaybeder. Listeni 30-45 günde bir yeniden yükle, özellikle son 90 gün içinde alışveriş yapanları önceliklendir.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata",
+      "body": "Günlük bütçenin sadece 3-4 katı kadar spend limit koymak, öğrenme evresini (7-14 gün / min. 50 dönüşüm) ortasında keser. Doğru kural: spend limit'i, planlanan toplam kampanya bütçesinin en az %20 üzerinde tutmak. Limit dolup kampanya durduğunda öğrenme evresi sıfırlanır, CPA yeniden yükselir. Limiti değiştirmek anlık etki etmez; mevcut harcama sıfırlanmadan yeni limit devreye girmez.",
       "is_checklist": false,
-      "pill": "Güncel liste = güncel lookalike kaynağı."
+      "pill": "Dar limit, öğrenme evresini öldürür"
     },
     {
       "kind": "cta",
       "label": "Hemen Uygula",
-      "title": "Eşleşme Oranın Düşükse,\nLookalike'ın da **Zayıf.**"
+      "title": "Harcama Sınırını Doğru Kur, Kampanyanı Koru"
     }
   ],
-  "caption": "Müşteri listeni Meta'ya yüklüyorsun ama yarısı eşleşmiyor mu? Bunun nedeni genelde veri kalitesi değil, format ve identifier sayısı. 👇\n\nTek e-posta ile yüklenen listeler çoğu zaman %60-70'te takılı kalır.\nEşleşme oranını yükseltmenin net bir sistemi var 👆\n\n─────────────────────\n🔐 Hashing nasıl çalışır, Meta ham veriyi neden görmez\n📊 Hangi identifier kombinasyonu en güçlü eşleşir\n🧹 Format hatalarının eşleşmeyi nasıl sıfırladığı\n🧩 Tek identifier yerine çoklu identifier stratejisi\n⏳ Liste yaşının eşleşme oranına etkisi\n─────────────────────\n\nEn büyük hata: Sadece e-posta ile yükleyip düşük eşleşme oranını normal sanmak. Oysa 2-3 identifier eklemek oranı neredeyse ikiye katlıyor.\n\nCustomer Match doğru kurulduğunda, lookalike kaynağın da pixel verin de çok daha güçlü oluyor.\n\n💾 Kaydet — müşteri listesi yüklemeden önce aç\n💬 Customer Match'te en çok hangi identifier'ı kullanıyorsun? Yorumda söyle!\n\n#customermatch #hashing #metareklamlari\n#facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Kampanyan sabah 10'da durdu, sen panik oldun. Sorun pixel değildi — harcama sınırıydı. 👇\n\nÇoğu kişi Account Spend Limit ile Campaign Spend Limit'i karıştırıyor ve bir tanesi hesaptaki TÜM kampanyaları aynı anda durdurabiliyor.\nDoğru kurulum carousel'de 👆\n\n─────────────────────\n🚦 Account vs Campaign Spend Limit farkı\n⚖️ Hangi limit neyi durdurur\n💰 Lifetime budget ile karıştırılmaması gereken nokta\n🛡️ Spend limit'in gerçek kullanım anları\n⚠️ Öğrenme evresini öldüren en büyük hata\n─────────────────────\n\nEn büyük hata: Spend limit'i günlük bütçenin 3-4 katına ayarlamak. Bu, kampanyan tam öğrenme evresindeyken aniden durmasına ve CPA'nın sıfırdan yükselmesine neden olur.\n\nDoğru ayarlanmış bir harcama sınırı seni korur — kampanyanı değil kısıtlar.\n\n💾 Kaydet — yeni bir kampanya kurarken bütçe sınırlarını belirlerken aç\n💬 Sen hiç spend limit yüzünden kampanyan durdu mu? Yorumda anlat!\n\n#spendlimit #harcamasiniri #metaadsmanager\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

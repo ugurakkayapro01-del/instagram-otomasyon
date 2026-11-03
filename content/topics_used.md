@@ -65,6 +65,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 58 | Bütçe Pacing Stratejisi — Standard vs Accelerated Delivery'nin Harcama Hızına Etkisi | 7 | Otomatik üretildi (2026-11-01) |
 | 59 | Video İzlenme Optimizasyon Event'i — ThruPlay vs 2 Saniyelik Sürekli İzlenme Seçimi | 7 | Otomatik üretildi (2026-11-02) |
 | 60 | Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri | 7 | Otomatik üretildi (2026-11-02) |
+| 61 | Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları | 7 | Otomatik üretildi (2026-11-03) |
 
 ---
 
