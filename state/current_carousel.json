@@ -1,65 +1,69 @@
 {
-  "topic": "Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "topic": "Conversion Value Rules — Kâr Marjına Göre Otomatik Teklif Ağırlıklandırma",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Engagement Custom Audience Kaynak Hiyerarşisi — Video/Profil/Etkileşim Bazlı Segmentasyon Önceliği",
+    "Campaign Budget Scheduling — Yüksek Sezon Satışları İçin Otomatik Bütçe Artış Zamanlaması",
+    "Dynamic Language Optimization (DLO) — Çok Dilli Reklamlarda Otomatik Dil Eşleştirmesi"
+  ],
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "BÜTÇE GÜVENLİĞİ",
-      "title": "Harcama Sınırı\nKoydun, Kampanyan\n**Durdu.** Neden?",
-      "subtitle": "Çoğu kişi bu ayarı yanlış kuruyor ve haberi bile olmuyor."
+      "tag": "KÂR ODAKLI TEKLİF VERME",
+      "title": "Algoritman Senin\nKârını **Bilmiyor**",
+      "subtitle": "ROAS yüksek görünebilir ama her satış aynı kârı getirmiyor. Conversion Value Rules bunu değiştiriyor."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🚦",
-      "title": "Hesap Mı, Kampanya Mı?",
-      "body": "Account Spend Limit, Ads Manager'ın fatura ayarlarından tanımlanır.\nHesaptaki TÜM kampanyaların toplam harcamasını kapsar.\nLimit dolduğunda hesaptaki her kampanya aynı anda durur.\nAjans/çoklu marka yönetiminde tehlikelidir: tek limit tüm markaları durdurabilir.",
-      "is_checklist": true,
-      "pill": "Tek limit, hesaptaki her şeyi durdurabilir"
+      "icon": "💰",
+      "title": "Value Rules Nedir?",
+      "body": "Conversion Value Rules, her dönüşüme sabit bir değer yerine kurala bağlı bir çarpan atamanı sağlar. Meta'nın algoritması artık 'en çok satış' değil, 'en çok kâr' getiren segmente bütçe kaydırır.",
+      "is_checklist": false,
+      "pill": "Ciro optimizasyonundan kâr optimizasyonuna geçiş"
     },
     {
       "kind": "special",
       "background": "dark",
       "num_label": "İpucu 02 / 07",
-      "icon": "⚖️",
-      "title": "Account vs Campaign: Fark Net",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Kapsam</div><div class=\"sval\">Hesaptaki tüm aktif kampanyalar</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Kapsam</div><div class=\"sval\">Sadece seçili tek kampanya</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Limit Dolunca</div><div class=\"sval\">TÜM kampanyalar aynı anda durur</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Limit Dolunca</div><div class=\"sval\">Sadece o kampanya durur, diğerleri sürer</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Nerede Kurulur</div><div class=\"sval\">Fatura ayarları (hesap seviyesi)</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Nerede Kurulur</div><div class=\"sval\">Kampanya düzenleme ekranı</div></div></div>",
-      "pill": "Campaign Spend Limit, hesabın geri kalanını etkilemez"
+      "icon": "🧮",
+      "title": "Değer Çarpanı Formülü",
+      "inner_html": "<div class='formula-box'>Gerçek Değer = Dönüşüm Değeri × Kural Çarpanı<br>Örnek: 1.000 TL satış × 1.5 (Yeni Müşteri) = 1.500 TL algoritmaya bildirilen değer</div>",
+      "pill": "Çarpan aralığı: 0.1x – 10x arası tanımlanabilir"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 03 / 07",
-      "icon": "💰",
-      "title": "Lifetime Budget'la Karıştırma",
-      "body": "Lifetime budget, pacing algoritmasının parçasıdır; Meta harcamayı kampanya süresine optimize ederek dağıtır. Spend limit ise sert bir finansal tavandır, optimizasyona hiç dahil edilmez, sadece 'dur' der. İkisi aynı anda kullanılabilir ama spend limit'i düşük koymak öğrenme evresini yarıda keser. Spend limit, kampanya performansından tamamen bağımsız çalışan bir güvenlik mekanizmasıdır.",
-      "is_checklist": false,
-      "pill": "Spend limit optimize etmez, sadece durdurur"
+      "icon": "🎯",
+      "title": "Hangi Koşullara Göre Kurulur?",
+      "body": "Cihaz platformu (mobil vs masaüstü)\nYeni müşteri vs mevcut müşteri\nÜrün kategorisi / kâr marjı grubu\nCoğrafi bölge (yüksek-düşük sepet ortalaması)",
+      "is_checklist": true,
+      "pill": "4 koşul tipi: cihaz, müşteri tipi, kategori, bölge"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "🛡️",
-      "title": "Ne Zaman Kullanmalısın?",
-      "body": "Automated Rules kurduğunda yedek güvenlik ağı olarak.\nEkip üyesine/stajyere hesap erişimi verirken üst sınır koymak için.\nTest kampanyalarında bütçenin kontrolsüz büyümesini engellemek için.\nQ4 gibi yoğun dönemlerde ani CPM artışına karşı finansal tampon için.",
-      "is_checklist": true,
-      "pill": "Spend limit, insan hatasına karşı sigorta"
+      "icon": "⚠️",
+      "title": "Ön Koşul: Value Optimizasyonu",
+      "body": "Value Rules sadece 'Değer' (Value) optimizasyon hedefiyle çalışır, 'Dönüşüm' hedefiyle değil. Kampanyanı önce Highest Value bidding stratejisine çevirmeden kural tanımlamak hiçbir şey değiştirmez.",
+      "is_checklist": false,
+      "pill": "Optimizasyon hedefi yanlışsa kural devre dışı kalır"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata",
-      "body": "Günlük bütçenin sadece 3-4 katı kadar spend limit koymak, öğrenme evresini (7-14 gün / min. 50 dönüşüm) ortasında keser. Doğru kural: spend limit'i, planlanan toplam kampanya bütçesinin en az %20 üzerinde tutmak. Limit dolup kampanya durduğunda öğrenme evresi sıfırlanır, CPA yeniden yükselir. Limiti değiştirmek anlık etki etmez; mevcut harcama sıfırlanmadan yeni limit devreye girmez.",
+      "icon": "🚨",
+      "title": "En Büyük Hata: Aşırı Parçalama",
+      "body": "Haftada 50'den az satışı olan bir hesapta 5-6 farklı değer kuralı tanımlamak, algoritmanın öğrenme verisini böler. Segment başına haftalık minimum 15-20 dönüşüm olmadan çarpanlar güvenilir çalışmaz.",
       "is_checklist": false,
-      "pill": "Dar limit, öğrenme evresini öldürür"
+      "pill": "Kural sayısı = veri hacmine göre sınırlı tutulmalı"
     },
     {
       "kind": "cta",
-      "label": "Hemen Uygula",
-      "title": "Harcama Sınırını Doğru Kur, Kampanyanı Koru"
+      "label": "KÂR ODAKLI BÜYÜME",
+      "title": "Ciro Değil, **Kâr** İçin Optimize Et"
     }
   ],
-  "caption": "Kampanyan sabah 10'da durdu, sen panik oldun. Sorun pixel değildi — harcama sınırıydı. 👇\n\nÇoğu kişi Account Spend Limit ile Campaign Spend Limit'i karıştırıyor ve bir tanesi hesaptaki TÜM kampanyaları aynı anda durdurabiliyor.\nDoğru kurulum carousel'de 👆\n\n─────────────────────\n🚦 Account vs Campaign Spend Limit farkı\n⚖️ Hangi limit neyi durdurur\n💰 Lifetime budget ile karıştırılmaması gereken nokta\n🛡️ Spend limit'in gerçek kullanım anları\n⚠️ Öğrenme evresini öldüren en büyük hata\n─────────────────────\n\nEn büyük hata: Spend limit'i günlük bütçenin 3-4 katına ayarlamak. Bu, kampanyan tam öğrenme evresindeyken aniden durmasına ve CPA'nın sıfırdan yükselmesine neden olur.\n\nDoğru ayarlanmış bir harcama sınırı seni korur — kampanyanı değil kısıtlar.\n\n💾 Kaydet — yeni bir kampanya kurarken bütçe sınırlarını belirlerken aç\n💬 Sen hiç spend limit yüzünden kampanyan durdu mu? Yorumda anlat!\n\n#spendlimit #harcamasiniri #metaadsmanager\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Her satış sana aynı kârı getirmiyor ama Meta algoritman bunu bilmiyor. 👇\n\nROAS'ın yüksek görünüyor olabilir ama arka planda düşük marjlı ürünlere bütçe akıyor olabilir.\nÇözüm carousel'de — Conversion Value Rules ile algoritmana gerçek kârını öğretiyoruz. 👆\n\n─────────────────────\n💰 Value Rules nedir, nasıl çalışır\n🧮 Değer çarpanı formülü ve örnek hesaplama\n🎯 Hangi 4 koşula göre kural kurulur\n⚠️ Çalışması için gereken optimizasyon hedefi şartı\n🚨 Segment parçalama hatası ve haftalık eşik\n─────────────────────\n\nEn büyük hata: Haftada 50'den az satışı olan hesapta 5-6 farklı değer kuralı tanımlamak. Algoritmanın öğrenme verisi bölünüyor, çarpanlar güvenilir çalışmıyor.\n\nDoğru kurulduğunda bu özellik, bütçeni otomatik olarak en kârlı segmente kaydırır.\n\n💾 Kaydet — Value Rules kurarken referans al\n💬 Sen hiç kâr marjına göre teklif ağırlıklandırması denedin mi? Yorumda söyle!\n\n#conversionvaluerules #valuebasedbidding #roas\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
