@@ -6,7 +6,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Engagement Custom Audience Kaynak Hiyerarşisi — Video/Profil/Etkileşim Bazlı Segmentasyon Önceliği
 - Campaign Budget Scheduling — Yüksek Sezon Satışları İçin Otomatik Bütçe Artış Zamanlaması
 - Dynamic Language Optimization (DLO) — Çok Dilli Reklamlarda Otomatik Dil Eşleştirmesi
 

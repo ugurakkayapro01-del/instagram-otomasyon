@@ -67,6 +67,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 60 | Müşteri Listesi Eşleştirme (Customer Match) — Hashing ve Eşleşme Oranını Yükseltme Teknikleri | 7 | Otomatik üretildi (2026-11-02) |
 | 61 | Reklam Seti ve Kampanya Harcama Sınırı (Spend Limit) — Doğru Kullanım Senaryoları | 7 | Otomatik üretildi (2026-11-03) |
 | 62 | Conversion Value Rules — Kâr Marjına Göre Otomatik Teklif Ağırlıklandırma | 7 | Otomatik üretildi (2026-11-03) |
+| 63 | Engagement Custom Audience Kaynak Hiyerarşisi — Video/Profil/Etkileşim Bazlı Segmentasyon Önceliği | 7 | Otomatik üretildi (2026-11-04) |
 
 ---
 
