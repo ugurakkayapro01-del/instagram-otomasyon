@@ -1,65 +1,65 @@
 {
-  "topic": "Engagement Custom Audience Kaynak Hiyerarşisi — Video/Profil/Etkileşim Bazlı Segmentasyon Önceliği",
+  "topic": "Campaign Budget Scheduling — Yüksek Sezon Satışları İçin Otomatik Bütçe Artış Zamanlaması",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "ENGAGEMENT AUDIENCE",
-      "title": "Instagram Etkileşiminin\nHer Türü **Aynı Değerde** Değil",
-      "subtitle": "Beğeni ile DM açma arasında 5 kat sinyal farkı var. Kitleni yanlış sinyalle kurarsan bütçen boşa gider."
+      "tag": "SEZONSAL KAMPANYA STRATEJİSİ",
+      "title": "Black Friday'de\nBütçeni Elle\n**Artırma**",
+      "subtitle": "Son dakika manuel müdahale öğrenme evresini sıfırlar. Meta'nın otomatik planlama aracı bunu kökten çözüyor."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🎯",
-      "title": "Engagement Custom Audience Nedir?",
-      "body": "Reklamınla veya hesabınla etkileşime giren kullanıcılardan oluşan özel kitle türüdür. Video izleme, profil ziyareti, gönderi etkileşimi, DM açma gibi 6 farklı kaynaktan beslenir. Her kaynağın 'sıcaklık' seviyesi farklıdır — hepsini aynı kitlede toplamak en büyük hatadır.",
+      "icon": "📅",
+      "title": "Campaign Budget Scheduling Nedir?",
+      "body": "Meta Ads Manager içindeki 'Scheduled Budget Increase' özelliği, belirlediğin tarih aralığında kampanya bütçeni otomatik artırıp event bitince eski haline döndürür. Manuel müdahaleye gerek kalmaz, sistem senin yerine zamanlama yapar.",
       "is_checklist": false,
-      "pill": "6 farklı kaynaktan sinyal topla, ayrı değerlendir"
+      "pill": "Otomatik planlama, manuel riski ortadan kaldırır"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 01",
-      "icon": "🔥",
-      "title": "Sıcaklık Sıralaması — Hangi Sinyal Daha Değerli?",
-      "inner_html": "<div class=\"tier-row\"><div class=\"tier-rank best\">01</div><div class=\"trow\"><div class=\"slabel\">DM / Mesaj Başlatma</div><div class=\"tdesc\">En sıcak sinyal — satın alma niyetine en yakın etkileşim</div></div></div><div class=\"tier-row\"><div class=\"tier-rank high\">02</div><div class=\"trow\"><div class=\"slabel\">Video %95 Tamamlama</div><div class=\"tdesc\">İçeriğe tam odaklanma — yüksek ilgi göstergesi</div></div></div><div class=\"tier-row\"><div class=\"tier-rank med\">03</div><div class=\"trow\"><div class=\"slabel\">Gönderi Kaydetme</div><div class=\"tdesc\">Beğeniden 3 kat güçlü, sonra dönme niyeti taşır</div></div></div><div class=\"tier-row\"><div class=\"tier-rank med\">04</div><div class=\"trow\"><div class=\"slabel\">Yorum + Profil Ziyareti</div><div class=\"tdesc\">Orta seviye ilgi, markayı araştırma sinyali</div></div></div><div class=\"tier-row\"><div class=\"tier-rank warn\">05</div><div class=\"trow\"><div class=\"slabel\">Sadece Beğeni</div><div class=\"tdesc\">En zayıf sinyal — pasif tüketim, düşük dönüşüm</div></div></div>",
-      "pill": "Lookalike kaynağı olarak önce Tier 01-02'yi kullan"
+      "num_label": "Adım 02",
+      "icon": "⚙️",
+      "title": "Maksimum Artış Sınırı",
+      "inner_html": "<div class=\"formula-box\">Planlanan bütçe ≤ Orijinal bütçe × 4<br>Minimum artış: %5 · Planlama: Min. 24 saat önceden</div>",
+      "pill": "Limiti aşan talep sistem tarafından otomatik reddedilir"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "⏱️",
-      "title": "Retention Window — Kaç Gün Geriye Gitmeli?",
-      "body": "Her kaynağın saklama süresi farklı olmalı. DM açanlar için 30 gün (sıcaklık hızla düşer), video izleyenler için 90 gün, profil ziyaretçileri için 180 gün, genel gönderi etkileşimi için maksimum 365 gün kullan. Süre uzadıkça sinyal zayıflar, reklam harcaman verimsizleşir.",
+      "num_label": "Adım 03",
+      "icon": "🔁",
+      "title": "Event Aralığı ve Öğrenme Evresi",
+      "body": "İki ayrı bütçe artış dönemi arasında en az 7 gün boşluk bırakılmalı. Bu sayede algoritma yeni bütçeye alışırken önceki öğrenme verisini kaybetmiyor. Normal %20 artış kuralından farklı olarak, CBS döneminde öğrenme evresi sıfırlanmıyor.",
       "is_checklist": false,
-      "pill": "Sıcak sinyal = kısa pencere, soğuk sinyal = uzun pencere"
+      "pill": "7 gün kuralı: ardışık eventleri asla bitiştirme"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🧩",
-      "title": "Hangi Sinyal Hangi Kampanya Aşamasında Kullanılır?",
-      "body": "Tier 01-02 → Retargeting + dönüşüm kampanyası kaynağı\nTier 03-04 → Lookalike kaynağı + orta huni (MOFU) içerik\nTier 05 → Sadece bilinirlik hedefi, dönüşümde kullanma\nKarışık kitle asla kurma — her tier ayrı reklam seti",
+      "num_label": "İpucu 04 / 07",
+      "icon": "🛍️",
+      "title": "Hangi Günler İçin Planlanmalı?",
+      "body": "11.11 ve Black Friday\nCyber Monday\nYılbaşı kampanya haftası\nSevgililer Günü / Anneler Günü\nMarka özel indirim günleri (kuruluş yıl dönümü vb.)",
       "is_checklist": true,
-      "pill": "Her sıcaklık seviyesi ayrı reklam setine gider"
+      "pill": "Takvimini 60 gün öncesinden planla"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 04 / 07",
+      "num_label": "Sinyal 05",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Tüm Etkileşimi Tek Kitlede Toplamak",
-      "body": "Beğenen ile DM açanı aynı retargeting kitlesine koyarsan, algoritma bütçeyi zayıf sinyale göre dağıtır. Sonuç: CPA yükselir, ROAS düşer. Her tier için ayrı özel kitle oluştur, ayrı reklam setinde test et.",
+      "title": "En Büyük Hata: Son Dakika Manuel Artış",
+      "body": "Event günü sabahı bütçeyi elle %200 artırmak öğrenme evresini sıfırlar ve CPA 48 saat boyunca yükselir. CBS ile planlanan artış ise sistem geçişi kademeli yönettiği için öğrenme evresini korur.",
       "is_checklist": false,
-      "pill": "Ayrı tier = ayrı kitle = ayrı reklam seti, asla karıştırma"
+      "pill": "Manuel panik artışı = kayıp performans"
     },
     {
       "kind": "cta",
-      "label": "KAYDET & UYGULA",
-      "title": "Sıcaklığına Göre Kitle Kur,\nBütçeni **Doğru Sinyale** Yönlendir"
+      "label": "Sezonu Planla, Panik Yapma",
+      "title": "Yüksek Sezonda\nBütçeni **Otomatik** Yönet"
     }
   ],
-  "caption": "Instagram'da beğeni alan reklamın DM açan reklamla aynı değerde olduğunu mu düşünüyorsun? Büyük yanılgı. 👇\n\nHer etkileşim türü farklı bir satın alma sinyali taşır — ama çoğu marka hepsini tek kitlede eritip bütçesini zayıf sinyale göre harcıyor.\nDoğru hiyerarşiyi bu carousel'de bulacaksın. 👆\n\n─────────────────────\n🎯 Engagement Custom Audience'ın 6 farklı kaynağı\n🔥 Sinyal sıcaklık sıralaması (DM'den beğeniye)\n⏱️ Her kaynak için doğru retention window (30-365 gün)\n🧩 Hangi tier hangi kampanya aşamasında kullanılır\n⚠️ Tüm etkileşimi tek kitlede toplama hatası\n─────────────────────\n\nEn büyük hata: Beğenen ile DM açanı aynı retargeting kitlesine koymak. Algoritma bütçeyi zayıf sinyale göre dağıtır, CPA yükselir.\n\nHer tier'ı ayrı kitle, ayrı reklam seti olarak kur — fark hemen görülür.\n\n💾 Kaydet — yeni retargeting kitlesi kurarken aç\n💬 Sen hangi etkileşim türünü retargeting kitlende kullanıyorsun? Yorumda söyle!\n\n#customaudience #retargeting #metareklamlari\n#facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Black Friday sabahı bütçeni elle artırmak, aslında algoritmanı resetliyor. Çoğu e-ticaret sahibi bunu bilmeden yapıyor. 👇\n\nYüksek sezon kampanyaları manuel müdahaleyle yönetildiğinde CPA fırlıyor, öğrenme evresi sıfırlanıyor.\nMeta'nın otomatik bütçe zamanlama aracı bu sorunu kökten çözüyor. 👆\n\n─────────────────────\n📅 Campaign Budget Scheduling nedir, nasıl çalışır\n⚙️ Maksimum %4x bütçe artış limiti ve 24 saatlik planlama kuralı\n🔁 Event aralarında 7 gün boşluk — öğrenme evresini koruma mantığı\n🛍️ Planlaman gereken sezonsal günler listesi\n⚠️ En büyük hata: son dakika manuel bütçe artışı\n─────────────────────\n\nEn büyük hata: Event günü sabahı panikle bütçeyi elle artırmak. Bu, 48 saat boyunca CPA'nı yükseltiyor.\n\nSezonu şansa bırakma, bütçeni önceden planla.\n\n💾 Kaydet — Kasım kampanyalarını planlamadan önce tekrar oku\n💬 Bu yıl hangi sezonsal kampanyayı planlıyorsun? Yorumda söyle!\n\n#budgetscheduling #blackfridayads #sezonselkampanya\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
