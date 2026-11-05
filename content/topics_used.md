@@ -69,6 +69,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 62 | Conversion Value Rules — Kâr Marjına Göre Otomatik Teklif Ağırlıklandırma | 7 | Otomatik üretildi (2026-11-03) |
 | 63 | Engagement Custom Audience Kaynak Hiyerarşisi — Video/Profil/Etkileşim Bazlı Segmentasyon Önceliği | 7 | Otomatik üretildi (2026-11-04) |
 | 64 | Campaign Budget Scheduling — Yüksek Sezon Satışları İçin Otomatik Bütçe Artış Zamanlaması | 7 | Otomatik üretildi (2026-11-04) |
+| 65 | Dynamic Language Optimization (DLO) — Çok Dilli Reklamlarda Otomatik Dil Eşleştirmesi | 7 | Otomatik üretildi (2026-11-05) |
 
 ---
 

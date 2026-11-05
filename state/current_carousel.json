@@ -1,65 +1,65 @@
 {
-  "topic": "Campaign Budget Scheduling — Yüksek Sezon Satışları İçin Otomatik Bütçe Artış Zamanlaması",
+  "topic": "Dynamic Language Optimization (DLO) — Çok Dilli Reklamlarda Otomatik Dil Eşleştirmesi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "formula",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "SEZONSAL KAMPANYA STRATEJİSİ",
-      "title": "Black Friday'de\nBütçeni Elle\n**Artırma**",
-      "subtitle": "Son dakika manuel müdahale öğrenme evresini sıfırlar. Meta'nın otomatik planlama aracı bunu kökten çözüyor."
+      "tag": "META REKLAM OTOMASYONU",
+      "title": "Tek Reklamla\n**12 Dili**\nAynı Anda Hedefle",
+      "subtitle": "Çok uluslu kitleye dil dil ayrı reklam seti kurmak zaman kaybı. Meta'nın az bilinen bu özelliği işi tek kurulumla otomatikleştiriyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "📅",
-      "title": "Campaign Budget Scheduling Nedir?",
-      "body": "Meta Ads Manager içindeki 'Scheduled Budget Increase' özelliği, belirlediğin tarih aralığında kampanya bütçeni otomatik artırıp event bitince eski haline döndürür. Manuel müdahaleye gerek kalmaz, sistem senin yerine zamanlama yapar.",
+      "num_label": "İpucu 01/05",
+      "icon": "🌍",
+      "title": "DLO Nasıl Çalışır?",
+      "body": "Dynamic Language Optimization, kullanıcının Facebook/Instagram arayüz dili ve cihaz dil sinyaline göre reklamın doğru dil versiyonunu otomatik gösterir.\nTek reklam setinde 40'a kadar dil varyasyonu tanımlayabilirsin, sistem gösterim anında doğru olanı seçer.",
       "is_checklist": false,
-      "pill": "Otomatik planlama, manuel riski ortadan kaldırır"
+      "pill": "Tek kurulum, otomatik dil eşleştirmesi"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 02",
-      "icon": "⚙️",
-      "title": "Maksimum Artış Sınırı",
-      "inner_html": "<div class=\"formula-box\">Planlanan bütçe ≤ Orijinal bütçe × 4<br>Minimum artış: %5 · Planlama: Min. 24 saat önceden</div>",
-      "pill": "Limiti aşan talep sistem tarafından otomatik reddedilir"
+      "num_label": "Karşılaştırma 02/05",
+      "icon": "⚖️",
+      "title": "Tek Dil mi, DLO mu?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">SADECE İNGİLİZCE</div><div class=\"sval\">%1,8 CTR</div><div class=\"tdesc\">Yerel dil kullanıcısı metni atlıyor, kaydırıyor</div></div><div class=\"cmp-col best\"><div class=\"flabel\">DLO AKTİF</div><div class=\"sval high\">%3,4 CTR</div><div class=\"tdesc\">Her kullanıcı kendi dilinde mesajı görüyor</div></div></div>",
+      "pill": "Native dilde mesaj, 2 kata yakın etkileşim"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "🔁",
-      "title": "Event Aralığı ve Öğrenme Evresi",
-      "body": "İki ayrı bütçe artış dönemi arasında en az 7 gün boşluk bırakılmalı. Bu sayede algoritma yeni bütçeye alışırken önceki öğrenme verisini kaybetmiyor. Normal %20 artış kuralından farklı olarak, CBS döneminde öğrenme evresi sıfırlanmıyor.",
-      "is_checklist": false,
-      "pill": "7 gün kuralı: ardışık eventleri asla bitiştirme"
+      "num_label": "Adım 03/05",
+      "icon": "⚙️",
+      "title": "Kurulum 3 Adımda",
+      "body": "Reklam düzeyinde 'Dilleri Optimize Et' seçeneğini aç\nHer dil için başlık, metin ve açıklamayı ayrı ayrı gir (minimum 2 dil)\nHedef kitleye tüm dil konuşanları tek seferde ekle, sistem otomatik ayırır",
+      "is_checklist": true,
+      "pill": "Tek reklam seti, çoklu dil yönetimi"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🛍️",
-      "title": "Hangi Günler İçin Planlanmalı?",
-      "body": "11.11 ve Black Friday\nCyber Monday\nYılbaşı kampanya haftası\nSevgililer Günü / Anneler Günü\nMarka özel indirim günleri (kuruluş yıl dönümü vb.)",
-      "is_checklist": true,
-      "pill": "Takvimini 60 gün öncesinden planla"
+      "num_label": "İpucu 04/05",
+      "icon": "✍️",
+      "title": "Makine Çevirisi Satış Öldürür",
+      "body": "Google Translate ile çevrilen metinler kelime kelime çeviri kokar, native konuşan kullanıcı anında fark edip kaydırır.\nHer dil için ya native konuşan birine çeviri yaptır ya da profesyonel çeviri hizmeti kullan.\nDeyimler ve CTA ifadeleri birebir çevrilmez — o dilin satış kültürüne göre uyarlanır.",
+      "is_checklist": false,
+      "pill": "Native çeviri yoksa DLO'yu hiç kurma"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Son Dakika Manuel Artış",
-      "body": "Event günü sabahı bütçeyi elle %200 artırmak öğrenme evresini sıfırlar ve CPA 48 saat boyunca yükselir. CBS ile planlanan artış ise sistem geçişi kademeli yönettiği için öğrenme evresini korur.",
+      "num_label": "Uyarı 05/05",
+      "icon": "🚫",
+      "title": "En Büyük Hata: Yanlış Format Seçimi",
+      "body": "DLO sadece tek görsel/video reklamlarda ve bazı Collection formatlarında çalışır, klasik carousel'in her kartı için ayrı dil ayarlanamaz.\nKullanıcının dil sinyali belirsizse Meta varsayılan dili gösterir — bu yüzden mutlaka bir 'ana dil' (fallback) tanımla.\nTek pazarda tek dil konuşuluyorsa DLO'ya hiç gerek yok, bütçeni karmaşık kurulum yerine kreatif testine ayır.",
       "is_checklist": false,
-      "pill": "Manuel panik artışı = kayıp performans"
+      "pill": "Format uyumsuzluğu DLO'yu çalışmaz hale getirir"
     },
     {
       "kind": "cta",
-      "label": "Sezonu Planla, Panik Yapma",
-      "title": "Yüksek Sezonda\nBütçeni **Otomatik** Yönet"
+      "label": "DİL OTOMASYONUNU ŞİMDİ DENE",
+      "title": "Tek Reklam, **Her Dilde** Doğru Mesaj"
     }
   ],
-  "caption": "Black Friday sabahı bütçeni elle artırmak, aslında algoritmanı resetliyor. Çoğu e-ticaret sahibi bunu bilmeden yapıyor. 👇\n\nYüksek sezon kampanyaları manuel müdahaleyle yönetildiğinde CPA fırlıyor, öğrenme evresi sıfırlanıyor.\nMeta'nın otomatik bütçe zamanlama aracı bu sorunu kökten çözüyor. 👆\n\n─────────────────────\n📅 Campaign Budget Scheduling nedir, nasıl çalışır\n⚙️ Maksimum %4x bütçe artış limiti ve 24 saatlik planlama kuralı\n🔁 Event aralarında 7 gün boşluk — öğrenme evresini koruma mantığı\n🛍️ Planlaman gereken sezonsal günler listesi\n⚠️ En büyük hata: son dakika manuel bütçe artışı\n─────────────────────\n\nEn büyük hata: Event günü sabahı panikle bütçeyi elle artırmak. Bu, 48 saat boyunca CPA'nı yükseltiyor.\n\nSezonu şansa bırakma, bütçeni önceden planla.\n\n💾 Kaydet — Kasım kampanyalarını planlamadan önce tekrar oku\n💬 Bu yıl hangi sezonsal kampanyayı planlıyorsun? Yorumda söyle!\n\n#budgetscheduling #blackfridayads #sezonselkampanya\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Aynı reklamı tüm dünyaya İngilizce gösteriyorsan, yerel kullanıcının büyük bölümünü daha mesajın başında kaybediyorsun. 👇\n\nÇok uluslu kitleye satış yapıyorsan dil engeli dönüşümünü sessizce yiyip bitiriyor olabilir.\nMeta'nın bu az bilinen özelliği tek kurulumla 40 dile kadar otomatik eşleştirme yapıyor, tüm detaylar carousel'de. 👆\n\n─────────────────────\n🌍 DLO kullanıcının dil sinyaline göre doğru versiyonu otomatik gösteriyor\n⚖️ Tek dil vs DLO: CTR neredeyse 2 kat farklı çıkıyor\n⚙️ 3 adımda kurulum: tek reklam setinde çoklu dil yönetimi\n✍️ Makine çevirisi yerine native çeviri şart\n🚫 Format kısıtları ve fallback dil ayarı dikkat ister\n─────────────────────\n\nEn büyük hata: Carousel formatında her kart için ayrı dil ayarlayabileceğini sanıp yanlış format seçmek — DLO sadece belirli formatlarda çalışıyor.\n\nDoğru kurulursa tek reklam seti, her pazarda yerel gibi konuşuyor.\n\n💾 Kaydet — çok uluslu kampanya kurarken referans al\n💬 Sen hangi pazarlara reklam veriyorsun, kaç dilde içerik hazırlıyorsun? Yorumda söyle!\n\n#dynamiclanguageoptimization #cokdillireklam #globaleticaret\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
