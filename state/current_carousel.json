@@ -1,69 +1,65 @@
 {
-  "topic": "Conversion API Gateway — Teknik Ekip Olmadan Sunucu Taraflı İzleme Kurulumu",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi",
-    "Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme",
-    "Lookback Window (Geriye Dönük Bakış Penceresi) Optimizasyonu — Custom Audience Tazeliğini 30/60/90 Gün ile Yönetme"
-  ],
-  "special_kind": "stat",
+  "topic": "Lookback Window (Geriye Dönük Bakış Penceresi) Optimizasyonu — Custom Audience Tazeliğini 30/60/90 Gün ile Yönetme",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "SUNUCU TARAFLI İZLEME",
-      "title": "Kod Yazmadan\nSunucu Taraflı\n**İzleme** Kurulumu",
-      "subtitle": "Meta'nın yeni Conversion API Gateway aracı, geliştirici olmadan server-side event göndermeni sağlıyor."
+      "tag": "KİTLE TAZELİĞİ · RETARGETING STRATEJİSİ",
+      "title": "180 Gün Önce Siteni\nZiyaret Edene Mi\n**Hala Reklam Veriyorsun?**",
+      "subtitle": "Custom Audience'ların çoğu yanlış zaman penceresiyle kuruluyor — ve bütçen soğumuş kitleye gidiyor."
     },
     {
       "kind": "light",
-      "num_label": "Adım 01",
-      "icon": "🛠️",
-      "title": "CAPI Gateway Nedir?",
-      "body": "Meta Conversion API Gateway, Cloudflare altyapısında barındırılan, kod yazmadan kurulan bir sunucu taraflı event gönderme sistemi. Normal CAPI kurulumu geliştirici ve haftalar gerektirirken, Gateway tek ekranda aktif olur.\nEvent'ler doğrudan Meta sunucularına, tarayıcı engelleyicilerden etkilenmeden ulaşır.",
+      "num_label": "Bilgi 01 / 07",
+      "icon": "🔄",
+      "title": "Lookback Window Nedir?",
+      "body": "Custom Audience oluştururken seçtiğin zaman aralığı, hangi kullanıcı davranışının kitleye dahil edileceğini belirler. 1 ila 180 gün arasında ayarlanabilir. Kısa pencere taze ama küçük bir kitle verir. Uzun pencere geniş ama soğumuş bir sinyal taşır.",
       "is_checklist": false,
-      "pill": "Kurulum süresi: haftalar yerine 15 dakika"
+      "pill": "Pencereyi event tipine göre seç, asla sabit tutma."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02",
-      "icon": "📈",
-      "title": "EMQ Skorunda Gerçek Artış",
-      "inner_html": "<div class=\"bignum\">%22</div><div class=\"bignumsub\">Ortalama CPA düşüşü — Gateway sonrası Event Match Quality artışıyla birlikte</div>",
-      "pill": "Match quality yükseldikçe optimizasyon algoritması daha doğru çalışır"
+      "num_label": "Bilgi 02 / 07",
+      "icon": "🏆",
+      "title": "Event Bazlı Pencere Sıralaması",
+      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><div class=\"tdesc\"><strong>Purchase (Satın Alma)</strong> — 7 gün penceresi. Niyet en taze, retargeting dönüşümü en yüksek.</div></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><div class=\"tdesc\"><strong>Add to Cart</strong> — 14 gün penceresi. Karar aşamasında, hatırlatma etkili.</div></div><div class=\"tier-row\"><span class=\"tier-rank\">03</span><div class=\"tdesc\"><strong>ViewContent / Ürün Görüntüleme</strong> — 30 gün penceresi. İlgi var ama niyet zayıflıyor.</div></div><div class=\"tier-row\"><span class=\"tier-rank\">04</span><div class=\"tdesc\"><strong>Tüm Ziyaretçiler</strong> — 60-90 gün penceresi. Kitle büyütme gerektiğinde kullanılır, dönüşüm düşük.</div></div>",
+      "pill": "Her event'e kendi penceresini ver, hepsine 180 gün uygulama."
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "🔗",
-      "title": "Hangi Event'ler Gönderilmeli?",
-      "body": "Purchase, AddToCart, InitiateCheckout önceliği her zaman en üstte olmalı\nevent_id ile deduplication zorunlu, yoksa çift sayım riski doğar\nTest Events aracıyla her event canlıya almadan doğrulanmalı\nEMQ skoru 7/10 altındaysa eksik parametre var demektir",
-      "is_checklist": true,
-      "pill": "Deduplication olmadan çift sayım riski doğar"
+      "num_label": "Bilgi 03 / 07",
+      "icon": "🧬",
+      "title": "Lookalike Kaynağında Pencere Mantığı Tersine Döner",
+      "body": "Lookalike modeli için daha fazla veri daha stabil bir örüntü demektir. Retargeting'in aksine burada 90-180 günlük geniş pencere, algoritmaya daha güçlü bir davranış imzası verir. Kısa pencere, Lookalike kaynağını küçük ve gürültülü bırakır.",
+      "is_checklist": false,
+      "pill": "Retargeting'de kısa, Lookalike'da uzun pencere kullan."
     },
     {
       "kind": "light",
-      "num_label": "Adım 04",
-      "icon": "⚙️",
-      "title": "Kurulum Akışı",
-      "body": "Events Manager içinde Veri Kaynakları > Ayarlar bölümünden Conversion API Gateway seçilir. Alan adı doğrulaması yapılır, Meta otomatik olarak bir Cloudflare worker örneği oluşturur. Ekstra sunucu, kod veya barındırma maliyeti gerekmez.",
-      "is_checklist": false,
-      "pill": "Tek gereksinim: alan adı için DNS erişimi"
+      "num_label": "Bilgi 04 / 07",
+      "icon": "📦",
+      "title": "Ürün Tipine Göre Pencere Ayarı",
+      "body": "Sezonluk/moda ürünler → 7-14 gün (hızlı soğuyan niyet)\nEvergreen/sürekli talep gören ürünler → 30-60 gün\nYüksek fiyatlı/uzun karar süreçli ürünler → 60-90 gün\nAbonelik/tekrar satın alma modelleri → 30 gün + otomatik yenileme",
+      "is_checklist": true,
+      "pill": "Pencereyi ürünün karar süresine göre ayarla."
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05",
+      "num_label": "En Büyük Hata",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Parametre Eksikliği",
-      "body": "Gateway altyapıyı otomatik kurar ama email, telefon, external_id gibi eşleştirme parametrelerini sen eklemezsen EMQ skoru düşük kalır. Gateway altyapıyı çözer, veri zenginliğini sen sağlarsın.",
+      "title": "Tüm Kitlelere Aynı 180 Günü Uygulamak",
+      "body": "Tek bir geniş pencereyle kurulan kitleler, taze niyetli kullanıcıları soğumuş ziyaretçilerle aynı kefeye koyar. Sonuç düşük dönüşüm ve yüksek maliyettir. Kitlelerini her 14-30 günde bir yenile, yoksa veri bayatlar ve reklam setin eski davranışları hedeflemeye devam eder.",
       "is_checklist": false,
-      "pill": "Altyapı otomatik, veri zenginliği manuel sorumluluk"
+      "pill": "Kitleyi 14-30 günde bir yenile, asla 'kur-unut' deme."
     },
     {
       "kind": "cta",
       "label": "DIGITAL PRO",
-      "title": "Veri Kalitesi Olmadan Gerçek Optimizasyon Olmaz"
+      "title": "Doğru Pencere, Doğru Zamanda Doğru Mesaj"
     }
   ],
-  "caption": "Çoğu e-ticaret sahibi CAPI kurmak için hâlâ yazılımcı arıyor. Oysa Meta bu işi kod yazmadan çözüyor. 👇\n\nSunucu taraflı izleme artık sadece büyük ekiplerin işi değil.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n🛠️ CAPI Gateway nedir, nasıl çalışır\n📈 EMQ skorunda %22'ye varan CPA düşüşü\n🔗 Hangi event'ler öncelikli gönderilmeli\n⚙️ 15 dakikada kurulum akışı\n⚠️ En büyük hata: parametre eksikliği\n─────────────────────\n\nEn büyük hata: Altyapıyı otomatikleştirmek yetmez. Email, telefon, external_id gibi eşleştirme parametrelerini sen eklemezsen EMQ skoru düşük kalır.\n\nBu kurulum bir kere yapılır, etkisi her kampanyaya yansır.\n\n💾 Kaydet — Pixel kurulumunu yeniden gözden geçireceğin gün aç.\n💬 Sen CAPI kurulumunu nasıl yaptın, yazılımcı ile mi yoksa Gateway ile mi? Yorumda söyle!\n\n#capigateway #eventmatchquality #serversidetracking\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Siteni 180 gün önce ziyaret eden biri, bugün seni hatırlamıyor bile. 👇\n\nÇoğu e-ticaret sahibi Custom Audience kurarken tek bir zaman penceresi kullanıyor — ve bütçesinin büyük kısmı soğumuş, ilgisiz kitleye gidiyor.\nDoğru pencere seçimi, retargeting performansını ikiye katlayabilir. Nasıl yapılacağı carousel'de 👆\n\n─────────────────────\n🔄 Lookback window nedir, 1-180 gün arası nasıl çalışır\n🏆 Event bazlı pencere sıralaması: Purchase'tan Tüm Ziyaretçiye\n🧬 Lookalike kaynağında mantık neden tersine döner\n📦 Ürün tipine göre doğru pencere seçimi (sezonluk vs evergreen)\n⚠️ En büyük hata: herkese aynı 180 günü uygulamak\n─────────────────────\n\nEn büyük hata: Tek bir geniş pencereyle kurulan kitleler taze niyetli kullanıcıyı soğumuş ziyaretçiyle aynı kefeye koyar. Sonuç: düşük dönüşüm, yüksek maliyet.\n\nKitlelerini doğru pencereyle kur, her 14-30 günde bir yenile — bütçen boşa gitmesin.\n\n💾 Kaydet — yeni Custom Audience kurarken tekrar bak\n💬 Retargeting kitlelerini hangi pencereyle kuruyorsun? Yorumda söyle!\n\n#lookbackwindow #customaudience #retargeting\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #reklamstratejisi #instagramreklamlari"
 }

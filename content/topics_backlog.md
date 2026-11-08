@@ -8,7 +8,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi
 - Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme
-- Lookback Window (Geriye Dönük Bakış Penceresi) Optimizasyonu — Custom Audience Tazeliğini 30/60/90 Gün ile Yönetme
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:
