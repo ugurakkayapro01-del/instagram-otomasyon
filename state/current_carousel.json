@@ -1,65 +1,69 @@
 {
-  "topic": "Dynamic Language Optimization (DLO) — Çok Dilli Reklamlarda Otomatik Dil Eşleştirmesi",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "topic": "Conversion API Gateway — Teknik Ekip Olmadan Sunucu Taraflı İzleme Kurulumu",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi",
+    "Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme",
+    "Lookback Window (Geriye Dönük Bakış Penceresi) Optimizasyonu — Custom Audience Tazeliğini 30/60/90 Gün ile Yönetme"
+  ],
+  "special_kind": "stat",
   "slides": [
     {
       "kind": "hook",
-      "tag": "META REKLAM OTOMASYONU",
-      "title": "Tek Reklamla\n**12 Dili**\nAynı Anda Hedefle",
-      "subtitle": "Çok uluslu kitleye dil dil ayrı reklam seti kurmak zaman kaybı. Meta'nın az bilinen bu özelliği işi tek kurulumla otomatikleştiriyor."
+      "tag": "SUNUCU TARAFLI İZLEME",
+      "title": "Kod Yazmadan\nSunucu Taraflı\n**İzleme** Kurulumu",
+      "subtitle": "Meta'nın yeni Conversion API Gateway aracı, geliştirici olmadan server-side event göndermeni sağlıyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01/05",
-      "icon": "🌍",
-      "title": "DLO Nasıl Çalışır?",
-      "body": "Dynamic Language Optimization, kullanıcının Facebook/Instagram arayüz dili ve cihaz dil sinyaline göre reklamın doğru dil versiyonunu otomatik gösterir.\nTek reklam setinde 40'a kadar dil varyasyonu tanımlayabilirsin, sistem gösterim anında doğru olanı seçer.",
+      "num_label": "Adım 01",
+      "icon": "🛠️",
+      "title": "CAPI Gateway Nedir?",
+      "body": "Meta Conversion API Gateway, Cloudflare altyapısında barındırılan, kod yazmadan kurulan bir sunucu taraflı event gönderme sistemi. Normal CAPI kurulumu geliştirici ve haftalar gerektirirken, Gateway tek ekranda aktif olur.\nEvent'ler doğrudan Meta sunucularına, tarayıcı engelleyicilerden etkilenmeden ulaşır.",
       "is_checklist": false,
-      "pill": "Tek kurulum, otomatik dil eşleştirmesi"
+      "pill": "Kurulum süresi: haftalar yerine 15 dakika"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Karşılaştırma 02/05",
-      "icon": "⚖️",
-      "title": "Tek Dil mi, DLO mu?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">SADECE İNGİLİZCE</div><div class=\"sval\">%1,8 CTR</div><div class=\"tdesc\">Yerel dil kullanıcısı metni atlıyor, kaydırıyor</div></div><div class=\"cmp-col best\"><div class=\"flabel\">DLO AKTİF</div><div class=\"sval high\">%3,4 CTR</div><div class=\"tdesc\">Her kullanıcı kendi dilinde mesajı görüyor</div></div></div>",
-      "pill": "Native dilde mesaj, 2 kata yakın etkileşim"
+      "num_label": "Sinyal 02",
+      "icon": "📈",
+      "title": "EMQ Skorunda Gerçek Artış",
+      "inner_html": "<div class=\"bignum\">%22</div><div class=\"bignumsub\">Ortalama CPA düşüşü — Gateway sonrası Event Match Quality artışıyla birlikte</div>",
+      "pill": "Match quality yükseldikçe optimizasyon algoritması daha doğru çalışır"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03/05",
-      "icon": "⚙️",
-      "title": "Kurulum 3 Adımda",
-      "body": "Reklam düzeyinde 'Dilleri Optimize Et' seçeneğini aç\nHer dil için başlık, metin ve açıklamayı ayrı ayrı gir (minimum 2 dil)\nHedef kitleye tüm dil konuşanları tek seferde ekle, sistem otomatik ayırır",
+      "num_label": "Adım 03",
+      "icon": "🔗",
+      "title": "Hangi Event'ler Gönderilmeli?",
+      "body": "Purchase, AddToCart, InitiateCheckout önceliği her zaman en üstte olmalı\nevent_id ile deduplication zorunlu, yoksa çift sayım riski doğar\nTest Events aracıyla her event canlıya almadan doğrulanmalı\nEMQ skoru 7/10 altındaysa eksik parametre var demektir",
       "is_checklist": true,
-      "pill": "Tek reklam seti, çoklu dil yönetimi"
+      "pill": "Deduplication olmadan çift sayım riski doğar"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04/05",
-      "icon": "✍️",
-      "title": "Makine Çevirisi Satış Öldürür",
-      "body": "Google Translate ile çevrilen metinler kelime kelime çeviri kokar, native konuşan kullanıcı anında fark edip kaydırır.\nHer dil için ya native konuşan birine çeviri yaptır ya da profesyonel çeviri hizmeti kullan.\nDeyimler ve CTA ifadeleri birebir çevrilmez — o dilin satış kültürüne göre uyarlanır.",
+      "num_label": "Adım 04",
+      "icon": "⚙️",
+      "title": "Kurulum Akışı",
+      "body": "Events Manager içinde Veri Kaynakları > Ayarlar bölümünden Conversion API Gateway seçilir. Alan adı doğrulaması yapılır, Meta otomatik olarak bir Cloudflare worker örneği oluşturur. Ekstra sunucu, kod veya barındırma maliyeti gerekmez.",
       "is_checklist": false,
-      "pill": "Native çeviri yoksa DLO'yu hiç kurma"
+      "pill": "Tek gereksinim: alan adı için DNS erişimi"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05/05",
-      "icon": "🚫",
-      "title": "En Büyük Hata: Yanlış Format Seçimi",
-      "body": "DLO sadece tek görsel/video reklamlarda ve bazı Collection formatlarında çalışır, klasik carousel'in her kartı için ayrı dil ayarlanamaz.\nKullanıcının dil sinyali belirsizse Meta varsayılan dili gösterir — bu yüzden mutlaka bir 'ana dil' (fallback) tanımla.\nTek pazarda tek dil konuşuluyorsa DLO'ya hiç gerek yok, bütçeni karmaşık kurulum yerine kreatif testine ayır.",
+      "num_label": "Uyarı 05",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Parametre Eksikliği",
+      "body": "Gateway altyapıyı otomatik kurar ama email, telefon, external_id gibi eşleştirme parametrelerini sen eklemezsen EMQ skoru düşük kalır. Gateway altyapıyı çözer, veri zenginliğini sen sağlarsın.",
       "is_checklist": false,
-      "pill": "Format uyumsuzluğu DLO'yu çalışmaz hale getirir"
+      "pill": "Altyapı otomatik, veri zenginliği manuel sorumluluk"
     },
     {
       "kind": "cta",
-      "label": "DİL OTOMASYONUNU ŞİMDİ DENE",
-      "title": "Tek Reklam, **Her Dilde** Doğru Mesaj"
+      "label": "DIGITAL PRO",
+      "title": "Veri Kalitesi Olmadan Gerçek Optimizasyon Olmaz"
     }
   ],
-  "caption": "Aynı reklamı tüm dünyaya İngilizce gösteriyorsan, yerel kullanıcının büyük bölümünü daha mesajın başında kaybediyorsun. 👇\n\nÇok uluslu kitleye satış yapıyorsan dil engeli dönüşümünü sessizce yiyip bitiriyor olabilir.\nMeta'nın bu az bilinen özelliği tek kurulumla 40 dile kadar otomatik eşleştirme yapıyor, tüm detaylar carousel'de. 👆\n\n─────────────────────\n🌍 DLO kullanıcının dil sinyaline göre doğru versiyonu otomatik gösteriyor\n⚖️ Tek dil vs DLO: CTR neredeyse 2 kat farklı çıkıyor\n⚙️ 3 adımda kurulum: tek reklam setinde çoklu dil yönetimi\n✍️ Makine çevirisi yerine native çeviri şart\n🚫 Format kısıtları ve fallback dil ayarı dikkat ister\n─────────────────────\n\nEn büyük hata: Carousel formatında her kart için ayrı dil ayarlayabileceğini sanıp yanlış format seçmek — DLO sadece belirli formatlarda çalışıyor.\n\nDoğru kurulursa tek reklam seti, her pazarda yerel gibi konuşuyor.\n\n💾 Kaydet — çok uluslu kampanya kurarken referans al\n💬 Sen hangi pazarlara reklam veriyorsun, kaç dilde içerik hazırlıyorsun? Yorumda söyle!\n\n#dynamiclanguageoptimization #cokdillireklam #globaleticaret\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Çoğu e-ticaret sahibi CAPI kurmak için hâlâ yazılımcı arıyor. Oysa Meta bu işi kod yazmadan çözüyor. 👇\n\nSunucu taraflı izleme artık sadece büyük ekiplerin işi değil.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n🛠️ CAPI Gateway nedir, nasıl çalışır\n📈 EMQ skorunda %22'ye varan CPA düşüşü\n🔗 Hangi event'ler öncelikli gönderilmeli\n⚙️ 15 dakikada kurulum akışı\n⚠️ En büyük hata: parametre eksikliği\n─────────────────────\n\nEn büyük hata: Altyapıyı otomatikleştirmek yetmez. Email, telefon, external_id gibi eşleştirme parametrelerini sen eklemezsen EMQ skoru düşük kalır.\n\nBu kurulum bir kere yapılır, etkisi her kampanyaya yansır.\n\n💾 Kaydet — Pixel kurulumunu yeniden gözden geçireceğin gün aç.\n💬 Sen CAPI kurulumunu nasıl yaptın, yazılımcı ile mi yoksa Gateway ile mi? Yorumda söyle!\n\n#capigateway #eventmatchquality #serversidetracking\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
