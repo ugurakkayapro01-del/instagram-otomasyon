@@ -6,7 +6,10 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 ## Hazır Bekleyen Konular
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
-- Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme
+- Reklam Seti Düzeyinde Frequency Cap Ayarları — Advantage+ Kampanyalarda Manuel Sıklık Kontrolü
+- Meta Pixel Server-Side Tagging ile Google Tag Manager Entegrasyonu — Çift Yönlü Veri Akışı Kurulumu
+- Reklam Hesabı Çoklu Para Birimi ve Bölgesel Fiyatlandırma Stratejisi — Global E-ticaret Bütçe Yönetimi
+- Meta Ads Preview Tool ile Yerleşim Bazlı Kreatif Önizleme — Format Hatalarını Yayından Önce Yakalama
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:

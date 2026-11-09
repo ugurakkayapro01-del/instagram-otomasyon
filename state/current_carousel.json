@@ -1,65 +1,70 @@
 {
-  "topic": "SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi",
+  "topic": "Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme",
   "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "timeline",
+  "new_backlog_candidates": [
+    "Reklam Seti Düzeyinde Frequency Cap Ayarları — Advantage+ Kampanyalarda Manuel Sıklık Kontrolü",
+    "Meta Pixel Server-Side Tagging ile Google Tag Manager Entegrasyonu — Çift Yönlü Veri Akışı Kurulumu",
+    "Reklam Hesabı Çoklu Para Birimi ve Bölgesel Fiyatlandırma Stratejisi — Global E-ticaret Bütçe Yönetimi",
+    "Meta Ads Preview Tool ile Yerleşim Bazlı Kreatif Önizleme — Format Hatalarını Yayından Önce Yakalama"
+  ],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "iOS Uygulama Reklamcılığı",
-      "title": "SKAdNetwork'ün\n**Gizli Saati**\nNeden Seni\nYanıltıyor",
-      "subtitle": "Dönüşüm verisi 72 saate kadar gecikmeli geliyor. Optimizasyon yaparken bunu bilmiyorsan, yanlış karar veriyorsun."
+      "tag": "GELİŞMİŞ TEST STRATEJİSİ",
+      "title": "A/B Testin Ötesi:\nKampanya Yapısını **Bilimsel** Olarak Test Et",
+      "subtitle": "Deneyler Aracı, hangi kreatifin değil, hangi stratejinin kazandığını kanıtlar."
     },
     {
       "kind": "light",
-      "num_label": "Adım 01",
-      "icon": "📡",
-      "title": "SKAdNetwork Nedir, Neden Var?",
-      "body": "Apple, iOS 14.5 sonrası kullanıcı verisini korumak için SKAdNetwork'ü getirdi. Bu sistem hangi kullanıcının reklamı tıkladığını paylaşmaz — sadece 'bu kampanya X kadar install getirdi' der. Facebook Ads Manager'da gördüğün iOS verisi bu yüzden gecikmeli ve sınırlıdır.",
+      "num_label": "İpucu 01/07",
+      "icon": "🧪",
+      "title": "Deneyler Aracı Ne İşe Yarar?",
+      "body": "Standart A/B test sadece tek bir değişkeni karşılaştırır: kreatif, hedef kitle ya da yerleşim. Deneyler Aracı (Experiments) ise kampanyanın TAMAMINI test eder — CBO mu ABO mu, Advantage+ mı manuel hedefleme mi, hangi teklif stratejisi daha çok dönüşüm getiriyor. Meta, trafiği rastgele ve çakışmayan gruplara böler; aynı kullanıcı iki grupta birden görünmez.",
       "is_checklist": false,
-      "pill": "iOS kullanıcı verisi artık cihaz seviyesinde paylaşılmıyor."
+      "pill": "Tek değişken değil, tüm stratejiyi test et"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Mekanizma 02",
-      "icon": "⏱️",
-      "title": "3 Postback Penceresi Nasıl İşliyor?",
-      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">0-2 Gün</div><div class=\"tdesc\">İlk postback penceresi — erken install sinyalleri gelir</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">3-7 Gün</div><div class=\"tdesc\">İkinci pencere — orta vadeli etkileşim verisi toplanır</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">8-35 Gün</div><div class=\"tdesc\">Üçüncü pencere — geç dönüşümler ve son veri burada gelir</div></div></div>",
-      "pill": "Üç pencere kapanmadan kampanyayı erken kapatma, veri eksik gelir."
+      "num_label": "İpucu 02/07",
+      "icon": "⚖️",
+      "title": "A/B Test vs Deneyler: Fark Nerede?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">A/B TEST</div><div class=\"fval\">Tek değişkeni karşılaştırır (kreatif, hedef kitle, yerleşim)</div></div><div class=\"cmp-col high\"><div class=\"slabel\">DENEYLER ARACI</div><div class=\"fval\">Kampanya yapısını karşılaştırır (CBO/ABO, Advantage+/manuel, teklif stratejisi)</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"sval\">1-2 hafta, tek metrik (CTR, CPA)</div></div><div class=\"cmp-col high\"><div class=\"sval\">2-4 hafta, %90 güven aralığı + holdout opsiyonu</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"sval\">Kreatif/hedefleme kararları için</div></div><div class=\"cmp-col high\"><div class=\"sval\">Strateji/bütçe mimarisi kararları için</div></div></div>",
+      "pill": "Doğru soruya doğru test aracı"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 03",
-      "icon": "🔢",
-      "title": "Conversion Value: 6 Bitlik Sınır",
-      "body": "SKAdNetwork, dönüşüm olayını 0-63 arası tek bir sayıya (6-bit) sıkıştırır. Bu sayı satın alma, sepete ekleme veya kayıt gibi olayları temsil eder. 64'ten fazla farklı event'i aynı anda takip edemezsin — önceliklendirme yapmak zorundasın.",
+      "num_label": "İpucu 03/07",
+      "icon": "🎯",
+      "title": "Holdout Test — Gerçek Artımsal Etkiyi Gör",
+      "body": "Deneyler Aracı'nın en güçlü modu Holdout Test'tir. Kitlenin %10-20'lik bir dilimine hiç reklam gösterilmez, bu grup kontrol grubu olur. Reklam gören grupla kontrol grubu arasındaki dönüşüm farkı, reklamın gerçek artımsal (incremental) etkisini verir — organik satışları reklam başarısı sanma hatasını önler.",
       "is_checklist": false,
-      "pill": "Conversion value planını kampanya kurmadan önce tasarla."
+      "pill": "%10-20 holdout = gerçek ROAS kanıtı"
     },
     {
       "kind": "light",
-      "num_label": "Kural 04",
-      "icon": "🔄",
-      "title": "24 Saatlik Timer Mantığı",
-      "body": "Her yeni conversion value güncellemesi, 24 saatlik geri sayımı sıfırdan başlatır. Kullanıcı uygulamayı sık açıp olay üretirse pencere uzar, veri geç gelir. İlk 24 saatte hiç event yoksa postback hemen ilk pencerede gönderilir.",
-      "is_checklist": false,
-      "pill": "Timer sıfırlanması = daha geç ama daha zengin veri."
+      "num_label": "İpucu 04/07",
+      "icon": "📐",
+      "title": "Minimum Test Gereksinimleri",
+      "body": "Min. 2-4 hafta test süresi (öğrenme evresi dahil)\nHer hücre için en az 50 dönüşüm veya 3.000 gösterim\n%90 güven aralığı (statistical significance) hedefi\nRastgele, çakışmayan kitle bölünmesi (kullanıcı bazlı, ad set bazlı değil)",
+      "is_checklist": true,
+      "pill": "Erken durdurma = yanlış sonuç"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05",
+      "num_label": "İpucu 05/07",
       "icon": "⚠️",
-      "title": "Privacy Threshold Hatası",
-      "body": "Düşük hacimli kampanyalarda Apple, 'crowd anonymity' eşiğini korumak için fine (detaylı) conversion value yerine coarse (kaba: düşük/orta/yüksek) değer gönderir. Küçük bütçeli test kampanyalarında bu yüzden optimizasyon verisi neredeyse işe yaramaz hale gelir.",
+      "title": "En Büyük Hata: Sonuçları Çok Erken Okumak",
+      "body": "Testin ilk 3-4 gününde 'kazanan' görünen varyant, öğrenme evresi bitince tersine dönebilir. Meta'nın kendi önerisi: sonucu %90 güven aralığına ulaşmadan asla uygulamaya alma. Ayrıca aynı bütçeyi aynı anda iki test üzerinde harcarsan veri kirlenir — her testi izole kampanyada çalıştır.",
       "is_checklist": false,
-      "pill": "Düşük hacimde coarse value bekle, fine value'ya güvenme."
+      "pill": "Güven aralığı dolmadan karar verme"
     },
     {
       "kind": "cta",
-      "label": "Kaydet. Kampanyanı kur. Sabırlı optimize et.",
-      "title": "iOS Verisi Yavaş Gelir.\n**Sabırsız Optimizasyon Kampanyayı Öldürür.**"
+      "label": "ŞİMDİ UYGULA",
+      "title": "Tahminle Değil, **Kanıtla** Büyüt"
     }
   ],
-  "caption": "iOS kampanyaların 3 gün gecikmeli veriyle mi optimize ediyorsun? Çoğu reklamveren bunu fark etmeden kampanyayı erken kapatıyor. 👇\n\nSKAdNetwork, Apple'ın gizlilik odaklı atıf sistemi — ama doğru okunmazsa yanlış kararlar aldırır.\nÇözüm carousel'de — 3 postback penceresi, 6-bit conversion value ve 24 saatlik timer mantığını adım adım anlatıyoruz 👆\n\n─────────────────────\n📡 SKAdNetwork'ün ne olduğu ve neden var\n⏱️ 3 postback penceresi: 0-2 / 3-7 / 8-35 gün\n🔢 6-bit conversion value sınırı (0-63)\n🔄 24 saatlik timer mantığı\n⚠️ Privacy threshold hatası — coarse value riski\n─────────────────────\n\nEn büyük hata: Kampanyayı ilk 48 saatte 'performans düşük' diyip kapatmak — veri henüz gelmedi.\n\niOS verisi yavaş ama doğru. Sabırla okursan optimizasyon kararların çok daha isabetli olur.\n\n💾 Kaydet — iOS kampanyası kurarken bu pencereleri unutma\n💬 iOS kampanyalarında en çok hangi noktada tıkıyorsun, erken optimizasyon mu veri eksikliği mi? Yorumda söyle!\n\n#skadnetwork #mobilreklam #metareklamlari\n#facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Kampanyanı 'sanırım bu daha iyi' diye değiştiriyorsan, aslında para yakıyor olabilirsin. 👇\n\nÇoğu kişi A/B testi sadece kreatif veya hedef kitle için kullanır — ama CBO mu ABO mu, Advantage+ mı manuel mi sorusunun cevabını tahminle verir.\nMeta'nın Deneyler Aracı bu soruları bilimsel olarak cevaplıyor. 👆\n\n─────────────────────\n🧪 Deneyler Aracı A/B testten nasıl farklı\n⚖️ İki yöntemin yan yana karşılaştırması\n🎯 Holdout test ile gerçek artımsal etkiyi ölçme\n📐 Minimum süre, dönüşüm ve güven aralığı eşikleri\n⚠️ Sonuçları erken okumanın maliyeti\n─────────────────────\n\nEn büyük hata: %90 güven aralığına ulaşmadan karar vermek. İlk 3-4 günün 'kazananı', testin sonunda kaybedene dönüşebilir.\n\nDoğru kurulan bir test, bütçeni tahminle değil veriyle yönetmeni sağlar.\n\n💾 Kaydet — bir sonraki kampanya yapısı testinden önce tekrar oku\n💬 Sen hiç Deneyler Aracı'nı kullandın mı, yoksa hâlâ sezgiyle mi karar veriyorsun? Yorumda söyle!\n\n#metaadsexperiments #incrementality #holdouttest\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }

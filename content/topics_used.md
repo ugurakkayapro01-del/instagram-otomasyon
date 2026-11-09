@@ -73,6 +73,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 66 | Conversion API Gateway — Teknik Ekip Olmadan Sunucu Taraflı İzleme Kurulumu | 7 | Otomatik üretildi (2026-11-08) |
 | 67 | Lookback Window (Geriye Dönük Bakış Penceresi) Optimizasyonu — Custom Audience Tazeliğini 30/60/90 Gün ile Yönetme | 7 | Otomatik üretildi (2026-11-08) |
 | 68 | SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi | 7 | Otomatik üretildi (2026-11-09) |
+| 69 | Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme | 7 | Otomatik üretildi (2026-11-09) |
 
 ---
 
