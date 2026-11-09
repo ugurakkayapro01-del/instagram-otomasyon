@@ -1,65 +1,65 @@
 {
-  "topic": "Lookback Window (Geriye Dönük Bakış Penceresi) Optimizasyonu — Custom Audience Tazeliğini 30/60/90 Gün ile Yönetme",
+  "topic": "SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "timeline",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KİTLE TAZELİĞİ · RETARGETING STRATEJİSİ",
-      "title": "180 Gün Önce Siteni\nZiyaret Edene Mi\n**Hala Reklam Veriyorsun?**",
-      "subtitle": "Custom Audience'ların çoğu yanlış zaman penceresiyle kuruluyor — ve bütçen soğumuş kitleye gidiyor."
+      "tag": "iOS Uygulama Reklamcılığı",
+      "title": "SKAdNetwork'ün\n**Gizli Saati**\nNeden Seni\nYanıltıyor",
+      "subtitle": "Dönüşüm verisi 72 saate kadar gecikmeli geliyor. Optimizasyon yaparken bunu bilmiyorsan, yanlış karar veriyorsun."
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 01 / 07",
-      "icon": "🔄",
-      "title": "Lookback Window Nedir?",
-      "body": "Custom Audience oluştururken seçtiğin zaman aralığı, hangi kullanıcı davranışının kitleye dahil edileceğini belirler. 1 ila 180 gün arasında ayarlanabilir. Kısa pencere taze ama küçük bir kitle verir. Uzun pencere geniş ama soğumuş bir sinyal taşır.",
+      "num_label": "Adım 01",
+      "icon": "📡",
+      "title": "SKAdNetwork Nedir, Neden Var?",
+      "body": "Apple, iOS 14.5 sonrası kullanıcı verisini korumak için SKAdNetwork'ü getirdi. Bu sistem hangi kullanıcının reklamı tıkladığını paylaşmaz — sadece 'bu kampanya X kadar install getirdi' der. Facebook Ads Manager'da gördüğün iOS verisi bu yüzden gecikmeli ve sınırlıdır.",
       "is_checklist": false,
-      "pill": "Pencereyi event tipine göre seç, asla sabit tutma."
+      "pill": "iOS kullanıcı verisi artık cihaz seviyesinde paylaşılmıyor."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Bilgi 02 / 07",
-      "icon": "🏆",
-      "title": "Event Bazlı Pencere Sıralaması",
-      "inner_html": "<div class=\"tier-row best\"><span class=\"tier-rank\">01</span><div class=\"tdesc\"><strong>Purchase (Satın Alma)</strong> — 7 gün penceresi. Niyet en taze, retargeting dönüşümü en yüksek.</div></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><div class=\"tdesc\"><strong>Add to Cart</strong> — 14 gün penceresi. Karar aşamasında, hatırlatma etkili.</div></div><div class=\"tier-row\"><span class=\"tier-rank\">03</span><div class=\"tdesc\"><strong>ViewContent / Ürün Görüntüleme</strong> — 30 gün penceresi. İlgi var ama niyet zayıflıyor.</div></div><div class=\"tier-row\"><span class=\"tier-rank\">04</span><div class=\"tdesc\"><strong>Tüm Ziyaretçiler</strong> — 60-90 gün penceresi. Kitle büyütme gerektiğinde kullanılır, dönüşüm düşük.</div></div>",
-      "pill": "Her event'e kendi penceresini ver, hepsine 180 gün uygulama."
+      "num_label": "Mekanizma 02",
+      "icon": "⏱️",
+      "title": "3 Postback Penceresi Nasıl İşliyor?",
+      "inner_html": "<div class=\"timeline\"><div class=\"tsec\"><div class=\"ttime\">0-2 Gün</div><div class=\"tdesc\">İlk postback penceresi — erken install sinyalleri gelir</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">3-7 Gün</div><div class=\"tdesc\">İkinci pencere — orta vadeli etkileşim verisi toplanır</div></div><div class=\"tconnect\"></div><div class=\"tsec\"><div class=\"ttime\">8-35 Gün</div><div class=\"tdesc\">Üçüncü pencere — geç dönüşümler ve son veri burada gelir</div></div></div>",
+      "pill": "Üç pencere kapanmadan kampanyayı erken kapatma, veri eksik gelir."
     },
     {
       "kind": "dark",
-      "num_label": "Bilgi 03 / 07",
-      "icon": "🧬",
-      "title": "Lookalike Kaynağında Pencere Mantığı Tersine Döner",
-      "body": "Lookalike modeli için daha fazla veri daha stabil bir örüntü demektir. Retargeting'in aksine burada 90-180 günlük geniş pencere, algoritmaya daha güçlü bir davranış imzası verir. Kısa pencere, Lookalike kaynağını küçük ve gürültülü bırakır.",
+      "num_label": "Sinyal 03",
+      "icon": "🔢",
+      "title": "Conversion Value: 6 Bitlik Sınır",
+      "body": "SKAdNetwork, dönüşüm olayını 0-63 arası tek bir sayıya (6-bit) sıkıştırır. Bu sayı satın alma, sepete ekleme veya kayıt gibi olayları temsil eder. 64'ten fazla farklı event'i aynı anda takip edemezsin — önceliklendirme yapmak zorundasın.",
       "is_checklist": false,
-      "pill": "Retargeting'de kısa, Lookalike'da uzun pencere kullan."
+      "pill": "Conversion value planını kampanya kurmadan önce tasarla."
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 04 / 07",
-      "icon": "📦",
-      "title": "Ürün Tipine Göre Pencere Ayarı",
-      "body": "Sezonluk/moda ürünler → 7-14 gün (hızlı soğuyan niyet)\nEvergreen/sürekli talep gören ürünler → 30-60 gün\nYüksek fiyatlı/uzun karar süreçli ürünler → 60-90 gün\nAbonelik/tekrar satın alma modelleri → 30 gün + otomatik yenileme",
-      "is_checklist": true,
-      "pill": "Pencereyi ürünün karar süresine göre ayarla."
+      "num_label": "Kural 04",
+      "icon": "🔄",
+      "title": "24 Saatlik Timer Mantığı",
+      "body": "Her yeni conversion value güncellemesi, 24 saatlik geri sayımı sıfırdan başlatır. Kullanıcı uygulamayı sık açıp olay üretirse pencere uzar, veri geç gelir. İlk 24 saatte hiç event yoksa postback hemen ilk pencerede gönderilir.",
+      "is_checklist": false,
+      "pill": "Timer sıfırlanması = daha geç ama daha zengin veri."
     },
     {
       "kind": "dark",
-      "num_label": "En Büyük Hata",
+      "num_label": "Uyarı 05",
       "icon": "⚠️",
-      "title": "Tüm Kitlelere Aynı 180 Günü Uygulamak",
-      "body": "Tek bir geniş pencereyle kurulan kitleler, taze niyetli kullanıcıları soğumuş ziyaretçilerle aynı kefeye koyar. Sonuç düşük dönüşüm ve yüksek maliyettir. Kitlelerini her 14-30 günde bir yenile, yoksa veri bayatlar ve reklam setin eski davranışları hedeflemeye devam eder.",
+      "title": "Privacy Threshold Hatası",
+      "body": "Düşük hacimli kampanyalarda Apple, 'crowd anonymity' eşiğini korumak için fine (detaylı) conversion value yerine coarse (kaba: düşük/orta/yüksek) değer gönderir. Küçük bütçeli test kampanyalarında bu yüzden optimizasyon verisi neredeyse işe yaramaz hale gelir.",
       "is_checklist": false,
-      "pill": "Kitleyi 14-30 günde bir yenile, asla 'kur-unut' deme."
+      "pill": "Düşük hacimde coarse value bekle, fine value'ya güvenme."
     },
     {
       "kind": "cta",
-      "label": "DIGITAL PRO",
-      "title": "Doğru Pencere, Doğru Zamanda Doğru Mesaj"
+      "label": "Kaydet. Kampanyanı kur. Sabırlı optimize et.",
+      "title": "iOS Verisi Yavaş Gelir.\n**Sabırsız Optimizasyon Kampanyayı Öldürür.**"
     }
   ],
-  "caption": "Siteni 180 gün önce ziyaret eden biri, bugün seni hatırlamıyor bile. 👇\n\nÇoğu e-ticaret sahibi Custom Audience kurarken tek bir zaman penceresi kullanıyor — ve bütçesinin büyük kısmı soğumuş, ilgisiz kitleye gidiyor.\nDoğru pencere seçimi, retargeting performansını ikiye katlayabilir. Nasıl yapılacağı carousel'de 👆\n\n─────────────────────\n🔄 Lookback window nedir, 1-180 gün arası nasıl çalışır\n🏆 Event bazlı pencere sıralaması: Purchase'tan Tüm Ziyaretçiye\n🧬 Lookalike kaynağında mantık neden tersine döner\n📦 Ürün tipine göre doğru pencere seçimi (sezonluk vs evergreen)\n⚠️ En büyük hata: herkese aynı 180 günü uygulamak\n─────────────────────\n\nEn büyük hata: Tek bir geniş pencereyle kurulan kitleler taze niyetli kullanıcıyı soğumuş ziyaretçiyle aynı kefeye koyar. Sonuç: düşük dönüşüm, yüksek maliyet.\n\nKitlelerini doğru pencereyle kur, her 14-30 günde bir yenile — bütçen boşa gitmesin.\n\n💾 Kaydet — yeni Custom Audience kurarken tekrar bak\n💬 Retargeting kitlelerini hangi pencereyle kuruyorsun? Yorumda söyle!\n\n#lookbackwindow #customaudience #retargeting\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #reklamstratejisi #instagramreklamlari"
+  "caption": "iOS kampanyaların 3 gün gecikmeli veriyle mi optimize ediyorsun? Çoğu reklamveren bunu fark etmeden kampanyayı erken kapatıyor. 👇\n\nSKAdNetwork, Apple'ın gizlilik odaklı atıf sistemi — ama doğru okunmazsa yanlış kararlar aldırır.\nÇözüm carousel'de — 3 postback penceresi, 6-bit conversion value ve 24 saatlik timer mantığını adım adım anlatıyoruz 👆\n\n─────────────────────\n📡 SKAdNetwork'ün ne olduğu ve neden var\n⏱️ 3 postback penceresi: 0-2 / 3-7 / 8-35 gün\n🔢 6-bit conversion value sınırı (0-63)\n🔄 24 saatlik timer mantığı\n⚠️ Privacy threshold hatası — coarse value riski\n─────────────────────\n\nEn büyük hata: Kampanyayı ilk 48 saatte 'performans düşük' diyip kapatmak — veri henüz gelmedi.\n\niOS verisi yavaş ama doğru. Sabırla okursan optimizasyon kararların çok daha isabetli olur.\n\n💾 Kaydet — iOS kampanyası kurarken bu pencereleri unutma\n💬 iOS kampanyalarında en çok hangi noktada tıkıyorsun, erken optimizasyon mu veri eksikliği mi? Yorumda söyle!\n\n#skadnetwork #mobilreklam #metareklamlari\n#facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
