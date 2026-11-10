@@ -1,65 +1,65 @@
 {
-  "topic": "Reklam Seti Düzeyinde Frequency Cap Ayarları — Advantage+ Kampanyalarda Manuel Sıklık Kontrolü",
+  "topic": "Meta Pixel Server-Side Tagging ile Google Tag Manager Entegrasyonu — Çift Yönlü Veri Akışı Kurulumu",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "stat",
   "slides": [
     {
       "kind": "hook",
-      "tag": "FREQUENCY CAP • ADVANTAGE+",
-      "title": "Advantage+ Otomasyonu\nSıklığı **Kontrolsüz**\nBırakıyor mu?",
-      "subtitle": "Çoğu reklamveren fark etmeden aynı kişiye bütçesini defalarca harcıyor."
+      "tag": "SUNUCU TARAFLI İZLEME",
+      "title": "Pixel'in Verisi\nTarayıcıda Kayboluyor.\n**Sunucudan Kurtar.**",
+      "subtitle": "Ad blocker'lar ve Safari ITP, dönüşüm verinin büyük bölümünü siliyor. Çözüm: server-side GTM."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01/05",
-      "icon": "🎯",
-      "title": "Frequency Cap Nedir, Neden Önemli?",
-      "body": "Frequency cap, bir kullanıcının reklamını belirli sürede en fazla kaç kez göreceğini sınırlar. Advantage+ kampanyalarında bu ayar varsayılan olarak algoritmaya bırakılmıştır. Sonuç: aynı kullanıcı 7-10 kez aynı reklamı görebilir, bütçe verimsiz harcanır.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🧱",
+      "title": "Client-Side Neden Veri Kaybediyor?",
+      "body": "Tarayıcıda çalışan pixel, kullanıcı ile sunucu arasındaki her engeli görür.\n• Ad blocker kullanım oranı dünya genelinde %27-40\n• Safari ITP çerez ömrünü 7 güne indiriyor\n• iOS 14.5+ ATT onayı olmadan veri akmıyor",
+      "is_checklist": true,
+      "pill": "Client-side pixel tek başına yeterli değil, veri sızdırıyor"
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "🔀",
+      "title": "Server-Side GTM Mimarisi Nasıl Çalışır?",
+      "body": "Web container tarayıcıda kalır ama veri doğrudan Meta'ya gitmez.\n• Client container → kendi sunucunuzdaki server container'a\n• Server container → Meta CAPI'ye first-party bağlantıyla iletir\n• Üçüncü taraf script görünmediği için ad blocker'lar engelleyemez",
       "is_checklist": false,
-      "pill": "Advantage+ açtığında frekans sınırını mutlaka kontrol et"
+      "pill": "Veri artık tarayıcıdan değil, sizin sunucunuzdan Meta'ya gidiyor"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Karşılaştırma",
-      "icon": "⚖️",
-      "title": "Otomatik vs Manuel Sıklık Kontrolü",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Advantage+ Otomatik</div><div class=\"sval\">Sınırsız gösterim<br>Algoritma kararı<br>Frekans takibi zor</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Manuel Frequency Cap</div><div class=\"sval\">Reklam seti düzeyinde sınır<br>Belirlenen eşik: 6-8/hafta<br>Bütçe israfı önlenir</div></div></div>",
-      "pill": "Manuel sınır olmadan algoritma frekansı umursamaz"
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02/05",
-      "icon": "⚙️",
-      "title": "Reklam Seti Düzeyinde Nasıl Ayarlanır?",
-      "body": "Reklam seti oluştururken 'Optimizasyon ve Teslimat' bölümünde Reach hedefi seçtiğinde frequency cap seçeneği açılır. Conversion hedefinde bu seçenek gizlidir; bunun yerine Automated Rules ile haftalık gösterim sayısını izleyip eşik aşıldığında reklamı durduran bir kural kurman gerekir.",
-      "is_checklist": false,
-      "pill": "Conversion kampanyalarında frekansı Automated Rules ile izle"
+      "num_label": "İpucu 03 / 07",
+      "icon": "📈",
+      "title": "Kurulum Sonrası Fark Ölçülebilir",
+      "inner_html": "<div class=\"bignum\">%35</div><div class=\"bignumsub\">Server-side kurulum sonrası Meta'ya ulaşan dönüşüm verisinde ortalama artış</div>",
+      "pill": "Event Match Quality skoru genelde 2-3 puan birden yükseliyor"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 03/05",
-      "icon": "📊",
-      "title": "Doğru Eşik Değeri Nasıl Belirlenir?",
-      "body": "Soğuk kitlede haftalık 4-6 gösterim idealdir, sıcak kitlede (retargeting) bu sayı 8-10'a çıkabilir çünkü kullanıcı markayı zaten tanıyor. Frekans 10'u geçtiğinde CPM yükselirken CTR düşmeye başlar — bu, bütçenin yanlış harcandığının net sinyalidir.",
-      "is_checklist": false,
-      "pill": "Soğuk kitle 4-6, sıcak kitle 8-10 frekans eşiği"
+      "num_label": "İpucu 04 / 07",
+      "icon": "🛠️",
+      "title": "Kurulumun 4 Temel Adımı",
+      "body": "• GTM'de yeni bir Server Container oluştur\n• Google Cloud Run veya App Engine'de host et\n• Kendi domaininin alt alan adını bağla (ör. sgtm.markaniz.com)\n• Client container'ı bu server container'a yönlendir",
+      "is_checklist": true,
+      "pill": "First-party subdomain kullanmazsan tarayıcı yine üçüncü taraf sayar"
     },
     {
       "kind": "dark",
-      "num_label": "En Büyük Hata",
-      "icon": "⚠️",
-      "title": "Advantage+'a Güvenip Frekansı Hiç Kontrol Etmemek",
-      "body": "Advantage+ kampanyaları bütçeyi otomatik dağıtırken frekansı optimize etmez, sadece dönüşüm hedefine göre harcar. Haftalık raporunda frekans sütununu açmazsan, aynı 1.000 kişiye 15 kez reklam gösterip bunu fark etmeyebilirsin. Bu, aylık bütçenin %20-30'unun boşa gitmesi demektir.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "🔁",
+      "title": "Çift Yönlü Akış: Client + Server Birlikte Çalışmalı",
+      "body": "Server-side, client-side'ın yerine geçmez — onu tamamlar.\n• Pixel (client) ve CAPI (server) aynı anda gönderilir\n• Aynı event_id ile Meta çift sayımı önler\n• En büyük hata: Client-side'ı tamamen kapatıp sadece server-side'a güvenmek",
       "is_checklist": false,
-      "pill": "Her hafta frekans sütununu manuel kontrol et"
+      "pill": "İki katman birlikte en yüksek veri kalitesini verir, tek başına değil"
     },
     {
       "kind": "cta",
-      "label": "DIGITAL PRO",
-      "title": "Sıklığı Sen Kontrol Etmezsen,\n**Bütçeni Algoritma Harcar**"
+      "label": "KAPANIŞ",
+      "title": "Veri Kaybını Durdurmak\nTeknik Değil, **Kurulum** Meselesi."
     }
   ],
-  "caption": "Advantage+ kampanyan otomatik çalışıyor diye sıklığı kontrol etmeyi bırakma. Aynı kişiye 15 kez reklam gösterip bütçeni eritebilirsin 👇\n\nAlgoritma dönüşüm hedefine göre harcar, frekansı kendiliğinden optimize etmez.\nDoğru eşik değerini ve manuel kontrol yolunu bu carousel'de anlattım 👆\n\n─────────────────────\n🎯 Frequency cap nedir, Advantage+'ta neden kayboluyor\n⚖️ Otomatik vs manuel sıklık kontrolü karşılaştırması\n⚙️ Reklam seti düzeyinde nasıl ayarlanır\n📊 Soğuk/sıcak kitle için doğru eşik değerleri\n⚠️ En büyük hata: frekansı hiç kontrol etmemek\n─────────────────────\n\nEn büyük hata: Advantage+'a güvenip frekans sütununu hiç açmamak — bu, ayda bütçenin %20-30'unu boşa harcatabilir.\n\nOtomasyon bütçeni yönetir ama frekansı sen izlemezsen kontrolü kaybedersin.\n\n💾 Kaydet — Advantage+ kampanyası kurarken aç\n💬 Sen kampanyalarında frekansı haftalık kontrol ediyor musun? Yorumda söyle!\n\n#frequencycap #advantageplus #metaads\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Reklam verini kaybediyorsan, önce pixel'in nerede durduğuna bak. 👇\n\nAd blocker'lar, Safari ITP ve iOS gizlilik kısıtlamaları client-side pixel'in gördüğü veriyi her gün daha fazla kesiyor.\nÇözüm carousel'de — server-side GTM kurulumu adım adım. 👆\n\n─────────────────────\n🧱 Client-side veri kaybının 3 sebebi\n🔀 Server-side GTM mimarisi nasıl işler\n📈 Kurulum sonrası ölçülen gerçek fark\n🛠️ 4 adımda kurulum yol haritası\n🔁 Client + server'ı birlikte çalıştırma kuralı\n─────────────────────\n\nEn büyük hata: Server-side'a geçince client-side pixel'i tamamen kapatmak. İkisi birlikte çalışmazsa veri kalitesi düşer, yükselmez.\n\nDoğru kurulduğunda bu, teknik bir detay değil — reklam bütçeni koruyan bir altyapı haline gelir.\n\n💾 Kaydet — server-side GTM kurulumuna başlamadan önce tekrar oku\n💬 Server-side tagging'e geçtin mi, yoksa hâlâ sadece client-side mı kullanıyorsun? Yorumda söyle!\n\n#servertagging #googletagmanager #conversionapi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }

@@ -75,6 +75,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 68 | SKAdNetwork ve Mobil Uygulama Kampanya Atıf Modellemesi — iOS Uygulama Reklamlarında Gecikmeli Veri Yönetimi | 7 | Otomatik üretildi (2026-11-09) |
 | 69 | Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme | 7 | Otomatik üretildi (2026-11-09) |
 | 70 | Reklam Seti Düzeyinde Frequency Cap Ayarları — Advantage+ Kampanyalarda Manuel Sıklık Kontrolü | 7 | Otomatik üretildi (2026-11-10) |
+| 71 | Meta Pixel Server-Side Tagging ile Google Tag Manager Entegrasyonu — Çift Yönlü Veri Akışı Kurulumu | 7 | Otomatik üretildi (2026-11-10) |
 
 ---
 
