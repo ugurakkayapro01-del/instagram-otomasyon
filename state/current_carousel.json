@@ -1,70 +1,65 @@
 {
-  "topic": "Meta Ads Experiments (Deneyler) Aracı — A/B Testten Farklı Olarak Kampanya Yapısını Simüle Etme",
+  "topic": "Reklam Seti Düzeyinde Frequency Cap Ayarları — Advantage+ Kampanyalarda Manuel Sıklık Kontrolü",
   "is_new_topic": false,
-  "new_backlog_candidates": [
-    "Reklam Seti Düzeyinde Frequency Cap Ayarları — Advantage+ Kampanyalarda Manuel Sıklık Kontrolü",
-    "Meta Pixel Server-Side Tagging ile Google Tag Manager Entegrasyonu — Çift Yönlü Veri Akışı Kurulumu",
-    "Reklam Hesabı Çoklu Para Birimi ve Bölgesel Fiyatlandırma Stratejisi — Global E-ticaret Bütçe Yönetimi",
-    "Meta Ads Preview Tool ile Yerleşim Bazlı Kreatif Önizleme — Format Hatalarını Yayından Önce Yakalama"
-  ],
+  "new_backlog_candidates": [],
   "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "GELİŞMİŞ TEST STRATEJİSİ",
-      "title": "A/B Testin Ötesi:\nKampanya Yapısını **Bilimsel** Olarak Test Et",
-      "subtitle": "Deneyler Aracı, hangi kreatifin değil, hangi stratejinin kazandığını kanıtlar."
+      "tag": "FREQUENCY CAP • ADVANTAGE+",
+      "title": "Advantage+ Otomasyonu\nSıklığı **Kontrolsüz**\nBırakıyor mu?",
+      "subtitle": "Çoğu reklamveren fark etmeden aynı kişiye bütçesini defalarca harcıyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01/07",
-      "icon": "🧪",
-      "title": "Deneyler Aracı Ne İşe Yarar?",
-      "body": "Standart A/B test sadece tek bir değişkeni karşılaştırır: kreatif, hedef kitle ya da yerleşim. Deneyler Aracı (Experiments) ise kampanyanın TAMAMINI test eder — CBO mu ABO mu, Advantage+ mı manuel hedefleme mi, hangi teklif stratejisi daha çok dönüşüm getiriyor. Meta, trafiği rastgele ve çakışmayan gruplara böler; aynı kullanıcı iki grupta birden görünmez.",
+      "num_label": "İpucu 01/05",
+      "icon": "🎯",
+      "title": "Frequency Cap Nedir, Neden Önemli?",
+      "body": "Frequency cap, bir kullanıcının reklamını belirli sürede en fazla kaç kez göreceğini sınırlar. Advantage+ kampanyalarında bu ayar varsayılan olarak algoritmaya bırakılmıştır. Sonuç: aynı kullanıcı 7-10 kez aynı reklamı görebilir, bütçe verimsiz harcanır.",
       "is_checklist": false,
-      "pill": "Tek değişken değil, tüm stratejiyi test et"
+      "pill": "Advantage+ açtığında frekans sınırını mutlaka kontrol et"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02/07",
+      "num_label": "Karşılaştırma",
       "icon": "⚖️",
-      "title": "A/B Test vs Deneyler: Fark Nerede?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">A/B TEST</div><div class=\"fval\">Tek değişkeni karşılaştırır (kreatif, hedef kitle, yerleşim)</div></div><div class=\"cmp-col high\"><div class=\"slabel\">DENEYLER ARACI</div><div class=\"fval\">Kampanya yapısını karşılaştırır (CBO/ABO, Advantage+/manuel, teklif stratejisi)</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"sval\">1-2 hafta, tek metrik (CTR, CPA)</div></div><div class=\"cmp-col high\"><div class=\"sval\">2-4 hafta, %90 güven aralığı + holdout opsiyonu</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"sval\">Kreatif/hedefleme kararları için</div></div><div class=\"cmp-col high\"><div class=\"sval\">Strateji/bütçe mimarisi kararları için</div></div></div>",
-      "pill": "Doğru soruya doğru test aracı"
+      "title": "Otomatik vs Manuel Sıklık Kontrolü",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">Advantage+ Otomatik</div><div class=\"sval\">Sınırsız gösterim<br>Algoritma kararı<br>Frekans takibi zor</div></div><div class=\"cmp-col best\"><div class=\"flabel\">Manuel Frequency Cap</div><div class=\"sval\">Reklam seti düzeyinde sınır<br>Belirlenen eşik: 6-8/hafta<br>Bütçe israfı önlenir</div></div></div>",
+      "pill": "Manuel sınır olmadan algoritma frekansı umursamaz"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03/07",
-      "icon": "🎯",
-      "title": "Holdout Test — Gerçek Artımsal Etkiyi Gör",
-      "body": "Deneyler Aracı'nın en güçlü modu Holdout Test'tir. Kitlenin %10-20'lik bir dilimine hiç reklam gösterilmez, bu grup kontrol grubu olur. Reklam gören grupla kontrol grubu arasındaki dönüşüm farkı, reklamın gerçek artımsal (incremental) etkisini verir — organik satışları reklam başarısı sanma hatasını önler.",
+      "num_label": "İpucu 02/05",
+      "icon": "⚙️",
+      "title": "Reklam Seti Düzeyinde Nasıl Ayarlanır?",
+      "body": "Reklam seti oluştururken 'Optimizasyon ve Teslimat' bölümünde Reach hedefi seçtiğinde frequency cap seçeneği açılır. Conversion hedefinde bu seçenek gizlidir; bunun yerine Automated Rules ile haftalık gösterim sayısını izleyip eşik aşıldığında reklamı durduran bir kural kurman gerekir.",
       "is_checklist": false,
-      "pill": "%10-20 holdout = gerçek ROAS kanıtı"
+      "pill": "Conversion kampanyalarında frekansı Automated Rules ile izle"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04/07",
-      "icon": "📐",
-      "title": "Minimum Test Gereksinimleri",
-      "body": "Min. 2-4 hafta test süresi (öğrenme evresi dahil)\nHer hücre için en az 50 dönüşüm veya 3.000 gösterim\n%90 güven aralığı (statistical significance) hedefi\nRastgele, çakışmayan kitle bölünmesi (kullanıcı bazlı, ad set bazlı değil)",
-      "is_checklist": true,
-      "pill": "Erken durdurma = yanlış sonuç"
+      "num_label": "İpucu 03/05",
+      "icon": "📊",
+      "title": "Doğru Eşik Değeri Nasıl Belirlenir?",
+      "body": "Soğuk kitlede haftalık 4-6 gösterim idealdir, sıcak kitlede (retargeting) bu sayı 8-10'a çıkabilir çünkü kullanıcı markayı zaten tanıyor. Frekans 10'u geçtiğinde CPM yükselirken CTR düşmeye başlar — bu, bütçenin yanlış harcandığının net sinyalidir.",
+      "is_checklist": false,
+      "pill": "Soğuk kitle 4-6, sıcak kitle 8-10 frekans eşiği"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05/07",
+      "num_label": "En Büyük Hata",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Sonuçları Çok Erken Okumak",
-      "body": "Testin ilk 3-4 gününde 'kazanan' görünen varyant, öğrenme evresi bitince tersine dönebilir. Meta'nın kendi önerisi: sonucu %90 güven aralığına ulaşmadan asla uygulamaya alma. Ayrıca aynı bütçeyi aynı anda iki test üzerinde harcarsan veri kirlenir — her testi izole kampanyada çalıştır.",
+      "title": "Advantage+'a Güvenip Frekansı Hiç Kontrol Etmemek",
+      "body": "Advantage+ kampanyaları bütçeyi otomatik dağıtırken frekansı optimize etmez, sadece dönüşüm hedefine göre harcar. Haftalık raporunda frekans sütununu açmazsan, aynı 1.000 kişiye 15 kez reklam gösterip bunu fark etmeyebilirsin. Bu, aylık bütçenin %20-30'unun boşa gitmesi demektir.",
       "is_checklist": false,
-      "pill": "Güven aralığı dolmadan karar verme"
+      "pill": "Her hafta frekans sütununu manuel kontrol et"
     },
     {
       "kind": "cta",
-      "label": "ŞİMDİ UYGULA",
-      "title": "Tahminle Değil, **Kanıtla** Büyüt"
+      "label": "DIGITAL PRO",
+      "title": "Sıklığı Sen Kontrol Etmezsen,\n**Bütçeni Algoritma Harcar**"
     }
   ],
-  "caption": "Kampanyanı 'sanırım bu daha iyi' diye değiştiriyorsan, aslında para yakıyor olabilirsin. 👇\n\nÇoğu kişi A/B testi sadece kreatif veya hedef kitle için kullanır — ama CBO mu ABO mu, Advantage+ mı manuel mi sorusunun cevabını tahminle verir.\nMeta'nın Deneyler Aracı bu soruları bilimsel olarak cevaplıyor. 👆\n\n─────────────────────\n🧪 Deneyler Aracı A/B testten nasıl farklı\n⚖️ İki yöntemin yan yana karşılaştırması\n🎯 Holdout test ile gerçek artımsal etkiyi ölçme\n📐 Minimum süre, dönüşüm ve güven aralığı eşikleri\n⚠️ Sonuçları erken okumanın maliyeti\n─────────────────────\n\nEn büyük hata: %90 güven aralığına ulaşmadan karar vermek. İlk 3-4 günün 'kazananı', testin sonunda kaybedene dönüşebilir.\n\nDoğru kurulan bir test, bütçeni tahminle değil veriyle yönetmeni sağlar.\n\n💾 Kaydet — bir sonraki kampanya yapısı testinden önce tekrar oku\n💬 Sen hiç Deneyler Aracı'nı kullandın mı, yoksa hâlâ sezgiyle mi karar veriyorsun? Yorumda söyle!\n\n#metaadsexperiments #incrementality #holdouttest\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Advantage+ kampanyan otomatik çalışıyor diye sıklığı kontrol etmeyi bırakma. Aynı kişiye 15 kez reklam gösterip bütçeni eritebilirsin 👇\n\nAlgoritma dönüşüm hedefine göre harcar, frekansı kendiliğinden optimize etmez.\nDoğru eşik değerini ve manuel kontrol yolunu bu carousel'de anlattım 👆\n\n─────────────────────\n🎯 Frequency cap nedir, Advantage+'ta neden kayboluyor\n⚖️ Otomatik vs manuel sıklık kontrolü karşılaştırması\n⚙️ Reklam seti düzeyinde nasıl ayarlanır\n📊 Soğuk/sıcak kitle için doğru eşik değerleri\n⚠️ En büyük hata: frekansı hiç kontrol etmemek\n─────────────────────\n\nEn büyük hata: Advantage+'a güvenip frekans sütununu hiç açmamak — bu, ayda bütçenin %20-30'unu boşa harcatabilir.\n\nOtomasyon bütçeni yönetir ama frekansı sen izlemezsen kontrolü kaybedersin.\n\n💾 Kaydet — Advantage+ kampanyası kurarken aç\n💬 Sen kampanyalarında frekansı haftalık kontrol ediyor musun? Yorumda söyle!\n\n#frequencycap #advantageplus #metaads\n#metareklamlari #facebookads #dijitalpazarlama\n#eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
