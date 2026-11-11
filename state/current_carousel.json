@@ -1,65 +1,65 @@
 {
-  "topic": "Meta Ads Preview Tool ile Yerleşim Bazlı Kreatif Önizleme — Format Hatalarını Yayından Önce Yakalama",
+  "topic": "Reklam Hesabı Çoklu Para Birimi ve Bölgesel Fiyatlandırma Stratejisi — Global E-ticaret Bütçe Yönetimi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "risk",
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KREATİF ÖNİZLEME",
-      "title": "Reklamın **Yayından Önce**\nNasıl Göründüğünü\nHiç Kontrol Ettin mi?",
-      "subtitle": "Tek bir crop hatası, bütçeni sessizce çöpe atabilir."
+      "tag": "GLOBAL E-TİCARET STRATEJİSİ",
+      "title": "Tek Hesapla\nFarklı Ülkeye\n**Reklam Verirsen**\nKur Seni Yer",
+      "subtitle": "Çoklu para birimi karmaşası bütçeni nasıl eritiyor? 7 slaytta gerçek mekanizma."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "📐",
-      "title": "Tek Görsel, 8 Farklı Crop",
-      "body": "Feed: 1080x1350 (4:5)\nStories/Reels: 1080x1920 (9:16)\nMarketplace: 1080x1080 (1:1)\nRight Column: 1080x1080 (1:1)",
-      "is_checklist": true,
-      "pill": "Her yerleşim için ayrı kreatif tasarla, tek beden herkese uymaz"
+      "icon": "💱",
+      "title": "Hesap Para Birimi Tuzağı",
+      "body": "Reklam hesabını TL ile açıp USD/EUR pazarlara satış yapıyorsan, Meta harcamanı hesap para birimine her gün güncel kurla çevirir. Kur %5 oynadığında bütçen fiilen %5 daralır veya genişler — sen fark etmeden. Çözüm: hedef pazarın ana para biriminde ayrı Business Manager hesabı aç.",
+      "is_checklist": false,
+      "pill": "Hesap para birimini hedef pazara göre seç, TL'ye güvenme"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🚨",
-      "title": "Safe Zone İhlali = Kayıp Mesaj",
-      "inner_html": "<div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"slabel\">Üst Safe Zone</div><div class=\"sval\">%14 alan profil/logo UI'siyle kapanır</div></div><div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"slabel\">Alt Safe Zone</div><div class=\"sval\">%20 alan CTA butonu ve kaydırma oku ile örtüşür</div></div><div class=\"risk-row\"><div class=\"risk-dot med\"></div><div class=\"slabel\">Kenar Kırpma</div><div class=\"sval\">9:16'da yatay %12 kenardan kesilir, logo/metin kaybolur</div></div>",
-      "pill": "Metni ve logoyu her zaman merkez %66'lık alanda tut"
+      "num_label": "Sıralama 02 / 07",
+      "icon": "🌍",
+      "title": "Pazar Tier'ına Göre Gerçek CPM",
+      "inner_html": "<div class='tier-row best'><span class='tier-rank'>01</span><span>Kuzey Amerika & Batı Avrupa — CPM $14-28, düşük kur riski (USD/EUR nispeten sabit)</span></div><div class='tier-row'><span class='tier-rank'>02</span><span>Körfez Ülkeleri (BAE/SAR) — CPM $9-16, yüksek sepet değeri riski dengeler</span></div><div class='tier-row'><span class='tier-rank'>03</span><span>Doğu Avrupa & Türkiye — CPM $2-6, ama yerel kur volatilitesi bütçe sinyalini bozar</span></div><div class='tier-row'><span class='tier-rank'>04</span><span>Gelişmekte olan Asya/Afrika — CPM $1-4, düşük rekabet ama dönüşüm kalitesi test şart</span></div>",
+      "pill": "Tier 1 pazarda CPM yüksek ama kur riski düşük — ikisini birlikte oku"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 03 / 07",
-      "icon": "🔍",
-      "title": "Ads Manager'ın Gizli Sekmesi",
-      "body": "Reklam seti kurulumunda sağ panelde 'Önizleme' sekmesi her placement için ayrı bir önizleme linki üretir. Bu linki kendi telefonuna gönder, gerçek ekranda kontrol et.",
+      "icon": "💰",
+      "title": "Bütçede Kur Tamponu Payı Ayır",
+      "body": "Toplam bütçenin %10-15'ini 'kur tamponu' olarak ayır, harcamayı asla tam limitte planlama. CBO (Kampanya Bütçe Optimizasyonu) kullanıyorsan bu pay otomatik dalgalanmayı emer, reklam setleri arasında ani kesinti yaşanmaz.",
       "is_checklist": false,
-      "pill": "Yayınlamadan önce mutlaka gerçek cihazda test et"
+      "pill": "Bütçenin %10-15'i kur tamponu olarak ayrılmalı"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "🎛️",
-      "title": "Otomatik Crop Güvenilmez",
-      "body": "Advantage+ kreatif otomatik kırpar ama yüz, logo ve metin pozisyonunu bilmez. 'Düzenle' sekmesinden her yerleşimi tek tek açıp manuel kontrol et.",
+      "icon": "🗂️",
+      "title": "Ülke Bazlı Reklam Seti Ayrımı",
+      "body": "Her hedef ülkeyi ayrı reklam setinde yönet, asla tek sette birleştirme. Farklı para birimli pazarlar aynı sette yarışınca algoritma yüksek CPM'li pazara bütçe kaydırır, düşük maliyetli pazar aç kalır.",
       "is_checklist": false,
-      "pill": "Otomasyona güven ama önizlemeden önce asla yayınlama"
+      "pill": "Her ülke/para birimi için ayrı reklam seti aç"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Tek Format Yükleme",
-      "body": "Sadece 1:1 kare yükleyip her yere aynı görseli göndermek en sık yapılan hata. Stories'de kenarlar kırpılır, CTA kaybolur, CTR düşer.",
+      "title": "En Büyük Hata: Fiyat Senkronizasyon Gecikmesi",
+      "body": "Katalog fiyatını yerel para birimine manuel çevirip haftada bir güncelleyenler, kur hareketinde ya zarar eder ya müşteri kaybeder. Meta Commerce Manager'da bölgesel fiyat listesi kurup otomatik kur güncellemesi aktif etmeyen her hesap bu riski taşır.",
       "is_checklist": false,
-      "pill": "Her kampanyada en az 2 format (1:1 ve 9:16) yükle"
+      "pill": "Bölgesel fiyat listesini otomatik kur güncellemesine bağla"
     },
     {
       "kind": "cta",
-      "label": "SIRADA NE VAR?",
-      "title": "Yayınlamadan Önce **Önizle**.\nSonra Yayınla."
+      "label": "KAPANIŞ",
+      "title": "Global Satıyorsan\nReklam Hesabın\n**Yerel Düşünmeli**"
     }
   ],
-  "caption": "Reklamını yayınladın ama Stories'de nasıl göründüğüne hiç bakmadın mı? 👇\n\nÇoğu marka tek bir kare görsel hazırlayıp her yerleşime aynısını gönderiyor.\nSonuç: kırpılan logo, kaybolan CTA, düşen CTR. Çözüm bu carousel'de 👆\n\n─────────────────────\n📐 Her yerleşimin kendi crop oranı var (Feed/Stories/Marketplace)\n🚨 Safe zone ihlali: üst %14, alt %20 risk bölgesi\n🔍 Ads Manager'ın gizli 'Önizleme' sekmesi\n🎛️ Otomatik crop'a güvenme, manuel kontrol şart\n⚠️ En büyük hata: tek format yükleyip her yere göndermek\n─────────────────────\n\nEn büyük hata: Sadece 1:1 kare yükleyip 'her yerde aynı görünür' sanmak. Stories ve Reels'te kenarlar kırpılır, mesajın yarısı kaybolur.\n\nBir kampanya yayınlamadan önce 2 dakikalık önizleme kontrolü, haftalarca süren düşük performansı önler.\n\n💾 Kaydet — yeni bir reklam seti kurarken önizleme adımını atlamamak için\n💬 Sen reklamını yayınlamadan önce yerleşim bazlı önizleme yapıyor musun? Yorumda söyle!\n\n#adspreview #placementoptimization #creativetesting\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Türkiye'de kurduğun reklam hesabıyla Avrupa'ya satış mı yapıyorsun? Kur farkı bütçeni senin haberin olmadan eritiyor olabilir. 👇\n\nÇoklu para birimi karmaşası, global satan e-ticaretçilerin en çok gözden kaçırdığı bütçe sızıntısı.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n💱 Hesap para birimi tuzağı — neden TL hesabı global satışta risk taşır\n🌍 Pazar tier'larına göre gerçek CPM farkları\n💰 Bütçede %10-15 kur tamponu kuralı\n🗂️ Ülke bazlı reklam seti ayrımı zorunluluğu\n⚠️ En büyük hata: manuel fiyat senkronizasyon gecikmesi\n─────────────────────\n\nEn büyük hata: Fiyatını haftada bir elle güncelleyip kur riskini görmezden gelmek. Otomatik senkronizasyon olmadan global satış şansa bırakılmış demektir.\n\nGlobal pazarda reklam vermek yerel refleksle yönetilemez. Doğru kurulum, kaybolan bütçeyi geri kazandırır.\n\n💾 Kaydet — yeni bir ülkeye açılmadan önce tekrar oku\n💬 Hangi ülkeye reklam veriyorsun, hesabını hangi para biriminde açtın? Yorumda söyle!\n\n#currencyrisk #globalecommerce #internationalads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #reklamstratejisi #instagramreklamlari"
 }
