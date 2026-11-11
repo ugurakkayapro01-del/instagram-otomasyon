@@ -1,65 +1,65 @@
 {
-  "topic": "Meta Pixel Server-Side Tagging ile Google Tag Manager Entegrasyonu — Çift Yönlü Veri Akışı Kurulumu",
+  "topic": "Meta Ads Preview Tool ile Yerleşim Bazlı Kreatif Önizleme — Format Hatalarını Yayından Önce Yakalama",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "stat",
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "SUNUCU TARAFLI İZLEME",
-      "title": "Pixel'in Verisi\nTarayıcıda Kayboluyor.\n**Sunucudan Kurtar.**",
-      "subtitle": "Ad blocker'lar ve Safari ITP, dönüşüm verinin büyük bölümünü siliyor. Çözüm: server-side GTM."
+      "tag": "KREATİF ÖNİZLEME",
+      "title": "Reklamın **Yayından Önce**\nNasıl Göründüğünü\nHiç Kontrol Ettin mi?",
+      "subtitle": "Tek bir crop hatası, bütçeni sessizce çöpe atabilir."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🧱",
-      "title": "Client-Side Neden Veri Kaybediyor?",
-      "body": "Tarayıcıda çalışan pixel, kullanıcı ile sunucu arasındaki her engeli görür.\n• Ad blocker kullanım oranı dünya genelinde %27-40\n• Safari ITP çerez ömrünü 7 güne indiriyor\n• iOS 14.5+ ATT onayı olmadan veri akmıyor",
+      "icon": "📐",
+      "title": "Tek Görsel, 8 Farklı Crop",
+      "body": "Feed: 1080x1350 (4:5)\nStories/Reels: 1080x1920 (9:16)\nMarketplace: 1080x1080 (1:1)\nRight Column: 1080x1080 (1:1)",
       "is_checklist": true,
-      "pill": "Client-side pixel tek başına yeterli değil, veri sızdırıyor"
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🔀",
-      "title": "Server-Side GTM Mimarisi Nasıl Çalışır?",
-      "body": "Web container tarayıcıda kalır ama veri doğrudan Meta'ya gitmez.\n• Client container → kendi sunucunuzdaki server container'a\n• Server container → Meta CAPI'ye first-party bağlantıyla iletir\n• Üçüncü taraf script görünmediği için ad blocker'lar engelleyemez",
-      "is_checklist": false,
-      "pill": "Veri artık tarayıcıdan değil, sizin sunucunuzdan Meta'ya gidiyor"
+      "pill": "Her yerleşim için ayrı kreatif tasarla, tek beden herkese uymaz"
     },
     {
       "kind": "special",
       "background": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "🚨",
+      "title": "Safe Zone İhlali = Kayıp Mesaj",
+      "inner_html": "<div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"slabel\">Üst Safe Zone</div><div class=\"sval\">%14 alan profil/logo UI'siyle kapanır</div></div><div class=\"risk-row\"><div class=\"risk-dot high\"></div><div class=\"slabel\">Alt Safe Zone</div><div class=\"sval\">%20 alan CTA butonu ve kaydırma oku ile örtüşür</div></div><div class=\"risk-row\"><div class=\"risk-dot med\"></div><div class=\"slabel\">Kenar Kırpma</div><div class=\"sval\">9:16'da yatay %12 kenardan kesilir, logo/metin kaybolur</div></div>",
+      "pill": "Metni ve logoyu her zaman merkez %66'lık alanda tut"
+    },
+    {
+      "kind": "dark",
       "num_label": "İpucu 03 / 07",
-      "icon": "📈",
-      "title": "Kurulum Sonrası Fark Ölçülebilir",
-      "inner_html": "<div class=\"bignum\">%35</div><div class=\"bignumsub\">Server-side kurulum sonrası Meta'ya ulaşan dönüşüm verisinde ortalama artış</div>",
-      "pill": "Event Match Quality skoru genelde 2-3 puan birden yükseliyor"
+      "icon": "🔍",
+      "title": "Ads Manager'ın Gizli Sekmesi",
+      "body": "Reklam seti kurulumunda sağ panelde 'Önizleme' sekmesi her placement için ayrı bir önizleme linki üretir. Bu linki kendi telefonuna gönder, gerçek ekranda kontrol et.",
+      "is_checklist": false,
+      "pill": "Yayınlamadan önce mutlaka gerçek cihazda test et"
     },
     {
       "kind": "light",
       "num_label": "İpucu 04 / 07",
-      "icon": "🛠️",
-      "title": "Kurulumun 4 Temel Adımı",
-      "body": "• GTM'de yeni bir Server Container oluştur\n• Google Cloud Run veya App Engine'de host et\n• Kendi domaininin alt alan adını bağla (ör. sgtm.markaniz.com)\n• Client container'ı bu server container'a yönlendir",
-      "is_checklist": true,
-      "pill": "First-party subdomain kullanmazsan tarayıcı yine üçüncü taraf sayar"
+      "icon": "🎛️",
+      "title": "Otomatik Crop Güvenilmez",
+      "body": "Advantage+ kreatif otomatik kırpar ama yüz, logo ve metin pozisyonunu bilmez. 'Düzenle' sekmesinden her yerleşimi tek tek açıp manuel kontrol et.",
+      "is_checklist": false,
+      "pill": "Otomasyona güven ama önizlemeden önce asla yayınlama"
     },
     {
       "kind": "dark",
       "num_label": "İpucu 05 / 07",
-      "icon": "🔁",
-      "title": "Çift Yönlü Akış: Client + Server Birlikte Çalışmalı",
-      "body": "Server-side, client-side'ın yerine geçmez — onu tamamlar.\n• Pixel (client) ve CAPI (server) aynı anda gönderilir\n• Aynı event_id ile Meta çift sayımı önler\n• En büyük hata: Client-side'ı tamamen kapatıp sadece server-side'a güvenmek",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Tek Format Yükleme",
+      "body": "Sadece 1:1 kare yükleyip her yere aynı görseli göndermek en sık yapılan hata. Stories'de kenarlar kırpılır, CTA kaybolur, CTR düşer.",
       "is_checklist": false,
-      "pill": "İki katman birlikte en yüksek veri kalitesini verir, tek başına değil"
+      "pill": "Her kampanyada en az 2 format (1:1 ve 9:16) yükle"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Veri Kaybını Durdurmak\nTeknik Değil, **Kurulum** Meselesi."
+      "label": "SIRADA NE VAR?",
+      "title": "Yayınlamadan Önce **Önizle**.\nSonra Yayınla."
     }
   ],
-  "caption": "Reklam verini kaybediyorsan, önce pixel'in nerede durduğuna bak. 👇\n\nAd blocker'lar, Safari ITP ve iOS gizlilik kısıtlamaları client-side pixel'in gördüğü veriyi her gün daha fazla kesiyor.\nÇözüm carousel'de — server-side GTM kurulumu adım adım. 👆\n\n─────────────────────\n🧱 Client-side veri kaybının 3 sebebi\n🔀 Server-side GTM mimarisi nasıl işler\n📈 Kurulum sonrası ölçülen gerçek fark\n🛠️ 4 adımda kurulum yol haritası\n🔁 Client + server'ı birlikte çalıştırma kuralı\n─────────────────────\n\nEn büyük hata: Server-side'a geçince client-side pixel'i tamamen kapatmak. İkisi birlikte çalışmazsa veri kalitesi düşer, yükselmez.\n\nDoğru kurulduğunda bu, teknik bir detay değil — reklam bütçeni koruyan bir altyapı haline gelir.\n\n💾 Kaydet — server-side GTM kurulumuna başlamadan önce tekrar oku\n💬 Server-side tagging'e geçtin mi, yoksa hâlâ sadece client-side mı kullanıyorsun? Yorumda söyle!\n\n#servertagging #googletagmanager #conversionapi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Reklamını yayınladın ama Stories'de nasıl göründüğüne hiç bakmadın mı? 👇\n\nÇoğu marka tek bir kare görsel hazırlayıp her yerleşime aynısını gönderiyor.\nSonuç: kırpılan logo, kaybolan CTA, düşen CTR. Çözüm bu carousel'de 👆\n\n─────────────────────\n📐 Her yerleşimin kendi crop oranı var (Feed/Stories/Marketplace)\n🚨 Safe zone ihlali: üst %14, alt %20 risk bölgesi\n🔍 Ads Manager'ın gizli 'Önizleme' sekmesi\n🎛️ Otomatik crop'a güvenme, manuel kontrol şart\n⚠️ En büyük hata: tek format yükleyip her yere göndermek\n─────────────────────\n\nEn büyük hata: Sadece 1:1 kare yükleyip 'her yerde aynı görünür' sanmak. Stories ve Reels'te kenarlar kırpılır, mesajın yarısı kaybolur.\n\nBir kampanya yayınlamadan önce 2 dakikalık önizleme kontrolü, haftalarca süren düşük performansı önler.\n\n💾 Kaydet — yeni bir reklam seti kurarken önizleme adımını atlamamak için\n💬 Sen reklamını yayınlamadan önce yerleşim bazlı önizleme yapıyor musun? Yorumda söyle!\n\n#adspreview #placementoptimization #creativetesting\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
