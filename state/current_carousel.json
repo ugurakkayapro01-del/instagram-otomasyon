@@ -1,69 +1,65 @@
 {
-  "topic": "Meta Pixel Test Events Aracı — Canlı Hata Ayıklama ile Kurulum Hatalarını Yayından Önce Yakalama",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Demografik Kırılım (Age & Gender Breakdown) Analizi — Gizli CPA Farklarını Tespit Etme ve Bütçe Yeniden Dağıtımı",
-    "Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme",
-    "Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi"
-  ],
-  "special_kind": "risk",
+  "topic": "Demografik Kırılım (Age & Gender Breakdown) Analizi — Gizli CPA Farklarını Tespit Etme ve Bütçe Yeniden Dağıtımı",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "tier",
   "slides": [
     {
       "kind": "hook",
-      "tag": "PIXEL KURULUM KONTROLÜ",
-      "title": "Pixel'in Çalıştığını\nSandın. **Test Events** Gerçeği Gösterir.",
-      "subtitle": "Reklam yayınlıyorsun ama veri hiç gelmiyor olabilir. Events Manager'daki bu araç, parayı harcamadan önce hatayı gösterir."
+      "tag": "DEMOGRAFİK ANALİZ",
+      "title": "Yaş Grubun\nCPA'nı Gizliyor\n**Fark Ettin mi?**",
+      "subtitle": "Ortalama CPA seni kandırır. Gerçek fark, kimsenin bakmadığı demografik kırılımda saklı."
     },
     {
       "kind": "light",
-      "num_label": "Adım 01",
-      "icon": "🔍",
-      "title": "Test Events Nedir, Nereden Açılır?",
-      "body": "Events Manager > Veri Kaynakları > Pikselin > Test Events sekmesi. Burada canlı olarak gelen her event'i, parametreleriyle birlikte saniyeler içinde görürsün. Hem browser pixel hem CAPI (sunucu) event'leri aynı ekranda karşılaştırılır.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "📊",
+      "title": "Ortalama Seni Kandırır",
+      "body": "Kampanyanın genel CPA'sına güvenmek büyük hata. Görünen CPA 150 TL olabilir ama 18-24 yaş grubu 280 TL, 35-44 yaş grubu ise 95 TL harcıyor olabilir. Ads Manager'da \"Breakdown > By Delivery > Age, Gender\" raporunu haftalık kontrol etmek zorunlu.",
       "is_checklist": false,
-      "pill": "Yayından önce her zaman burada test et."
-    },
-    {
-      "kind": "dark",
-      "num_label": "Adım 02",
-      "icon": "⚠️",
-      "title": "En Sık Görülen 4 Kurulum Hatası",
-      "body": "Event_id eksik → deduplication çalışmaz, çift sayım olur\nValue/currency parametresi boş → ROAS hesaplaması yanlış çıkar\nYanlış event adı → Purchase yerine Lead gönderilir\nEvent 2 kez tetiklenir → sayfa yenilemede mükerrer veri",
-      "is_checklist": true,
-      "pill": "4 hatadan biri bile optimizasyonu çökertir."
+      "pill": "Her kampanyada haftada en az 1 kez demografik kırılım raporu çıkar"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Adım 03",
-      "icon": "🚦",
-      "title": "Event Durum Sinyalleri",
-      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot best\"></span><span class=\"thr-badge best\">RECEIVED</span><span class=\"tdesc\">Event doğru parametrelerle ulaştı, event_id eşleşti.</span></div><div class=\"risk-row\"><span class=\"risk-dot med\"></span><span class=\"thr-badge med\">WARNING</span><span class=\"tdesc\">Event geldi ama value veya currency parametresi eksik.</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span class=\"thr-badge danger\">ERROR</span><span class=\"tdesc\">Event 24 saattir hiç gelmiyor, kurulum kopuk.</span></div>",
-      "pill": "Warning'i görmezden gelme, 48 saat içinde düzelt."
-    },
-    {
-      "kind": "light",
-      "num_label": "Adım 04",
-      "icon": "🧪",
-      "title": "Yayın Öncesi 3 Dakikalık Test Rutini",
-      "body": "Satın alma sayfasında test siparişi ver, Test Events'te Purchase event'inin geldiğini doğrula. Value ve currency alanlarını kontrol et. Browser ve server event'inin aynı event_id ile eşleştiğini (deduplication: matched) gör.",
-      "is_checklist": false,
-      "pill": "3 dakika test, haftalarca yanlış optimizasyonu önler."
+      "num_label": "İpucu 02 / 07",
+      "icon": "🏆",
+      "title": "CPA'ya Göre Segment Sıralaması",
+      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\">35-44 Kadın — CPA 85 TL</div></div><div class=\"tier-row high\"><div class=\"tier-rank\">02</div><div class=\"tdesc\">25-34 Kadın — CPA 110 TL</div></div><div class=\"tier-row med\"><div class=\"tier-rank\">03</div><div class=\"tdesc\">35-44 Erkek — CPA 145 TL</div></div><div class=\"tier-row danger\"><div class=\"tier-rank\">04</div><div class=\"tdesc\">18-24 Erkek — CPA 310 TL</div></div>",
+      "pill": "En kötü performans gösteren segmenti daralt veya exclusion'a al"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı",
-      "icon": "🧠",
-      "title": "En Büyük Hata: Test Etmeden Yayına Almak",
-      "body": "Birçok hesap sahibi kampanyayı kurar, bütçeyi yükler, sonuçları bekler. Pixel aslında hiç veri göndermiyordur. Algoritma kör optimizasyon yapar, bütçe yanlış kişilere gider. Test Events 2 dakikanı alır, haftalarca kaybı önler.",
+      "num_label": "İpucu 03 / 07",
+      "icon": "🎯",
+      "title": "Fark Neden Oluşuyor?",
+      "body": "Lowest cost teklif stratejisi algoritmanın \"ucuz gösterim\" bulduğu segmente kaymasına neden olur — bu her zaman en kârlı segment değildir. Creative mesajın 35-44 yaş kadına hitap ediyorsa ama bütçe otomatik 18-24 erkeğe kayıyorsa, CPA farkı 3 katına çıkar.",
       "is_checklist": false,
-      "pill": "Yayına almadan önce son kontrol: Test Events."
+      "pill": "Creative mesajınla en çok uyuşan segmenti manuel önceliklendir"
+    },
+    {
+      "kind": "light",
+      "num_label": "İpucu 04 / 07",
+      "icon": "✅",
+      "title": "Yeniden Dağıtım Checklist'i",
+      "body": "Breakdown raporunu en az 7 günlük veriyle çıkar\nCPA'sı ortalamanın %50 üzerinde olan segmenti işaretle\nO segmenti ayrı reklam seti olarak izole et veya exclusion'a al\nPerformanslı segmente +%20 bütçe kaydır, öğrenme evresini sıfırlama\n3 gün sonra tekrar kontrol et, kalıcıysa yapıyı sabitle",
+      "is_checklist": true,
+      "pill": "Haftalık rutin: breakdown kontrolü olmadan optimizasyon eksik kalır"
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata",
+      "body": "Advantage+ kampanyalarda \"otomatik optimize ediyor\" diyip demografik kırılımı hiç kontrol etmemek en pahalı hatalardan biri. Algoritma dönüşüm hacmini maksimize eder, kârlılığı değil. Düşük CPA'lı ama düşük LTV'li segmente kayan bütçe, kısa vadede iyi görünüp uzun vadede kârı eritir.",
+      "is_checklist": false,
+      "pill": "Düşük CPA her zaman en kârlı segment demek değildir"
     },
     {
       "kind": "cta",
-      "label": "DIGITAL PRO",
-      "title": "Pixel'in Sağlığını Bugün Kontrol Et."
+      "label": "Kapanış",
+      "title": "Ortalamaya Değil,\nKırılıma **Güven**"
     }
   ],
-  "caption": "Kampanyanı yayınlıyorsun ama Pixel aslında hiç veri göndermiyor olabilir. 👇\n\nBöyle bir hatayı fark etmeden geçen her gün, bütçeni kör bir algoritmaya teslim ediyor demektir.\nÇözüm, Events Manager'ın içinde zaten saklı — sadece nasıl okuyacağını bilmen gerekiyor. 👆\n\n─────────────────────\n🔍 Test Events sekmesi nerede, ne işe yarar\n⚠️ En sık yapılan 4 kurulum hatası\n🚦 Event durum sinyalleri: Received / Warning / Error\n🧪 Yayın öncesi 3 dakikalık test rutini\n🧠 Test etmeden yayına almanın gerçek maliyeti\n─────────────────────\n\nEn büyük hata: Kampanyayı kurup sonuçları beklemek, ama Pixel'in çalışıp çalışmadığını hiç kontrol etmemek.\n\nBu küçük kontrol, haftalarca yanlış optimizasyonun önüne geçer.\n\n💾 Kaydet — her yeni kampanya kurulumundan önce aç\n💬 Test Events'te hiç 'Error' gördün mü? Yorumda söyle!\n\n#pixeltest #eventsmanager #capi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Kampanyanın CPA'sı iyi görünüyor ama bazı yaş grupları seni sessizce batırıyor olabilir. 👇\n\nOrtalama rakam, en pahalı ve en verimli segmenti aynı anda gizler.\nGerçek fark demografik kırılımda saklı — bu carousel'de nasıl bulacağını anlatıyorum 👆\n\n─────────────────────\n📊 Ortalama CPA neden yanıltıcı\n🏆 CPA'ya göre segment sıralaması (01-04)\n🎯 Algoritma neden yanlış segmente kayar\n✅ Bütçe yeniden dağıtım checklist'i\n⚠️ Advantage+ kampanyalarda yapılan en pahalı hata\n─────────────────────\n\nEn büyük hata: Düşük CPA'yı otomatik olarak \"en kârlı segment\" sanmak. LTV'yi görmeden karar veren her optimizasyon, uzun vadede kârı eritir.\n\nHaftalık breakdown raporu, kampanya optimizasyonunun atlanamayan ilk adımıdır.\n\n💾 Kaydet — bütçe optimizasyonu yapmadan önce aç\n💬 Son breakdown raporuna ne zaman baktın? Yorumda söyle!\n\n#demografikanaliz #cpaoptimizasyonu #audiencebreakdown\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

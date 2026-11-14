@@ -79,6 +79,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 72 | Meta Ads Preview Tool ile Yerleşim Bazlı Kreatif Önizleme — Format Hatalarını Yayından Önce Yakalama | 7 | Otomatik üretildi (2026-11-11) |
 | 73 | Reklam Hesabı Çoklu Para Birimi ve Bölgesel Fiyatlandırma Stratejisi — Global E-ticaret Bütçe Yönetimi | 7 | Otomatik üretildi (2026-11-11) |
 | 74 | Meta Pixel Test Events Aracı — Canlı Hata Ayıklama ile Kurulum Hatalarını Yayından Önce Yakalama | 7 | Otomatik üretildi (2026-11-14) |
+| 75 | Demografik Kırılım (Age & Gender Breakdown) Analizi — Gizli CPA Farklarını Tespit Etme ve Bütçe Yeniden Dağıtımı | 7 | Otomatik üretildi (2026-11-14) |
 
 ---
 
