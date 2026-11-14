@@ -1,65 +1,69 @@
 {
-  "topic": "Reklam Hesabı Çoklu Para Birimi ve Bölgesel Fiyatlandırma Stratejisi — Global E-ticaret Bütçe Yönetimi",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "topic": "Meta Pixel Test Events Aracı — Canlı Hata Ayıklama ile Kurulum Hatalarını Yayından Önce Yakalama",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Demografik Kırılım (Age & Gender Breakdown) Analizi — Gizli CPA Farklarını Tespit Etme ve Bütçe Yeniden Dağıtımı",
+    "Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme",
+    "Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi"
+  ],
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "GLOBAL E-TİCARET STRATEJİSİ",
-      "title": "Tek Hesapla\nFarklı Ülkeye\n**Reklam Verirsen**\nKur Seni Yer",
-      "subtitle": "Çoklu para birimi karmaşası bütçeni nasıl eritiyor? 7 slaytta gerçek mekanizma."
+      "tag": "PIXEL KURULUM KONTROLÜ",
+      "title": "Pixel'in Çalıştığını\nSandın. **Test Events** Gerçeği Gösterir.",
+      "subtitle": "Reklam yayınlıyorsun ama veri hiç gelmiyor olabilir. Events Manager'daki bu araç, parayı harcamadan önce hatayı gösterir."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "💱",
-      "title": "Hesap Para Birimi Tuzağı",
-      "body": "Reklam hesabını TL ile açıp USD/EUR pazarlara satış yapıyorsan, Meta harcamanı hesap para birimine her gün güncel kurla çevirir. Kur %5 oynadığında bütçen fiilen %5 daralır veya genişler — sen fark etmeden. Çözüm: hedef pazarın ana para biriminde ayrı Business Manager hesabı aç.",
+      "num_label": "Adım 01",
+      "icon": "🔍",
+      "title": "Test Events Nedir, Nereden Açılır?",
+      "body": "Events Manager > Veri Kaynakları > Pikselin > Test Events sekmesi. Burada canlı olarak gelen her event'i, parametreleriyle birlikte saniyeler içinde görürsün. Hem browser pixel hem CAPI (sunucu) event'leri aynı ekranda karşılaştırılır.",
       "is_checklist": false,
-      "pill": "Hesap para birimini hedef pazara göre seç, TL'ye güvenme"
+      "pill": "Yayından önce her zaman burada test et."
+    },
+    {
+      "kind": "dark",
+      "num_label": "Adım 02",
+      "icon": "⚠️",
+      "title": "En Sık Görülen 4 Kurulum Hatası",
+      "body": "Event_id eksik → deduplication çalışmaz, çift sayım olur\nValue/currency parametresi boş → ROAS hesaplaması yanlış çıkar\nYanlış event adı → Purchase yerine Lead gönderilir\nEvent 2 kez tetiklenir → sayfa yenilemede mükerrer veri",
+      "is_checklist": true,
+      "pill": "4 hatadan biri bile optimizasyonu çökertir."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama 02 / 07",
-      "icon": "🌍",
-      "title": "Pazar Tier'ına Göre Gerçek CPM",
-      "inner_html": "<div class='tier-row best'><span class='tier-rank'>01</span><span>Kuzey Amerika & Batı Avrupa — CPM $14-28, düşük kur riski (USD/EUR nispeten sabit)</span></div><div class='tier-row'><span class='tier-rank'>02</span><span>Körfez Ülkeleri (BAE/SAR) — CPM $9-16, yüksek sepet değeri riski dengeler</span></div><div class='tier-row'><span class='tier-rank'>03</span><span>Doğu Avrupa & Türkiye — CPM $2-6, ama yerel kur volatilitesi bütçe sinyalini bozar</span></div><div class='tier-row'><span class='tier-rank'>04</span><span>Gelişmekte olan Asya/Afrika — CPM $1-4, düşük rekabet ama dönüşüm kalitesi test şart</span></div>",
-      "pill": "Tier 1 pazarda CPM yüksek ama kur riski düşük — ikisini birlikte oku"
-    },
-    {
-      "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "💰",
-      "title": "Bütçede Kur Tamponu Payı Ayır",
-      "body": "Toplam bütçenin %10-15'ini 'kur tamponu' olarak ayır, harcamayı asla tam limitte planlama. CBO (Kampanya Bütçe Optimizasyonu) kullanıyorsan bu pay otomatik dalgalanmayı emer, reklam setleri arasında ani kesinti yaşanmaz.",
-      "is_checklist": false,
-      "pill": "Bütçenin %10-15'i kur tamponu olarak ayrılmalı"
+      "num_label": "Adım 03",
+      "icon": "🚦",
+      "title": "Event Durum Sinyalleri",
+      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot best\"></span><span class=\"thr-badge best\">RECEIVED</span><span class=\"tdesc\">Event doğru parametrelerle ulaştı, event_id eşleşti.</span></div><div class=\"risk-row\"><span class=\"risk-dot med\"></span><span class=\"thr-badge med\">WARNING</span><span class=\"tdesc\">Event geldi ama value veya currency parametresi eksik.</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span class=\"thr-badge danger\">ERROR</span><span class=\"tdesc\">Event 24 saattir hiç gelmiyor, kurulum kopuk.</span></div>",
+      "pill": "Warning'i görmezden gelme, 48 saat içinde düzelt."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "🗂️",
-      "title": "Ülke Bazlı Reklam Seti Ayrımı",
-      "body": "Her hedef ülkeyi ayrı reklam setinde yönet, asla tek sette birleştirme. Farklı para birimli pazarlar aynı sette yarışınca algoritma yüksek CPM'li pazara bütçe kaydırır, düşük maliyetli pazar aç kalır.",
+      "num_label": "Adım 04",
+      "icon": "🧪",
+      "title": "Yayın Öncesi 3 Dakikalık Test Rutini",
+      "body": "Satın alma sayfasında test siparişi ver, Test Events'te Purchase event'inin geldiğini doğrula. Value ve currency alanlarını kontrol et. Browser ve server event'inin aynı event_id ile eşleştiğini (deduplication: matched) gör.",
       "is_checklist": false,
-      "pill": "Her ülke/para birimi için ayrı reklam seti aç"
+      "pill": "3 dakika test, haftalarca yanlış optimizasyonu önler."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Fiyat Senkronizasyon Gecikmesi",
-      "body": "Katalog fiyatını yerel para birimine manuel çevirip haftada bir güncelleyenler, kur hareketinde ya zarar eder ya müşteri kaybeder. Meta Commerce Manager'da bölgesel fiyat listesi kurup otomatik kur güncellemesi aktif etmeyen her hesap bu riski taşır.",
+      "num_label": "Uyarı",
+      "icon": "🧠",
+      "title": "En Büyük Hata: Test Etmeden Yayına Almak",
+      "body": "Birçok hesap sahibi kampanyayı kurar, bütçeyi yükler, sonuçları bekler. Pixel aslında hiç veri göndermiyordur. Algoritma kör optimizasyon yapar, bütçe yanlış kişilere gider. Test Events 2 dakikanı alır, haftalarca kaybı önler.",
       "is_checklist": false,
-      "pill": "Bölgesel fiyat listesini otomatik kur güncellemesine bağla"
+      "pill": "Yayına almadan önce son kontrol: Test Events."
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Global Satıyorsan\nReklam Hesabın\n**Yerel Düşünmeli**"
+      "label": "DIGITAL PRO",
+      "title": "Pixel'in Sağlığını Bugün Kontrol Et."
     }
   ],
-  "caption": "Türkiye'de kurduğun reklam hesabıyla Avrupa'ya satış mı yapıyorsun? Kur farkı bütçeni senin haberin olmadan eritiyor olabilir. 👇\n\nÇoklu para birimi karmaşası, global satan e-ticaretçilerin en çok gözden kaçırdığı bütçe sızıntısı.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n💱 Hesap para birimi tuzağı — neden TL hesabı global satışta risk taşır\n🌍 Pazar tier'larına göre gerçek CPM farkları\n💰 Bütçede %10-15 kur tamponu kuralı\n🗂️ Ülke bazlı reklam seti ayrımı zorunluluğu\n⚠️ En büyük hata: manuel fiyat senkronizasyon gecikmesi\n─────────────────────\n\nEn büyük hata: Fiyatını haftada bir elle güncelleyip kur riskini görmezden gelmek. Otomatik senkronizasyon olmadan global satış şansa bırakılmış demektir.\n\nGlobal pazarda reklam vermek yerel refleksle yönetilemez. Doğru kurulum, kaybolan bütçeyi geri kazandırır.\n\n💾 Kaydet — yeni bir ülkeye açılmadan önce tekrar oku\n💬 Hangi ülkeye reklam veriyorsun, hesabını hangi para biriminde açtın? Yorumda söyle!\n\n#currencyrisk #globalecommerce #internationalads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #reklamstratejisi #instagramreklamlari"
+  "caption": "Kampanyanı yayınlıyorsun ama Pixel aslında hiç veri göndermiyor olabilir. 👇\n\nBöyle bir hatayı fark etmeden geçen her gün, bütçeni kör bir algoritmaya teslim ediyor demektir.\nÇözüm, Events Manager'ın içinde zaten saklı — sadece nasıl okuyacağını bilmen gerekiyor. 👆\n\n─────────────────────\n🔍 Test Events sekmesi nerede, ne işe yarar\n⚠️ En sık yapılan 4 kurulum hatası\n🚦 Event durum sinyalleri: Received / Warning / Error\n🧪 Yayın öncesi 3 dakikalık test rutini\n🧠 Test etmeden yayına almanın gerçek maliyeti\n─────────────────────\n\nEn büyük hata: Kampanyayı kurup sonuçları beklemek, ama Pixel'in çalışıp çalışmadığını hiç kontrol etmemek.\n\nBu küçük kontrol, haftalarca yanlış optimizasyonun önüne geçer.\n\n💾 Kaydet — her yeni kampanya kurulumundan önce aç\n💬 Test Events'te hiç 'Error' gördün mü? Yorumda söyle!\n\n#pixeltest #eventsmanager #capi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
