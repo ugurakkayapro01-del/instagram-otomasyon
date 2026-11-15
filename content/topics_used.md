@@ -81,6 +81,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 74 | Meta Pixel Test Events Aracı — Canlı Hata Ayıklama ile Kurulum Hatalarını Yayından Önce Yakalama | 7 | Otomatik üretildi (2026-11-14) |
 | 75 | Demografik Kırılım (Age & Gender Breakdown) Analizi — Gizli CPA Farklarını Tespit Etme ve Bütçe Yeniden Dağıtımı | 7 | Otomatik üretildi (2026-11-14) |
 | 76 | Meta Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme | 7 | Otomatik üretildi (2026-11-15) |
+| 77 | Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi | 7 | Otomatik üretildi (2026-11-15) |
 
 ---
 

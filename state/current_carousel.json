@@ -1,65 +1,65 @@
 {
-  "topic": "Meta Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme",
+  "topic": "Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "formula",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "CATALOG OTOMASYONU",
-      "title": "Stokta Yok Ama\nReklamı Hâlâ\n**Yayında** mı?",
-      "subtitle": "Feed Rules kurulmadan çalışan her katalog, sessizce bütçe yakıyor."
+      "tag": "SEZON SONRASI STRATEJİ",
+      "title": "Tatil Sezonu Bitti.\nKitlen **Hâlâ Aynı** Kitle mi?",
+      "subtitle": "Kasım-Aralık'ta topladığın veri, Ocak'ta seni yanıltabilir. İşte neden."
     },
     {
       "kind": "light",
-      "num_label": "Kural 01",
-      "icon": "📦",
-      "title": "Feed Rule Nedir, Neden Gerekli?",
-      "body": "Feed Rule, kataloğundaki ürünleri manuel değil otomatik filtreleyen bir mantık katmanıdır. Stok 0 olan, fiyatı değişen veya kârsız ürünü reklamdan anında çıkarır. 500+ SKU'lu mağazada elle takip imkansızdır; feed rule burada zorunlu hale gelir.",
+      "num_label": "Sinyal 01",
+      "icon": "📉",
+      "title": "CPM Düşüşünü Yanlış Okuma",
+      "body": "Tatil sezonu bitince CPM genelde %25-40 arası düşer — rekabet azalır. Ama bu düşüşü 'reklamım iyileşti' sanıp bütçeyi aniden artırma. Düşen CPM, azalan talebin de işareti olabilir. Önce dönüşüm oranına bak, sonra bütçeye dokun.",
       "is_checklist": false,
-      "pill": "Feed Rule = otomatik ürün filtreleme motoru"
+      "pill": "CPM düşüşü = fırsat değil, önce dönüşüm oranını kontrol et"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Mantık 02",
-      "icon": "⚙️",
-      "title": "IF-THEN Mantığı Nasıl Çalışır?",
-      "inner_html": "<div class=\"formula-box\">EĞER availability = \"out of stock\"<br>İSE custom_label_4 = \"hide\"<br>VE reklam setinden otomatik hariç tut</div>",
-      "pill": "Her kural tek koşul + tek aksiyon içerir"
+      "num_label": "Sinyal 02",
+      "icon": "🔍",
+      "title": "Sezonluk Alıcı mı, Sadık Müşteri mi?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">SEZONLUK ALICI</div><div class=\"tdesc\">Tek sefer satın aldı, 60 gün içinde geri dönmedi. İndirim odaklı, marka sadakati düşük. Bu segmenti LAL kaynağından ayıklamazsan CPA yükselir.</div></div><div class=\"cmp-col best\"><div class=\"slabel\">SADIK MÜŞTERİ</div><div class=\"tdesc\">60 gün içinde 2. satın alımı yaptı. Yeni LAL kaynağı için öncelikli segment — sezon öncesi normal alıcı profiline en yakın grup.</div></div></div>",
+      "pill": "60 günlük pencere ile sezonluk alıcıyı sadık müşteriden ayır"
     },
     {
       "kind": "dark",
-      "num_label": "Kural 03",
-      "icon": "💰",
-      "title": "Fiyat Değişiminde Otomatik Tepki",
-      "body": "Fiyat %15'ten fazla değişirse feed rule ürünü otomatik yeniden kategorize eder. İndirimli ürünler \"sale\" etiketine, normale dönenler ana kataloğa geri taşınır. Böylece ROAS hesaplaması hiçbir zaman eski fiyatla çarpıtılmaz.",
+      "num_label": "Sinyal 03",
+      "icon": "🎯",
+      "title": "Lookalike Kaynağını Temizle",
+      "body": "Tatil döneminde oluşan Purchase LAL kaynağı 'indirim avcısı' sinyali taşır. Bunu Ocak'ta aynen kullanmaya devam etmek CPA'yı yükseltir. Kaynağı son 60 günün Purchase event'ine daraltarak yenile, sezon öncesi normal alıcı profiline dön.",
       "is_checklist": false,
-      "pill": "Fiyat değişince kategori otomatik güncellenir"
+      "pill": "LAL kaynağını son 60 güne daralt, sezon çarpıtmasını temizle"
     },
     {
       "kind": "light",
-      "num_label": "Kural 04",
-      "icon": "🏷️",
-      "title": "Custom Label ile Segmentasyon",
-      "body": "custom_label_0: Kâr marjı yüksek ürünler\ncustom_label_1: Sezonluk/kampanya ürünleri\ncustom_label_2: Düşük stok uyarısı (10 adet altı)\ncustom_label_3: Yeni eklenen ürünler (son 30 gün)",
-      "is_checklist": true,
-      "pill": "5 custom label = 5 farklı bütçe stratejisi"
+      "num_label": "Sinyal 04",
+      "icon": "💰",
+      "title": "Teklif Stratejisini Değiştir",
+      "body": "Sezon boyunca Highest Volume ile hacim topladıysan, Ocak'ta Cost Cap'e geç. Hedef CPA'yı sezon öncesi ortalamanın %10 üzerine sabitle — algoritma yeni normale yumuşak geçsin, ani ROAS düşüşü yaşanmasın.",
+      "is_checklist": false,
+      "pill": "Highest Volume'den Cost Cap'e geçiş, hedef CPA +%10 tolerans"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05",
-      "icon": "🚨",
-      "title": "En Büyük Hata: Statik Katalog",
-      "body": "Feed rule kurmadan DPA çalıştırmak, stokta olmayan ürünü göstermeye devam ettirir. Bu hem kullanıcı deneyimini hem Meta'nın algoritma güvenini kırar. Kural yoksa harcanan her bütçe, yanlış ürüne gidiyor olabilir.",
+      "num_label": "Sinyal 05",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Ani Bütçe Kesintisi",
+      "body": "Sezon bitince bütçeyi tek seferde %50+ kesmek öğrenme evresini sıfırlar. Bunun yerine haftalık max %20 kademeli azaltma uygula. Ayrıca satın alımdan 21-45 gün sonrasını win-back penceresi olarak ayır — ikinci satın alma oranını bu pencerede artırabilirsin.",
       "is_checklist": false,
-      "pill": "Statik katalog = kontrolsüz bütçe kaybı"
+      "pill": "Haftalık max %20 azaltma, 21-45 gün win-back penceresini kaçırma"
     },
     {
       "kind": "cta",
-      "label": "HARCAMAYI KORU",
-      "title": "Kataloğun Otomatik\nÇalışsın, Sen\n**Büyümeye** Odaklan."
+      "label": "KAPANIŞ",
+      "title": "Sezon Bitti, Strateji Bitmedi.\n**Veriyi Yeniden Oku.**"
     }
   ],
-  "caption": "Stokta olmayan ürünün reklamı hâlâ yayında mı? Bu tek hata, bütçeni fark ettirmeden eritiyor. 👇\n\nÇoğu e-ticaret sahibi kataloğunu elle takip etmeye çalışıyor ama 100+ üründe bu imkansız.\nÇözüm Feed Rules'ta — carousel'de adım adım anlattım. 👆\n\n─────────────────────\n📦 Feed Rule nedir, neden şart\n⚙️ IF-THEN mantığı nasıl kurulur\n💰 Fiyat değişiminde otomatik tepki\n🏷️ Custom label ile 4 segmentasyon kuralı\n🚨 En büyük hata: statik katalog\n─────────────────────\n\nEn büyük hata: Feed rule kurmadan DPA çalıştırmak. Stokta olmayan ürün gösterilmeye devam eder, hem müşteri güveni hem algoritma güveni kırılır.\n\nKataloğunu bir kere doğru kur, bütçeni her gün elle kontrol etmekten kurtul.\n\n💾 Kaydet — yeni katalog kurarken referans al\n💬 Kataloğunda şu an kaç custom label kullanıyorsun? Yorumda söyle!\n\n#feedrules #catalogads #dynamicproductads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Kasım-Aralık'ta topladığın her veri, Ocak'ta seni yanıltabilir. Çoğu marka sezon bitince aynı kitleye, aynı teklifle devam ediyor — ve CPA'nın neden fırladığını anlamıyor. 👇\n\nSezonluk indirim avcısı ile sadık müşteri aynı kitle değil. Algoritman bu farkı sen söylemezsen anlamaz.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n📉 CPM düşüşünü doğru okuma\n🔍 Sezonluk alıcı vs sadık müşteri ayrımı\n🎯 Lookalike kaynağını 60 güne daraltma\n💰 Highest Volume'den Cost Cap'e geçiş\n⚠️ Ani bütçe kesintisinin öğrenme evresine zararı\n─────────────────────\n\nEn büyük hata: Bütçeyi tek seferde %50+ kesmek. Bunun yerine haftalık max %20 kademeli azalt.\n\nSezon bitti diye strateji bitmiyor — veriyi yeniden okumak gerekiyor.\n\n💾 Kaydet — Ocak ayı kampanya revizyonu yaparken aç.\n💬 Sen sezon sonrası bütçeni ne zaman ve nasıl kesiyorsun? Yorumda söyle!\n\n#postholiday #audienceshift #costcap\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

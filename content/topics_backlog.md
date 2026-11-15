@@ -7,7 +7,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme
-- Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:
