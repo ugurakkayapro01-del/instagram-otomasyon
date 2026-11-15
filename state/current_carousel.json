@@ -1,65 +1,65 @@
 {
-  "topic": "Demografik Kırılım (Age & Gender Breakdown) Analizi — Gizli CPA Farklarını Tespit Etme ve Bütçe Yeniden Dağıtımı",
+  "topic": "Meta Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "DEMOGRAFİK ANALİZ",
-      "title": "Yaş Grubun\nCPA'nı Gizliyor\n**Fark Ettin mi?**",
-      "subtitle": "Ortalama CPA seni kandırır. Gerçek fark, kimsenin bakmadığı demografik kırılımda saklı."
+      "tag": "CATALOG OTOMASYONU",
+      "title": "Stokta Yok Ama\nReklamı Hâlâ\n**Yayında** mı?",
+      "subtitle": "Feed Rules kurulmadan çalışan her katalog, sessizce bütçe yakıyor."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "📊",
-      "title": "Ortalama Seni Kandırır",
-      "body": "Kampanyanın genel CPA'sına güvenmek büyük hata. Görünen CPA 150 TL olabilir ama 18-24 yaş grubu 280 TL, 35-44 yaş grubu ise 95 TL harcıyor olabilir. Ads Manager'da \"Breakdown > By Delivery > Age, Gender\" raporunu haftalık kontrol etmek zorunlu.",
+      "num_label": "Kural 01",
+      "icon": "📦",
+      "title": "Feed Rule Nedir, Neden Gerekli?",
+      "body": "Feed Rule, kataloğundaki ürünleri manuel değil otomatik filtreleyen bir mantık katmanıdır. Stok 0 olan, fiyatı değişen veya kârsız ürünü reklamdan anında çıkarır. 500+ SKU'lu mağazada elle takip imkansızdır; feed rule burada zorunlu hale gelir.",
       "is_checklist": false,
-      "pill": "Her kampanyada haftada en az 1 kez demografik kırılım raporu çıkar"
+      "pill": "Feed Rule = otomatik ürün filtreleme motoru"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🏆",
-      "title": "CPA'ya Göre Segment Sıralaması",
-      "inner_html": "<div class=\"tier-row best\"><div class=\"tier-rank\">01</div><div class=\"tdesc\">35-44 Kadın — CPA 85 TL</div></div><div class=\"tier-row high\"><div class=\"tier-rank\">02</div><div class=\"tdesc\">25-34 Kadın — CPA 110 TL</div></div><div class=\"tier-row med\"><div class=\"tier-rank\">03</div><div class=\"tdesc\">35-44 Erkek — CPA 145 TL</div></div><div class=\"tier-row danger\"><div class=\"tier-rank\">04</div><div class=\"tdesc\">18-24 Erkek — CPA 310 TL</div></div>",
-      "pill": "En kötü performans gösteren segmenti daralt veya exclusion'a al"
+      "num_label": "Mantık 02",
+      "icon": "⚙️",
+      "title": "IF-THEN Mantığı Nasıl Çalışır?",
+      "inner_html": "<div class=\"formula-box\">EĞER availability = \"out of stock\"<br>İSE custom_label_4 = \"hide\"<br>VE reklam setinden otomatik hariç tut</div>",
+      "pill": "Her kural tek koşul + tek aksiyon içerir"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "🎯",
-      "title": "Fark Neden Oluşuyor?",
-      "body": "Lowest cost teklif stratejisi algoritmanın \"ucuz gösterim\" bulduğu segmente kaymasına neden olur — bu her zaman en kârlı segment değildir. Creative mesajın 35-44 yaş kadına hitap ediyorsa ama bütçe otomatik 18-24 erkeğe kayıyorsa, CPA farkı 3 katına çıkar.",
+      "num_label": "Kural 03",
+      "icon": "💰",
+      "title": "Fiyat Değişiminde Otomatik Tepki",
+      "body": "Fiyat %15'ten fazla değişirse feed rule ürünü otomatik yeniden kategorize eder. İndirimli ürünler \"sale\" etiketine, normale dönenler ana kataloğa geri taşınır. Böylece ROAS hesaplaması hiçbir zaman eski fiyatla çarpıtılmaz.",
       "is_checklist": false,
-      "pill": "Creative mesajınla en çok uyuşan segmenti manuel önceliklendir"
+      "pill": "Fiyat değişince kategori otomatik güncellenir"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "✅",
-      "title": "Yeniden Dağıtım Checklist'i",
-      "body": "Breakdown raporunu en az 7 günlük veriyle çıkar\nCPA'sı ortalamanın %50 üzerinde olan segmenti işaretle\nO segmenti ayrı reklam seti olarak izole et veya exclusion'a al\nPerformanslı segmente +%20 bütçe kaydır, öğrenme evresini sıfırlama\n3 gün sonra tekrar kontrol et, kalıcıysa yapıyı sabitle",
+      "num_label": "Kural 04",
+      "icon": "🏷️",
+      "title": "Custom Label ile Segmentasyon",
+      "body": "custom_label_0: Kâr marjı yüksek ürünler\ncustom_label_1: Sezonluk/kampanya ürünleri\ncustom_label_2: Düşük stok uyarısı (10 adet altı)\ncustom_label_3: Yeni eklenen ürünler (son 30 gün)",
       "is_checklist": true,
-      "pill": "Haftalık rutin: breakdown kontrolü olmadan optimizasyon eksik kalır"
+      "pill": "5 custom label = 5 farklı bütçe stratejisi"
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata",
-      "body": "Advantage+ kampanyalarda \"otomatik optimize ediyor\" diyip demografik kırılımı hiç kontrol etmemek en pahalı hatalardan biri. Algoritma dönüşüm hacmini maksimize eder, kârlılığı değil. Düşük CPA'lı ama düşük LTV'li segmente kayan bütçe, kısa vadede iyi görünüp uzun vadede kârı eritir.",
+      "num_label": "Uyarı 05",
+      "icon": "🚨",
+      "title": "En Büyük Hata: Statik Katalog",
+      "body": "Feed rule kurmadan DPA çalıştırmak, stokta olmayan ürünü göstermeye devam ettirir. Bu hem kullanıcı deneyimini hem Meta'nın algoritma güvenini kırar. Kural yoksa harcanan her bütçe, yanlış ürüne gidiyor olabilir.",
       "is_checklist": false,
-      "pill": "Düşük CPA her zaman en kârlı segment demek değildir"
+      "pill": "Statik katalog = kontrolsüz bütçe kaybı"
     },
     {
       "kind": "cta",
-      "label": "Kapanış",
-      "title": "Ortalamaya Değil,\nKırılıma **Güven**"
+      "label": "HARCAMAYI KORU",
+      "title": "Kataloğun Otomatik\nÇalışsın, Sen\n**Büyümeye** Odaklan."
     }
   ],
-  "caption": "Kampanyanın CPA'sı iyi görünüyor ama bazı yaş grupları seni sessizce batırıyor olabilir. 👇\n\nOrtalama rakam, en pahalı ve en verimli segmenti aynı anda gizler.\nGerçek fark demografik kırılımda saklı — bu carousel'de nasıl bulacağını anlatıyorum 👆\n\n─────────────────────\n📊 Ortalama CPA neden yanıltıcı\n🏆 CPA'ya göre segment sıralaması (01-04)\n🎯 Algoritma neden yanlış segmente kayar\n✅ Bütçe yeniden dağıtım checklist'i\n⚠️ Advantage+ kampanyalarda yapılan en pahalı hata\n─────────────────────\n\nEn büyük hata: Düşük CPA'yı otomatik olarak \"en kârlı segment\" sanmak. LTV'yi görmeden karar veren her optimizasyon, uzun vadede kârı eritir.\n\nHaftalık breakdown raporu, kampanya optimizasyonunun atlanamayan ilk adımıdır.\n\n💾 Kaydet — bütçe optimizasyonu yapmadan önce aç\n💬 Son breakdown raporuna ne zaman baktın? Yorumda söyle!\n\n#demografikanaliz #cpaoptimizasyonu #audiencebreakdown\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Stokta olmayan ürünün reklamı hâlâ yayında mı? Bu tek hata, bütçeni fark ettirmeden eritiyor. 👇\n\nÇoğu e-ticaret sahibi kataloğunu elle takip etmeye çalışıyor ama 100+ üründe bu imkansız.\nÇözüm Feed Rules'ta — carousel'de adım adım anlattım. 👆\n\n─────────────────────\n📦 Feed Rule nedir, neden şart\n⚙️ IF-THEN mantığı nasıl kurulur\n💰 Fiyat değişiminde otomatik tepki\n🏷️ Custom label ile 4 segmentasyon kuralı\n🚨 En büyük hata: statik katalog\n─────────────────────\n\nEn büyük hata: Feed rule kurmadan DPA çalıştırmak. Stokta olmayan ürün gösterilmeye devam eder, hem müşteri güveni hem algoritma güveni kırılır.\n\nKataloğunu bir kere doğru kur, bütçeni her gün elle kontrol etmekten kurtul.\n\n💾 Kaydet — yeni katalog kurarken referans al\n💬 Kataloğunda şu an kaç custom label kullanıyorsun? Yorumda söyle!\n\n#feedrules #catalogads #dynamicproductads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
