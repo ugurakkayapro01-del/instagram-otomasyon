@@ -1,65 +1,69 @@
 {
-  "topic": "Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "topic": "Store Visits (Mağaza Ziyareti) Optimizasyonu — Fiziksel Mağazası Olan E-ticaretler İçin Online-Offline Köprü Kampanyası",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Meta Brand Lift Test — Reklamın Marka Bilinirliğine ve Hatırlanırlığına Etkisini Ölçme Metodolojisi",
+    "Conversion Domain Doğrulama ve Deep Link Bütünlüğü — iOS Sonrası Pixel-Domain Eşleşme Sorunlarını Çözme",
+    "Reklam Hesabı Kalite Skoru (Account Quality) — İhlal Öncesi Erken Uyarı Sinyallerini Takip Etme"
+  ],
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "SEZON SONRASI STRATEJİ",
-      "title": "Tatil Sezonu Bitti.\nKitlen **Hâlâ Aynı** Kitle mi?",
-      "subtitle": "Kasım-Aralık'ta topladığın veri, Ocak'ta seni yanıltabilir. İşte neden."
+      "tag": "OMNICHANNEL STRATEJİ",
+      "title": "Online Reklamın\n**Fiziksel Mağazana**\nMüşteri Getirdiğini\nÖlçebiliyor musun?",
+      "subtitle": "Çoğu e-ticaret sahibi bunu hiç denemiyor. Oysa doğru kurulumla her ziyaretin gerçek maliyetini görebilirsin."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01",
-      "icon": "📉",
-      "title": "CPM Düşüşünü Yanlış Okuma",
-      "body": "Tatil sezonu bitince CPM genelde %25-40 arası düşer — rekabet azalır. Ama bu düşüşü 'reklamım iyileşti' sanıp bütçeyi aniden artırma. Düşen CPM, azalan talebin de işareti olabilir. Önce dönüşüm oranına bak, sonra bütçeye dokun.",
+      "num_label": "Adım 01",
+      "icon": "📍",
+      "title": "Store Visits Hedefi Nedir?",
+      "body": "Meta'nın 'Store Traffic' kampanya hedefi, reklamını gören kişinin fiziksel mağazana gidip gitmediğini GPS verisiyle tahmin eder. Online bütçeni offline satışla eşleştirmenin tek doğrudan yoludur. Her lokasyon için ayrı reklam seti kurman gerekir.",
       "is_checklist": false,
-      "pill": "CPM düşüşü = fırsat değil, önce dönüşüm oranını kontrol et"
+      "pill": "Her mağaza lokasyonu ayrı reklam seti olmalı"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02",
-      "icon": "🔍",
-      "title": "Sezonluk Alıcı mı, Sadık Müşteri mi?",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">SEZONLUK ALICI</div><div class=\"tdesc\">Tek sefer satın aldı, 60 gün içinde geri dönmedi. İndirim odaklı, marka sadakati düşük. Bu segmenti LAL kaynağından ayıklamazsan CPA yükselir.</div></div><div class=\"cmp-col best\"><div class=\"slabel\">SADIK MÜŞTERİ</div><div class=\"tdesc\">60 gün içinde 2. satın alımı yaptı. Yeni LAL kaynağı için öncelikli segment — sezon öncesi normal alıcı profiline en yakın grup.</div></div></div>",
-      "pill": "60 günlük pencere ile sezonluk alıcıyı sadık müşteriden ayır"
+      "num_label": "Formül",
+      "icon": "🧮",
+      "title": "Ziyaret Başına Maliyetini Hesapla",
+      "inner_html": "<div class=\"formula-box\">Toplam Reklam Harcaması ÷ Tahmini Mağaza Ziyareti = CPV</div><div class=\"formula-box\">Örnek: 5.000 TL ÷ 250 ziyaret = 20 TL</div>",
+      "pill": "CPV'yi ortalama sepet tutarınla karşılaştır"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 03",
+      "num_label": "Adım 02",
       "icon": "🎯",
-      "title": "Lookalike Kaynağını Temizle",
-      "body": "Tatil döneminde oluşan Purchase LAL kaynağı 'indirim avcısı' sinyali taşır. Bunu Ocak'ta aynen kullanmaya devam etmek CPA'yı yükseltir. Kaynağı son 60 günün Purchase event'ine daraltarak yenile, sezon öncesi normal alıcı profiline dön.",
+      "title": "Doğru Yarıçapı Seçmek",
+      "body": "Mağazana 1-3 km yarıçap yaya/kısa mesafe müşterisini hedefler, dönüşüm oranı yüksek ama kitle küçüktür. 5-10 km araçla gelen müşteriyi kapsar, kitle büyür ama alaka düşer. Başlangıçta 3 km ile test et, CPV'ye göre genişlet.",
       "is_checklist": false,
-      "pill": "LAL kaynağını son 60 güne daralt, sezon çarpıtmasını temizle"
+      "pill": "3 km ile başla, sonucuna göre daralt veya genişlet"
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 04",
-      "icon": "💰",
-      "title": "Teklif Stratejisini Değiştir",
-      "body": "Sezon boyunca Highest Volume ile hacim topladıysan, Ocak'ta Cost Cap'e geç. Hedef CPA'yı sezon öncesi ortalamanın %10 üzerine sabitle — algoritma yeni normale yumuşak geçsin, ani ROAS düşüşü yaşanmasın.",
+      "num_label": "Adım 03",
+      "icon": "⏱️",
+      "title": "Ziyaret Ölçüm Penceresi",
+      "body": "Meta, reklamı gördükten sonra 1, 7 veya 30 gün içindeki mağaza ziyaretini sayar. Kısa pencere anlık kampanyalar için, uzun pencere marka bilinirliği kampanyaları için uygundur. Pencereyi kampanya amacına göre seç, karıştırma.",
       "is_checklist": false,
-      "pill": "Highest Volume'den Cost Cap'e geçiş, hedef CPA +%10 tolerans"
+      "pill": "Flaş kampanyada 7 gün, marka kampanyasında 30 gün kullan"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05",
+      "num_label": "Uyarı",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Ani Bütçe Kesintisi",
-      "body": "Sezon bitince bütçeyi tek seferde %50+ kesmek öğrenme evresini sıfırlar. Bunun yerine haftalık max %20 kademeli azaltma uygula. Ayrıca satın alımdan 21-45 gün sonrasını win-back penceresi olarak ayır — ikinci satın alma oranını bu pencerede artırabilirsin.",
+      "title": "En Büyük Hata: Tüm Şubeleri Tek Sette Hedeflemek",
+      "body": "Tüm mağazalarını tek reklam setinde birleştirirsen Meta hangi şubenin ziyaret getirdiğini ayıramaz, optimizasyon kör çalışır. Her lokasyon için ayrı reklam seti, ayrı adres pini ve ayrı bütçe tanımla. 10'dan az aktif lokasyonu olan hesaplarda bu hedef zayıf veri üretir.",
       "is_checklist": false,
-      "pill": "Haftalık max %20 azaltma, 21-45 gün win-back penceresini kaçırma"
+      "pill": "Her şube = ayrı reklam seti, asla birleştirme"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Sezon Bitti, Strateji Bitmedi.\n**Veriyi Yeniden Oku.**"
+      "label": "SONUÇ",
+      "title": "Online Bütçen,\n**Offline Satışına** Köprü Olsun"
     }
   ],
-  "caption": "Kasım-Aralık'ta topladığın her veri, Ocak'ta seni yanıltabilir. Çoğu marka sezon bitince aynı kitleye, aynı teklifle devam ediyor — ve CPA'nın neden fırladığını anlamıyor. 👇\n\nSezonluk indirim avcısı ile sadık müşteri aynı kitle değil. Algoritman bu farkı sen söylemezsen anlamaz.\nÇözüm bu carousel'de. 👆\n\n─────────────────────\n📉 CPM düşüşünü doğru okuma\n🔍 Sezonluk alıcı vs sadık müşteri ayrımı\n🎯 Lookalike kaynağını 60 güne daraltma\n💰 Highest Volume'den Cost Cap'e geçiş\n⚠️ Ani bütçe kesintisinin öğrenme evresine zararı\n─────────────────────\n\nEn büyük hata: Bütçeyi tek seferde %50+ kesmek. Bunun yerine haftalık max %20 kademeli azalt.\n\nSezon bitti diye strateji bitmiyor — veriyi yeniden okumak gerekiyor.\n\n💾 Kaydet — Ocak ayı kampanya revizyonu yaparken aç.\n💬 Sen sezon sonrası bütçeni ne zaman ve nasıl kesiyorsun? Yorumda söyle!\n\n#postholiday #audienceshift #costcap\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Online reklamına her ay binlerce lira harcıyorsun ama fiziksel mağazana kaç kişi geldiğini hiç ölçmüyorsun, değil mi? 👇\n\nÇoğu e-ticaret sahibi bunu bilmiyor, bilse bile denemiyor. Oysa Meta'nın Store Traffic hedefi online bütçeni offline satışla doğrudan eşleştirebiliyor — nasıl olduğunu bu carousel'de anlattım 👆\n\n─────────────────────\n📍 Store Visits hedefi gerçekte nasıl çalışır\n🧮 Ziyaret başına maliyetini (CPV) hesaplama formülü\n🎯 Doğru hedefleme yarıçapı nasıl seçilir (1-3 km vs 5-10 km)\n⏱️ Ziyaret ölçüm penceresi: 1/7/30 gün ne zaman kullanılır\n⚠️ Şubeleri tek reklam setinde birleştirme hatası\n─────────────────────\n\nEn büyük hata: Tüm mağaza lokasyonlarını tek reklam setinde hedeflemek. Meta hangi şubenin ziyaret getirdiğini ayıramaz, optimizasyon kör çalışır.\n\nOmnichannel çalışıyorsan bu veri olmadan bütçeni doğru dağıtamazsın. Doğru kurulum, doğru ölçüm demek.\n\n💾 Kaydet — yeni şube açarken veya mevcut mağaza kampanyanı kurarken tekrar bak\n💬 Fiziksel mağazan var mı, online reklamla mağaza ziyareti hiç denedin mi? Yorumda söyle!\n\n#storevisits #omnichannel #localads\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
