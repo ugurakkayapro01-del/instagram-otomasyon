@@ -83,6 +83,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 76 | Meta Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme | 7 | Otomatik üretildi (2026-11-15) |
 | 77 | Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi | 7 | Otomatik üretildi (2026-11-15) |
 | 78 | Store Visits (Mağaza Ziyareti) Optimizasyonu — Fiziksel Mağazası Olan E-ticaretler İçin Online-Offline Köprü Kampanyası | 7 | Otomatik üretildi (2026-11-17) |
+| 79 | Meta Brand Lift Test — Reklamın Marka Bilinirliğine ve Hatırlanırlığına Etkisini Ölçme Metodolojisi | 7 | Otomatik üretildi (2026-11-18) |
 
 ---
 

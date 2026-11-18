@@ -7,7 +7,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme
-- Meta Brand Lift Test — Reklamın Marka Bilinirliğine ve Hatırlanırlığına Etkisini Ölçme Metodolojisi
 - Conversion Domain Doğrulama ve Deep Link Bütünlüğü — iOS Sonrası Pixel-Domain Eşleşme Sorunlarını Çözme
 - Reklam Hesabı Kalite Skoru (Account Quality) — İhlal Öncesi Erken Uyarı Sinyallerini Takip Etme
 
