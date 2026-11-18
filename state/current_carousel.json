@@ -1,65 +1,65 @@
 {
-  "topic": "Meta Brand Lift Test — Reklamın Marka Bilinirliğine ve Hatırlanırlığına Etkisini Ölçme Metodolojisi",
+  "topic": "Conversion Domain Doğrulama ve Deep Link Bütünlüğü — iOS Sonrası Pixel-Domain Eşleşme Sorunlarını Çözme",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "formula",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "MARKA ÖLÇÜMLEME · BRAND LIFT",
-      "title": "Reklamın Satmıyor\nAma **Marka Bilinci**\nYaratıyor mu?",
-      "subtitle": "Çoğu marka bunu hiç ölçmüyor — sadece tahmin ediyor."
+      "tag": "TEKNİK ALTYAPI · PIXEL",
+      "title": "Pixel Doğru Kurulu.\n**Domain Yanlış.**\nSonuç: Veri Kaybı.",
+      "subtitle": "iOS14+ sonrası domain doğrulaması yapılmazsa, en iyi pixel kurulumu bile işe yaramaz."
     },
     {
       "kind": "light",
-      "num_label": "Bilgi 01 / 07",
-      "icon": "🧪",
-      "title": "Brand Lift Test Nedir?",
-      "body": "Meta, reklamını gören bir grupla hiç görmeyen bir kontrol (holdout) grubunu karşılaştırır. İkisine de aynı anket sorusu gösterilir. Aradaki fark tıklama değil, kullanıcının zihnindeki gerçek değişimdir.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🌐",
+      "title": "Conversion Domain Nedir?",
+      "body": "Meta, iOS14.5 sonrası her kampanyayı tek bir domain'e bağlar. Business Manager > Brand Safety > Domains kısmında doğrulanmamış bir domain'e giden trafik, Aggregated Event Measurement (AEM) dışında kalabilir. Doğrulama iki yöntemle yapılır: DNS TXT kaydı veya HTML dosya yükleme. İkisini birden yapmak en güvenli yoldur.",
       "is_checklist": false,
-      "pill": "Test grubu vs kontrol grubu karşılaştırması"
+      "pill": "Domain doğrulamadan AEM event önceliklendirmesi çalışmaz."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Formül 02 / 07",
-      "icon": "📐",
-      "title": "Lift Nasıl Hesaplanır?",
-      "inner_html": "<div class=\"formula-box\"><div class=\"flabel\">AD RECALL LIFT FORMÜLÜ</div><div class=\"fval\">%38 (Test) − %22 (Kontrol)<br>= +16 Puan Lift</div></div><div class=\"formula-box\"><div class=\"flabel\">ANLAMLILIK EŞİĞİ</div><div class=\"fval\">Min. 2.000.000 Gösterim<br>+ %95 Güven Aralığı</div></div>",
-      "pill": "Pozitif fark = reklamının gerçek etkisi"
+      "num_label": "Sinyal 02 / 07",
+      "icon": "⚖️",
+      "title": "Doğru vs Yanlış Yapılandırma",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">YANLIŞ</div><div class=\"sval\">Çoklu subdomain, www/non-www karışık, fbclid redirect zincirinde kayboluyor</div></div><div class=\"cmp-col high\"><div class=\"slabel\">DOĞRU</div><div class=\"sval\">Tek doğrulanmış domain, maksimum 1 redirect, fbclid korunuyor</div></div></div>",
+      "pill": "Tek subdomain + doğrulanmış domain = tam veri akışı."
     },
     {
       "kind": "dark",
       "num_label": "İpucu 03 / 07",
-      "icon": "📊",
-      "title": "Hangi Metrikler Ölçülür?",
-      "body": "Ad Recall Lift\nAwareness Lift\nMessage Association\nFavorability\nPurchase Intent",
-      "is_checklist": true,
-      "pill": "5 metrik, 5 farklı zihinsel aşama"
+      "icon": "📲",
+      "title": "Deep Link Bütünlüğü",
+      "body": "Uygulamadan web'e geçişte Universal Links (iOS) ve App Links (Android) doğru yapılandırılmazsa, app trafiği yanlışlıkla web pixel'ine düşer. Bu durumda event_id deduplication bozulur, aynı dönüşüm iki kez sayılabilir ya da hiç sayılmayabilir. Meta Events Manager > Test Events aracını hem app hem web tarafında ayrı ayrı çalıştır.",
+      "is_checklist": false,
+      "pill": "App ve web event'leri ayrı test edilmeden yayına alınmaz."
     },
     {
       "kind": "light",
-      "num_label": "Adım 04 / 07",
-      "icon": "🎯",
-      "title": "Minimum Örneklem Eşiği",
-      "body": "İstatistiksel anlamlılık için en az 2 milyon gösterim ve 2-4 haftalık test süresi gerekir. Daha düşük hacimde sonuçlar güven aralığı dışına çıkar ve yanıltıcı yorumlara yol açar.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "🔗",
+      "title": "Redirect Zinciri Tehlikesi",
+      "body": "Her redirect, fbclid parametresinin kaybolma riskini artırır. 2'den fazla hop içeren yönlendirme zincirlerinde eşleşme oranı belirgin şekilde düşer. Link kısaltıcılar ve üçüncü parti analytics yönlendirmeleri bu zinciri uzatır; reklam linkini doğrudan hedef sayfaya yönlendir.",
       "is_checklist": false,
-      "pill": "Küçük bütçede Brand Lift sonucu güvenilmez"
+      "pill": "0 redirect = en yüksek fbclid eşleşme oranı."
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Satışla Karıştırmak",
-      "body": "Brand Lift dönüşüm değil, algı ölçer. Düşük ROAS'lı bir kampanya yüksek Ad Recall Lift verebilir — bu başarısızlık değil, kampananın farklı bir amaca hizmet ettiği anlamına gelir.",
-      "is_checklist": false,
-      "pill": "Farklı KPI, farklı başarı tanımı"
+      "num_label": "Adım 05 / 07",
+      "icon": "✅",
+      "title": "Yayından Önce Kontrol Listesi",
+      "body": "Domain Business Manager'da doğrulanmış mı?\nTüm reklam linkleri aynı subdomain'e mi gidiyor?\nwww/non-www yönlendirmesi tek yönde sabit mi?\nUniversal/App Links test edildi mi?\nTest Events'te hem app hem web event'i görünüyor mu?",
+      "is_checklist": true,
+      "pill": "Bu 5 maddeden biri eksikse veri kaybı garanti."
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Marka Bilincini **Ölçmeden** Büyütemezsin"
+      "label": "SIRADAKİ ADIM",
+      "title": "Domain Doğrulaman Eksikse, En İyi Kreatif Bile Seni Kurtarmaz."
     }
   ],
-  "caption": "Reklamın satış getirmiyor diye başarısız mı sanıyorsun? Belki de marka bilincini ölçmüyorsun, sadece tahmin ediyorsun. 👇\n\nÇoğu e-ticaret sahibi ROAS'a bakıp kampanyayı kapatıyor ama o kampanya aslında markayı akılda tutuyor olabilir.\nMeta'nın Brand Lift Test metodolojisi bu görünmez etkiyi ölçüyor — detaylar carousel'de. 👆\n\n─────────────────────\n🧪 Brand Lift Test gerçekte nasıl çalışır\n📐 Lift hesaplama formülü ve örnek sayılar\n📊 Ölçülen 5 temel marka metriği\n🎯 İstatistiksel anlamlılık için minimum gösterim eşiği\n⚠️ Brand Lift'i satışla karıştırmanın bedeli\n─────────────────────\n\nEn büyük hata: Düşük ROAS'lı bir kampanyayı otomatik olarak \"başarısız\" ilan etmek. O kampanya belki de markanı akılda tutuyor, sadece farklı bir KPI'da başarılı.\n\nMarka bilincini ölçmeden büyütmeye çalışmak, karanlıkta hedef tahtasına nişan almaktır.\n\n💾 Kaydet — bir sonraki kampanya raporunu yorumlarken aç\n💬 Hiç Brand Lift Test denedin mi, yoksa sadece ROAS'a mı bakıyorsun? Yorumda söyle!\n\n#brandlift #adrecall #markabilinirligi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Pixel'in kurulu diye veri sağlıklı sanıyorsun ama domain doğrulanmamışsa her şey boşa gidiyor. 👇\n\nÇoğu marka bu hatayı hiç fark etmeden aylarca yaşıyor — sayılar tutmuyor ama sebep hep başka yerde aranıyor.\nGerçek sebep bu carousel'de. 👆\n\n─────────────────────\n🌐 Conversion Domain nedir, nasıl doğrulanır\n⚖️ Doğru vs yanlış domain yapılandırması\n📲 Deep link bütünlüğü ve Universal/App Links\n🔗 Redirect zincirinin fbclid'e verdiği zarar\n✅ Yayından önce 5 maddelik kontrol listesi\n─────────────────────\n\nEn büyük hata: Domain doğrulamayı 'teknik detay' sanıp atlamak. Oysa bu, AEM'in event önceliklendirmesini doğrudan etkiliyor.\n\nAltyapı sağlamsa optimizasyon da sağlam olur. Önce temeli kontrol et.\n\n💾 Kaydet — yeni domain/subdomain eklerken bu listeye bak\n💬 Domain doğrulamanı en son ne zaman kontrol ettin? Yorumda söyle!\n\n#conversiondomain #deeplink #pixeldogrulama\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

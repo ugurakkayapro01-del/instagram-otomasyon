@@ -84,6 +84,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 77 | Tatil Sonrası Davranış Değişikliği (Post-Holiday Audience Shift) — Hedefleme ve Teklif Stratejisi Güncellemesi | 7 | Otomatik üretildi (2026-11-15) |
 | 78 | Store Visits (Mağaza Ziyareti) Optimizasyonu — Fiziksel Mağazası Olan E-ticaretler İçin Online-Offline Köprü Kampanyası | 7 | Otomatik üretildi (2026-11-17) |
 | 79 | Meta Brand Lift Test — Reklamın Marka Bilinirliğine ve Hatırlanırlığına Etkisini Ölçme Metodolojisi | 7 | Otomatik üretildi (2026-11-18) |
+| 80 | Conversion Domain Doğrulama ve Deep Link Bütünlüğü — iOS Sonrası Pixel-Domain Eşleşme Sorunlarını Çözme | 7 | Otomatik üretildi (2026-11-18) |
 
 ---
 
