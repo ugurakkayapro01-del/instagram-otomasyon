@@ -1,65 +1,69 @@
 {
-  "topic": "Reklam Hesabı Kalite Skoru (Account Quality) — İhlal Öncesi Erken Uyarı Sinyallerini Takip Etme",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "risk",
+  "topic": "Placement Asset Customization — Yerleşime Özel Kreatif Boyutlandırma ile CTR Kaybını Önleme",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli",
+    "Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi",
+    "Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi"
+  ],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "HESAP GÜVENLİĞİ · ACCOUNT QUALITY",
-      "title": "Hesabın Askıya\nAlınmadan Önce\n**Sinyal Veriyor**",
-      "subtitle": "Çoğu reklamveren hesabı kısıtlanana kadar bu paneli hiç açmıyor. Account Quality skorun şu an ne diyor?"
+      "tag": "KREATİF STRATEJİSİ",
+      "title": "Tek Görselle\nTüm Yerleşimlere\n**Reklam Verme Hatası**",
+      "subtitle": "Aynı kare görseli Feed'e de Stories'e de atıyorsan, CTR'ının yarısını kaybediyorsun."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01",
-      "icon": "📊",
-      "title": "Account Quality Paneli Neyi Gösterir?",
-      "body": "Business Manager içinde 'Account Quality' sekmesi, hesabının gerçek sağlık durumunu gösterir. Üç veri katmanı var: onaylanmış ihlaller, aktif kısıtlamalar ve geçmiş uyarı kayıtları. Bu panel haftada en az 1 kez kontrol edilmeli — ihlal birikimi genelde 2-3 hafta önceden burada görünür.",
+      "num_label": "Adım 01",
+      "icon": "📐",
+      "title": "Her Yerleşimin Kendi Oranı Var",
+      "body": "Meta, tek bir görseli otomatik kırpar (auto-crop) — bu kırpma genelde ürünü, yüzü veya metni keser.\nFeed: 4:5 (1080x1350)\nStories / Reels: 9:16 (1080x1920)\nSağ sütun: 1:1 (1080x1080)",
       "is_checklist": false,
-      "pill": "Haftalık Account Quality kontrolü rutine al"
+      "pill": "Tek format = otomatik kırpma = kaybolan dikkat"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02",
-      "icon": "🚦",
-      "title": "4 Hesap Durumu — Hangisindesin?",
-      "inner_html": "<div class=\"risk-row\"><div class=\"risk-dot\"></div><div class=\"trow\"><div class=\"tdesc\"><strong>Good Standing</strong> — Hesap tamamen temiz, kısıtlama yok</div></div><div class=\"thr-badge\">GÜVENLİ</div></div><div class=\"risk-row\"><div class=\"risk-dot warn\"></div><div class=\"trow\"><div class=\"tdesc\"><strong>At Risk</strong> — 1-2 ihlal kaydı, yakın izleme gerekir</div></div><div class=\"thr-badge warn\">İZLEMEDE</div></div><div class=\"risk-row\"><div class=\"risk-dot med\"></div><div class=\"trow\"><div class=\"tdesc\"><strong>Restricted</strong> — Harcama veya yayın limiti uygulanıyor</div></div><div class=\"thr-badge med\">KISITLI</div></div><div class=\"risk-row\"><div class=\"risk-dot danger\"></div><div class=\"trow\"><div class=\"tdesc\"><strong>Disabled</strong> — Hesap tamamen kapatıldı</div></div><div class=\"thr-badge danger\">KAPALI</div></div>",
-      "pill": "Durumunu öğrenmeden strateji kurma"
+      "num_label": "Kıyas 01",
+      "icon": "⚖️",
+      "title": "Aynı Görsel, İki Farklı Sonuç",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">TEK GÖRSEL (Auto-crop)</div><div class=\"fval danger\">Ürün kesik, CTR düşük</div></div><div class=\"cmp-col best\"><div class=\"flabel\">YERLEŞİME ÖZEL ASSET</div><div class=\"fval high\">Tam kadraj, CTR yüksek</div></div></div>",
+      "pill": "Asset customization açıkken CTR ortalama %18-35 artıyor"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 03",
-      "icon": "⚠️",
-      "title": "İhlaller Neden Birikir, Tek Seferde Olmaz",
-      "body": "Meta çoğu politika ihlalinde doğrudan kapatma yapmaz, 'strike' biriktirir. Reklam metninde yasaklı iddia, önce/sonra görseli veya yanıltıcı fiyat gibi tekrar eden ihlaller 30 gün içinde 3'ü geçtiğinde hesap otomatik incelemeye düşer. Tek seferlik hata risksizdir, örüntü tehlikelidir.",
+      "num_label": "Adım 02",
+      "icon": "🎬",
+      "title": "Stories/Reels İçin Güvenli Alan Kuralı",
+      "body": "Üstte ve altta ~250px'lik alan UI elemanları (profil, CTA butonu) tarafından kapanır.\nMetni ve logonu ekranın orta %60'lık bandına yerleştir.\nBu bantta kalan kreatifler %20'ye kadar daha fazla tıklama alıyor.",
       "is_checklist": false,
-      "pill": "30 günde 3 ihlal = otomatik inceleme eşiği"
+      "pill": "Güvenli alan dışına metin koyma, UI üstüne biner"
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 04",
-      "icon": "💳",
-      "title": "Ödeme ve Red Oranı Gizli Skor Oluşturur",
-      "body": "Reddedilen reklamların toplam reklama oranı %10'u geçtiğinde sistem hesabı 'yüksek riskli' kategoriye alır. Üst üste 2 başarısız ödeme denemesi de aynı etkiyi yaratır. İkisi birlikte görülürse manuel inceleme süresi normalin 3 katına çıkar.",
+      "num_label": "Adım 03",
+      "icon": "🖼️",
+      "title": "Ads Manager'da Asset Customization Açma",
+      "body": "Reklam seviyesinde 'Multiple Formats / Asset Customization' seçeneğini aktif et.\nHer yerleşim için ayrı görsel/video yükle, Meta otomatik eşleştirir.\nBaşlangıç için minimum 2 varyant yeterli: Feed için 4:5, Stories için 9:16.",
       "is_checklist": false,
-      "pill": "Red oranını %10 altında, ödeme yöntemini güncel tut"
+      "pill": "2 varyant, sıfır bütçe artışı ile CTR kazancı"
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05",
-      "icon": "🧠",
-      "title": "En Büyük Hata: Kısıtlama Gelince Yeni Hesap Açmak",
-      "body": "Kısıtlanan hesaptan kaçıp aynı ödeme yöntemi veya IP ile yeni Business Manager açmak, 'ilişkili hesap' tespiti tetikler ve ikinci hesap da otomatik işaretlenir. Doğru adım: itiraz formunu doldurmak ve Account Quality panelindeki nedeni düzeltmek.",
+      "num_label": "Uyarı",
+      "icon": "🚫",
+      "title": "En Büyük Hata: Metni Görselin İçine Gömmek",
+      "body": "Görselin içine gömülü metin, farklı oranlarda kırpılınca okunamaz hale gelir.\nMetni overlay katmanında tut, görsel dosyasından ayrı yönet.\nLogo ve CTA metnini her zaman orta bölgeye sabitle.",
       "is_checklist": false,
-      "pill": "Yeni hesap açmak çözüm değil, ek risk yaratır"
+      "pill": "Gömülü metin = her kırpmada okunabilirlik kaybı"
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Hesabını Kaybetmeden\nÖnce **Kontrol Et**"
+      "label": "KAYDET & UYGULA",
+      "title": "Tek Format, Yarım Performans.\nYerleşime Özel Tasarla."
     }
   ],
-  "caption": "Reklam hesabın kapanmadan önce sana haber veriyor. Sen bakmıyorsun. 👇\n\nÇoğu e-ticaret sahibi Account Quality panelini hayatında hiç açmamış.\nHesabın şu an hangi durumda, bu carousel'de gösteriyorum 👆\n\n─────────────────────\n📊 Account Quality paneli nasıl okunur\n🚦 4 hesap durumu: Good Standing → Disabled\n⚠️ 30 günde 3 ihlal = otomatik inceleme eşiği\n💳 %10 red oranı + ödeme hatası gizli risk skoru yaratıyor\n🧠 En büyük hata: kısıtlama sonrası yeni hesap açmak\n─────────────────────\n\nEn büyük hata: Kısıtlanan hesaptan kaçıp yeni hesap açmak. Bu, ilişkili hesap tespitini tetikler ve ikinci hesabı da işaretletir.\n\nHesabını kaybetmek, kurduğun onlarca kampanyayı sıfırdan başlatmak demek. Bu sinyalleri bilmek, onu önlemenin en ucuz yolu.\n\n💾 Kaydet — yeni kampanya kurmadan önce Account Quality panelini kontrol ederken aç\n💬 Hesabında şu an \"At Risk\" ya da \"Restricted\" uyarısı gördün mü? Yorumda söyle!\n\n#accountquality #businessmanager #metaadspolicy\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Aynı görseli Feed'e, Stories'e, Reels'e aynı anda atıyorsan CTR'ının bir kısmını çöpe atıyorsun demektir. 👇\n\nMeta senin yerine kırpma yapıyor — ve genelde ürünü, yüzü ya da mesajı tam ortadan kesiyor.\nBu küçük ayar farkı, aynı bütçeyle %18-35 daha fazla tıklama demek. 👆\n\n─────────────────────\n📐 Her yerleşimin kendi en-boy oranı var\n⚖️ Tek görsel vs yerleşime özel asset kıyası\n🎬 Stories/Reels güvenli alan kuralı\n🖼️ Ads Manager'da asset customization nasıl açılır\n🚫 En büyük hata: metni görsele gömmek\n─────────────────────\n\nEn büyük hata: Metni görselin içine sabit şekilde basmak. Farklı oranda kırpılınca okunmaz hale geliyor, mesajın kayboluyor.\n\nBu ayarı açmak 5 dakikanı alır ama aylarca gözden kaçan bir CTR kaybını kapatır.\n\n💾 Kaydet — yeni kreatif yüklerken bu checklist'i aç\n💬 Sen reklamlarını yerleşime özel mi hazırlıyorsun yoksa tek format mı kullanıyorsun? Yorumda söyle!\n\n#assetcustomization #placementoptimization #ctroptimizasyonu\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

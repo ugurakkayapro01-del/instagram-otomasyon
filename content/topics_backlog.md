@@ -7,6 +7,9 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme
+- Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli
+- Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi
+- Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:
