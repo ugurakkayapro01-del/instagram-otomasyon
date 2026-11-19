@@ -7,7 +7,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme
-- Reklam Hesabı Kalite Skoru (Account Quality) — İhlal Öncesi Erken Uyarı Sinyallerini Takip Etme
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:
