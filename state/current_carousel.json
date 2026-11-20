@@ -1,69 +1,65 @@
 {
-  "topic": "Placement Asset Customization — Yerleşime Özel Kreatif Boyutlandırma ile CTR Kaybını Önleme",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli",
-    "Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi",
-    "Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi"
-  ],
+  "topic": "Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
   "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "KREATİF STRATEJİSİ",
-      "title": "Tek Görselle\nTüm Yerleşimlere\n**Reklam Verme Hatası**",
-      "subtitle": "Aynı kare görseli Feed'e de Stories'e de atıyorsan, CTR'ının yarısını kaybediyorsun."
+      "tag": "KAMPANYA YÖNETİMİ",
+      "title": "Meta'nın Önerdiği\nHer Şeyi **Uygulama**",
+      "subtitle": "Guidance panelindeki önerilerin önemli bir kısmı hesabına zarar verebilir. Hangisi gerçek, hangisi değil?"
     },
     {
       "kind": "light",
-      "num_label": "Adım 01",
-      "icon": "📐",
-      "title": "Her Yerleşimin Kendi Oranı Var",
-      "body": "Meta, tek bir görseli otomatik kırpar (auto-crop) — bu kırpma genelde ürünü, yüzü veya metni keser.\nFeed: 4:5 (1080x1350)\nStories / Reels: 9:16 (1080x1920)\nSağ sütun: 1:1 (1080x1080)",
+      "num_label": "İpucu 01 / 07",
+      "icon": "🧭",
+      "title": "Guidance Paneli Nedir?",
+      "body": "Ads Manager'daki \"Önerilen İşlemler\" sekmesi, algoritmanın hesap verine bakarak ürettiği otomatik aksiyon önerileridir. Ama bu öneriler senin kâr marjına değil, platform geneli optimizasyonuna göre üretilir.",
       "is_checklist": false,
-      "pill": "Tek format = otomatik kırpma = kaybolan dikkat"
+      "pill": "Her öneri cebine değil, Meta'nın cebine bakar"
+    },
+    {
+      "kind": "dark",
+      "num_label": "İpucu 02 / 07",
+      "icon": "⚠️",
+      "title": "Neden Körü Körüne Uygulanmaz?",
+      "body": "Geçmiş veri + platform ortalamasına göre üretilir, kâr marjını bilmez\n\"Bütçe artır\" önerisi CPA artışını hesaba katmaz\n\"Hedef kitleyi genişlet\" önerisi her segment için doğru değildir",
+      "is_checklist": true,
+      "pill": "Her öneri context'ten kopuk gelir"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Kıyas 01",
+      "num_label": "İpucu 03 / 07",
       "icon": "⚖️",
-      "title": "Aynı Görsel, İki Farklı Sonuç",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">TEK GÖRSEL (Auto-crop)</div><div class=\"fval danger\">Ürün kesik, CTR düşük</div></div><div class=\"cmp-col best\"><div class=\"flabel\">YERLEŞİME ÖZEL ASSET</div><div class=\"fval high\">Tam kadraj, CTR yüksek</div></div></div>",
-      "pill": "Asset customization açıkken CTR ortalama %18-35 artıyor"
-    },
-    {
-      "kind": "dark",
-      "num_label": "Adım 02",
-      "icon": "🎬",
-      "title": "Stories/Reels İçin Güvenli Alan Kuralı",
-      "body": "Üstte ve altta ~250px'lik alan UI elemanları (profil, CTA butonu) tarafından kapanır.\nMetni ve logonu ekranın orta %60'lık bandına yerleştir.\nBu bantta kalan kreatifler %20'ye kadar daha fazla tıklama alıyor.",
-      "is_checklist": false,
-      "pill": "Güvenli alan dışına metin koyma, UI üstüne biner"
+      "title": "Uygula mı, Reddet mi?",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">REDDET</div><div class=\"tdesc\">\"Hedef kitleni genişlet\" — mevcut segment hâlâ dönüşüm veriyorsa</div></div><div class=\"cmp-col best\"><div class=\"flabel\">UYGULA</div><div class=\"tdesc\">\"Düşük harcamalı 3 reklam setini birleştir\" — bütçe parçalanmasını önler</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">REDDET</div><div class=\"tdesc\">\"Günlük bütçeni %50 artır\" — CPA'nı anlık yükseltir, öğrenmeyi sıfırlar</div></div><div class=\"cmp-col best\"><div class=\"flabel\">UYGULA</div><div class=\"tdesc\">\"Düşük kaliteli kreatifi devre dışı bırak\" — ranking skorunu korur</div></div></div>",
+      "pill": "Her öneriyi kendi hedefine göre tart"
     },
     {
       "kind": "light",
-      "num_label": "Adım 03",
-      "icon": "🖼️",
-      "title": "Ads Manager'da Asset Customization Açma",
-      "body": "Reklam seviyesinde 'Multiple Formats / Asset Customization' seçeneğini aktif et.\nHer yerleşim için ayrı görsel/video yükle, Meta otomatik eşleştirir.\nBaşlangıç için minimum 2 varyant yeterli: Feed için 4:5, Stories için 9:16.",
-      "is_checklist": false,
-      "pill": "2 varyant, sıfır bütçe artışı ile CTR kazancı"
+      "num_label": "İpucu 04 / 07",
+      "icon": "📊",
+      "title": "Hangi Önerileri Her Zaman Uygula",
+      "body": "Düşük harcamalı reklam setlerini birleştirme önerisi\nPixel kurulum hatası bildirimleri (event eşleşme sorunu)\nDüşük kalite skorlu kreatifi devre dışı bırakma uyarısı",
+      "is_checklist": true,
+      "pill": "Teknik düzeltmeler her zaman güvenlidir"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı",
+      "num_label": "İpucu 05 / 07",
       "icon": "🚫",
-      "title": "En Büyük Hata: Metni Görselin İçine Gömmek",
-      "body": "Görselin içine gömülü metin, farklı oranlarda kırpılınca okunamaz hale gelir.\nMetni overlay katmanında tut, görsel dosyasından ayrı yönet.\nLogo ve CTA metnini her zaman orta bölgeye sabitle.",
+      "title": "En Büyük Hata: Toplu Onay",
+      "body": "\"Tümünü Uygula\" butonuna basmak, test ettiğin reklam setlerini birleştirebilir ve öğrenme evresini sıfırlayabilir. Her öneriyi tek tek, kendi hedefine göre değerlendir.",
       "is_checklist": false,
-      "pill": "Gömülü metin = her kırpmada okunabilirlik kaybı"
+      "pill": "Toplu onay = kontrolü kaybetmek"
     },
     {
       "kind": "cta",
-      "label": "KAYDET & UYGULA",
-      "title": "Tek Format, Yarım Performans.\nYerleşime Özel Tasarla."
+      "label": "DIGITAL PRO",
+      "title": "Meta'nın Önerisi Değil,\nSenin **Stratejin** Kazanır"
     }
   ],
-  "caption": "Aynı görseli Feed'e, Stories'e, Reels'e aynı anda atıyorsan CTR'ının bir kısmını çöpe atıyorsun demektir. 👇\n\nMeta senin yerine kırpma yapıyor — ve genelde ürünü, yüzü ya da mesajı tam ortadan kesiyor.\nBu küçük ayar farkı, aynı bütçeyle %18-35 daha fazla tıklama demek. 👆\n\n─────────────────────\n📐 Her yerleşimin kendi en-boy oranı var\n⚖️ Tek görsel vs yerleşime özel asset kıyası\n🎬 Stories/Reels güvenli alan kuralı\n🖼️ Ads Manager'da asset customization nasıl açılır\n🚫 En büyük hata: metni görsele gömmek\n─────────────────────\n\nEn büyük hata: Metni görselin içine sabit şekilde basmak. Farklı oranda kırpılınca okunmaz hale geliyor, mesajın kayboluyor.\n\nBu ayarı açmak 5 dakikanı alır ama aylarca gözden kaçan bir CTR kaybını kapatır.\n\n💾 Kaydet — yeni kreatif yüklerken bu checklist'i aç\n💬 Sen reklamlarını yerleşime özel mi hazırlıyorsun yoksa tek format mı kullanıyorsun? Yorumda söyle!\n\n#assetcustomization #placementoptimization #ctroptimizasyonu\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Meta'nın Ads Manager'da sana sunduğu her \"öneri\" aslında senin lehine değil. Guidance panelindeki butona körü körüne basmak, iyi performans gösteren reklam setlerini bile bozabilir. 👇\n\nBu panel platform geneli optimizasyona göre çalışır, senin kâr marjını bilmez.\nHangi öneriyi uygulayıp hangisini reddetmen gerektiği carousel'de. 👆\n\n─────────────────────\n🧭 Guidance paneli neye göre çalışır\n⚠️ Önerilerin körü körüne uygulanmaması gereken sebepler\n⚖️ Uygula vs Reddet — net karşılaştırma\n📊 Her zaman güvenli olan 3 öneri türü\n🚫 Toplu onayın yarattığı en büyük hata\n─────────────────────\n\nEn büyük hata: \"Tümünü Uygula\" butonuna basıp test ettiğin reklam setlerini birleştirmek. Bu, öğrenme evresini sıfırlar ve haftalardır biriktirdiğin veriyi çöpe atar.\n\nMeta'nın önerisi bir rehber olabilir ama karar her zaman sende kalmalı.\n\n💾 Kaydet — Guidance panelinde yeni bir öneri gördüğünde tekrar bak\n💬 Sen hiç yanlış bir öneriyi uygulayıp zarar ettin mi? Yorumda anlat!\n\n#metaadsmanager #campaignoptimization #adsrecommendations\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

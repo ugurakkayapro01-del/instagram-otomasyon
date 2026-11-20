@@ -87,6 +87,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 80 | Conversion Domain Doğrulama ve Deep Link Bütünlüğü — iOS Sonrası Pixel-Domain Eşleşme Sorunlarını Çözme | 7 | Otomatik üretildi (2026-11-18) |
 | 81 | Reklam Hesabı Kalite Skoru (Account Quality) — İhlal Öncesi Erken Uyarı Sinyallerini Takip Etme | 7 | Otomatik üretildi (2026-11-19) |
 | 82 | Placement Asset Customization — Yerleşime Özel Kreatif Boyutlandırma ile CTR Kaybını Önleme | 7 | Otomatik üretildi (2026-11-19) |
+| 83 | Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli | 7 | Otomatik üretildi (2026-11-20) |
 
 ---
 
