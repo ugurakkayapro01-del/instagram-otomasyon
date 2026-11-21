@@ -88,6 +88,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 81 | Reklam Hesabı Kalite Skoru (Account Quality) — İhlal Öncesi Erken Uyarı Sinyallerini Takip Etme | 7 | Otomatik üretildi (2026-11-19) |
 | 82 | Placement Asset Customization — Yerleşime Özel Kreatif Boyutlandırma ile CTR Kaybını Önleme | 7 | Otomatik üretildi (2026-11-19) |
 | 83 | Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli | 7 | Otomatik üretildi (2026-11-20) |
+| 84 | Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi | 7 | Otomatik üretildi (2026-11-21) |
 
 ---
 
