@@ -7,7 +7,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme
-- Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi
 
 ## Yeni Konu Üretme Kuralları
 Havuz azaldığında yeni konular şu kritere göre üretilir:

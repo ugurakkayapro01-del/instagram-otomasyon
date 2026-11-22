@@ -1,65 +1,65 @@
 {
-  "topic": "Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi",
+  "topic": "Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "tier",
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "HESAP GÜVENİLİRLİĞİ · İLERİ SEVİYE",
-      "title": "Reklamın Neden\nHep İncelemede?\n**Doğrulama** Eksik Olabilir",
-      "subtitle": "Business Verification yapmayan hesaplar, Meta'nın gözünde hep 'risk altında' sayılır."
+      "tag": "BENCHMARK ANALİZİ",
+      "title": "Ortalamaya\nBakarak\n**Panik Yapma**",
+      "subtitle": "Herkes aynı CTR'ı hedefliyor ama sektörler arası fark iki katına varıyor. Senin sektörün neresi?"
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "🛡️",
-      "title": "Business Verification Nedir?",
-      "body": "Meta Business Manager'da işletmeni resmi olarak doğrulatman, hesabının 'bilinmeyen varlık' statüsünden çıkmasını sağlar. Vergi levhası veya ticaret sicil belgesi + domain doğrulama ile 2-5 iş günü içinde tamamlanır. Doğrulanmamış hesaplar, algoritmanın gözünde varsayılan olarak daha düşük güven skoruyla başlar.",
+      "icon": "📊",
+      "title": "Genel Ortalama Bir Yalan",
+      "body": "İnternette dolaşan '%0,90 ortalama CTR iyidir' bilgisi tüm sektörleri tek torbaya koyar. Moda markasıyla elektronik markasının CTR'ı aynı skalada değerlendirilemez. Doğru kıyas, kendi sektörünün benchmark aralığıdır.",
       "is_checklist": false,
-      "pill": "Doğrulama = Meta'nın seni 'tanıması', güvenin temeli burada başlar"
+      "pill": "Genel ortalamayla değil, sektör aralığınla kıyaslan."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sıralama",
-      "icon": "📊",
-      "title": "3 Güven Seviyesi, 3 Farklı Muamele",
-      "inner_html": "<div class=\"tier-row\"><span class=\"tier-rank\">01</span><span class=\"tdesc\">Doğrulanmamış Hesap — yavaş limit açılımı, uzun inceleme kuyruğu</span></div><div class=\"tier-row\"><span class=\"tier-rank\">02</span><span class=\"tdesc\">Business Verified — hızlı limit artışı, itirazda öncelik</span></div><div class=\"tier-row best\"><span class=\"tier-rank\">03</span><span class=\"tdesc\">Business + Meta Verified — en yüksek güven skoru, organik senkron</span></div>",
-      "pill": "Her seviye bir üstekine göre incelemede +1 kademe hız kazandırır"
+      "num_label": "İpucu 02 / 07",
+      "icon": "🎯",
+      "title": "Sektörüne Göre CTR ve CPM Aralığı",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">DÜŞÜK REKABET</div><div class=\"sval\">Kozmetik & Moda</div><div class=\"fval\">CTR %1,2–1,8</div><div class=\"fval\">CPM $7–10</div></div><div class=\"cmp-col\"><div class=\"flabel\">YÜKSEK REKABET</div><div class=\"sval\">Elektronik & Mobilya</div><div class=\"fval\">CTR %0,7–1,0</div><div class=\"fval\">CPM $12–18</div></div></div>",
+      "pill": "Elektronik satıyorsan %1 CTR zaten iyi sonuçtur."
     },
     {
       "kind": "dark",
-      "num_label": "Adım 02",
-      "icon": "🔐",
-      "title": "Doğrulama Süreci — 3 Adım",
-      "body": "Business Manager > Güvenlik Merkezi'nden 'İşletmeni Doğrula' seçeneği açılır\nVergi levhası, ticaret sicil gazetesi veya resmi kuruluş belgesi yüklenir\nWebsite sahipliği; DNS TXT kaydı veya HTML dosyası ile 24-48 saatte onaylanır",
-      "is_checklist": true,
-      "pill": "Belgeler eksiksizse süreç ortalama 2-5 iş günü sürer"
+      "num_label": "İpucu 03 / 07",
+      "icon": "💰",
+      "title": "CPM Tek Başına Suçlu Değil",
+      "body": "Yüksek CPM kötü hedefleme değil, yüksek rekabet anlamına gelebilir. Kasım-Aralık döneminde CPM'ler %30-50 artar çünkü herkes aynı kitleye reklam veriyor. Asıl bakman gereken metrik CPM değil, dönüşüm başı maliyet olan CPA.",
+      "is_checklist": false,
+      "pill": "CPM yerine her zaman CPA'ya odaklan."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 03 / 07",
-      "icon": "⚠️",
-      "title": "Doğrulanmamış Hesabın Bedeli",
-      "body": "Ani bütçe artışı + yüksek riskli reklam kategorisi (finans, sağlık, suplement) kombinasyonu doğrulanmamış hesaplarda incelemeyi doğrudan tetikler. Harcama limiti ilk günlerde genelde düşük başlar ve haftalar içinde kademeli açılır; doğrulanmış hesaplarda bu süreç belirgin şekilde hızlanır. Kısıtlama itirazlarında da doğrulanmamış hesaplar sıraya en arkadan girer.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "📈",
+      "title": "Kendi Benchmark'ını Kur",
+      "body": "Sektör ortalaması sadece başlangıç noktası. Son 90 günlük kendi CTR, CPM ve CPA verini topla, bunu kendi tarihsel ortalaman yap. Her ay %10'dan fazla sapma varsa asıl o zaman müdahale et.",
       "is_checklist": false,
-      "pill": "Doğrulama yoksa her bütçe artışı potansiyel bir inceleme tetikleyicisi"
+      "pill": "Dış ortalama değil, kendi 90 günlük verin referans olsun."
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05",
-      "icon": "✅",
-      "title": "Meta Verified — Ayrı Ama Tamamlayıcı",
-      "body": "Meta Verified (mavi tik), Business Verification'dan farklı, aylık abonelikle alınan ayrı bir doğrulamadır. Hesap taklidine karşı koruma sağlar, destek taleplerinde öncelikli sıraya girer. İkisi birlikte kullanıldığında hem reklam hesabı güven skoru hem de organik profil güvenilirliği aynı anda yükselir.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Erken Durdurma",
+      "body": "Düşük CTR görüp kampanyayı 2. günde durdurmak en büyük hatadır. Meta'nın öğrenme evresi 7-14 gün sürer, ilk hafta CTR dalgalanması normaldir. Sektör aralığının altındaysan bile 50 dönüşüm tamamlanmadan karar verme.",
       "is_checklist": false,
-      "pill": "Business Verification zorunlu temel, Meta Verified üstüne eklenen güven katmanı"
+      "pill": "50 dönüşüm ve 7 gün dolmadan kampanyayı yargılama."
     },
     {
       "kind": "cta",
-      "label": "KAPANIŞ",
-      "title": "Doğrulanmamış Hesap,\nErtelenmiş **Büyüme** Demektir"
+      "label": "HAZIRSAN BAŞLAYALIM",
+      "title": "Rakamlara Değil,\n**Doğru Rakamlara** Bak"
     }
   ],
-  "caption": "Reklam hesabın sürekli incelemede mi kalıyor? Sorun kreatifin değil, doğrulama eksikliğin olabilir. 👇\n\nÇoğu e-ticaret sahibi Business Verification'ı 'opsiyonel' sanıyor ama Meta bunu güven skorunun temeli olarak kullanıyor.\nFarkı ve nasıl yapılacağını bu carousel'de anlatıyorum. 👆\n\n─────────────────────\n🛡️ Business Verification'ın hesap güvenine etkisi\n📊 3 güven seviyesi ve her birinin muamelesi\n🔐 Doğrulama süreci — 3 net adım\n⚠️ Doğrulanmamış hesapların ödediği bedel\n✅ Meta Verified'ın ek katkısı\n─────────────────────\n\nEn büyük hata: Belgeleri hazırlamadan bütçeyi aniden artırmak. Bu kombinasyon doğrulanmamış hesaplarda incelemeyi doğrudan tetikliyor.\n\nDoğrulama bir kerelik iş ama etkisi her kampanyana yansıyor.\n\n💾 Kaydet — hesap kurarken veya kısıtlama yaşadığında tekrar bak\n💬 Hesabını Business Verification ile doğruladın mı? Yorumda söyle!\n\n#businessverification #metaverified #hesapguvenligi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Düşük CTR görünce panikleyip kampanyayı kapatıyorsan büyük ihtimalle yanlış kıyas yapıyorsun. 👇\n\nİnternetteki 'ortalama CTR' rakamları tüm sektörleri tek torbaya koyuyor, bu da seni yanlış kararlara itiyor.\nDoğru benchmark sektörüne özel — çözümü bu carousel'de. 👆\n\n─────────────────────\n📊 Genel ortalama neden yanıltıcı\n🎯 Sektöre göre CTR/CPM aralıkları\n💰 CPM değil CPA'ya odaklanma mantığı\n📈 Kendi 90 günlük benchmark'ını kurma\n⚠️ Kampanyayı erken durdurma hatası\n─────────────────────\n\nEn büyük hata: Düşük CTR'ı görüp 2. günde kampanyayı durdurmak. Öğrenme evresi 7-14 gün sürüyor, erken karar seni her zaman yanıltır.\n\nDoğru kıyas yapınca hangi kampananın gerçekten kötü, hangisinin normal dalgalandığını net görürsün.\n\n💾 Kaydet — raporlarını incelerken yanında bulunsun\n💬 Sen hangi sektördesin, CTR'ın ortalamanın üstünde mi altında mı? Yorumda söyle!\n\n#ctrbenchmark #cpmoptimizasyonu #reklamperformansi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }
