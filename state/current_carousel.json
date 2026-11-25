@@ -1,65 +1,69 @@
 {
-  "topic": "Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi",
-  "is_new_topic": false,
-  "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "topic": "İade Oranının Reklam Optimizasyonuna Etkisi — Refund Event Entegrasyonu ile Net ROAS Hesaplama",
+  "is_new_topic": true,
+  "new_backlog_candidates": [
+    "Cost Per Unique Click (CPUC) ve Tıklama Kalitesi Analizi — Link Click ile Unique Click Farkının Bütçeye Etkisi",
+    "Threads Reklamları — Meta Ekosisteminde Yeni Yerleşimde Erken Dönem Düşük CPM Fırsatı",
+    "Kampanya Harcama Hız Analizi (Spend Velocity) — Anormal Harcama Artışını Pacing Üzerinden Erken Tespit Etme"
+  ],
+  "special_kind": "formula",
   "slides": [
     {
       "kind": "hook",
-      "tag": "BENCHMARK ANALİZİ",
-      "title": "Ortalamaya\nBakarak\n**Panik Yapma**",
-      "subtitle": "Herkes aynı CTR'ı hedefliyor ama sektörler arası fark iki katına varıyor. Senin sektörün neresi?"
+      "tag": "REKLAM ANALİTİĞİ",
+      "title": "ROAS'ın\nYarısı **Yalan**\nOlabilir",
+      "subtitle": "İade oranını hesaba katmayan her ROAS raporu, seni yanlış ürüne bütçe ayırmaya itiyor."
     },
     {
       "kind": "light",
       "num_label": "İpucu 01 / 07",
-      "icon": "📊",
-      "title": "Genel Ortalama Bir Yalan",
-      "body": "İnternette dolaşan '%0,90 ortalama CTR iyidir' bilgisi tüm sektörleri tek torbaya koyar. Moda markasıyla elektronik markasının CTR'ı aynı skalada değerlendirilemez. Doğru kıyas, kendi sektörünün benchmark aralığıdır.",
+      "icon": "📉",
+      "title": "Brüt ROAS Seni Kandırıyor",
+      "body": "Meta reklam panelindeki ROAS, satın alma anındaki tutarı baz alır. İade/iptal gelince bu veri güncellenmez. Moda ve ayakkabı kategorisinde iade oranı %30-40'a çıkabilir — bu, ROAS'ın gerçekte göründüğünden çok daha düşük olduğu anlamına gelir.",
       "is_checklist": false,
-      "pill": "Genel ortalamayla değil, sektör aralığınla kıyaslan."
+      "pill": "Brüt ROAS, iade sonrası gerçek kârı göstermez."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "İpucu 02 / 07",
-      "icon": "🎯",
-      "title": "Sektörüne Göre CTR ve CPM Aralığı",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"flabel\">DÜŞÜK REKABET</div><div class=\"sval\">Kozmetik & Moda</div><div class=\"fval\">CTR %1,2–1,8</div><div class=\"fval\">CPM $7–10</div></div><div class=\"cmp-col\"><div class=\"flabel\">YÜKSEK REKABET</div><div class=\"sval\">Elektronik & Mobilya</div><div class=\"fval\">CTR %0,7–1,0</div><div class=\"fval\">CPM $12–18</div></div></div>",
-      "pill": "Elektronik satıyorsan %1 CTR zaten iyi sonuçtur."
+      "num_label": "Formül 02",
+      "icon": "🧮",
+      "title": "Net ROAS Formülü",
+      "inner_html": "<div class=\"formula-box\">Net ROAS = (Brüt Gelir − İade Tutarı) ÷ Reklam Harcaması</div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Brüt ROAS</div><div class=\"sval\">4.2x</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Net ROAS</div><div class=\"sval\">2.6x</div></div></div>",
+      "pill": "Kararını her zaman net ROAS'a göre ver, brüte değil."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 03 / 07",
-      "icon": "💰",
-      "title": "CPM Tek Başına Suçlu Değil",
-      "body": "Yüksek CPM kötü hedefleme değil, yüksek rekabet anlamına gelebilir. Kasım-Aralık döneminde CPM'ler %30-50 artar çünkü herkes aynı kitleye reklam veriyor. Asıl bakman gereken metrik CPM değil, dönüşüm başı maliyet olan CPA.",
+      "num_label": "Adım 03",
+      "icon": "🔄",
+      "title": "Refund Event'i Nasıl Bağlanır",
+      "body": "Meta'ya 'Refund' standart event'ini gönder, orijinal 'Purchase' event'inin event_id'siyle eşleştir. Pixel veya CAPI üzerinden value ve currency parametresiyle gönderilen bu sinyal, algoritmanın gerçek kâr verisine göre öğrenmesini sağlar.",
       "is_checklist": false,
-      "pill": "CPM yerine her zaman CPA'ya odaklan."
+      "pill": "event_id eşleşmezse Meta refund'u asla purchase'a bağlayamaz."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04 / 07",
-      "icon": "📈",
-      "title": "Kendi Benchmark'ını Kur",
-      "body": "Sektör ortalaması sadece başlangıç noktası. Son 90 günlük kendi CTR, CPM ve CPA verini topla, bunu kendi tarihsel ortalaman yap. Her ay %10'dan fazla sapma varsa asıl o zaman müdahale et.",
-      "is_checklist": false,
-      "pill": "Dış ortalama değil, kendi 90 günlük verin referans olsun."
+      "num_label": "Eşik 04",
+      "icon": "⚠️",
+      "title": "Kategori Bazlı İade Eşiği",
+      "body": "%15 üstü iade oranı olan ürünleri ayrı reklam setine taşı\nElektronik kategorisi ortalama iade oranı: %8-10\nGiyim/ayakkabı kategorisi ortalama iade oranı: %25-35\nKozmetik kategorisi ortalama iade oranı: %5-8",
+      "is_checklist": true,
+      "pill": "Kategori eşiğini aşan ürünü value optimization'dan çıkar."
     },
     {
       "kind": "dark",
-      "num_label": "İpucu 05 / 07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Erken Durdurma",
-      "body": "Düşük CTR görüp kampanyayı 2. günde durdurmak en büyük hatadır. Meta'nın öğrenme evresi 7-14 gün sürer, ilk hafta CTR dalgalanması normaldir. Sektör aralığının altındaysan bile 50 dönüşüm tamamlanmadan karar verme.",
+      "num_label": "Uyarı 05",
+      "icon": "🚨",
+      "title": "En Büyük Hata",
+      "body": "Value Optimization kullanıp refund event'i hiç göndermemek. Algoritma, iade edilen satışları 'başarılı dönüşüm' sanıp o kitleye benzer insanlara bütçe akıtmaya devam eder — sonuç, sürekli artan harcama ve düşen gerçek kâr.",
       "is_checklist": false,
-      "pill": "50 dönüşüm ve 7 gün dolmadan kampanyayı yargılama."
+      "pill": "Refund sinyali yoksa Value Optimization seni yanlış kitleye yönlendirir."
     },
     {
       "kind": "cta",
-      "label": "HAZIRSAN BAŞLAYALIM",
-      "title": "Rakamlara Değil,\n**Doğru Rakamlara** Bak"
+      "label": "ŞİMDİ UYGULA",
+      "title": "Net ROAS'ını\nBilmeyen,\n**Kör** Yönetiyor"
     }
   ],
-  "caption": "Düşük CTR görünce panikleyip kampanyayı kapatıyorsan büyük ihtimalle yanlış kıyas yapıyorsun. 👇\n\nİnternetteki 'ortalama CTR' rakamları tüm sektörleri tek torbaya koyuyor, bu da seni yanlış kararlara itiyor.\nDoğru benchmark sektörüne özel — çözümü bu carousel'de. 👆\n\n─────────────────────\n📊 Genel ortalama neden yanıltıcı\n🎯 Sektöre göre CTR/CPM aralıkları\n💰 CPM değil CPA'ya odaklanma mantığı\n📈 Kendi 90 günlük benchmark'ını kurma\n⚠️ Kampanyayı erken durdurma hatası\n─────────────────────\n\nEn büyük hata: Düşük CTR'ı görüp 2. günde kampanyayı durdurmak. Öğrenme evresi 7-14 gün sürüyor, erken karar seni her zaman yanıltır.\n\nDoğru kıyas yapınca hangi kampananın gerçekten kötü, hangisinin normal dalgalandığını net görürsün.\n\n💾 Kaydet — raporlarını incelerken yanında bulunsun\n💬 Sen hangi sektördesin, CTR'ın ortalamanın üstünde mi altında mı? Yorumda söyle!\n\n#ctrbenchmark #cpmoptimizasyonu #reklamperformansi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Reklam panelinde ROAS 4x görünüyor ama cebine giren para onun yarısı bile değil mi? 👇\n\nÇoğu e-ticaret sahibi ROAS'ı iade öncesi brüt tutardan okuyor. Gerçek kâr tablosu çok farklı.\nBu carousel'de Net ROAS'ı nasıl doğru hesaplayacağını gösteriyorum 👆\n\n─────────────────────\n📉 Brüt ROAS neden seni yanıltıyor\n🧮 Net ROAS formülü ve örnek hesaplama\n🔄 Refund event'ini Meta'ya nasıl bağlarsın\n⚠️ Kategori bazlı iade eşiği (elektronik/giyim/kozmetik)\n🚨 Value Optimization'da yapılan en büyük hata\n─────────────────────\n\nEn büyük hata: Refund event'i göndermeden Value Optimization kullanmak. Algoritma iade edilen satışı 'başarı' sanıp aynı kitleye bütçe akıtmaya devam eder.\n\nGerçek kârını bilmeden bütçe kararı verme — rakamları düzelt, sonra büyüt.\n\n💾 Kaydet — ROAS raporuna bakmadan önce aç\n💬 Sen ROAS'ını brüt mü, net mi hesaplıyorsun? Yorumda söyle!\n\n#netroas #refundevent #capi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

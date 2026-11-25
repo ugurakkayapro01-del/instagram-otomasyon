@@ -90,6 +90,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 83 | Meta Ads Guidance (Kampanya Önerileri) Aracı — Hangi Önerileri Uygulamalı, Hangilerini Reddetmeli | 7 | Otomatik üretildi (2026-11-20) |
 | 84 | Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi | 7 | Otomatik üretildi (2026-11-21) |
 | 85 | Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi | 7 | Otomatik üretildi (2026-11-22) |
+| 86 | İade Oranının Reklam Optimizasyonuna Etkisi — Refund Event Entegrasyonu ile Net ROAS Hesaplama | 7 | Otomatik üretildi (2026-11-25) |
 
 ---
 
