@@ -1,69 +1,65 @@
 {
-  "topic": "İade Oranının Reklam Optimizasyonuna Etkisi — Refund Event Entegrasyonu ile Net ROAS Hesaplama",
-  "is_new_topic": true,
-  "new_backlog_candidates": [
-    "Cost Per Unique Click (CPUC) ve Tıklama Kalitesi Analizi — Link Click ile Unique Click Farkının Bütçeye Etkisi",
-    "Threads Reklamları — Meta Ekosisteminde Yeni Yerleşimde Erken Dönem Düşük CPM Fırsatı",
-    "Kampanya Harcama Hız Analizi (Spend Velocity) — Anormal Harcama Artışını Pacing Üzerinden Erken Tespit Etme"
-  ],
-  "special_kind": "formula",
+  "topic": "Cost Per Unique Click (CPUC) ve Tıklama Kalitesi Analizi — Link Click ile Unique Click Farkının Bütçeye Etkisi",
+  "is_new_topic": false,
+  "new_backlog_candidates": [],
+  "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "REKLAM ANALİTİĞİ",
-      "title": "ROAS'ın\nYarısı **Yalan**\nOlabilir",
-      "subtitle": "İade oranını hesaba katmayan her ROAS raporu, seni yanlış ürüne bütçe ayırmaya itiyor."
+      "tag": "METRİK ANALİZİ · TIKLAMA KALİTESİ",
+      "title": "CPC Raporun\nYalan Söylüyor\n**Tek Kişi 5 Kez Tıklıyor**",
+      "subtitle": "Link Click ile Unique Click arasındaki farkı görmezden gelirsen, bütçeni yanlış reklam setine akıtıyor olabilirsin."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01 / 07",
-      "icon": "📉",
-      "title": "Brüt ROAS Seni Kandırıyor",
-      "body": "Meta reklam panelindeki ROAS, satın alma anındaki tutarı baz alır. İade/iptal gelince bu veri güncellenmez. Moda ve ayakkabı kategorisinde iade oranı %30-40'a çıkabilir — bu, ROAS'ın gerçekte göründüğünden çok daha düşük olduğu anlamına gelir.",
+      "num_label": "Sinyal 01 / 05",
+      "icon": "🖱️",
+      "title": "Link Click vs Unique Click: Temel Fark",
+      "body": "Link Click, bir reklamdaki her tıklamayı sayar — aynı kişi 4 kez tıklarsa 4 click olarak raporlanır.\nUnique Click, sadece tekil kişi sayısını sayar — aynı kişi kaç kez tıklarsa tıklasın 1 olarak geçer.\nMeta Ads Manager varsayılan olarak Link Click (CPC) gösterir, bu yüzden çoğu hesap sahibi bu farkı hiç fark etmez.",
       "is_checklist": false,
-      "pill": "Brüt ROAS, iade sonrası gerçek kârı göstermez."
+      "pill": "Varsayılan CPC raporu tekil kişiyi değil, toplam tıklama hareketini gösterir."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Formül 02",
-      "icon": "🧮",
-      "title": "Net ROAS Formülü",
-      "inner_html": "<div class=\"formula-box\">Net ROAS = (Brüt Gelir − İade Tutarı) ÷ Reklam Harcaması</div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Brüt ROAS</div><div class=\"sval\">4.2x</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Net ROAS</div><div class=\"sval\">2.6x</div></div></div>",
-      "pill": "Kararını her zaman net ROAS'a göre ver, brüte değil."
+      "num_label": "Sinyal 02 / 05",
+      "icon": "📊",
+      "title": "CPC (All) vs CPC (Unique): Oran Eşiği",
+      "inner_html": "<div class='cmp-row'><div class='cmp-col'><div class='slabel'>Link Click (CPC)</div><div class='sval'>18 TL</div><div class='tdesc'>Tüm tıklama hareketleri</div></div><div class='cmp-col best'><div class='slabel'>Unique Click (CPC)</div><div class='sval'>27 TL</div><div class='tdesc'>Sadece tekil kişi sayısı</div></div></div><div class='formula-box'>Link Click ÷ Unique Click > <span class='hl'>1.3</span> ise → kreatifte çoklu buton/karışıklık sinyali var, tıklama kalitesi düşük demektir.</div>",
+      "pill": "Oran 1.3'ü geçtiğinde kreatif tasarımını ve CTA netliğini kontrol et."
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03",
-      "icon": "🔄",
-      "title": "Refund Event'i Nasıl Bağlanır",
-      "body": "Meta'ya 'Refund' standart event'ini gönder, orijinal 'Purchase' event'inin event_id'siyle eşleştir. Pixel veya CAPI üzerinden value ve currency parametresiyle gönderilen bu sinyal, algoritmanın gerçek kâr verisine göre öğrenmesini sağlar.",
+      "num_label": "Sinyal 03 / 05",
+      "icon": "🎯",
+      "title": "Outbound Click: Daha Güvenilir Bir Metrik",
+      "body": "Outbound Click, sadece kullanıcıyı Instagram/Facebook dışına, senin sitene yönlendiren tıklamaları sayar.\nLink Click; beğeni, yorum açma veya profil tıklaması gibi platform içi hareketleri de bazen karıştırabilir.\nOutbound CTR, Link CTR'den genelde %15-25 daha düşük çıkar — bu normal, çünkü gerçek niyet gösteren trafiği filtreler.",
       "is_checklist": false,
-      "pill": "event_id eşleşmezse Meta refund'u asla purchase'a bağlayamaz."
+      "pill": "Bütçe kararını her zaman Outbound Click üzerinden ver, Link Click üzerinden değil."
     },
     {
       "kind": "light",
-      "num_label": "Eşik 04",
-      "icon": "⚠️",
-      "title": "Kategori Bazlı İade Eşiği",
-      "body": "%15 üstü iade oranı olan ürünleri ayrı reklam setine taşı\nElektronik kategorisi ortalama iade oranı: %8-10\nGiyim/ayakkabı kategorisi ortalama iade oranı: %25-35\nKozmetik kategorisi ortalama iade oranı: %5-8",
+      "num_label": "Sinyal 04 / 05",
+      "icon": "🔍",
+      "title": "Hangi Metriğe Ne Zaman Bakmalısın?",
+      "body": "Kreatif testi yaparken → Unique CTR'a bak, tekrar tıklama testin sonucunu şişirmesin\nBütçe optimizasyonu yaparken → Outbound CTR ve CPA'yı birlikte değerlendir\nTrafik kalitesini sorgularken → Link/Unique oranı 1.3+ ise reklam setini durdurup incele\nDönüşüm raporlarken → Her zaman Purchase/ATC event'iyle çapraz kontrol et, tıklama tek başına yeterli değil",
       "is_checklist": true,
-      "pill": "Kategori eşiğini aşan ürünü value optimization'dan çıkar."
+      "pill": "Tek bir metriğe göre karar verme — üçünü birlikte oku."
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05",
-      "icon": "🚨",
-      "title": "En Büyük Hata",
-      "body": "Value Optimization kullanıp refund event'i hiç göndermemek. Algoritma, iade edilen satışları 'başarılı dönüşüm' sanıp o kitleye benzer insanlara bütçe akıtmaya devam eder — sonuç, sürekli artan harcama ve düşen gerçek kâr.",
+      "num_label": "Sinyal 05 / 05",
+      "icon": "⚠️",
+      "title": "En Büyük Hata: Sadece CPC (All)'a Bakmak",
+      "body": "Düşük görünen Link CPC seni yanıltabilir — altında çok sayıda tekrar tıklama gizli olabilir.\nBu durumda 'ucuz trafik' sandığın reklam seti aslında az sayıda kişiye defalarca gösteriliyor olabilir.\nSonuç: Gerçek erişim düşük, frekans yüksek, dönüşüm maliyeti giderek artar — ama Link CPC raporu bunu göstermez.",
       "is_checklist": false,
-      "pill": "Refund sinyali yoksa Value Optimization seni yanlış kitleye yönlendirir."
+      "pill": "Link CPC düşükse önce frekansı ve Unique CTR'ı kontrol et, sevinme."
     },
     {
       "kind": "cta",
-      "label": "ŞİMDİ UYGULA",
-      "title": "Net ROAS'ını\nBilmeyen,\n**Kör** Yönetiyor"
+      "label": "SIRADAKİ ADIM",
+      "title": "Tıklamayı Değil,\nTekil İlgiyi Optimize Et."
     }
   ],
-  "caption": "Reklam panelinde ROAS 4x görünüyor ama cebine giren para onun yarısı bile değil mi? 👇\n\nÇoğu e-ticaret sahibi ROAS'ı iade öncesi brüt tutardan okuyor. Gerçek kâr tablosu çok farklı.\nBu carousel'de Net ROAS'ı nasıl doğru hesaplayacağını gösteriyorum 👆\n\n─────────────────────\n📉 Brüt ROAS neden seni yanıltıyor\n🧮 Net ROAS formülü ve örnek hesaplama\n🔄 Refund event'ini Meta'ya nasıl bağlarsın\n⚠️ Kategori bazlı iade eşiği (elektronik/giyim/kozmetik)\n🚨 Value Optimization'da yapılan en büyük hata\n─────────────────────\n\nEn büyük hata: Refund event'i göndermeden Value Optimization kullanmak. Algoritma iade edilen satışı 'başarı' sanıp aynı kitleye bütçe akıtmaya devam eder.\n\nGerçek kârını bilmeden bütçe kararı verme — rakamları düzelt, sonra büyüt.\n\n💾 Kaydet — ROAS raporuna bakmadan önce aç\n💬 Sen ROAS'ını brüt mü, net mi hesaplıyorsun? Yorumda söyle!\n\n#netroas #refundevent #capi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret #performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Reklam panelinde gördüğün CPC rakamı seni kandırıyor olabilir. 👇\n\nAynı kişi bir reklama 4-5 kez tıklarsa, Link Click metriği bunu hâlâ 'ucuz trafik' gibi gösterir.\nGerçek tabloyu görmek için hangi metriğe bakman gerektiği bu carousel'de. 👆\n\n─────────────────────\n🖱️ Link Click ile Unique Click arasındaki gerçek fark\n📊 CPC (all) vs CPC (unique) oranı ve 1.3 eşiği\n🎯 Outbound Click neden daha güvenilir bir sinyal\n🔍 Hangi durumda hangi metriğe bakman gerektiği\n⚠️ Sadece Link CPC'ye bakmanın bedeli\n─────────────────────\n\nEn büyük hata: Düşük Link CPC'yi görüp sevinmek. Altında az sayıda kişiye defalarca gösterilen, frekansı patlamış bir reklam seti gizli olabilir.\n\nTıklama sayısı değil, tekil ilgi önemli. Bütçeni buna göre yönet.\n\n💾 Kaydet — raporlarını incelerken referans olarak kullan\n💬 Sen CPC'ye bakarken Link mi Unique mi kullanıyorsun? Yorumda söyle!\n\n#cpc #outboundclick #tiklamakalitesi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
 }

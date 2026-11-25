@@ -91,6 +91,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 84 | Meta Verified ve İşletme Doğrulama — Reklam Hesabı Güvenilirlik Skoruna Etkisi | 7 | Otomatik üretildi (2026-11-21) |
 | 85 | Sektörel CTR/CPM Benchmark Analizi — Kendi Performansını Doğru Yorumlama Çerçevesi | 7 | Otomatik üretildi (2026-11-22) |
 | 86 | İade Oranının Reklam Optimizasyonuna Etkisi — Refund Event Entegrasyonu ile Net ROAS Hesaplama | 7 | Otomatik üretildi (2026-11-25) |
+| 87 | Cost Per Unique Click (CPUC) ve Tıklama Kalitesi Analizi — Link Click ile Unique Click Farkının Bütçeye Etkisi | 7 | Otomatik üretildi (2026-11-25) |
 
 ---
 
