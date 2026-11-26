@@ -93,6 +93,7 @@ Yeni bir carousel üretildiğinde, aşağıya yeni bir satır olarak eklenmelidi
 | 86 | İade Oranının Reklam Optimizasyonuna Etkisi — Refund Event Entegrasyonu ile Net ROAS Hesaplama | 7 | Otomatik üretildi (2026-11-25) |
 | 87 | Cost Per Unique Click (CPUC) ve Tıklama Kalitesi Analizi — Link Click ile Unique Click Farkının Bütçeye Etkisi | 7 | Otomatik üretildi (2026-11-25) |
 | 88 | Threads Reklamları — Meta Ekosisteminde Yeni Yerleşimde Erken Dönem Düşük CPM Fırsatı | 7 | Otomatik üretildi (2026-11-26) |
+| 89 | Kampanya Harcama Hız Analizi (Spend Velocity) — Anormal Harcama Artışını Pacing Üzerinden Erken Tespit Etme | 7 | Otomatik üretildi (2026-11-26) |
 
 ---
 

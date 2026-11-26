@@ -1,65 +1,65 @@
 {
-  "topic": "Threads Reklamları — Meta Ekosisteminde Yeni Yerleşimde Erken Dönem Düşük CPM Fırsatı",
+  "topic": "Kampanya Harcama Hız Analizi (Spend Velocity) — Anormal Harcama Artışını Pacing Üzerinden Erken Tespit Etme",
   "is_new_topic": false,
   "new_backlog_candidates": [],
-  "special_kind": "comparison",
+  "special_kind": "risk",
   "slides": [
     {
       "kind": "hook",
-      "tag": "THREADS REKLAMLARI · YENİ YERLEŞİM",
-      "title": "Threads'te Reklam\nVermek İçin\n**Erken Pencere** Kapanıyor",
-      "subtitle": "Çoğu marka hâlâ Feed'de savaşıyor, Threads'te rekabet neredeyse yok."
+      "tag": "SPEND VELOCITY ANALİZİ",
+      "title": "Bütçen\nBir Gecede\n**İki Katına** Çıktı mı?",
+      "subtitle": "Harcama hızındaki ani sıçrama, algoritma hatası değil erken uyarı sinyalidir."
     },
     {
       "kind": "light",
-      "num_label": "İpucu 01/07",
-      "icon": "🧵",
-      "title": "Threads Nedir, Reklamlara Nasıl Dahil Olur?",
-      "body": "Threads, Meta'nın metin ağırlıklı sosyal platformu. Advantage+ Placements açık olduğunda reklamların otomatik olarak Threads'e de dağıtılır — ayrı bir kurulum gerekmez. Manuel yerleşim seçtiğinde Threads devre dışı kalır ve bu düşük maliyetli envanteri kaçırırsın.",
+      "num_label": "İpucu 01 / 07",
+      "icon": "⚡",
+      "title": "Spend Velocity Nedir?",
+      "body": "Spend velocity, kampanyanın saatlik harcama hızının normal seyrinden ne kadar saptığını gösterir. Günlük bütçenin saatte %10-15'i yerine %30'u harcanıyorsa bu bir sinyaldir. Bu sapma çoğu zaman manuel kontrol yapılana kadar fark edilmez ve bütçe günün ilk saatlerinde tükenir.",
       "is_checklist": false,
-      "pill": "Advantage+ Placements'ı kapatma, Threads otomatik gelir."
+      "pill": "Harcama hızını saatlik takip et, günlük değil"
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02/07",
-      "icon": "📊",
-      "title": "Feed'e Göre Gerçek Fark",
-      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Feed Yerleşimi</div><div class=\"sval\">CPM: 110-180₺</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Threads Yerleşimi</div><div class=\"sval\">CPM: 45-90₺</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Rekabet Yoğunluğu</div><div class=\"sval\">Yüksek · Doygun</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Rekabet Yoğunluğu</div><div class=\"sval\">Düşük · Yeni Envanter</div></div></div>",
-      "pill": "Aynı bütçeyle Threads'te 2 kata yakın daha fazla gösterim."
+      "num_label": "Adım 02",
+      "icon": "🚨",
+      "title": "Harcama Hızı Risk Eşikleri",
+      "inner_html": "<div class=\"risk-row\"><span class=\"risk-dot\"></span><span class=\"thr-badge\">%100-130</span><span class=\"flabel\">Güvenli — normal dalgalanma</span></div><div class=\"risk-row\"><span class=\"risk-dot warn\"></span><span class=\"thr-badge\">%130-180</span><span class=\"flabel\">İzleme — bid ve audience ayarını kontrol et</span></div><div class=\"risk-row\"><span class=\"risk-dot danger\"></span><span class=\"thr-badge\">%180+</span><span class=\"flabel\">Tehlike — kampanyayı duraklat, kök neden analizi yap</span></div>",
+      "pill": "3 eşik: %130 altı güvenli, %180 üzeri acil müdahale"
     },
     {
       "kind": "dark",
-      "num_label": "Adım 03/07",
-      "icon": "🎨",
-      "title": "Kreatif İçin Ekstra İş Yok",
-      "body": "Threads, Feed ile aynı kreatif boyutlarını kullanır (1080x1080 veya 4:5 oran). Yeniden tasarım yapmana gerek yok, mevcut reklam seti otomatik optimize eder. Tek fark: görsel değil, metin ağırlıklı ve sohbet tonlu kopy burada daha iyi performans veriyor.",
-      "is_checklist": false,
-      "pill": "Görseli değil, metni Threads'e göre yumuşat."
+      "num_label": "İpucu 03 / 07",
+      "icon": "🔍",
+      "title": "Ani Artışın 4 Yaygın Nedeni",
+      "body": "Accelerated delivery ayarının yanlışlıkla açık kalması\nBid stratejisinin Lowest Cost'a otomatik dönmesi\nAudience genişlemesinin (Advantage+ Audience) beklenmeyen şekilde tetiklenmesi\nRakip CPM artışının algoritmayı daha hızlı harcamaya itmesi",
+      "is_checklist": true,
+      "pill": "Her sıçramanın arkasında tek bir ayar değişikliği var"
     },
     {
       "kind": "light",
-      "num_label": "İpucu 04/07",
-      "icon": "🎯",
-      "title": "Hangi Hedefte İşe Yarar?",
-      "body": "Awareness, Traffic ve Engagement hedefli kampanyalarda Threads güçlü sonuç veriyor — 18-34 yaş arası, tartışma ve topluluk odaklı kullanıcı kitlesi burada yoğun. Erişim ve marka bilinirliği bütçesinin bir kısmını bu yerleşime kaydır.",
+      "num_label": "İpucu 04 / 07",
+      "icon": "📊",
+      "title": "Nasıl İzlenir?",
+      "body": "Ads Manager'da 'Breakdown > Hour' seçeneğiyle saatlik harcama grafiği çıkar. İlk 4 saatte bütçenin %50'sinden fazlası gitmişse bu velocity anomalisidir. Haftalık ortalama saatlik harcamanı referans al, günlük sapmaları bu ortalamayla kıyasla.",
       "is_checklist": false,
-      "pill": "Üst huni kampanyalarında Threads'i önceliklendir."
+      "pill": "Saatlik breakdown, anomaliyi gösteren tek rapor"
     },
     {
       "kind": "dark",
-      "num_label": "Uyarı 05/07",
-      "icon": "⚠️",
-      "title": "En Büyük Hata: Purchase'ı Zorlamak",
-      "body": "Threads'te dönüşüm (Purchase) optimizasyonu için veri hacmi henüz yetersiz — algoritma öğrenme evresinde zorlanır. Placement breakdown raporunda Threads performansını ayrı izle, CPA yükselirse o reklam setinde manuel olarak çıkar.",
+      "num_label": "İpucu 05 / 07",
+      "icon": "⚙️",
+      "title": "Otomatik Kuralla Erken Uyarı Kur",
+      "body": "Automated Rules'da 'Günlük harcama > bütçenin %150'si' koşulu tanımla, tetiklendiğinde bildirim gönder veya kampanyayı duraklat. En büyük hata: velocity anomalisini fark edip hiçbir aksiyon almadan ertesi güne bırakmaktır — o bütçe geri gelmez.",
       "is_checklist": false,
-      "pill": "Alt huni kampanyalarda Threads'i izle, zorlama."
+      "pill": "Kural kur, uyumadan önce alarm seni uyandırsın"
     },
     {
       "kind": "cta",
-      "label": "SON SÖZ",
-      "title": "Erken Giren,\nUcuz **CPM**'i Kapar."
+      "label": "KAPANIŞ",
+      "title": "Bütçeni Kontrolsüz\nHarcamaya **Bırakma**"
     }
   ],
-  "caption": "Threads'te reklam verenlerin çoğu bunu bilmiyor: CPM'ler Feed'in yarısı kadar ucuz. Bu fırsat kapanmadan önce üstüne gitmek gerekiyor 👇\n\nRekabet yoğunlaşmadan önce bu yerleşimi kullanmayan markalar, gelecek yıl bu ucuzluğu bulamayacak.\nNasıl doğru kullanılır, hangi kampanyalarda işe yarar — hepsi carousel'de 👆\n\n─────────────────────\n🧵 Threads reklamları Advantage+ ile otomatik aktif\n📊 Feed'e göre CPM farkı net rakamlarla\n🎨 Kreatif yeniden tasarım gerekmiyor\n🎯 Hangi kampanya hedefinde işe yarıyor\n⚠️ Purchase kampanyasında yapılan en büyük hata\n─────────────────────\n\nEn büyük hata: Dönüşüm kampanyalarını Threads'e zorlamak — veri az, algoritma öğrenemiyor, CPA fırlıyor.\n\nBu pencere uzun sürmeyecek — rekabet arttıkça CPM de Feed'e yaklaşacak.\n\n💾 Kaydet — Advantage+ Placements ayarlarını kontrol ederken aç.\n💬 Threads'te reklam verdin mi, CPM farkını gördün mü? Yorumda söyle!\n\n#threadsads #dusukcpm #metareklamlari\n#facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
+  "caption": "Bütçen bir gecede iki katına çıktıysa bu şans değil, uyarı sinyalidir. Çoğu e-ticaret sahibi bunu ancak rapor gününde fark ediyor. 👇\n\nHarcama hızındaki (spend velocity) ani sıçrama, genelde tek bir ayar değişikliğinden kaynaklanır.\nHangi eşiklerde ne yapman gerektiği bu carousel'de. 👆\n\n─────────────────────\n⚡ Spend velocity nedir ve neden saatlik takip şart\n🚨 3 risk eşiği: %130 güvenli, %180 üzeri acil müdahale\n🔍 Ani artışın 4 yaygın nedeni (accelerated delivery, bid, audience, rakip CPM)\n📊 Ads Manager'da saatlik breakdown ile anomali tespiti\n⚙️ Automated Rules ile otomatik uyarı kurma\n─────────────────────\n\nEn büyük hata: Anomaliyi fark edip hiçbir aksiyon almadan ertesi güne bırakmak. O bütçe geri gelmiyor.\n\nBu sistemi kurduğunda, kampanya seni uyandırmadan önce sen onu durdurursun.\n\n💾 Kaydet — kampanya kurarken alarm eşiklerini belirlerken aç\n💬 Sen hiç bir gecede bütçenin anormal gittiğini fark ettin mi? Yorumda anlat!\n\n#spendvelocity #automatedrules\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
