@@ -7,7 +7,6 @@ buradan silinip `topics_used.md`'ye taşınmalıdır.
 
 - Meta Advantage+ kampanyaları — otomasyon ne zaman işe yarar
 - Catalog Feed Rules — Stok ve Fiyat Değişimine Göre Otomatik Ürün Filtreleme
-- Threads Reklamları — Meta Ekosisteminde Yeni Yerleşimde Erken Dönem Düşük CPM Fırsatı
 - Kampanya Harcama Hız Analizi (Spend Velocity) — Anormal Harcama Artışını Pacing Üzerinden Erken Tespit Etme
 
 ## Yeni Konu Üretme Kuralları

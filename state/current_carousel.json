@@ -1,65 +1,65 @@
 {
-  "topic": "Cost Per Unique Click (CPUC) ve Tıklama Kalitesi Analizi — Link Click ile Unique Click Farkının Bütçeye Etkisi",
+  "topic": "Threads Reklamları — Meta Ekosisteminde Yeni Yerleşimde Erken Dönem Düşük CPM Fırsatı",
   "is_new_topic": false,
   "new_backlog_candidates": [],
   "special_kind": "comparison",
   "slides": [
     {
       "kind": "hook",
-      "tag": "METRİK ANALİZİ · TIKLAMA KALİTESİ",
-      "title": "CPC Raporun\nYalan Söylüyor\n**Tek Kişi 5 Kez Tıklıyor**",
-      "subtitle": "Link Click ile Unique Click arasındaki farkı görmezden gelirsen, bütçeni yanlış reklam setine akıtıyor olabilirsin."
+      "tag": "THREADS REKLAMLARI · YENİ YERLEŞİM",
+      "title": "Threads'te Reklam\nVermek İçin\n**Erken Pencere** Kapanıyor",
+      "subtitle": "Çoğu marka hâlâ Feed'de savaşıyor, Threads'te rekabet neredeyse yok."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 01 / 05",
-      "icon": "🖱️",
-      "title": "Link Click vs Unique Click: Temel Fark",
-      "body": "Link Click, bir reklamdaki her tıklamayı sayar — aynı kişi 4 kez tıklarsa 4 click olarak raporlanır.\nUnique Click, sadece tekil kişi sayısını sayar — aynı kişi kaç kez tıklarsa tıklasın 1 olarak geçer.\nMeta Ads Manager varsayılan olarak Link Click (CPC) gösterir, bu yüzden çoğu hesap sahibi bu farkı hiç fark etmez.",
+      "num_label": "İpucu 01/07",
+      "icon": "🧵",
+      "title": "Threads Nedir, Reklamlara Nasıl Dahil Olur?",
+      "body": "Threads, Meta'nın metin ağırlıklı sosyal platformu. Advantage+ Placements açık olduğunda reklamların otomatik olarak Threads'e de dağıtılır — ayrı bir kurulum gerekmez. Manuel yerleşim seçtiğinde Threads devre dışı kalır ve bu düşük maliyetli envanteri kaçırırsın.",
       "is_checklist": false,
-      "pill": "Varsayılan CPC raporu tekil kişiyi değil, toplam tıklama hareketini gösterir."
+      "pill": "Advantage+ Placements'ı kapatma, Threads otomatik gelir."
     },
     {
       "kind": "special",
       "background": "dark",
-      "num_label": "Sinyal 02 / 05",
+      "num_label": "Sinyal 02/07",
       "icon": "📊",
-      "title": "CPC (All) vs CPC (Unique): Oran Eşiği",
-      "inner_html": "<div class='cmp-row'><div class='cmp-col'><div class='slabel'>Link Click (CPC)</div><div class='sval'>18 TL</div><div class='tdesc'>Tüm tıklama hareketleri</div></div><div class='cmp-col best'><div class='slabel'>Unique Click (CPC)</div><div class='sval'>27 TL</div><div class='tdesc'>Sadece tekil kişi sayısı</div></div></div><div class='formula-box'>Link Click ÷ Unique Click > <span class='hl'>1.3</span> ise → kreatifte çoklu buton/karışıklık sinyali var, tıklama kalitesi düşük demektir.</div>",
-      "pill": "Oran 1.3'ü geçtiğinde kreatif tasarımını ve CTA netliğini kontrol et."
+      "title": "Feed'e Göre Gerçek Fark",
+      "inner_html": "<div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Feed Yerleşimi</div><div class=\"sval\">CPM: 110-180₺</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Threads Yerleşimi</div><div class=\"sval\">CPM: 45-90₺</div></div></div><div class=\"cmp-row\"><div class=\"cmp-col\"><div class=\"slabel\">Rekabet Yoğunluğu</div><div class=\"sval\">Yüksek · Doygun</div></div><div class=\"cmp-col best\"><div class=\"slabel\">Rekabet Yoğunluğu</div><div class=\"sval\">Düşük · Yeni Envanter</div></div></div>",
+      "pill": "Aynı bütçeyle Threads'te 2 kata yakın daha fazla gösterim."
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 03 / 05",
-      "icon": "🎯",
-      "title": "Outbound Click: Daha Güvenilir Bir Metrik",
-      "body": "Outbound Click, sadece kullanıcıyı Instagram/Facebook dışına, senin sitene yönlendiren tıklamaları sayar.\nLink Click; beğeni, yorum açma veya profil tıklaması gibi platform içi hareketleri de bazen karıştırabilir.\nOutbound CTR, Link CTR'den genelde %15-25 daha düşük çıkar — bu normal, çünkü gerçek niyet gösteren trafiği filtreler.",
+      "num_label": "Adım 03/07",
+      "icon": "🎨",
+      "title": "Kreatif İçin Ekstra İş Yok",
+      "body": "Threads, Feed ile aynı kreatif boyutlarını kullanır (1080x1080 veya 4:5 oran). Yeniden tasarım yapmana gerek yok, mevcut reklam seti otomatik optimize eder. Tek fark: görsel değil, metin ağırlıklı ve sohbet tonlu kopy burada daha iyi performans veriyor.",
       "is_checklist": false,
-      "pill": "Bütçe kararını her zaman Outbound Click üzerinden ver, Link Click üzerinden değil."
+      "pill": "Görseli değil, metni Threads'e göre yumuşat."
     },
     {
       "kind": "light",
-      "num_label": "Sinyal 04 / 05",
-      "icon": "🔍",
-      "title": "Hangi Metriğe Ne Zaman Bakmalısın?",
-      "body": "Kreatif testi yaparken → Unique CTR'a bak, tekrar tıklama testin sonucunu şişirmesin\nBütçe optimizasyonu yaparken → Outbound CTR ve CPA'yı birlikte değerlendir\nTrafik kalitesini sorgularken → Link/Unique oranı 1.3+ ise reklam setini durdurup incele\nDönüşüm raporlarken → Her zaman Purchase/ATC event'iyle çapraz kontrol et, tıklama tek başına yeterli değil",
-      "is_checklist": true,
-      "pill": "Tek bir metriğe göre karar verme — üçünü birlikte oku."
+      "num_label": "İpucu 04/07",
+      "icon": "🎯",
+      "title": "Hangi Hedefte İşe Yarar?",
+      "body": "Awareness, Traffic ve Engagement hedefli kampanyalarda Threads güçlü sonuç veriyor — 18-34 yaş arası, tartışma ve topluluk odaklı kullanıcı kitlesi burada yoğun. Erişim ve marka bilinirliği bütçesinin bir kısmını bu yerleşime kaydır.",
+      "is_checklist": false,
+      "pill": "Üst huni kampanyalarında Threads'i önceliklendir."
     },
     {
       "kind": "dark",
-      "num_label": "Sinyal 05 / 05",
+      "num_label": "Uyarı 05/07",
       "icon": "⚠️",
-      "title": "En Büyük Hata: Sadece CPC (All)'a Bakmak",
-      "body": "Düşük görünen Link CPC seni yanıltabilir — altında çok sayıda tekrar tıklama gizli olabilir.\nBu durumda 'ucuz trafik' sandığın reklam seti aslında az sayıda kişiye defalarca gösteriliyor olabilir.\nSonuç: Gerçek erişim düşük, frekans yüksek, dönüşüm maliyeti giderek artar — ama Link CPC raporu bunu göstermez.",
+      "title": "En Büyük Hata: Purchase'ı Zorlamak",
+      "body": "Threads'te dönüşüm (Purchase) optimizasyonu için veri hacmi henüz yetersiz — algoritma öğrenme evresinde zorlanır. Placement breakdown raporunda Threads performansını ayrı izle, CPA yükselirse o reklam setinde manuel olarak çıkar.",
       "is_checklist": false,
-      "pill": "Link CPC düşükse önce frekansı ve Unique CTR'ı kontrol et, sevinme."
+      "pill": "Alt huni kampanyalarda Threads'i izle, zorlama."
     },
     {
       "kind": "cta",
-      "label": "SIRADAKİ ADIM",
-      "title": "Tıklamayı Değil,\nTekil İlgiyi Optimize Et."
+      "label": "SON SÖZ",
+      "title": "Erken Giren,\nUcuz **CPM**'i Kapar."
     }
   ],
-  "caption": "Reklam panelinde gördüğün CPC rakamı seni kandırıyor olabilir. 👇\n\nAynı kişi bir reklama 4-5 kez tıklarsa, Link Click metriği bunu hâlâ 'ucuz trafik' gibi gösterir.\nGerçek tabloyu görmek için hangi metriğe bakman gerektiği bu carousel'de. 👆\n\n─────────────────────\n🖱️ Link Click ile Unique Click arasındaki gerçek fark\n📊 CPC (all) vs CPC (unique) oranı ve 1.3 eşiği\n🎯 Outbound Click neden daha güvenilir bir sinyal\n🔍 Hangi durumda hangi metriğe bakman gerektiği\n⚠️ Sadece Link CPC'ye bakmanın bedeli\n─────────────────────\n\nEn büyük hata: Düşük Link CPC'yi görüp sevinmek. Altında az sayıda kişiye defalarca gösterilen, frekansı patlamış bir reklam seti gizli olabilir.\n\nTıklama sayısı değil, tekil ilgi önemli. Bütçeni buna göre yönet.\n\n💾 Kaydet — raporlarını incelerken referans olarak kullan\n💬 Sen CPC'ye bakarken Link mi Unique mi kullanıyorsun? Yorumda söyle!\n\n#cpc #outboundclick #tiklamakalitesi\n#metareklamlari #facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi"
+  "caption": "Threads'te reklam verenlerin çoğu bunu bilmiyor: CPM'ler Feed'in yarısı kadar ucuz. Bu fırsat kapanmadan önce üstüne gitmek gerekiyor 👇\n\nRekabet yoğunlaşmadan önce bu yerleşimi kullanmayan markalar, gelecek yıl bu ucuzluğu bulamayacak.\nNasıl doğru kullanılır, hangi kampanyalarda işe yarar — hepsi carousel'de 👆\n\n─────────────────────\n🧵 Threads reklamları Advantage+ ile otomatik aktif\n📊 Feed'e göre CPM farkı net rakamlarla\n🎨 Kreatif yeniden tasarım gerekmiyor\n🎯 Hangi kampanya hedefinde işe yarıyor\n⚠️ Purchase kampanyasında yapılan en büyük hata\n─────────────────────\n\nEn büyük hata: Dönüşüm kampanyalarını Threads'e zorlamak — veri az, algoritma öğrenemiyor, CPA fırlıyor.\n\nBu pencere uzun sürmeyecek — rekabet arttıkça CPM de Feed'e yaklaşacak.\n\n💾 Kaydet — Advantage+ Placements ayarlarını kontrol ederken aç.\n💬 Threads'te reklam verdin mi, CPM farkını gördün mü? Yorumda söyle!\n\n#threadsads #dusukcpm #metareklamlari\n#facebookads #dijitalpazarlama #eticaret\n#performancemarketing #eticaretsahipleri #reklamstratejisi #instagramreklamlari"
 }
